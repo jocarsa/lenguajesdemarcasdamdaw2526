@@ -22,6 +22,7 @@ Finales de los años 90 surgen "los motores de búsqueda"
 -Yandex (Rusia)
 -Baidu (China)
 
+
 Navegadores web:
 -Chrome
 -Opera
