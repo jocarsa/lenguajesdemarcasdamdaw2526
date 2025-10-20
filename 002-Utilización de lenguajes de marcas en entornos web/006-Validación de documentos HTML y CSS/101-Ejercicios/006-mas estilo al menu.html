@@ -38,7 +38,26 @@
           margin:auto; /* Centralo en pantalla */
           padding:20px; /* Pon un poco de margen interior */
         }
-        
+        nav ul{
+          list-style-type:none; /* Anula estilos de lista */
+          margin:0px; /* anula el margen exterior por defecto */
+          padding:0px; /* anula el margen interior por defecto */
+          display:flex; /* Activa flex de izquierda a derecha */
+          gap:1px; /* Distancia entre los elementos flexbox o grid */
+          justify-content: center; /* Centrar los elementos de menu */
+        }
+        nav ul li a{
+          text-decoration:none; /* Anula los estilos de subrayado */
+          color:inherit;        /* Le pone el color que deberia tener */
+          color:white;          /* Fuerzo el color a blanco */
+          background:indigo;    /* El fondo es de un color solido */
+          padding:5px;          /* Le pongo margen interior */
+          font-size:10px;       /* Le pongo tamaño de letra */
+          text-transform:uppercase;   /* Texto va en mayusculas */
+          display:block;        /* Permito a los elementos que sean bloques */
+          width:60px;           /* Su anchura es de 60 pixeles */
+          text-align:center;    /* Alineo el texto al centro */
+        }
      </style>
   </head>
   <body>
