@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      section{display:grid;grid-template-columns:repeat(7,50px);}
+      div{width:40px;height:40px;border:1px solid grey;padding:5px;}
+    </style>
+  </head>
+  <body>
+    <script>
+      for(let mes = 0;mes<=11;mes++){
+        document.write("<h1>2025-"+(mes+1)+"</h1>");
+        document.write("<section>");  
+        const dias_en_mes = new Date(2025, mes+1, 0).getDate();
+        for(let dia = 1;dia<=dias_en_mes;dia++){
+          document.write("<div>"+dia+"</div>");
+        }
+        document.write("</section>");
+      }
+    </script>
+  </body>
+</html>

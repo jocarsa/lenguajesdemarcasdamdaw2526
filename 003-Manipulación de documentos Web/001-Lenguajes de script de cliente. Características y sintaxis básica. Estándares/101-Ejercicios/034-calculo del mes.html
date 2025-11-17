@@ -1,0 +1,12 @@
+<script>
+  // Atrapo el dia de hoy
+  const hoy = new Date();
+  // Saco el año
+  const anio = hoy.getFullYear();
+  // Saco el mes
+  const mes = hoy.getMonth(); // 0 = enero, 11 = diciembre
+  // Calculo los dias que tiene este mes
+  const dias_en_mes = new Date(anio, mes + 1, 0).getDate();
+  console.log(dias_en_mes)
+</script>
+
