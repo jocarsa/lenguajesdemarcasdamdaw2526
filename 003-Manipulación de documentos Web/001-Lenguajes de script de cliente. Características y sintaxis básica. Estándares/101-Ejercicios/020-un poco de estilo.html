@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body{
+        display:grid;
+        grid-template-columns:repeat(7,40px);
+      }
+      div{border:1px solid grey;width:40px;height:40px;}
+    </style>
+  </head>
+  <body>
+    <script>  
+      // Esto es un calendario
+      for(let dia = 1;dia<=31;dia++){
+        document.write("<div>"+dia+"</div>");
+      }
+    </script>
+  </body>
+</html>
+

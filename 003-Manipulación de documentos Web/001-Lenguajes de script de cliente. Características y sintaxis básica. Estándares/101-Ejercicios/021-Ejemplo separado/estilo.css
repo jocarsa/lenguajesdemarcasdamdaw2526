@@ -1,0 +1,5 @@
+body{
+  display:grid;
+  grid-template-columns:repeat(7,40px);
+}
+div{border:1px solid grey;width:40px;height:40px;}
