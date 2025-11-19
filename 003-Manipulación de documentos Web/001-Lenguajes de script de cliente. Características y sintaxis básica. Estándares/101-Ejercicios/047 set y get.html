@@ -1,0 +1,20 @@
+<script>
+  class Gato{
+    // Propiedades en constructor
+    constructor(){
+      this.color = undefined;
+      this.edad = 0;
+      this.raza = undefined;
+    }
+    maulla(){
+      return "Miau";
+    }
+    setColor(nuevocolor){this.color = nuevocolor;}
+    getColor(){return this.color;}
+  }
+  var gato1 = new Gato();
+  var gato2 = new Gato();
+  gato1.setColor("naranja");
+  document.write(gato1.getColor());
+  console.log(gato1.maulla());
+</script>
