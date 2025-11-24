@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+   <head>
+   </head>
+   <body>
+       <nav></nav>
+       <script>
+           let botones = ['clientes','productos','pedidos'];
+           let contenedor = document.querySelector("nav");
+           botones.forEach(function(texto_boton){
+           		let boton = document.createElement("button");
+           		boton.textContent = texto_boton;
+           		contenedor.appendChild(boton);
+               // Cuando hagas click sobre el boton...
+               	boton.onclick = function(){
+                	console.log("Has hecho click en el botón");
+                }
+           })
+       </script>
+   </body>
+</html>
