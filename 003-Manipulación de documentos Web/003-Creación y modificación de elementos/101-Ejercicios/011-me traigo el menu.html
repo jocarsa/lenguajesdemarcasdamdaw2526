@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+   <head>
+       <style>
+           html,body{height:100%;padding:0px;margin:0px;display:flex;width:100%;}
+           nav{background:indigo;flex:1;color:white;padding:20px;}
+           main{flex:4;background:aliceblue;padding:20px;}
+       </style>
+   </head>
+   <body>
+       <nav>jocarsa | panel</nav>
+       <style>
+           nav{display:flex;flex-direction:column;gap:20px;}
+           nav button{border:none;background:white;color:indigo;padding:20px;
+           text-transform:uppercase;}
+       </style>
+       <script>
+           // En primer lugar cargamos datos de un json
+           fetch("botones.json")
+           .then(function(respuesta){
+               return respuesta.json(); // La resp viene en JSON
+           })
+           .then(function(datos){
+               // Y luego creamos botones a partir de lo que hay en el json
+           		let contenedor = document.querySelector("nav")
+                datos.forEach(function(texto_boton){
+                	let boton = document.createElement("button")
+                    boton.textContent = texto_boton;
+                    contenedor.appendChild(boton);
+                })
+           })
+       </script>
+       <main>2</main>
+   </body>
+</html>
+
+
+

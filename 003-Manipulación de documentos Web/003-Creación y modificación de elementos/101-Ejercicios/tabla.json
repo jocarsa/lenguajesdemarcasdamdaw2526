@@ -1,0 +1,8 @@
+[
+  ["id", "nombre", "email", "telefono", "direccion", "fecha_alta"],
+  [1, "María López García", "maria.lopez@example.com", "+34 612 345 678", "Calle Mayor 12, 46001 Valencia", "2024-01-15"],
+  [2, "Javier Martínez Ruiz", "javier.martinez@example.com", "+34 699 123 456", "Avenida del Puerto 88, 46022 Valencia", "2024-02-03"],
+  [3, "Lucía Fernández Torres", "lucia.fernandez@example.com", "+34 644 987 321", "Calle Colón 5, 46004 Valencia", "2024-03-21"],
+  [4, "Carlos Navarro Giménez", "carlos.navarro@example.com", "+34 622 111 222", "Plaza del Ayuntamiento 3, 46002 Valencia", "2024-04-10"],
+  [5, "Elena Serrano Vidal", "elena.serrano@example.com", "+34 633 555 999", "Calle San Vicente 45, 46007 Valencia", "2024-05-02"]
+]

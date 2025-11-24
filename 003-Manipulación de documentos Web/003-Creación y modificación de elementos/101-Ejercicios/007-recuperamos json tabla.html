@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+   <head>
+   </head>
+   <body>
+       <nav></nav>
+       <script>
+           // En primer lugar cargamos datos de un json
+           fetch("tabla.json")
+           .then(function(respuesta){
+               return respuesta.json(); // La resp viene en JSON
+           })
+           .then(function(datos){
+               console.log(datos);
+           })
+       </script>
+   </body>
+</html>

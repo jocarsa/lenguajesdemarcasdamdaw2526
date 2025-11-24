@@ -3,5 +3,6 @@
 	"pedidos",
     "productos",
     "stock",
-    "empleados"
+    "empleados",
+    "estanterias"
 ]

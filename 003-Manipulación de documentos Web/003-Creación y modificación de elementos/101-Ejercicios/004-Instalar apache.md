@@ -5,6 +5,9 @@ sudo apt install apache2
 De ahi en adelante, todos los archivos que hagáis tendrán que estar en:
 /var/www/html
 
+1.-Copiais vuestra a /var/www/html
+2.-A partir de ese momento editais el codigo dentro de esa carpeta
+
 Liberación de permisos:
 
 cd /var/www
