@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum xmlns="https://ejemplo.com/curriculum"
+            version="1.0">
+    <datosPersonales>
+        <nombre>Jose Vicente</nombre>
+        <apellidos>Carratala Sanchis</apellidos>
+        <fechaNacimiento>RELLENAR</fechaNacimiento>
+        <nacionalidad>Española</nacionalidad>
+        <email>RELLENAR</email>
+        <telefono>RELLENAR</telefono>
+        <webPersonal>https://josevicentecarratala.com</webPersonal>
+        <linkedin>RELLENAR</linkedin>
+        <direccion>
+            <calle>RELLENAR</calle>
+            <codigoPostal>RELLENAR</codigoPostal>
+            <ciudad>RELLENAR</ciudad>
+            <pais>España</pais>
+        </direccion>
+    </datosPersonales>
+
+    <perfilProfesional>
+        Profesor de desarrollo de software y autor de materiales
+        didácticos especializados en programación, bases de datos
+        y tecnologías web. Amplia experiencia en formación profesional
+        (DAM, DAW, ASIR) y en el diseño de soluciones de gestión empresarial
+        y plataformas educativas integradas.
+    </perfilProfesional>
+
+    <experienciaProfesional>
+        <puesto>
+            <titulo>Profesor de Desarrollo de Aplicaciones Multiplataforma y Web</titulo>
+            <empresa>Capitol Formación</empresa>
+            <localizacion>España</localizacion>
+            <fechaInicio>RELLENAR</fechaInicio>
+            <fechaFin>Actualidad</fechaFin>
+            <descripcion>
+                Impartición de módulos de programación, bases de datos,
+                entornos de desarrollo, lenguajes de marcas y sistemas,
+                con enfoque práctico y basado en proyectos. Diseño
+                de actividades, exámenes, proyectos intermodulares y
+                material de apoyo para alumnado de formación profesional.
+            </descripcion>
+        </puesto>
+
+        <puesto>
+            <titulo>Fundador y desarrollador de soluciones de gestión empresarial</titulo>
+            <empresa>Jocarsa</empresa>
+            <localizacion>España</localizacion>
+            <fechaInicio>RELLENAR</fechaInicio>
+            <fechaFin>Actualidad</fechaFin>
+            <descripcion>
+                Diseño y desarrollo de un ecosistema de productos de software
+                (CRM, ERP, herramientas de productividad, gestión de empleados,
+                integración con Moodle y sistemas de formación).
+                Responsabilidad sobre el ciclo completo: análisis, diseño,
+                desarrollo, despliegue y mantenimiento.
+            </descripcion>
+        </puesto>
+
+        <!-- Añade aquí más puestos si lo deseas -->
+    </experienciaProfesional>
+
+    <formacionAcademica>
+        <estudio>
+            <titulo>RELLENAR (p. ej. Ingeniería / CFGS / Grado)</titulo>
+            <centro>RELLENAR</centro>
+            <localizacion>RELLENAR</localizacion>
+            <fechaInicio>RELLENAR</fechaInicio>
+            <fechaFin>RELLENAR</fechaFin>
+        </estudio>
+    </formacionAcademica>
+
+    <publicaciones>
+        <publicacion>
+            <tipo>Libro</tipo>
+            <titulo>Aprende programación con Python</titulo>
+            <editorial>RELLENAR</editorial>
+            <anio>RELLENAR</anio>
+            <descripcion>
+                Manual práctico de introducción a la programación con Python
+                orientado a estudiantes y profesionales que se inician en el
+                desarrollo de software.
+            </descripcion>
+        </publicacion>
+        <!-- Añade aquí otros libros o materiales -->
+    </publicaciones>
+
+    <proyectosDestacados>
+        <proyecto>
+            <nombre>Plataforma de gestión educativa y SIS integrado</nombre>
+            <rol>Arquitecto y desarrollador principal</rol>
+            <descripcion>
+                Desarrollo de un sistema de información para centros de formación
+                que integra gestión académica, evaluación, matrícula, conexión
+                con Moodle y generación de informes y actas.
+            </descripcion>
+            <tecnologias>PHP, MySQL/MariaDB, JavaScript, Moodle, APIs REST</tecnologias>
+        </proyecto>
+        <proyecto>
+            <nombre>Solución de gestión de empleados "jocarsa | darksalmon"</nombre>
+            <rol>Diseño y desarrollo</rol>
+            <descripcion>
+                Aplicación para la gestión de empleados, asistencia, vacaciones,
+                contratos, incidencias y geolocalización, administrada desde
+                interfaz web.
+            </descripcion>
+            <tecnologias>PHP, JavaScript, HTML/CSS, SQLite/MySQL</tecnologias>
+        </proyecto>
+    </proyectosDestacados>
+
+    <competencias>
+        <competencia categoria="Programación">
+            <skill nombre="Python" nivel="Avanzado"/>
+            <skill nombre="Java" nivel="Avanzado"/>
+            <skill nombre="PHP" nivel="Avanzado"/>
+            <skill nombre="JavaScript" nivel="Avanzado"/>
+            <skill nombre="SQL" nivel="Avanzado"/>
+        </competencia>
+        <competencia categoria="Web y servidores">
+            <skill nombre="HTML5/CSS3" nivel="Avanzado"/>
+            <skill nombre="Desarrollo web full-stack" nivel="Avanzado"/>
+            <skill nombre="Apache / Nginx" nivel="Avanzado"/>
+            <skill nombre="Flask (Python)" nivel="Intermedio"/>
+        </competencia>
+        <competencia categoria="Sistemas y DevOps">
+            <skill nombre="Linux (Ubuntu Server)" nivel="Avanzado"/>
+            <skill nombre="Administración de servidores" nivel="Avanzado"/>
+            <skill nombre="Automatización y copias de seguridad" nivel="Avanzado"/>
+        </competencia>
+        <competencia categoria="IA y modelos de lenguaje">
+            <skill nombre="LLMs y asistentes educativos" nivel="Intermedio"/>
+            <skill nombre="Entrenamiento y evaluación de modelos" nivel="Intermedio"/>
+        </competencia>
+        <competencia categoria="Docencia">
+            <skill nombre="Diseño de material didáctico" nivel="Avanzado"/>
+            <skill nombre="Metodologías activas basadas en proyecto" nivel="Avanzado"/>
+        </competencia>
+    </competencias>
+
+    <idiomas>
+        <idioma>
+            <nombre>Español</nombre>
+            <nivel>Lengua materna</nivel>
+        </idioma>
+        <idioma>
+            <nombre>RELLENAR</nombre>
+            <nivel>RELLENAR</nivel>
+        </idioma>
+    </idiomas>
+
+    <otrosDatos>
+        <dato>Disponibilidad para colaboración en proyectos de formación y desarrollo de software.</dato>
+        <dato>Interés especial en IA aplicada a la docencia y la programación.</dato>
+        <dato>RELLENAR (carné conducir, disponibilidad viajes, etc.).</dato>
+    </otrosDatos>
+</curriculum>

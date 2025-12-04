@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+    <style>
+      #jugador{width:20px;height:20px;background:red;position:absolute;transition:all 1s;}
+   	</style>
+  </head>
+  <body>
+    <div id="jugador"></div>
+   	<script>
+      // Creo un temporizador porque si no, nada se pone en marcha
+      let temporizador = setTimeout("bucle()",1000);	
+      
+      // Fijaos que llamo a la función desde dentro de la función
+      function bucle(){
+        // Pongo una posición aleatoria para el npc
+      	document.querySelector("#jugador").style.left = Math.random()*500+"px"
+        document.querySelector("#jugador").style.top = Math.random()*500+"px"
+        clearTimeout(temporizador) // Elimino temporizador para no acumular
+        temporizador = setTimeout("bucle()",1000); // Llamo a bucle de nuevo
+      }
+      
+    </script>
+  </body>
+</html>

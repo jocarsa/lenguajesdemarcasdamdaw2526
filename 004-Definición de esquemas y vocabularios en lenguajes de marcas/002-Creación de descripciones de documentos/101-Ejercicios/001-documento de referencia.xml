@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+  <nombre>Jose Vicente</nombre>
+  <apellidos>Carratala Sanchis</apellidos>
+  <telefonos>
+    <telefono>12345567</telefono>
+    <telefono>6534646</telefono>
+  </telefonos>
+</persona>

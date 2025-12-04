@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+    <style>
+      #jugador{width:20px;height:20px;background:red;position:absolute;transition:all 1s;}
+   	</style>
+  </head>
+  <body>
+    <div id="jugador"></div>
+   	<script>
+      // Creo un temporizador porque si no, nada se pone en marcha
+      let temporizador = setTimeout("bucle()",1000);
+      let posicionx = 200;
+      let posiciony = 200;
+      
+      // Fijaos que llamo a la función desde dentro de la función
+      function bucle(){
+        // Primero modifico un poco la posicion del personaje
+        posicionx += (Math.random()-0.5)*20;
+        posiciony += (Math.random()-0.5)*20;
+        // Y luego pongo una posición aleatoria para el npc
+      	document.querySelector("#jugador").style.left = posicionx+"px";
+        document.querySelector("#jugador").style.top = posiciony+"px";
+        clearTimeout(temporizador) // Elimino temporizador para no acumular
+        temporizador = setTimeout("bucle()",1000); // Llamo a bucle de nuevo
+      }
+      
+    </script>
+  </body>
+</html>

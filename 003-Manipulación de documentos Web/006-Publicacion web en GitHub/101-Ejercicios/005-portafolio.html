@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Portafolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jose Vicente Carratala Sanchis</h1>
+      <h2>Portafolio web</h2>
+    </header>
+    <main>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+      <article>
+       	<img src="josevicente.jpg">
+        <h3>Título del proyecto</h3>
+        <p>Párrafo con una descripción del proyecto</p>
+        <a href="otrapagina.html">Saber más</a>
+      </article>
+    </main>
+    <footer>
+      info@josevicentecarratala.com - +34 620 89 17 18
+    </footer>
+  </body>
+</html>
