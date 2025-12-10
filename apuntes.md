@@ -14139,6 +14139,97 @@ Estas actividades están diseñadas para ayudar a los estudiantes a entender y a
 <a id="tecnologias-de-transformacion-de-documentos"></a>
 ## Tecnologías de transformación de documentos
 
+### pdf a texto
+<small>Creado: 2025-12-10 10:38</small>
+
+`002-pdf a texto.py`
+
+```python
+# pip3 install pypdf --break-system-packages
+from pypdf import PdfReader
+
+lector = PdfReader("librophp.pdf")
+texto = ""
+
+for pagina in lector.pages:
+    texto += pagina.extract_text() + "\n"
+
+print(texto)
+```
+
+### texto a pdf
+<small>Creado: 2025-12-10 10:43</small>
+
+`003-texto a pdf.py`
+
+```python
+# pip3 install fpdf --break-system-packages
+from fpdf import FPDF
+
+def text_to_pdf(text, filename="salida.pdf"):
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+
+    for line in text.split("\n"):
+        pdf.cell(0, 10, txt=line, ln=True)
+
+    pdf.output(filename)
+
+text_to_pdf("Hola este es un texto desde Python")
+```
+
+### excel a python
+<small>Creado: 2025-12-10 10:54</small>
+
+`004-excel a python.py`
+
+```python
+# pip3 install pandas --break-system-packages
+# pip3 install odfpy --break-system-packages
+
+import pandas as pd
+
+df = pd.read_excel('empresa.ods', engine='odf')
+data = df.to_dict(orient='records')
+print(data)
+```
+
+### desde python hasta excel
+<small>Creado: 2025-12-10 10:56</small>
+
+`005-desde python hasta excel.py`
+
+```python
+import pandas as pd
+
+diccionario = [
+    {
+        "titular": "Noticia 1",
+        "fecha": "2025-12-09",
+        "contenido": "Este es el contenido de la noticia 1"
+    },
+    {
+        "titular": "Noticia 2",
+        "fecha": "2025-12-10",
+        "contenido": "Este es el contenido de la noticia 2"
+    },
+    {
+        "titular": "Noticia 3",
+        "fecha": "2025-12-11",
+        "contenido": "Este es el contenido de la noticia 3"
+    }
+]
+
+# Convertir a DataFrame
+df = pd.DataFrame(diccionario)
+
+# Exportar a Excel
+df.to_excel("noticias.xlsx", index=False)
+
+print("Archivo creado: noticias.xlsx")
+```
+
 
 <a id="descripcion-de-la-estructura-y-de-la-sintaxis"></a>
 ## Descripción de la estructura y de la sintaxis
