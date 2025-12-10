@@ -113,28 +113,34 @@
 Esta carpeta contiene una serie de ejercicios que te ayudarán a entender los fundamentos básicos del lenguaje HTML, esencial para el desarrollo web. Los problemas trabajan desde la declaración DOCTYPE hasta la inclusión de elementos como el título y las metainformaciones en un documento HTML. A través de estos ejercicios, practicarás competencias clave como la estructuración de una página web utilizando etiquetas HTML correctas y la especificación del juego de caracteres para garantizar que tu sitio sea visualmente correcto e internacionalmente accesible.
 
 ### doctype
+<small>Creado: 2025-10-08 09:43</small>
 
 #### Explicación
 
-El fragmento de código que has mostrado es el elemento `<!DOCTYPE>` en HTML. Este elemento no es un etiqueta HTML como las demás, sino una declaración que indica al navegador qué versión del lenguaje HTML se va a utilizar en el documento. En este caso, la declaración `<!doctype html>` especifica que el documento está escrito en HTML5.
+El fragmento de código que has proporcionado es una declaración `<!DOCTYPE>` en HTML. Esta línea, aunque breve, es crucial porque indica al navegador el tipo específico de documento HTML con el que está trabajando. En este caso, la declaración `<!DOCTYPE html>` especifica que el documento es del tipo HTML5.
 
-La importancia de esta línea radica en que ayuda a los navegadores a entender cómo deben interpretar el resto del código HTML. Antiguamente, existían diferentes versiones y variantes de HTML (como XHTML), pero la declaración `<!doctype html>` es una forma simplificada para especificar que se está utilizando HTML5, lo cual es la versión más reciente y ampliamente utilizada en la actualidad.
+La declaración `<!DOCTYPE>` no es realmente una etiqueta HTML, sino más bien una instrucción para el navegador o procesador de documentos. Su función principal es ayudar a los navegadores a entender cómo interpretar correctamente el resto del contenido del archivo. En la versión anterior de HTML (HTML4), había varias formas diferentes de declarar el tipo de documento, pero en HTML5 se simplificó a `<!DOCTYPE html>`.
 
-Incluir esta línea al principio del archivo HTML es crucial para garantizar un correcto funcionamiento de tu página web en diferentes navegadores.
+Es importante incluir esta declaración al principio de cada archivo HTML para asegurar que los navegadores interpreten correctamente el código y muestren el contenido como estaba diseñado.
+
+`001-doctype.html`
 
 ```html
 <!doctype html>
 ```
 
 ### etiqueta html
+<small>Creado: 2025-10-08 09:43</small>
 
 #### Explicación
 
-Este fragmento de código es el inicio básico de un archivo HTML, que se usa para crear páginas web. La primera línea `<!DOCTYPE html>` es una declaración que indica al navegador que tipo de documento va a seguir. En este caso, especifica que el documento es del tipo HTML5, lo cual significa que el navegador debe interpretar las reglas y características propias de esta versión.
+Este fragmento de código es el esqueleto básico de un documento HTML. Comienza con la declaración `<!DOCTYPE html>`, que indica al navegador que este documento está escrito en HTML5, lo cual es importante para asegurar su correcta interpretación.
 
-La estructura principal del documento se encierra entre la etiqueta `<html>` y su cierre `</html>`. Dentro de estas etiquetas, se organiza todo el contenido de la página web. Aunque en este ejemplo no hay nada más que la apertura y cierre de las etiquetas, es donde irían todas las partes del documento HTML como encabezados, párrafos, imágenes, entre otros elementos necesarios para formar una página web completa.
+Dentro de esta declaración, se encuentran las etiquetas `<html>` que encierran todo el contenido del documento web. Aunque en este caso la estructura entre las etiquetas `</html>` esté vacía, normalmente aquí irían otras etiquetas como `<head>` y `<body>`, donde se definen tanto los metadatos como el contenido visible de la página.
 
-Es importante entender esta estructura básica porque sin ella, el navegador no sabría cómo interpretar correctamente los demás elementos que se incluyan en la página.
+Es crucial tener esta estructura básica para que cualquier documento web funcione correctamente en un navegador.
+
+`002-etiqueta html.html`
 
 ```html
 <!doctype html>
@@ -144,10 +150,13 @@ Es importante entender esta estructura básica porque sin ella, el navegador no 
 ```
 
 ### lenguage
+<small>Creado: 2025-10-08 09:43</small>
 
 #### Explicación
 
-Este fragmento de código es el inicio de un documento HTML, que es el lenguaje utilizado para crear páginas web. La primera línea `<!DOCTYPE html>` indica al navegador que este archivo está escrito en HTML5, la versión más reciente del lenguaje. Luego, se abre la etiqueta `<html>`, que encierra todo el contenido de la página y es donde se declaran las características principales del documento, como el idioma, en este caso `es` para español. Esta estructura básica es crucial porque define cómo debe interpretar y renderizar el resto del contenido el navegador web.
+Este fragmento de código HTML es el inicio básico de un documento web. Comenzamos con `<!DOCTYPE html>`, que indica al navegador que este documento está escrito en HTML5. Luego, la etiqueta `<html>` abre el documento y contiene toda la información del sitio web. Dentro de esta etiqueta, se especifica el atributo `lang="es"`, lo cual define que el idioma principal del contenido será español. Este código establece una estructura básica pero esencial para cualquier página web en HTML5, sentando las bases para agregar más elementos y funcionalidades dentro del cuerpo del documento.
+
+`003-lenguage.html`
 
 ```html
 <!doctype html>
@@ -157,14 +166,25 @@ Este fragmento de código es el inicio de un documento HTML, que es el lenguaje 
 ```
 
 ### cabeza y cuerpo
+<small>Creado: 2025-10-08 09:44</small>
 
 #### Explicación
 
-Este fragmento de código es una estructura básica de un documento HTML (Lenguaje de Marca de Hipertexto) que se utiliza para crear páginas web. La línea `<!doctype html>` al inicio indica al navegador que el archivo que sigue está escrito en HTML5, la última versión del lenguaje.
+Este fragmento de código HTML es una plantilla básica para crear una página web. Comienza con `<!DOCTYPE html>`, que indica al navegador que está tratando con un documento HTML5. A continuación, se abre la etiqueta `<html>` con el atributo `lang="es"`, lo que especifica que el idioma de esta página es español.
 
-La etiqueta `<html lang="es">` define el comienzo del documento y especifica que la página está escrita principalmente en español con el atributo `lang="es"`. Dentro de este bloque, se encuentran dos partes principales: `<head>` y `<body>`. El contenido dentro de `<head>` no se visualiza directamente en la página web pero contiene información importante como el título de la página y referencias a hojas de estilo o scripts. Por otro lado, todo lo que va dentro del bloque `<body>` es visible para el usuario, incluyendo texto, imágenes y otros elementos visuales.
+Dentro del elemento `<html>`, hay dos secciones principales: `<head>` y `<body>`. La sección `<head>` no contiene contenido visible para los usuarios, pero almacena información importante sobre la página como metadatos, enlaces a hojas de estilo (CSS), o scripts JavaScript. En este caso, el `<head>` está vacío.
 
-Esta estructura básica es fundamental porque proporciona una plantilla clara donde se pueden agregar más detalles y elementos conforme se avanza en la creación de páginas web.
+El elemento `<body>` es donde todo el contenido visualmente可见的最后一条指令似乎是要求解释一个HTML文档的基本结构。以下是对此代码片段的解释，符合给定的要求：
+
+---
+
+Este código HTML representa la estructura básica de una página web simple. Comienza con `<!DOCTYPE html>`, que especifica que este documento sigue las reglas del lenguaje HTML5. A continuación, se abre el elemento `<html>` con un atributo `lang="es"`, lo cual indica al navegador que el idioma principal de la página es español.
+
+El código contiene dos partes principales: la sección `<head>`, vacía en este ejemplo, y la sección `<body>`, también vacía. La parte `<head>` se utiliza para incluir información no visible pero crucial sobre la página, como metadatos o enlaces a estilos CSS. Por otro lado, el contenido visual de la página, como texto, imágenes y videos, va dentro del elemento `<body>`.
+
+Esta estructura es fundamental para crear cualquier página web legible por los navegadores modernos.
+
+`004-cabeza y cuerpo.html`
 
 ```html
 <!doctype html>
@@ -177,16 +197,17 @@ Esta estructura básica es fundamental porque proporciona una plantilla clara do
 ```
 
 ### titulo
+<small>Creado: 2025-10-08 09:49</small>
 
 #### Explicación
 
-Este fragmento de código es una estructura básica de un documento HTML (Hypertext Markup Language), que es el lenguaje estándar para crear páginas web. La línea `<!doctype html>` indica al navegador que la página está escrita en HTML5, lo cual es importante porque define cómo debe interpretarse y renderizarse el contenido del archivo.
+Este fragmento de código es un ejemplo básico de una página HTML. Comienza con la declaración `<!doctype html>`, que indica al navegador que el documento debe ser interpretado según las reglas del lenguaje HTML5. La estructura principal está formada por la etiqueta `<html>` que contiene dos secciones: `<head>` y `<body>`. 
 
-En la siguiente parte, `<html lang="es">`, se abre la etiqueta principal de un documento HTML con el atributo `lang` establecido en "es", indicando que el idioma utilizado será español. Esto ayuda a los motores de búsqueda y lectores de pantalla a entender mejor el contenido del sitio web.
+En la sección `<head>`, encontramos la etiqueta `<title>Jose Vicente Carratala</title>`. Esta etiqueta es crucial porque establece el título de la página, que aparecerá en la pestaña del navegador. El texto dentro de esta etiqueta (`"Jose Vicente Carratala"` en este caso) identifica a quién pertenece o qué representa esa página web.
 
-El elemento `<head>` contiene información sobre el documento, pero no lo muestra directamente al usuario cuando se carga la página. Dentro del bloque `<head>`, encontramos la etiqueta `<title>Jose Vicente Carratala</title>`. Esta etiqueta es crucial porque define el título que aparecerá en la pestaña del navegador y también será usado por los motores de búsqueda para entender sobre qué trata tu página.
+La sección `<body>` está vacía en este ejemplo, pero aquí es donde irían los contenidos visibles y interactivos para el usuario. En resumen, esta estructura básica proporciona una plantilla fundamental para crear cualquier tipo de página web utilizando HTML5.
 
-La estructura actual no incluye contenido dentro del bloque `<body>`, lo cual sería donde irían todos los elementos visibles en la página web, como texto, imágenes, enlaces, etc.
+`005-titulo.html`
 
 ```html
 <!doctype html>
@@ -200,14 +221,17 @@ La estructura actual no incluye contenido dentro del bloque `<body>`, lo cual se
 ```
 
 ### meta charset
+<small>Creado: 2025-10-08 09:49</small>
 
 #### Explicación
 
-Este código es una estructura básica de un documento HTML, que es el lenguaje usado para crear páginas web. La línea `<meta charset="utf-8">` dentro del bloque `<head>` especifica cómo se deben interpretar los caracteres utilizados en todo el documento, en este caso, utilizando el conjunto de caracteres UTF-8. Esto es importante porque UTF-8 permite representar cualquier carácter que pueda usarse en un lenguaje escrito y asegura que texto como acentos o caracteres especiales no se muestren incorrectamente.
+Este fragmento de código HTML es una estructura básica de un documento web que incluye algunas etiquetas importantes para definir cómo se debe interpretar y mostrar el contenido. La línea `<!doctype html>` indica al navegador que el archivo es en formato HTML5, lo cual es crucial porque ayuda a los navegadores a entender correctamente la sintaxis del resto del código.
 
-La estructura general del código incluye las etiquetas `<!doctype html>` para indicar que el documento sigue la sintaxis HTML5, `<html lang="es">` establece que el idioma principal de la página es español, y finalmente, dentro del bloque `<head>`, se define un título que aparecerá en la pestaña o ventana del navegador.
+Dentro de las etiquetas `<html lang="es">`, especificamos que el idioma del documento es español (el atributo "lang" ayuda a herramientas como motores de búsqueda y programas de accesibilidad a comprender mejor el contenido). En la sección `<head>`, encontramos dos elementos clave: una etiqueta `title` que define el título del documento, en este caso, "Jose Vicente Carratala", lo cual aparecerá en la pestaña del navegador y es importante para la indexación por motores de búsqueda. La etiqueta `<meta charset="utf-8">`, por su parte, establece que el conjunto de caracteres utilizado en el documento es UTF-8, permitiendo el uso de un amplio rango de caracteres internacionales, lo cual es vital si el contenido incluye letras con acentos o símbolos especiales.
 
-Este tipo de estructura básica garantiza que una página web esté bien formada y sea accesible para los motores de búsqueda y lectores de pantalla, entre otros.
+Esta estructura básica garantiza una correcta interpretación del documento por parte de los navegadores y otras herramientas web.
+
+`006-meta charset.html`
 
 ```html
 <!doctype html>
@@ -259,17 +283,226 @@ Este tipo de estructura básica garantiza que una página web esté bien formada
 <a id="identificacion-de-etiquetas-y-atributos-de-html"></a>
 ## Identificación de etiquetas y atributos de HTML
 
+### Introducción a los ejercicios
+
+El archivo HTML que has proporcionado es un ejemplo básico de una página web personal. A continuación, te muestro cómo se ha ido desarrollando la estructura desde el primer archivo hasta el último:
+
+### Archivo Inicial (01-estructura-basica.html)
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Esta es la estructura básica de una página -->
+  </body>
+</html>
+```
+Este archivo incluye la declaración doctype, las etiquetas html y head con el título, y un cuerpo vacío.
+
+### Archivo 02-titulo-y-navegacion.html
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Añadimos un título y una barra de navegación -->
+    <h1>Jose Vicente Carratala</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+```
+Se añade un título en la parte superior de la página y una barra de navegación con enlaces a diferentes secciones.
+
+### Archivo 03-estructura-del-contenido.html
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Añadimos una estructura de contenido -->
+    <header>
+      <h1>Jose Vicente Carratala</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Contenido principal -->
+    </main>
+  </body>
+</html>
+```
+Se añade un `<header>` con el título y la barra de navegación, y se incluye una etiqueta `main` para contener el contenido principal.
+
+### Archivo 04-bloques-de-contenido.html
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Añadimos bloques de contenido -->
+    <header>
+      <h1>Jose Vicente Carratala</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Contenido principal -->
+      <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi página web.</p>
+      </section>
+      <section id="sobremi">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Jose Vicente Carratala.</p>
+      </section>
+    </main>
+  </body>
+</html>
+```
+Se añaden secciones dentro del `<main>` para diferentes bloques de contenido.
+
+### Archivo 05-enlaces-y-listas.html
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Añadimos enlaces y listas -->
+    <header>
+      <h1>Jose Vicent
+```
+
+### Archivo Final (016-formularios.html)
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <!-- Esto es la cabecera de la página -->
+      <h1>Jose Vicente Carratala</h1>
+      <h2>Profesor, desarrollador y diseñador</h2>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mi</a></li>
+          <li><a href="#docencia">Docencia</a></li>
+          <li><a href="#desarrollo">Desarrollo</a></li>
+          <li><a href="#diseño">Diseño</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contenido principal -->
+      <section id="inicio">
+        <h3>Inicio</h3>
+        <img src="josevicente.jpg" alt="Jose Vicente Carratala">
+      </section>
+       <section id="sobremi">
+        <h3>Sobre mi</h3>
+        <p>Soy Jose Vicente Carratala, un profesional apasionado por la tecnología, la formación y la creatividad digital. A lo largo de mi trayectoria, he trabajado en diversas áreas relacionadas con el desarrollo de software, la enseñanza de programación y la creación de contenidos visuales en 3D. Mi objetivo es ofrecer soluciones innovadoras y efectivas en el mundo de la tecnología y la formación.</p>
+      </section>
+       <section id="docencia">
+        <h3>Docencia</h3>
+      </section>
+       <section id="desarrollo">
+        <h3>Desarrollo</h3>
+      </section>
+       <section id="diseno">
+        <h3>Diseño</h3>
+      </section>
+       <section id="portafolio">
+        <h3>Portafolio</h3>
+      </section>
+       <section id="contacto">
+        <h3>Contacto</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d414497.63064825995!2d-1.0295638937500018!3d39.168675474193435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1759912118914!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form>
+          <label for="nombre">Introduce tu nombre</label>
+          <input type="text" id="nombre">
+          <label for="email">Introduce tu email</label>
+          <input type="email" id="email">
+          <label for="mensaje">Introduce tu mensaje</label>
+          <textarea id="mensaje"></textarea>
+          <input type="submit">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Esto es el pie de página -->
+      <a href="https://facebook.com/carratala">Facebook</a>
+      <a href="https://instagram.com/jvcarratala">Instagram</a>
+      <a href="https://github.com/jocarsa">GitHub</a>
+      <a href="https://linkedin.com/jvcarratala">LinkedIn</a>
+    </footer>
+  </body>
+</html>
+```
+El archivo final es una página web completa con:
+- Título y encabezado
+- Navegación con enlaces a diferentes secciones
+- Contenido principal dividido en varias secciones (Inicio, Sobre mí, Docencia, Desarrollo, Diseño, Portafolio, Contacto)
+- Mapa incrustado y formulario de contacto
+
+Este archivo muestra cómo una página web puede evolucionar desde un simple esqueleto HTML hasta incluir navegación, contenido estructurado, mapas incrustados e interacción con formularios.
+
 ### sandwich
+<small>Creado: 2025-10-08 09:51</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web. Comenzamos con `<!doctype html>`, que indica al navegador que estamos trabajando con HTML5, el lenguaje estándar actual para crear páginas web.
+Este código HTML es una estructura básica de una página web. Comenzamos con la declaración `<!doctype html>`, que informa al navegador que se trata de un documento HTML5.
 
-En la etiqueta `<html>` se define el idioma del contenido del documento como español (`lang="es"`). Dentro de esta etiqueta hay dos partes principales: la cabecera y el cuerpo de la página. La cabecera (`<head>`) contiene información sobre cómo debe ser interpretada la página, pero no lo que los visitantes van a ver directamente. En este caso, se especifica un título para la página con `<title>` (que sería "Jose Vicente Carratala" en este ejemplo), y una codificación de caracteres (`<meta charset="utf-8">`) que asegura que todos los símbolos y letras del alfabeto puedan ser mostrados correctamente.
+Dentro del elemento `<html lang="es">`, especificamos que el idioma principal de esta página es español utilizando el atributo `lang`.
 
-El cuerpo de la página, definido por `<body>`, es donde realmente se colocarían los contenidos visibles como texto, imágenes o enlaces. En este ejemplo, dentro del cuerpo tenemos tres secciones importantes: `header` (la parte superior), `main` (el contenido principal) y `footer` (la parte inferior). Aunque actualmente estas etiquetas están vacías, normalmente aquí es donde un diseñador web colocaría diferentes elementos como el menú de navegación en el header o información sobre el autor en el footer.
+El bloque `<head>` contiene metadatos sobre la página, como el título mostrado en la pestaña del navegador (`<title>Jose Vicente Carratala</title>`) y una declaración de caracteres (`<meta charset="utf-8">`) que asegura que todos los caracteres usados en el documento sean correctamente interpretados.
 
-Esta estructura ayuda a que los motores de búsqueda e incluso las personas con discapacidades visuales puedan entender mejor la organización y el contenido de una página, lo cual es crucial para su accesibilidad.
+El bloque `<body>` contiene todo el contenido visible de la página. Aquí se encuentran tres elementos principales: `<header>`, `<main>` y `<footer>`. Estos elementos dividen la página en secciones lógicas, ayudando a estructurarla y facilitar su comprensión tanto para usuarios como para motores de búsqueda.
+
+Este esquema básico permite organizar el contenido de una manera clara y semántica.
+
+`007-sandwich.html`
 
 ```html
 <!doctype html>
@@ -290,16 +523,19 @@ Esta estructura ayuda a que los motores de búsqueda e incluso las personas con 
 ```
 
 ### comentarios
+<small>Creado: 2025-10-08 09:52</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una estructura básica de un documento web. La línea `<!doctype html>` indica que este archivo sigue las reglas del lenguaje HTML5, y la etiqueta `<html lang="es">` establece el idioma del contenido como español.
+Este código HTML es una estructura básica de una página web con comentarios que explican las diferentes secciones. La etiqueta `<!DOCTYPE html>` al inicio indica que estamos trabajando con la versión más reciente del lenguaje HTML.
 
-Dentro del bloque `<head>`, encontramos varias etiquetas importantes: `<title>` contiene el título de la página, que aparecerá en la pestaña del navegador. La etiqueta `<meta charset="utf-8">` especifica que se utilizarán caracteres Unicode para permitir el uso de letras con acentos y otros símbolos internacionales.
+En el encabezado (`<head>`) encontramos metadatos importantes, como el título de la página ("Jose Vicente Carratala") y una declaración de caracteres (`<meta charset="utf-8">`) que asegura que todos los caracteres especiales se muestren correctamente en cualquier idioma.
 
-En el bloque `<body>`, hay tres secciones principales: `header`, `main` y `footer`. Estas son estructuras semánticas que describen la función del contenido dentro de ellas. Los comentarios entre las etiquetas, como por ejemplo `"<!-- Esto es la cabecera de la página -->"`, no afectan el funcionamiento del sitio web pero ayudan a otros desarrolladores (o tu futuro yo) a entender qué está pasando en cada sección.
+El cuerpo (`<body>`), donde aparecerán las partes visibles del documento, contiene tres secciones principales: `<header>`, `<main>` y `<footer>`. Los comentarios dentro de estas etiquetas ("Esto es la cabecera de la página", "Esto es el contenido principal" y "Esto es el pié de página") no aparecen en la página web final pero sirven para ayudar a los desarrolladores a entender rápidamente qué contiene cada sección. Esta estructura ayuda a organizar el contenido y mejora la accesibilidad y el rendimiento del sitio web al permitir que los motores de búsqueda entiendan mejor la jerarquía y el propósito de cada parte del documento.
 
-Es importante utilizar estructuras semánticas y dejar comentarios claros para mejorar la legibilidad y mantenimiento del código, lo que facilita el trabajo de equipos grandes o te permite retomar un proyecto después de mucho tiempo sin perderse.
+Los comentarios en HTML son muy útiles para mantener un código limpio, documentado y fácil de entender tanto para uno mismo como para otros desarrolladores que puedan trabajar en el proyecto.
+
+`008-comentarios.html`
 
 ```html
 <!doctype html>
@@ -323,18 +559,15 @@ Es importante utilizar estructuras semánticas y dejar comentarios claros para m
 ```
 
 ### cabeceras
+<small>Creado: 2025-10-08 09:55</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web. Comienza con `<!doctype html>`, que indica al navegador que debe esperar recibir un documento HTML5. La etiqueta `<html>` define el inicio y fin del documento, y dentro tiene dos secciones principales: `<head>` y `<body>`. 
+Este fragmento de código HTML crea una estructura básica para una página web que presenta información sobre Jose Vicente Carratala. La parte más importante son las etiquetas que definen diferentes secciones del documento, como `<header>`, `<main>` y `<footer>`. En la cabecera (`<header>`), hay dos elementos de encabezado: un `<h1>` con el nombre "Jose Vicente Carratala" y un `<h2>` que describe su papel como profesor, desarrollador y diseñador. También existe una etiqueta `<nav>` vacía donde se podría agregar la navegación del sitio web en el futuro. La estructura general ayuda a los motores de búsqueda y lectores de pantalla a comprender mejor el contenido y la organización de la página.
 
-En `<head>`, encontramos la etiqueta `<title>`, que establece el título de la página que aparecerá en la pestaña del navegador. También hay una etiqueta `<meta charset="utf-8">` para indicar que se utilizarán caracteres Unicode, lo cual es importante para soportar todos los caracteres especiales y lenguajes.
+Esta plantilla es importante porque proporciona una buena base para páginas web sencillas, destacando claramente las diferentes secciones con etiquetas HTML específicas que facilitan tanto la navegación como la accesibilidad del sitio. La estructura también mejora la experiencia del usuario al ayudar a los motores de búsqueda a indexar el contenido correctamente y al permitir una lectura más fácil para aquellos que utilizan herramientas de asistencia.
 
-La parte más relevante está dentro de `<body>`, donde se encuentra el bloque `<header>` que contiene información sobre la página. En este caso, muestra el nombre "Jose Vicente Carratala" en un encabezado principal (`<h1>`) seguido por una subcategoría descriptiva (`<h2>`). Además, hay un menú vacío etiquetado como `<nav>`, que podría ser utilizado para añadir enlaces de navegación.
-
-El bloque `<main>` está vacío y se usa para incluir el contenido principal de la página. Finalmente, el código cierra con una etiqueta `<footer>`, aunque no tiene contenido por ahora; esta etiqueta es comúnmente utilizada para colocar información del pie de página como derechos de autor o enlaces de contacto.
-
-Esta estructura ayuda a organizar y mejorar la accesibilidad y comprensión del sitio web tanto para los usuarios finales como para motores de búsqueda.
+`009-cabeceras.html`
 
 ```html
 <!doctype html>
@@ -363,14 +596,19 @@ Esta estructura ayuda a organizar y mejorar la accesibilidad y comprensión del 
 ```
 
 ### lista no ordenada
+<small>Creado: 2025-10-08 09:57</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una estructura básica para una página web. Comienza con la declaración `<!doctype html>`, que indica al navegador que se trata de un documento HTML5. A continuación, el código establece las características básicas de la página, como el idioma (español) y la codificación de caracteres utilizada (`utf-8`), lo cual es crucial para asegurar que los caracteres especiales o acentuados se muestren correctamente.
+Este código HTML representa la estructura básica de una página web personal. La página está en español y utiliza etiquetas para definir diferentes secciones como el encabezado, el contenido principal y el pie de página. El bloque `<header>` contiene información sobre el autor y un menú de navegación que incluye varios elementos de lista no ordenada (`<ul>`) con opciones como "Inicio", "Sobre mi" y otros enlaces al sitio.
 
-La estructura principal incluye elementos como `<header>`, donde se ubica información importante al inicio de la página, como el título del sitio en dos niveles de encabezado (`<h1>` y `<h2>`) y una barra de navegación con enlaces a diferentes secciones del sitio web dentro de una lista no ordenada (`<ul>`). Cada elemento de la lista representa un enlace al cual se puede hacer clic para navegar por el sitio.
+El menú es importante porque permite a los visitantes navegar fácilmente por diferentes secciones del sitio web. Las etiquetas `<h1>` y `<h2>` dentro del encabezado proporcionan un título principal y una descripción secundaria que dan contexto sobre quién es el autor de la página.
 
-El código también incluye elementos como `<main>`, que define el contenido principal y central de la página, aunque en este caso está vacío, y `<footer>`, destinado a información del pie de página que aparecería al final. Esta estructura ayuda a los navegadores y motores de búsqueda a entender mejor cómo se organiza el contenido de la página web, lo cual es importante para su accesibilidad y visibilidad en Internet.
+El contenido principal (`<main>`) está vacío en este ejemplo, lo que significa que sería llenado con información específica relacionada con los temas mencionados en el menú. El `<footer>` marca el final del documento y normalmente incluiría información adicional como derechos de autor o enlaces a redes sociales.
+
+Este tipo de estructura es fundamental para el diseño web ya que ayuda a organizar el contenido de manera clara y accesible, permitiendo a los motores de búsqueda entender mejor la página.
+
+`010-lista no ordenada.html`
 
 ```html
 <!doctype html>
@@ -407,16 +645,15 @@ El código también incluye elementos como `<main>`, que define el contenido pri
 ```
 
 ### secciones
+<small>Creado: 2025-10-08 09:59</small>
 
 #### Explicación
 
-Este código HTML crea la estructura básica de una página web para un sitio personal o profesional. Comienza con los metadatos y configuraciones necesarias en la sección `<head>`, incluyendo el título de la página y la codificación del texto. Luego, dentro del bloque `<body>`, hay tres elementos clave: `<header>`, `<main>` y `<footer>`.
+Este fragmento de código HTML crea una estructura básica para un sitio web, dividiendo la página en secciones claras como la cabecera (header), el contenido principal (main) y el pie de página (footer). La cabecera contiene información sobre el autor del sitio web, incluyendo su nombre y ocupación, junto con un menú de navegación que lista diferentes secciones del sitio. El contenido principal está dividido en varias secciones, cada una representada por una etiqueta `<section>` con un subtítulo (h3) que indica qué información o página pertenece. Finalmente, el pie de página es donde generalmente se incluyen datos adicionales como créditos, links a redes sociales u otras referencias legales.
 
-El encabezado (`<header>`) contiene información relevante sobre el sitio web, como el nombre del usuario (en este caso, "Jose Vicente Carratala") y un breve perfil que indica sus roles profesionales. También incluye una barra de navegación con enlaces a diferentes secciones del sitio.
+Esta estructura ayuda a los usuarios a navegar fácilmente por el sitio web, proporcionándoles una idea clara del contenido disponible y facilitando la exploración de diferentes áreas. La organización en secciones también es beneficiosa para motores de búsqueda y herramientas de accesibilidad, ya que estas etiquetas HTML ayudan a definir la estructura semántica del documento.
 
-El contenido principal (`<main>`) está dividido en varias secciones (`<section>`), cada una representando diferentes aspectos del trabajo o vida profesional del usuario, como "Sobre mi", "Docencia", "Desarrollo" y así sucesivamente. Cada sección comienza con un encabezado de nivel 3 (`<h3>`) que indica el tema de esa sección.
-
-Finalmente, hay una declaración vacía para un pie de página (`<footer>`), aunque no contiene ningún contenido en este ejemplo. Este diseño es importante porque sigue los estándares HTML semánticos y facilita la estructura del sitio web tanto para los humanos como para las máquinas (como motores de búsqueda).
+`011-secciones.html`
 
 ```html
 <!doctype html>
@@ -476,16 +713,19 @@ Finalmente, hay una declaración vacía para un pie de página (`<footer>`), aun
 ```
 
 ### anchor
+<small>Creado: 2025-10-08 10:09</small>
 
 #### Explicación
 
-Este fragmento de código HTML describe la estructura básica de una página web para un sitio profesional. Comienza con la declaración `<!doctype html>`, que indica que estamos utilizando HTML5, seguido por las etiquetas `<html>` y `<head>` que contienen metadatos importantes como el título de la página ("Jose Vicente Carratala") y la codificación de caracteres (`utf-8`).
+Este código HTML describe la estructura básica de una página web que presenta información sobre un profesional llamado Jose Vicente Carratala. La página incluye una cabecera (header) donde se muestra su nombre y rol profesional, seguido por un menú de navegación (nav) con enlaces a diferentes secciones de la página.
 
-En el cuerpo de la página (`<body>`), se encuentra una cabecera (`<header>`) que incluye un título principal (`<h1>`) con el nombre del propietario del sitio y un subtítulo que detalla sus roles. Además, hay una barra de navegación (`<nav>`) compuesta por un menú desplegable (`<ul>`), donde cada elemento es un enlace a diferentes secciones de la página identificadas por `id` (por ejemplo, `<a href="#inicio">Inicio</a>`).
+Cada enlace dentro del menú utiliza el atributo `href` que comienza con un numeral (`#`). Esto es importante porque los valores comenzando con un numeral son identificadores de fragmentos o identes, lo que permite vincular directamente a partes específicas de la misma página. Por ejemplo, cuando haces clic en "Inicio", el navegador busca el elemento correspondiente al `id="inicio"` y se desplaza hacia allá.
 
-El contenido principal de la página está dentro del bloque `<main>`, que contiene varias secciones (`<section>`), cada una con un encabezado h3 y un identificador único para permitir el salto rápido a esa sección desde los enlaces en el menú. Esto es útil para organizar el contenido de manera clara y facilitar la navegación del usuario.
+El contenido principal (main) está dividido en varias secciones (section), cada una representando un tema diferente relacionado con Jose Vicente Carratala. Cada sección tiene un id único que coincide con los valores de `href` utilizados en el menú, permitiendo que los enlaces internos funcionen correctamente.
 
-Finalmente, aunque está vacío en este ejemplo, se incluye una etiqueta `<footer>` que podría contener información adicional como datos de contacto o derechos de autor si se completa. Esta estructura HTML ayuda a los motores de búsqueda y lectores de pantalla a entender mejor el propósito y la organización de la página web.
+Esta estructura es común en sitios web personales o profesionales para organizar y navegar por contenido diverso de manera clara y sencilla.
+
+`012-anchor.html`
 
 ```html
 <!doctype html>
@@ -545,14 +785,17 @@ Finalmente, aunque está vacío en este ejemplo, se incluye una etiqueta `<foote
 ```
 
 ### enlaces externos
+<small>Creado: 2025-10-08 10:13</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple con varias secciones y enlaces. En la parte superior, llamada cabecera (header), hay un título para el sitio web seguido de una barra de navegación con varios enlaces que permiten a los visitantes moverse entre diferentes partes del contenido. Estos enlaces son anclajes internos que apuntan a secciones dentro de la misma página, lo cual es útil para estructurar grandes cantidades de información.
+Este código HTML representa una página web básica con un menú de navegación y varias secciones. En la parte superior, hay una cabecera que incluye el título del sitio "Jose Vicente Carratala" y un pequeño resumen profesional bajo el nombre. La cabecera también contiene una barra de navegación (`<nav>`) con varios enlaces internos (`<a href="#...">`) a diferentes secciones dentro de la misma página, como Inicio, Sobre mi, Docencia, Desarrollo, Diseño y Portafolio.
 
-El cuerpo principal (main) contiene varias secciones identificadas por id únicos (inicio, sobremi, docencia, desarrollo, diseño, portafolio y contacto). Cada una de estas secciones tiene un encabezado h3 que indica su propósito. Este tipo de estructura es clave para mejorar la accesibilidad del sitio web y facilitar el uso en dispositivos móviles.
+El contenido principal de la página está definido por el elemento `<main>` que contiene varias secciones (`<section>`) identificadas con etiquetas `id`. Cada una de estas secciones tiene un encabezado de nivel 3 (`<h3>`) que indica su propósito, como "Inicio", "Sobre mi", etc. Esto ayuda a estructurar la página y facilita el salto rápido a diferentes partes del sitio usando los enlaces internos.
 
-Finalmente, el pie de página (footer) proporciona enlaces a las redes sociales y plataformas profesionales del autor del sitio. Estos enlaces externos llevan a otras páginas web donde los usuarios pueden obtener información adicional sobre la persona o empresa que mantiene este sitio web.
+En la parte inferior de la página, hay un pie de página (`<footer>`), donde se encuentran enlaces externos (`<a href="...">`) que redirigen al usuario hacia otras páginas web como Facebook, Instagram, GitHub y LinkedIn. Estos enlaces proporcionan a los visitantes del sitio una forma fácil de conectarse con el autor en diferentes plataformas sociales.
+
+`013-enlaces externos.html`
 
 ```html
 <!doctype html>
@@ -616,14 +859,17 @@ Finalmente, el pie de página (footer) proporciona enlaces a las redes sociales 
 ```
 
 ### imagenes
+<small>Creado: 2025-10-08 10:29</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una estructura básica para la página web personal de un profesor y desarrollador llamado Jose Vicente Carratala. La página incluye elementos como el título, metadatos (caracteres), un menú de navegación con enlaces a diferentes secciones del sitio, imágenes, texto informativo y una red social incorporada en el mapa.
+Este código HTML representa la estructura básica de una página web personal. La página contiene varias secciones que describen diferentes aspectos del perfil profesional de Jose Vicente Carratala, como docencia, desarrollo y diseño. En el centro de la página hay un menú con enlaces a distintas secciones identificadas por sus respectivos IDs (como "inicio", "sobremi", etc.). Cada sección tiene un título y algunos detalles sobre Jose Vicente Carratala, como su biografía breve y una imagen personal.
 
-En la parte superior, hay un `header` que contiene los títulos principales (`h1`, `h2`) e información de contacto. Dentro del bloque principal (`main`), hay varias secciones (`section`) identificadas por IDs únicos para cada área temática (inicio, sobre mí, docencia, desarrollo, diseño, portafolio y contacto). Cada sección tiene un subtítulo (`h3`) que indica el tema de la sección. Por ejemplo, en la sección "Inicio", hay una imagen del profesor utilizando la etiqueta `<img>` con atributos para especificar la ruta del archivo y un texto alternativo descriptivo.
+En la sección de inicio, hay una etiqueta `<img>` que muestra una imagen llamada `josevicente.jpg`, la cual tiene un atributo `alt` para describir la imagen en caso de que no pueda mostrarse. En la sección de contacto, se incluye un mapa integrado a través de una etiqueta `<iframe>`, lo que permite a los visitantes ubicar físicamente dónde está Jose Vicente Carratala.
 
-El `footer` al final del documento contiene enlaces a las cuentas sociales del autor, lo que facilita el contacto directo desde la página web. Este diseño es crucial porque proporciona una estructura clara y funcional que ayuda a los visitantes a navegar fácilmente por toda la información disponible sobre Jose Vicente Carratala.
+Este tipo de estructura HTML es importante porque facilita la navegación y proporciona información clara sobre el perfil profesional del individuo, haciendo uso efectivo de las etiquetas semánticas como `<header>`, `<main>` y `<footer>`. Esto no solo mejora la experiencia del usuario en la página web, sino que también ayuda a los motores de búsqueda a indexar adecuadamente el contenido.
+
+`014-imagenes.html`
 
 ```html
 <!doctype html>
@@ -690,14 +936,23 @@ El `footer` al final del documento contiene enlaces a las cuentas sociales del a
 ```
 
 ### iframe
+<small>Creado: 2025-10-08 10:29</small>
 
 #### Explicación
 
-Este código HTML crea una página web básica con varias secciones y elementos importantes. En el `<header>` encontrarás un título principal y subtítulo junto con una barra de navegación que incluye enlaces a diferentes partes del sitio, como "Inicio", "Sobre mi", entre otros. La etiqueta `<main>` contiene las áreas principales de contenido, donde cada sección está identificada por un ID único para facilitar el acceso directo desde la barra de navegación.
+Este fragmento de código HTML representa la estructura básica de una página web personal. La página comienza con la declaración `<!doctype html>`, que indica al navegador que se trata de un documento HTML5.
 
-La sección más destacable es la de contacto, que incluye un `iframe` incorporando un mapa de Google Maps en el sitio web. Esto permite a los visitantes ver dónde está ubicado Jose Vicente Carratala sin tener que salir del sitio web.
+En el encabezado (`<head>`), encontramos elementos como `<title>` y `<meta charset="utf-8">`. El título "Jose Vicente Carratala" aparecerá en la pestaña del navegador, mientras que `charset` define que los caracteres usados son Unicode (UTF-8).
 
-Por último, en el `<footer>`, hay varios enlaces hacia las cuentas sociales y perfil profesional de la persona, facilitándole al usuario acceder fácilmente a otras plataformas donde puede obtener más información o ponerse en contacto. Este diseño es típico para páginas web personales o profesionales que quieren presentar una imagen clara y accesible de su trabajo y contactos.
+El cuerpo principal de la página (`<body>`) se divide en varias secciones. La cabecera (`<header>`), que incluye un menú con enlaces a diferentes partes de la página como "Inicio", "Sobre mí" y otros, facilita la navegación del usuario. El contenido principal está dentro de `<main>`, donde cada sección (como Inicio, Sobre mí, Docencia) tiene su propio bloque (`<section>`), lo que ayuda a estructurar claramente el contenido de la página.
+
+En particular, la sección "Contacto" incluye un marco (`<iframe>`) que muestra un mapa interactivo desde Google Maps. Este tipo de integración permite a los visitantes de la página ubicar físicamente al profesional y quizás incluso contactarlo.
+
+Finalmente, el pie de página (`<footer>`), contiene enlaces a las cuentas sociales del autor, permitiendo a los usuarios conectarse directamente con él fuera del sitio web.
+
+Esta estructura HTML es importante porque proporciona una base sólida para crear sitios web accesibles y bien organizados, lo que mejora la experiencia del usuario.
+
+`015-iframe.html`
 
 ```html
 <!doctype html>
@@ -764,16 +1019,17 @@ Por último, en el `<footer>`, hay varios enlaces hacia las cuentas sociales y p
 ```
 
 ### formularios
+<small>Creado: 2025-10-08 10:38</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo de una página web simple en HTML que presenta la información y servicios ofrecidos por Jose Vicente Carratala, quien parece ser un profesional en tecnología. La estructura básica del documento HTML se define con etiquetas como `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`. En el `<head>` encontramos la definición de idioma (`<lang="es">`), el título que aparece en la pestaña del navegador (`<title>`), y un metadato para especificar la codificación de caracteres (`<meta charset="utf-8">`). 
+Este código HTML representa una página web simple con múltiples secciones que describen las diferentes áreas de trabajo y habilidades del autor, Jose Vicente Carratala. La estructura principal incluye elementos como el encabezado (`<header>`), la navegación (`<nav>`), el contenido principal (`<main>`), y el pie de página (`<footer>`). Cada sección en `<main>` está organizada con una etiqueta `<section>`, cada una identificada por un ID único, como "inicio", "sobremi" (sobre mí), etc. Estas secciones contienen información sobre el autor y sus habilidades profesionales.
 
-El contenido principal se presenta dentro del `<body>`, dividido principalmente entre una cabecera (`<header>`), el cuerpo principal que incluye varias secciones (`<main>` con múltiples `<section>`), y un pie de página (`<footer>`). Cada sección está diseñada para proporcionar información específica, como la biografía del autor en "Sobre mi", y permite al visitante navegar por diferentes partes de la página a través de una barra de navegación que contiene links internos.
+Una parte importante de esta página es la última sección, donde hay un formulario de contacto que permite a los visitantes enviar un mensaje a Jose Vicente Carratala. El formulario incluye campos para introducir el nombre del usuario (`<input type="text">`), su correo electrónico (`<input type="email">`) y un área de texto (`<textarea>`) para escribir un mensaje. Este diseño es fundamental para que los visitantes puedan comunicarse fácilmente con el autor.
 
-Una característica destacable es la inclusión de un formulario dentro de la sección "Contacto" que permite a los usuarios enviar su nombre, correo electrónico y mensaje directamente desde la página web. También hay enlaces a redes sociales e información de contacto incluidos en el pie de la página, proporcionando una experiencia más completa para el usuario.
+El uso de enlaces internos dentro del menú (`<a href="#id_seccion">`) permite a los usuarios navegar rápidamente por diferentes partes de la página, mejorando la experiencia del usuario y facilitando el acceso a información específica.
 
-Esta estructura HTML es importante porque facilita tanto la navegación como la comprensión del sitio web para los visitantes y mejora la clasificación en motores de búsqueda (SEO).
+`016-formularios.html`
 
 ```html
 <!doctype html>
@@ -1001,16 +1257,23 @@ Para completar el proyecto web de Jose Vicente Carratala, hay varias tareas pend
 Si tienes alguna pregunta o necesitas ayuda con cualquiera de estas tareas, no dudes en consultar. ¡Buena suerte!
 
 ### posicionamiento
+<small>Creado: 2025-10-13 08:36</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo sencillo pero completo de una página web en HTML. La estructura principal está dividida entre la cabecera (`<header>`), el contenido principal (`<main>`) y el pie de página (`<footer>`). En la parte superior, dentro del bloque `<head>`, se especifica que el documento es un HTML5 y establece el idioma en español. También incluye una etiqueta para definir el título de la página y una declaración de caracteres.
+Este código HTML es la estructura básica de una página web personal que presenta información sobre Jose Vicente Carratala, incluyendo sus roles como profesor, desarrollador y diseñador. La página está organizada en varias secciones claramente definidas utilizando etiquetas `<header>`, `<main>` y `<footer>`.
 
-El contenido principal consiste en diferentes secciones (`<section>`), cada una representando distintas partes del sitio, como información sobre el autor ("Sobre mi"), experiencias docentes ("Docencia") o detalles del desarrollo y diseño. Cada sección tiene un título que facilita la navegación interna mediante enlaces dentro de la barra de navegación (`<nav>`), permitiendo al usuario moverse fácilmente entre las diferentes partes de la página.
+En el encabezado (`<header>`), encontramos la identificación principal del sitio con un título y subtítulo, seguido de una barra de navegación que permite al usuario acceder rápidamente a diferentes partes de la página. Cada enlace dentro de esta sección utiliza anclas HTML para hacer referencia directamente a los elementos específicos en la parte central (`<main>`) del sitio.
 
-Una parte destacable es el formulario de contacto, donde los visitantes pueden enviar sus datos y mensajes directamente a través del sitio web. Además, incluye un mapa interactivo incorporado que muestra dónde puede encontrarse Jose Vicente Carratala.
+El cuerpo principal (`<main>`) contiene seis secciones, cada una con su propio encabezado (`<h3>`). La primera sección es "Inicio", que incluye una imagen de perfil. Las siguientes cinco están dedicadas a aspectos clave de la carrera de Carratala: "Sobre mí", "Docencia", "Desarrollo", "Diseño" y "Portafolio". Cada sección tiene el potencial de tener contenido detallado, aunque en este código sólo está completa la descripción personal.
 
-Este tipo de estructura en HTML es fundamental para diseñar sitios web claros y funcionales, facilitando tanto la navegación como la organización del contenido para los visitantes del sitio.
+En la sección "Contacto", además del encabezado, hay un mapa incrustado que permite a los visitantes ubicar físicamente al profesor y un formulario sencillo para enviar mensajes directamente desde la página web. 
+
+El pie de página (`<footer>`) proporciona enlaces a las cuentas sociales y repositorio de código del autor, facilitando la conexión con él fuera de la página web.
+
+Esta estructura HTML es crucial para mejorar la navegabilidad y accesibilidad del sitio, permitiendo tanto a los usuarios como a los motores de búsqueda comprender fácilmente la jerarquía y el contenido del sitio.
+
+`017-posicionamiento.html`
 
 ```html
 <!doctype html>
@@ -1088,14 +1351,19 @@ Este tipo de estructura en HTML es fundamental para diseñar sitios web claros y
 ```
 
 ### descripcion
+<small>Creado: 2025-10-13 08:39</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web personal que presenta información sobre Jose Vicente Carratala, destacando su rol como formador, desarrollador y diseñador. En el encabezado del documento, se especifican metadatos importantes como el título de la página ("Jose Vicente Carratala") y una descripción breve para mejorar su visibilidad en motores de búsqueda. Además, hay un menú de navegación que ofrece enlaces a diferentes secciones de la web.
+Este código HTML representa la estructura básica de una página web personal, donde se presentan las habilidades y proyectos de Jose Vicente Carratala. La página incluye varias secciones importantes que ayudan a organizar el contenido y hacerlo más fácil de navegar para los visitantes.
 
-La parte principal del sitio incluye varias secciones divididas por temas como el inicio, información personal, docencia, desarrollo, diseño, portafolio y contacto. Cada sección tiene un encabezado (h3) que indica su propósito y contenido. Por ejemplo, en la sección de "Contacto" hay un formulario donde los visitantes pueden enviar sus datos a Jose Vicente y también un mapa integrado que muestra una ubicación geográfica probablemente relacionada con él.
+En la parte superior del archivo, puedes ver cómo se establece el tipo de documento como HTML5 utilizando `<!doctype html>`, seguido por una declaración de idioma en español `<html lang="es">`. Dentro de la etiqueta `<head>`, hay un título que aparecerá en la pestaña del navegador y un conjunto de metadatos que describen la página, lo cual es útil para los motores de búsqueda. Además, se incluye una imagen representativa en la sección principal con identificadores únicos (`id`) que permiten a los usuarios navegar rápidamente a diferentes partes de la página a través del menú.
 
-Finalmente, el pie de página contiene enlaces a las cuentas sociales y plataformas profesionales del autor, facilitando la interacción con su audiencia en redes sociales. Este diseño es importante porque proporciona una estructura clara y fácil de navegar para los visitantes, además de ser funcional y personalizable según las necesidades específicas del profesional.
+La estructura `<main>` contiene múltiples secciones (`<section>`) que cada una representa un aspecto diferente de la carrera y el portafolio de Jose Vicente Carratala, desde su descripción personal hasta sus proyectos en docencia, desarrollo, diseño y contacto. Finalmente, el bloque `<footer>` proporciona enlaces a las redes sociales del autor para permitir a los visitantes conectarse con él fuera de esta página web.
+
+Este tipo de estructura es crucial en el diseño web ya que facilita la navegación y mejora la experiencia del usuario al organizar claramente el contenido.
+
+`018-descripcion.html`
 
 ```html
 <!doctype html>
@@ -1175,16 +1443,19 @@ Finalmente, el pie de página contiene enlaces a las cuentas sociales y platafor
 ```
 
 ### etiqueta de visor
+<small>Creado: 2025-10-13 08:40</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web personal. Comienza con el elemento `<!doctype html>` que indica al navegador que se trata de un documento HTML5, seguido del contenedor principal `<html lang="es">` donde "es" especifica que el idioma utilizado en la página es español.
+Este fragmento de código HTML describe la estructura básica de una página web personal para Jose Vicente Carratala, que incluye información sobre él como profesor, desarrollador y diseñador. La página comienza con las etiquetas `<!doctype html>` y `<html lang="es">`, indicando que se trata de un documento HTML escrito en español.
 
-La parte más importante está dentro del bloque `<body>`, que contiene toda la información visible para los visitantes. El código incluye una cabecera (`<header>`), que presenta al usuario quién eres y qué haces, con un menú de navegación (nav) que permite a los usuarios moverse fácilmente por diferentes secciones del sitio web. Cada enlace en el menú tiene un `href` que es la ubicación de la sección en cuestión dentro de la misma página.
+En la sección del encabezado (`<head>`), encontramos los metadatos necesarios para mejorar la visibilidad y el posicionamiento web. Por ejemplo, se especifica el título de la página con `<title>Jose Vicente Carratala</title>` y se define un carácter de codificación (`utf-8`) para soporte internacional del idioma. Además, hay una descripción breve sobre quién es Jose Vicente Carratala y cómo su sitio web se mostrará en dispositivos móviles gracias a las etiquetas `<meta name="description">` y `<meta name="viewport">`.
 
-El contenido principal de la página está encerrado en `<main>`, dividiéndose en varias secciones (`<section>`), cada una con su propio título y contenido. Estas secciones proporcionan información acerca del individuo, sus actividades (como docencia y desarrollo) e incluyen un formulario para que los visitantes puedan contactarte.
+El cuerpo (`<body>`) de la página incluye un encabezado (`<header>`), una sección principal (`<main>`) que contiene múltiples áreas temáticas (como "Inicio", "Sobre mi", etc.), cada una identificada por su respectivo ID y subtítulo. En estas secciones, se proporcionan detalles sobre la carrera profesional de Jose Vicente Carratala y cómo los visitantes pueden contactarlo a través de un formulario en el área de contacto.
 
-Finalmente, el bloque `<footer>` proporciona enlaces a las redes sociales y plataformas de código del autor, permitiendo a los usuarios conectarse o ver más información sobre ti. Este diseño es importante porque mejora la experiencia del usuario al organizar la información de forma lógica y fácil de navegar.
+Por último, hay un pie de página (`<footer>`) que presenta varios enlaces a las cuentas de redes sociales del autor para facilitar su conexión con sus seguidores. Esta estructura HTML es fundamental para crear una página web bien organizada y fácilmente navegable por los usuarios y motores de búsqueda.
+
+`019-etiqueta de visor.html`
 
 ```html
 <!doctype html>
@@ -1264,14 +1535,17 @@ Finalmente, el bloque `<footer>` proporciona enlaces a las redes sociales y plat
 ```
 
 ### keywords - palabras clave
+<small>Creado: 2025-10-13 08:41</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus roles como profesor, desarrollador y diseñador. La parte más importante del código se encuentra dentro de las etiquetas `<head>` y `<body>`. En el `<head>`, encontramos metadatos importantes que describen la página, incluyendo el título, el conjunto de caracteres (`charset`) utilizado, una descripción breve (`description`), un ajuste para dispositivos móviles (`viewport`), y las palabras clave (`keywords`). Estos datos son esenciales porque ayudan a los motores de búsqueda a entender sobre qué trata la página web.
+Este fragmento de código HTML representa la estructura completa de una página web personal. La sección `<head>` contiene información importante que no aparece visualmente en el navegador, como el título de la página ("Jose Vicente Carratala") y metadatos específicos para ayudar con su indexación en motores de búsqueda. Dentro del bloque `<meta name="keywords">`, se incluyen palabras clave relevantes como "programación", "curso", "diseño" y "IA", que son términos buscados por los usuarios y que describen el contenido de la página.
 
-En el `<body>`, se despliega la estructura completa de la página, comenzando con una cabecera (`header`) que incluye el nombre y un menú de navegación (`nav`) para permitir al usuario acceder fácilmente a diferentes secciones del sitio. A continuación, viene el contenido principal (`main`), dividido en varias secciones que cubren aspectos como la introducción del autor, información sobre él mismo, sus actividades docentes y de desarrollo, así como un formulario de contacto.
+La estructura principal de la página (`<body>`) está dividida en varias secciones, comenzando con un `<header>` que incluye información sobre quién es Jose Vicente Carratala y una barra de navegación que permite a los visitantes moverse fácilmente entre diferentes partes del sitio web. El contenido principal (`<main>`) contiene múltiples secciones que cubren aspectos como la descripción personal, experiencias profesionales en docencia y desarrollo, así como un formulario de contacto.
 
-Finalmente, hay un pie de página (`footer`) con enlaces a las cuentas de redes sociales del autor. Esta estructura no solo es funcional para navegar por el sitio web, sino que también está diseñada para ser clara y fácil de entender para los visitantes, lo cual es crucial para cualquier página personal o profesional.
+Esta página es importante porque proporciona una representación clara y organizada de las habilidades y experiencia profesional de Jose Vicente Carratala, facilitando a los visitantes encontrar rápidamente la información que necesitan. La inclusión de redes sociales en el `<footer>` permite a los usuarios conectarse directamente con él fuera del sitio web principal.
+
+`020-keywords - palabras clave.html`
 
 ```html
 <!doctype html>
@@ -1352,18 +1626,19 @@ Finalmente, hay un pie de página (`footer`) con enlaces a las cuentas de redes 
 ```
 
 ### autor
+<small>Creado: 2025-10-13 08:43</small>
 
 #### Explicación
 
-Este fragmento de código HTML representa la estructura básica de una página web personal de un profesional llamado Jose Vicente Carratala. La página incluye elementos esenciales como el encabezado (head) y el cuerpo (body) del documento.
+Este código HTML es la estructura básica de una página web personal que destaca las diferentes áreas de trabajo del profesional Jose Vicente Carratala. En la sección `<head>`, encontramos elementos como el título de la página, los metadatos para describir y posicionar el sitio en motores de búsqueda, y opciones para asegurar que la página se adapte correctamente a distintos dispositivos.
 
-En la sección `<head>`, encontramos metadatos importantes que describen la página, tales como el título, la codificación de caracteres y las etiquetas SEO para mejorar el posicionamiento web. Estos elementos ayudan a los motores de búsqueda a entender qué trata la página y cómo debe clasificarla.
+En el cuerpo principal (`<body>`), la página comienza con una cabecera (`<header>`) que incluye un menú de navegación con diferentes secciones del sitio web. A continuación, en `<main>`, hay varias secciones para cada apartado mencionado en el menú (inicio, sobre mí, docencia, desarrollo, diseño y portafolio), donde la información específica sería añadida según corresponda.
 
-En el cuerpo (`<body>`), hay una estructura clara que comienza con un encabezado (`<header>`) que incluye una imagen, información sobre el autor y un menú navegación con enlaces a diferentes secciones de la página. El contenido principal está dentro del `<main>`, donde se encuentra información detallada sobre cada sección como "Sobre mí", "Docencia", etc., además de un formulario de contacto que incluye campos para introducir el nombre, correo electrónico y mensaje.
+El fragmento también incluye un formulario de contacto con campos para nombre, email y mensaje, así como una página de mapa integrada. Finalmente, en el `<footer>`, se proporcionan enlaces a las redes sociales del profesional, facilitando la interacción directa con los seguidores o clientes potenciales.
 
-Finalmente, la página termina con un pie de página (`<footer>`), que proporciona enlaces a redes sociales y plataformas profesionales del autor. Esto ayuda a los visitantes a conectarse fácilmente con Jose Vicente Carratala fuera de su sitio web principal.
+Este tipo de estructura es importante porque ayuda a los motores de búsqueda a entender mejor la web y también mejora la experiencia del usuario al ofrecer navegación fácil e información bien organizada.
 
-Este diseño es importante porque ofrece una estructura clara y coherente para la navegación, mejora el SEO (Posicionamiento en motores de búsqueda) y proporciona un espacio versátil tanto para contenido informativo como interactivo.
+`021-autor.html`
 
 ```html
 <!doctype html>
@@ -1445,14 +1720,17 @@ Este diseño es importante porque ofrece una estructura clara y coherente para l
 ```
 
 ### favicon
+<small>Creado: 2025-10-13 08:46</small>
 
 #### Explicación
 
-Este fragmento de código es una página HTML que representa un sitio web personal para Jose Vicente Carratala, destacando su perfil profesional como formador, programador y diseñador. En la sección `<head>` del documento, puedes ver cómo se establecen los metadatos importantes como el título de la página, las etiquetas de descripción y keywords, así como información sobre el autor y una etiqueta especial llamada `favicon` que enlaza a un icono personalizado (`josevicenteicono.jpg`) que aparecerá en la pestaña del navegador. Esto es crucial para mejorar la visibilidad y el reconocimiento de su marca en línea.
+Este fragmento de código HTML es la estructura básica de una página web para Jose Vicente Carratala, que incluye elementos clave como el título de la página, metadatos importantes y un diseño de navegación con enlaces a diferentes secciones del sitio. En la parte superior, dentro del `<head>` del documento, se encuentran las etiquetas `<meta>` que proporcionan información sobre la descripción, palabras clave, autor y posicionamiento de la página para motores de búsqueda. Además, hay una referencia a un icono personalizado (`favicon`) usando la etiqueta `<link rel="icon">`.
 
-El cuerpo principal de la página, entre las etiquetas `<body>` y `</body>`, contiene una estructura HTML típica con un encabezado (`<header>`), contenido principal (`<main>`), y un pie de página (`<footer>`). En el encabezado, se encuentra un menú de navegación (`<nav>`) que ofrece enlaces a diferentes secciones del sitio web. La sección `<main>` presenta varias partes distintas como una introducción, detalles sobre la persona, experiencias laborales y una forma de contacto con un mapa integrado para facilitar el acceso a su ubicación.
+La estructura principal del sitio web se presenta en el cuerpo (`<body>`), que comienza con una cabecera (`<header>`) donde aparece información general sobre Jose Vicente Carratala, incluyendo su nombre y roles profesionales junto a un menú de navegación para acceder a diferentes partes del sitio. El contenido principal está organizado en secciones (`<section>`), cada una dedicada a aspectos específicos como la descripción personal, docencia, desarrollo, diseño y portafolio. La página también incluye una sección de contacto que permite a los visitantes enviar un mensaje directamente desde el sitio web.
 
-Esta estructura ayuda a los visitantes a navegar fácilmente por todo el contenido del sitio web, proporcionando una experiencia amigable y coherente que refuerza tanto el perfil profesional como la personalidad de Jose Vicente Carratala.
+Esta estructura no solo mejora la experiencia del usuario al facilitar la navegación por el sitio, sino que también ayuda en el posicionamiento SEO (Posicionamiento en Motores de Búsqueda) debido a las etiquetas meta y la descripción detallada proporcionadas.
+
+`022-favicon.html`
 
 ```html
 <!doctype html>
@@ -1534,14 +1812,19 @@ Esta estructura ayuda a los visitantes a navegar fácilmente por todo el conteni
 ```
 
 ### open graph
+<small>Creado: 2025-10-13 08:48</small>
 
 #### Explicación
 
-Este código HTML crea una página web personal para Jose Vicente Carratala, donde se presenta información sobre él como formador y profesional de la tecnología. En el encabezado (`<head>`), hay varias etiquetas que proporcionan metadatos importantes: descripciones, palabras clave, autorización y hasta etiquetas Open Graph que mejoran cómo aparece la página cuando se comparte en redes sociales. Por ejemplo, `<meta property="og:title" content="Jose Vicente Carratala">` establece el título de la página para compartir.
+Este fragmento de código HTML representa una página web personal para Jose Vicente Carratala, que es un profesional dedicado a la tecnología, formación y diseño digital. La estructura principal incluye elementos como `<head>`, donde se establecen metadatos importantes para el rendimiento del sitio en motores de búsqueda y redes sociales, así como una cabecera (`<header>`), contenido principal (`<main>`), y un pie de página (`<footer>`).
 
-En el cuerpo (`<body>`), hay una estructura clara con una cabecera (`<header>`) que incluye un menú de navegación y el nombre del sitio, seguida por el contenido principal (`<main>`). Este contenido está dividido en secciones distintas (como "Sobre mi", "Docencia", etc.) para facilitar la navegación. Cada sección tiene su propio título y contenido específico.
+En la parte superior de la página, dentro del bloque `<head>`, hay varias etiquetas `meta` que proporcionan información clave sobre el sitio. Entre ellas se encuentra la descripción del sitio, las palabras clave relevantes, y datos específicos para Open Graph (OG) utilizados por redes sociales como Facebook para compartir contenido web. Estas etiquetas OG incluyen un título (`og:title`), una descripción (`og:description`) y una imagen (`og:image`) que se mostrarán cuando alguien comparte el enlace del sitio en plataformas sociales.
 
-Por último, hay un pie de página (`<footer>`) que incluye enlaces a las redes sociales del autor. Todo esto ayuda a los visitantes a navegar fácilmente por el sitio web y a obtener una visión clara de quién es Jose Vicente Carratala como profesional.
+La sección `<main>` contiene diferentes bloques de contenido, cada uno identificado con un `id` único, lo cual es útil para la navegación por medio de enlaces internos dentro de la página. Además, incluye una imagen y descripciones sobre el autor, y finaliza con una sección de contacto que ofrece un formulario para enviar mensajes directamente a Jose Vicente Carratala.
+
+Este diseño combina elementos estructurales esenciales del HTML5 (como `<header>` y `<footer>`) con características modernas como la optimización para redes sociales y el uso de mapas incrustados de Google Maps, lo que hace que la página sea interactiva y fácilmente accesible tanto para los usuarios como para las máquinas.
+
+`023-open graph.html`
 
 ```html
 <!doctype html>
@@ -1628,16 +1911,28 @@ Por último, hay un pie de página (`<footer>`) que incluye enlaces a las redes 
 ```
 
 ### articulo
+<small>Creado: 2025-10-13 09:06</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de una página web estática creada con HTML. El documento comienza con la declaración `<!doctype html>`, que indica al navegador que el código que sigue es HTML5, y luego establece la configuración básica del sitio web en las etiquetas `<head>` como el idioma (`<html lang="es">`), un título descriptivo para la página (`<title>`), caracteres permitidos con `<meta charset="utf-8">`, y varias metatags adicionales que proporcionan información sobre el contenido de la página, incluyendo descripciones, palabras clave y orientación en dispositivos móviles. También se incluye un ícono personalizado para la pestaña del navegador (`<link rel="icon" href="josevicenteicono.jpg">`) y metadatos específicos para redes sociales (`og:*`).
+Este fragmento de código HTML es la estructura básica y completa de una página web personal. Comienza con las declaraciones necesarias como `<!doctype html>` para indicar que se trata de un documento HTML5, seguido del elemento `<html lang="es">` que especifica el idioma en español.
 
-La estructura principal de la página se define con las etiquetas `<header>`, `<main>` y `<footer>`. En el encabezado, encontramos un título y subtítulo que describen quién es Jose Vicente Carratala, seguido por una barra de navegación (`<nav>`) que contiene enlaces a diferentes secciones del sitio web. El contenido principal está organizado en varias secciones (`<section>`), cada una representando aspectos como el inicio, información personal, docencia, desarrollo, diseño y un portafolio, entre otros.
+En la parte superior, dentro de la etiqueta `<head>`, encontramos varias etiquetas importantes:
+- La etiqueta `<title>` define el título que aparecerá en la pestaña del navegador.
+- Las metainformaciones como `<meta charset="utf-8">` aseguran que todos los caracteres se interpreten correctamente, mientras que las etiquetas `<meta name="description">`, `<meta name="keywords">`, y `<meta name="author">` proporcionan información sobre la página para motores de búsqueda.
+- Las etiquetas `<link rel="icon" href="josevicenteicono.jpg" type="image/jpeg">` se utilizan para establecer el icono personalizado del sitio web.
+- Además, hay metadatos Open Graph (`og:title`, `og:description`, `og:image`, `og:url`) que ayudan a compartir la página en redes sociales con una imagen y descripción específicas.
 
-El código también incluye elementos interactivos como un formulario de contacto con campos para nombre, correo electrónico y mensaje, así como un mapa incrustado que proporciona la ubicación del autor. Finalmente, en el pie de página, se muestran enlaces a las redes sociales del autor para facilitar el seguimiento y comunicación.
+En el cuerpo de la página (`<body>`), se encuentran varias secciones estructuradas:
+- La cabecera (`<header>`) contiene información como un título principal, subtítulo e inicio del menú de navegación.
+- El contenido principal (`<main>`) incluye diferentes secciones que cubren temas como "Inicio", "Sobre mi", y otras áreas relevantes. Cada sección tiene su propio encabezado y texto descriptivo.
+- Se proporciona una sección para el formulario de contacto, donde los visitantes pueden enviar mensajes directamente a través del sitio web.
 
-Esta estructura es importante porque ayuda a organizar eficazmente el contenido de una manera fácil de navegar y entender para los usuarios, además de ser amigable con motores de búsqueda, lo que puede mejorar la visibilidad en Internet.
+Finalmente, la página concluye con un pie de página (`<footer>`), que incluye enlaces a las redes sociales y perfiles profesionales relevantes del autor.
+
+Esta estructura es importante porque permite organizar el contenido de manera clara para los visitantes del sitio, ayuda en el posicionamiento SEO (optimización para motores de búsqueda) y proporciona una experiencia web coherente y profesional.
+
+`024-articulo.html`
 
 ```html
 <!doctype html>
@@ -1730,60 +2025,20 @@ Esta estructura es importante porque ayuda a organizar eficazmente el contenido 
 </html>
 ```
 
-### Resumen HTML
-
-#### Explicación
-
-Este fragmento de código en Markdown proporciona una breve historia sobre el origen del lenguaje HTML y cómo se desarrolló. Explica que HTML fue creado a principios de los años 90 por Tim Berners-Lee y un equipo en el CERN, inspirado en otros lenguajes como SGML, con la intención de ser fácil de usar para cualquier persona. Se enfatiza que HTML es un lenguaje abierto, lo cual significa que está disponible para su uso gratuito y no tiene restricciones específicas sobre quién puede crear o modificar páginas web.
-
-El texto también menciona el lanzamiento inicial de tres componentes clave: el propio lenguaje HTML, un navegador web (para visualizar las páginas HTML) y un servidor web (para transmitir estas páginas a los usuarios). Además, se hace referencia a cómo Estados Unidos adoptó rápidamente la World Wide Web durante los años 90. El texto finaliza mencionando el surgimiento de motores de búsqueda como Google, Bing, Yahoo, Yandex y Baidu, que ayudaron a facilitar la navegación en internet.
-
-Esta información es importante para entender cómo nació y se desarrolló la web tal como la conocemos hoy, así como las herramientas fundamentales necesarias para su funcionamiento.
-
-```markdown
-HTML se crea:
-1.-En torno a 1991 (empieza a gestarse en 1989 y se convierte en estandar en 1993)
-2.-Heredero de lenguajes como SGML
-3.-Lo crea un equipo liderado por Tim Berners-Lee
-4.-Lo crean en el CERN de Suiza (el acelerador de electrones)
-
-Lo crean como lenguaje abierto para que cualquier persona pueda escribir su propio contenido
-Lo crean "lo más fácil posible"
-Para que fuera fácil de aprender por cualquier persona
-
-Lanzan tres elementos:
--El propio lenguaje
--Un navegador web (un programa informático que interpreta y renderiza HTML)
--Un servidor web (un programa que sirve páginas web)
-
-USA adoptó la web/internet de forma muy rápida en los años 90
-
-Finales de los años 90 surgen "los motores de búsqueda"
--Google (USA)
--Bing (USA)
--Yahoo (USA)
--Yandex (Rusia)
--Baidu (China)
-
-
-Navegadores web:
--Chrome
--Opera
--Firefox
--Edge
--Safari
--Vivaldi
-```
-
 ### muchos articulos
+<small>Creado: 2025-10-13 09:08</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web personal, diseñada para presentar información sobre Jose Vicente Carratala y sus actividades profesionales. La sección `<head>` contiene elementos como el título de la página, metadatos que describen su contenido (como la descripción, las palabras clave, y las etiquetas Open Graph para compartir en redes sociales), así como una referencia a un ícono personalizado.
+Este fragmento de código HTML es la estructura básica de una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus actividades como profesor, desarrollador y diseñador. La página comienza con las etiquetas HTML necesarias para definir el tipo de documento y establecer el idioma del contenido.
 
-En la parte principal del documento (`<body>`) se encuentran los elementos estructurales de la página. El `<header>` incluye el título principal, un subtítulo que describe su papel profesional y una barra de navegación con enlaces a diferentes secciones del sitio. Cada sección del `<main>` representa una parte específica del perfil de Carratala, desde información personal hasta sus proyectos y portafolio. La sección "Contacto" incluye un mapa interactivo integrado y un formulario para enviar mensajes.
+En la sección `<head>`, se incluyen metadatos importantes que describen la página y proporcionan información adicional para motores de búsqueda y redes sociales, como título (`<title>`), charset, descripción, palabras clave, autor y propiedades Open Graph. Estos elementos son fundamentales para mejorar el SEO (Posicionamiento en Motores de Búsqueda) y permiten que las páginas web se compartan de manera efectiva en plataformas sociales.
 
-Finalmente, el `<footer>` proporciona enlaces a perfiles sociales y plataformas donde puedes encontrar más contenido relacionado con Jose Vicente Carratala. Este diseño no solo hace que la página sea fácil de navegar, sino que también ayuda a mejorar su visibilidad en motores de búsqueda y redes sociales.
+La estructura del contenido principal (`<main>`) está dividida en diferentes secciones (`<section>`), cada una representando un bloque de información como 'Inicio', 'Sobre mi', 'Docencia', etc. Cada sección tiene un título y puede contener párrafos, imágenes e incluso formularios interactivos para mejorar la experiencia del usuario. Por ejemplo, en la sección "Portafolio", se muestran varios artículos que representan diferentes proyectos o trabajos.
+
+Finalmente, el código incluye una sección de pie de página (`<footer>`), donde están ubicados los enlaces a las redes sociales y plataformas profesionales del autor, facilitando la comunicación directa entre él y sus visitantes.
+
+`025-muchos articulos.html`
 
 ```html
 <!doctype html>
@@ -1891,12 +2146,19 @@ Finalmente, el `<footer>` proporciona enlaces a perfiles sociales y plataformas 
 ```
 
 ### contenido del bloque
+<small>Creado: 2025-10-13 09:09</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una página web personal que presenta a Jose Vicente Carratala, describiendo sus roles como formador, desarrollador y diseñador. La estructura del documento comienza con la declaración `<!DOCTYPE html>`, seguida por el encabezado `<head>` donde se especifican metadatos importantes como la codificación de caracteres (`<meta charset="utf-8">`), información para motores de búsqueda (`<meta name="description">`, `<meta property="og:title">`) y un ícono personalizado (`<link rel="icon">`). En el cuerpo principal, hay una sección de encabezado que incluye su nombre y rol profesional, junto con un menú de navegación (`<nav>`) para enlaces a diferentes partes del sitio. La sección `<main>` contiene múltiples `section` que detallan la información sobre "Inicio", "Sobre mí", "Docencia", "Desarrollo", "Diseño" y "Portafolio". También hay un formulario de contacto y un mapa integrado para facilitar el acceso a su ubicación. Finalmente, en el `<footer>` se incluyen enlaces a sus perfiles sociales y repositorio en GitHub.
+Este fragmento de código HTML representa la estructura completa de una página web personal dedicada a Jose Vicente Carratala. La página incluye diversos elementos importantes que mejoran tanto su funcionalidad como su visibilidad en motores de búsqueda (SEO). En el encabezado (`<head>`), se especifican metadatos fundamentales como la descripción, las palabras clave, y las etiquetas Open Graph para compartir contenido en redes sociales. También hay un ícono personalizado definido mediante `<link rel="icon">`.
 
-Este tipo de estructura es importante porque proporciona una navegación clara para los visitantes del sitio web y ayuda a los motores de búsqueda a indexar correctamente la página, lo que mejora su visibilidad en resultados de búsqueda.
+El cuerpo principal (`<body>`) está dividido en varias secciones que cubren diferentes aspectos de la carrera profesional de Jose Vicente Carratala: información sobre él mismo, docencia, desarrollo y diseño. Cada sección incluye un encabezado descriptivo y contenido detallado como texto e imágenes. Además, el sitio web cuenta con una navegación en forma de lista no ordenada (`<ul>`) que permite a los visitantes acceder fácilmente a diferentes partes del sitio.
+
+La página también incluye un formulario de contacto integrado y un mapa interactivo para facilitar la localización. Finalmente, el pie de página contiene enlaces a las cuentas de redes sociales de Jose Vicente Carratala, lo que promueve su presencia online y permite a los visitantes conectarse con él en otras plataformas.
+
+Este diseño es importante porque proporciona una experiencia de usuario fluida y completa, mientras también optimiza la página para motores de búsqueda, mejorando así su visibilidad en internet.
+
+`026-contenido del bloque.html`
 
 ```html
 <!doctype html>
@@ -2009,16 +2271,6 @@ Este tipo de estructura es importante porque proporciona una navegación clara p
     </footer>
   </body>
 </html>
-```
-
-### Tareas a realizar
-
-#### Explicación
-
-Parece que has proporcionado un camino de archivo y un formato (Markdown), pero no hay ningún código Markdown dentro del bloque de código para analizar. ¿Podrías proporcionarme el contenido específico de Markdown que deseas que explique? Esto me permitirá darte una explicación clara y útil sobre cómo funciona ese fragmento de código en particular.
-
-```markdown
-
 ```
 
 ### Actividades propuestas
@@ -2247,14 +2499,17 @@ Aquí te proporciono un ejemplo mejorado:
 Este código debería proporcionarte una estructura sólida y un diseño visualmente atractivo para tu sitio web personal.
 
 ### empezamos estilo
+<small>Creado: 2025-10-15 10:26</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea la estructura básica y el contenido inicial para una página web personal o profesional. La página incluye elementos esenciales como un encabezado (header) con información sobre quien es Jose Vicente Carratala, una barra de navegación con enlaces a diferentes secciones del sitio, y un cuerpo principal que contiene múltiples secciones con detalles sobre su carrera en docencia, desarrollo y diseño. Además, la página incluye un pie de página (footer) con enlaces a redes sociales y plataformas como GitHub y LinkedIn.
+Este código HTML representa la estructura básica de una página web personal para Jose Vicente Carratala, que incluye información sobre su formación y experiencia profesional. La página está organizada en secciones claramente definidas utilizando elementos como `<header>`, `<main>` y `<footer>`. En el encabezado (`<header>`), puedes ver un título principal con estilos de texto rojo, seguido de una navegación que permite al usuario moverse entre diferentes partes del sitio web. El cuerpo principal (`<main>`) contiene varias secciones divididas en bloques que describen aspectos como la biografía del autor, su trayectoria profesional y sus proyectos. Cada sección tiene un encabezado con subtítulos y contenido descriptivo asociado.
 
-El código también incorpora metadatos importantes para el posicionamiento web y el intercambio de información social, tales como descripciones, palabras clave y propiedades específicas para Facebook Open Graph. Estos detalles ayudan a mejorar la visibilidad del sitio en motores de búsqueda y redes sociales.
+En el pie de página (`<footer>`), hay varios enlaces a las redes sociales del propietario del sitio web, permitiendo a los visitantes conectarse o seguir su trabajo más reciente. Este diseño es típico para sitios web profesionales que buscan proporcionar una visión completa del perfil y habilidades de un individuo, incluyendo formas fáciles de contacto y acceso a sus redes sociales.
 
-La estructura semántica del código, con elementos HTML5 como `<header>`, `<main>`, `<section>` y `<footer>`, es crucial porque facilita la navegación por el contenido del sitio tanto para los usuarios como para las herramientas que indexan o analizan el sitio web. Esto mejora tanto la experiencia de usuario como el rendimiento en motores de búsqueda (SEO).
+La inclusión de metadatos como `<meta name="description">` y propiedades Open Graph en el encabezado (`<head>`) ayuda a mejorar la indexación del sitio web en motores de búsqueda y su visualización en plataformas sociales. Estos elementos son esenciales para asegurar que el contenido sea fácilmente accesible y comprensible tanto para humanos como para robots de búsqueda, lo cual es crucial para el posicionamiento SEO (optimización para motores de búsqueda) del sitio web.
+
+`001-empezamos estilo.html`
 
 ```html
 <!doctype html>
@@ -2370,14 +2625,19 @@ La estructura semántica del código, con elementos HTML5 como `<header>`, `<mai
 ```
 
 ### estilo interno
+<small>Creado: 2025-10-15 10:27</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web para Jose Vicente Carratala, que incluye información sobre su trabajo como formador, desarrollador y diseñador. En el encabezado (`<head>`), se especifican metadatos importantes como el título de la página, caracteres usados, descripción del contenido (que ayuda en las búsquedas web) y propiedades para redes sociales. También se incluye un ícono personalizado que se muestra en la pestaña del navegador.
+Este fragmento de código es una página HTML que representa un sitio web personal para Jose Vicente Carratala, donde se presentan sus habilidades como profesor, desarrollador y diseñador. La estructura básica del documento incluye la declaración `<!DOCTYPE html>` que indica que el documento sigue las reglas de HTML5.
 
-En el cuerpo (`<body>`), hay una estructura clara con una cabecera (`<header>`), un contenido principal (`<main>`) dividido en diferentes secciones, y un pie de página (`<footer>`). La cabecera contiene un título personalizado y un menú de navegación que incluye hipervínculos a los distintos apartados de la página. El contenido principal está estructurado usando etiquetas `<section>`, cada una dedicada a una parte específica como la introducción, información sobre el autor, experiencias laborales y secciones para compartir su portafolio y permitir contactarlo.
+El encabezado (`<head>`) contiene elementos importantes como el título del sitio web, metadatos para mejorar el SEO (por ejemplo, descripción, palabras clave), y propiedades específicas para redes sociales (`og:title`, `og:description`, etc.) que ayudan a mostrar un resumen del contenido cuando se comparte en plataformas como Facebook o Twitter. Además, se incluye una hoja de estilos interna vacía donde podrían añadirse reglas CSS más adelante para personalizar la apariencia del sitio.
 
-Este diseño es importante porque proporciona una navegación fácil e intuitiva para los visitantes de la página web, permitiéndoles encontrar rápidamente la información que necesitan. Además, al ser bien estructurado, ayuda a mejorar el rendimiento en motores de búsqueda (SEO) y facilita la creación de estilos consistentes usando CSS.
+El cuerpo (`<body>`) está dividido en varias secciones que representan diferentes áreas del sitio: cabecera, contenido principal y pie de página. La cabecera incluye un menú de navegación con varios enlaces a secciones específicas del sitio. Cada sección del contenido principal (Inicio, Sobre mí, Docencia, Desarrollo, Diseño, Portafolio y Contacto) tiene su propio bloque estructurado con títulos, parágrafos e imágenes que describen las diferentes áreas de trabajo o intereses de Jose Vicente Carratala. El pie de página proporciona enlaces a sus redes sociales.
+
+Esta estructura es crucial para la organización del contenido y mejora la experiencia del usuario al facilitar la navegación entre diferentes secciones del sitio web, lo cual es fundamental para sitios personales que buscan destacar habilidades profesionales y permitir una fácil comunicación con los visitantes.
+
+`002-estilo interno.html`
 
 ```html
 <!doctype html>
@@ -2496,16 +2756,17 @@ Este diseño es importante porque proporciona una navegación fácil e intuitiva
 ```
 
 ### comentario
+<small>Creado: 2025-10-15 10:29</small>
 
 #### Explicación
 
-Este fragmento de código es una página HTML que describe la web personal de Jose Vicente Carratala. La estructura principal incluye elementos como el `<head>` y el `<body>`, donde se definen los metadatos y las partes visibles del sitio, respectivamente. En el `<head>`, hay varias etiquetas `meta` que proporcionan información sobre la página a motores de búsqueda y otros sistemas web, incluyendo descripciones, palabras clave, autor, y propiedades para redes sociales como Facebook.
+Este fragmento de código HTML es la estructura básica de una página web personal que presenta información sobre José Vicente Carratalá, un profesional en tecnología y diseño. La página incluye elementos importantes como el título de la página (`<title>`), metadatos para búsqueda (`<meta name="description">`, `<meta property="og:title">` etc.), y un estilo CSS incrustado que se usa para dar formato a los elementos HTML.
 
-El cuerpo principal (`<body>`) contiene elementos estructurales claves como un `<header>` con una cabecera visible y un menú de navegación (`nav`), y un `<main>` que alberga el contenido central del sitio. Este contenido está dividido en varias secciones, cada una representando diferentes aspectos de la carrera de Jose Vicente Carratala, como docencia, desarrollo o diseño.
+El código también contiene una cabecera (`<header>`) con un menú de navegación y subtítulos, contenido principal (`<main>`), que incluye diferentes secciones como "Inicio", "Sobre mi", "Docencia", "Desarrollo", "Diseño", "Portafolio" y "Contacto". Cada una de estas secciones tiene un encabezado `<h3>`, descripciones detalladas y, en algunos casos, formularios o imágenes para ilustrar el contenido.
 
-El código incluye también una sección para mostrar su portafolio y un formulario de contacto que permite a los visitantes enviar mensajes directamente desde el sitio. Además, en las partes visibles del HTML hay comentarios (`<!-- -->`) que ayudan a explicar qué hace cada parte del documento, lo cual es útil tanto para otros desarrolladores que trabajen con este código como para recordarte su propósito.
+Finalmente, la página incluye un pie de página (`<footer>`), que proporciona enlaces a perfiles en redes sociales. Esta estructura ayuda a organizar el contenido de manera clara y profesional, facilitando la navegación del usuario por la página web.
 
-Esta estructura de página web está bien organizada y utiliza elementos semánticos, lo cual facilita la comprensión y el mantenimiento del sitio.
+`003-comentario.html`
 
 ```html
 <!doctype html>
@@ -2632,14 +2893,19 @@ Esta estructura de página web está bien organizada y utiliza elementos semánt
 ```
 
 ### estilo de titulo 2
+<small>Creado: 2025-10-15 10:30</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus roles como formador, desarrollador y diseñador. En el `<head>` del documento, se incluyen metadatos importantes como título, descripción y palabras clave para mejorar el SEO (Posicionamiento en motores de búsqueda), así como una hoja de estilo interna que establece el color azul para los subtítulos `<h2>`. 
+Este fragmento de código HTML es una página web simple que muestra la biografía y el trabajo del profesor Jose Vicente Carratala. La estructura principal está compuesta por varias secciones como cabecera, contenido principal (main) y pie de página (footer). Cada sección contiene elementos específicos, como encabezados (h1, h2, h3), párrafos (p), imágenes (img) y un formulario para contactar al profesor.
 
-En la parte principal del cuerpo (`<body>`), se muestra una cabecera con un menú desplegable que enumera las diferentes secciones de la página. Cada sección contiene información detallada sobre Jose Vicente, incluyendo imágenes y texto explicativo. La página también incorpora elementos interactivos como un formulario para enviar mensajes y enlaces a sus redes sociales y repositorios en línea.
+En la parte superior del código, en la etiqueta `<head>`, puedes ver diferentes metadatos que proporcionan información adicional sobre la página, como su descripción, palabras clave y autor. También se incluyen varios enlaces a redes sociales y un ícono favicon específico.
 
-Esta estructura es importante porque ayuda a organizar la información de una manera que sea fácil de navegar y entender para los visitantes, además de proporcionar metadatos útiles para mejorar el posicionamiento web.
+Además, hay una hoja de estilos interna (inline CSS) dentro del `<head>` donde se define el color azul para los elementos h2, lo que personaliza la apariencia de estos encabezados. Este estilo interno es útil cuando necesitas aplicar rápidamente un diseño a ciertas partes específicas de una página.
+
+La estructura y el contenido de este HTML son fundamentales para entender cómo se organizan las páginas web y cómo se integran elementos visuales y funcionalidades, como formularios de contacto o enlaces sociales.
+
+`004-estilo de titulo 2.html`
 
 ```html
 <!doctype html>
@@ -2768,16 +3034,17 @@ Esta estructura es importante porque ayuda a organizar la información de una ma
 ```
 
 ### estilo
+<small>Creado: 2025-10-15 10:33</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo sencillo en CSS (Hoja de Estilo en Cascada) que muestra cómo se aplica estilo a una etiqueta HTML. En concreto, el código está diseñado para cambiar el color del texto dentro de las etiquetas `<h2>` a azul.
+Este código CSS es un ejemplo básico de cómo se define el estilo para un elemento específico en una página web. En este caso, está estableciendo la apariencia del encabezado de nivel 2 (denotado por `h2`), cambiando su color a azul (`color: blue;`). 
 
-El bloque comienza con `/*` y termina con `*/`, lo cual indica un comentario en CSS. Dentro de este comentario se explica la estructura básica de cómo definir estilos: primero se especifica el selector (que es una parte del documento HTML al que queremos aplicar los estilos) seguido por llaves `{}`, dentro de las cuales van las propiedades y valores que querríamos cambiar.
+Lo que hace es que cuando cualquier etiqueta `<h2>` se encuentre en un archivo HTML vinculado a esta hoja de estilos, el texto dentro de dicha etiqueta aparecerá en color azul. Esto permite estandarizar y controlar la apariencia visual de diferentes elementos del sitio web sin necesidad de modificar directamente los archivos HTML.
 
-Justo después, vemos la declaración real de estilo fuera del comentario. `h2{ color:blue; }` es una regla CSS donde `h2` es el selector que identifica a todas las etiquetas `<h2>` en un documento HTML. Dentro de las llaves `{}`, hay una propiedad (en este caso, `color`) seguida por dos puntos y luego el valor que deseamos aplicar (aquí, `blue`). Esto significa que cualquier texto dentro de etiquetas `<h2>` tendrá color azul.
+Es importante porque ayuda a mantener un aspecto uniforme y profesional para todos los encabezados de nivel 2 que se utilicen en el sitio, facilitando así tanto la estética como la gestión del diseño del sitio web.
 
-Este tipo de reglas es crucial en CSS porque permite estilizar visualmente elementos HTML de manera precisa y controlada.
+`005-estilo.css`
 
 ```css
 /*
@@ -2794,14 +3061,17 @@ h2{
 ```
 
 ### externo
+<small>Creado: 2025-10-15 10:33</small>
 
 #### Explicación
 
-Este fragmento de código HTML representa la estructura básica de una página web personal. La página incluye diversas etiquetas meta que proporcionan información adicional sobre el contenido, como descripciones para motores de búsqueda y datos para redes sociales. También se carga un archivo externo llamado "005-estilo.css" que define cómo se verá la página en términos de diseño visual.
+Este archivo HTML es una página web completa que muestra la estructura y el contenido de un sitio para Jose Vicente Carratala, destacando su profesión como formador, desarrollador y diseñador. Comienza con la declaración `<!DOCTYPE html>`, indicando que se trata de un documento HTML5. La etiqueta `<html>` define el documento HTML y especifica que es en español mediante la propiedad `lang="es"`. Dentro del encabezado (`<head>`), se incluyen metadatos importantes como el título, codificación de caracteres (UTF-8) para soporte internacional, descripción, palabras clave, y etiquetas de redes sociales. También hay una llamada a un archivo CSS externo `005-estilo.css` que proporciona el estilo visual al documento HTML.
 
-En la parte principal del documento (dentro de `<body>`), hay una estructura que incluye un encabezado (`<header>`), contenido central o "main" (`<main>`) y un pie de página (`<footer>`). El encabezado contiene el título principal, información sobre quién es Jose Vicente Carratala, y un menú de navegación con enlaces a diferentes secciones del sitio. Cada una de estas secciones (como "Inicio", "Sobre mi", "Docencia", etc.) está representada por elementos `<section>` que contienen subtitulos (`<h3>`) e información detallada.
+El cuerpo (`<body>`) contiene la estructura principal del sitio web: desde la sección de encabezado (`<header>`), pasando por el contenido principal (`<main>`), hasta llegar a los elementos de pie de página (`<footer>`). En cada sección, se destacan diferentes aspectos del trabajo y habilidades de Jose Vicente Carratala. Por ejemplo, en la sección de "Inicio" hay una imagen, mientras que en "Docencia", "Desarrollo" y "Diseño", se incluyen detalles sobre sus actividades profesionales con imágenes y textos informativos. La sección del "Portafolio" muestra ejemplos de trabajos realizados, y la última sección es para el contacto directo con un formulario y mapas integrados.
 
-Esta estructura es importante porque ayuda al usuario a navegar fácilmente por la página y proporciona contenido claro y organizado. Además, el uso de etiquetas semánticas como `header`, `main` y `footer` mejora la accesibilidad para personas con discapacidades cognitivas o tecnológicas y también facilita que los motores de búsqueda entiendan mejor la estructura y el contenido del sitio web.
+ÚLTIMO PÁRRAFO: En comparación con el código previo, este archivo HTML representa una página web completa que integra tanto contenido como estilo (a través del enlace externo a `005-estilo.css`), lo cual marca una gran diferencia de escala y complejidad. Además de la estructura básica HTML, incluye elementos avanzados como redes sociales, mapas integrados con Google Maps, y un formulario de contacto, proporcionando una experiencia web más rica y completa para el usuario.
+
+`005-externo.html`
 
 ```html
 <!doctype html>
@@ -2918,14 +3188,17 @@ Esta estructura es importante porque ayuda al usuario a navegar fácilmente por 
 ```
 
 ### volvemos a interno
+<small>Creado: 2025-10-15 10:35</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web personal para Jose Vicente Carratala, que incluye tanto metadatos como contenido visual y textual. En la sección `<head>`, encontramos etiquetas `meta` con información sobre el autor, descripción, palabras clave y posicionamiento en dispositivos móviles, así como metadatos para redes sociales (Open Graph) que ayudan a promover la página en plataformas como Facebook o LinkedIn. Además, hay una referencia al icono de la página (`favicon`) y un bloque `<style>` donde se pueden incluir estilos CSS internos.
+Este código HTML representa la estructura básica de una página web personal. La página se organiza en varias secciones claramente definidas, comenzando con un encabezado (`header`) que incluye el título de la página y un menú de navegación (`nav`), seguido del contenido principal (`main`) dividido en diferentes secciones para distintas áreas temáticas como 'Inicio', 'Sobre mí', 'Docencia', 'Desarrollo', 'Diseño' y 'Portafolio'. Cada sección contiene información relevante sobre Jose Vicente Carratala, desde su biografía hasta sus logros profesionales.
 
-El cuerpo de la página está dividido en varias secciones principales: el encabezado (`<header>`) que contiene información sobre Jose Vicente Carratala y un menú de navegación, el contenido principal (`<main>`) con diversas secciones para cada aspecto de su trabajo (sobre mí, docencia, desarrollo, diseño, portafolio y contacto), y finalmente un pie de página (`<footer>`) que proporciona enlaces a sus perfiles en redes sociales. Cada sección incluye elementos como encabezados `<h3>` para títulos secundarios y contenido estructurado usando etiquetas `section`, `article` y formularios para permitir la interacción del usuario, como un formulario de contacto.
+El contenido principal finaliza con una sección de contacto que incluye un formulario para enviar mensajes y un mapa integrado. La página también tiene un pie de página (`footer`) que proporciona enlaces a las redes sociales del autor.
 
-Este diseño es importante porque proporciona una estructura clara e informativa que mejora tanto el rendimiento en motores de búsqueda (SEO) como la experiencia del usuario al navegar por la página. Además, incluir metadatos específicos para redes sociales ayuda a compartir y promover la página más eficazmente en estas plataformas.
+Es importante notar cómo el código utiliza etiquetas semánticas como `<header>`, `<main>`, `<section>` y `<footer>`, lo cual mejora tanto la accesibilidad para usuarios con discapacidades como el SEO (Posicionamiento en motores de búsqueda) ya que ayuda a los buscadores a entender mejor la estructura del sitio web.
+
+`006-volvemos a interno.html`
 
 ```html
 <!doctype html>
@@ -3044,22 +3317,17 @@ Este diseño es importante porque proporciona una estructura clara e informativa
 ```
 
 ### color del texto
+<small>Creado: 2025-10-15 10:38</small>
 
 #### Explicación
 
-Este código es la estructura HTML completa de una página web personal para Jose Vicente Carratala, donde se presenta información sobre él como formador y profesional tecnológico. La sección más relevante a destacar en este contexto es el bloque de estilo incorporado dentro del `<head>` que cambia el color del texto para los encabezados (`<h1>`, `<h2>` y `<h3>`). 
+Este código HTML es una página web personal de un profesional llamado Jose Vicente Carratala. La estructura principal incluye elementos como el encabezado (`<header>`), la sección principal (`<main>`) y el pie de página (`<footer>`). En la cabecera, hay información sobre el autor y enlaces a diferentes partes del sitio web.
 
-El fragmento de código específico es:
-```css
-<style>
-    h1,h2,h3{
-      color:indigo;
-    }
-</style>
-```
-Este bloque define que todos los elementos de encabezado (títulos) en las secciones principales (`<h1>`, `<h2>` y `<h3>`) tendrán un color indigo, lo cual ayuda a diferenciar visualmente estos elementos importantes dentro del contenido. Es importante porque mejora la legibilidad y proporciona una estructura clara para el usuario que visita la página.
+El bloque clave para tu pregunta está dentro de las etiquetas `<style></style>` en la parte superior, donde se establece que los elementos `h1`, `h2` e `h3` tendrán un color indigo. Esto significa que todas las cabeceras grandes y medianas del sitio web aparecerán con este tono específico, proporcionando una consistencia visual a través de la página.
 
-Esta definición de estilo en línea es útil para aplicar rápidamente estilos simples sin necesidad de crear un archivo CSS externo, aunque se recomienda separar estilos complejos en archivos externos para mantener el código limpio y organizado.
+Este estilo es importante porque ayuda a dar coherencia y claridad al diseño, permitiendo que los usuarios identifiquen fácilmente los titulares y secciones principales del contenido.
+
+`007-color del texto.html`
 
 ```html
 <!doctype html>
@@ -3180,14 +3448,17 @@ Esta definición de estilo en línea es útil para aplicar rápidamente estilos 
 ```
 
 ### color de fondo
+<small>Creado: 2025-10-15 10:40</small>
 
 #### Explicación
 
-Este código HTML es una página web personal de un profesional llamado Jose Vicente Carratala, que muestra su trabajo como formador, programador y diseñador. En la sección `<head>` del documento, hay varias etiquetas importantes que definen cómo se mostrará el sitio web tanto para los navegadores como para motores de búsqueda.
+Este fragmento de código HTML representa la estructura básica y algunos elementos estilísticos para una página web personal o profesional. La página incluye un encabezado (header), el contenido principal (main) dividido en varias secciones, y un pie de página (footer). En el `head` del documento, encontramos metadatos importantes como la descripción de la página (`meta description`), palabras clave para motores de búsqueda (`meta keywords`), así como las etiquetas Open Graph utilizadas por redes sociales para compartir enlaces.
 
-Una parte específica a destacar dentro de la etiqueta `<style>`, es donde se establecen las reglas CSS (Cascading Style Sheets) para dar estilo a la página. Aquí, se especifica que todos los elementos `h1`, `h2` y `h3` tendrán el color indigo (`color:indigo;`). Además, se indica que el fondo del cuerpo de la página tendrá un tono GhostWhite (`background:GhostWhite;`). Estas reglas CSS son cruciales para dar a la página una apariencia visual coherente y profesional.
+En particular, este código destaca por incluir CSS directamente dentro de la etiqueta `<style>` en el `head`, lo que permite personalizar visualmente la página sin necesidad de un archivo externo. Por ejemplo, establece que los títulos (`h1`, `h2`, y `h3`) tendrán un color indigo y que todo el cuerpo del documento (`body`) tendrá un fondo de color GhostWhite.
 
-La estructura HTML proporciona una organización clara con elementos como `<header>`, `<main>` y `<footer>`, lo que facilita tanto el desarrollo del sitio web como su mantenimiento futuro.
+La importancia de esta sección de código reside en cómo combina elementos HTML con estilos CSS para crear una página web atractiva y funcional, permitiendo al usuario personalizar visualmente la apariencia del sitio sin cambiar el contenido estructural. Además, las etiquetas meta proporcionan información adicional sobre el documento que puede ser utilizada por motores de búsqueda y redes sociales para mejorar la visibilidad y el alcance de la página.
+
+`008-color de fondo.html`
 
 ```html
 <!doctype html>
@@ -3311,16 +3582,19 @@ La estructura HTML proporciona una organización clara con elementos como `<head
 ```
 
 ### familia de fuente
+<small>Creado: 2025-10-15 11:00</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web personal, que describe a Jose Vicente Carratala como profesional en tecnología, formación y diseño. La página incluye elementos clave como el título de la página, metadatos para mejorar su visibilidad en motores de búsqueda y marcadores de redes sociales.
+Este código HTML representa una página web personal que incluye varias secciones para presentar información sobre un profesional llamado José Vicente Carratala. La estructura principal de la página está dividida en partes como el encabezado (header), el cuerpo principal (main) y el pie de página (footer). En el encabezado, se muestra una barra de navegación con enlaces a diferentes secciones del sitio web.
 
-En la sección `<head>`, encontramos las etiquetas necesarias para definir el contenido de la página, desde información básica sobre quién es Jose Vicente Carratala hasta metadatos como descripciones y palabras clave que ayudan a los buscadores a indexar correctamente la web. Además, hay una llamada a un estilo personalizado que carga una fuente externa (Ubuntu) para darle al sitio un aspecto único.
+En el cuerpo principal, hay múltiples secciones que cubren aspectos como "Inicio", "Sobre mí", "Docencia", "Desarrollo", "Diseño" y "Portafolio". Cada sección contiene información detallada sobre las habilidades y experiencias de José Vicente Carratala en diferentes áreas. La última sección es la de contacto, que incluye un formulario para enviar mensajes y un mapa integrado.
 
-La sección `<body>` contiene el contenido visual de la página. Incluye un encabezado (`<header>`) con información sobre Jose Vicente Carratala y un menú de navegación, así como una sección principal (`<main>`) que divide su contenido en diferentes partes (Inicio, Sobre mi, Docencia, Desarrollo, Diseño, Portafolio y Contacto). Cada parte proporciona detalles específicos sobre sus actividades profesionales.
+En el CSS interno del archivo (dentro de las etiquetas `<style>`), se define una familia de fuentes personalizada llamada "ubuntu" utilizando la regla `@font-face`. Esto permite utilizar este tipo de fuente en todo el documento HTML, haciéndolo más atractivo visualmente. También se definen estilos para los elementos h1, h2 y h3 que establecen sus colores en índigo, mientras que el fondo del cuerpo está definido como "GhostWhite".
 
-La estructura es importante porque permite a los visitantes navegar fácilmente por la página y encontrar información relevante de manera rápida. Además, el uso de fuentes personalizadas (como Ubuntu) mejora la experiencia visual del usuario y puede hacer que la web sea más memorable.
+Este archivo es una excelente manera de comprender cómo combinar HTML con CSS para crear una página web personalizada y atractiva.
+
+`009-familia de fuente.html`
 
 ```html
 <!doctype html>
@@ -3458,18 +3732,17 @@ La estructura es importante porque permite a los visitantes navegar fácilmente 
 ```
 
 ### geometria
+<small>Creado: 2025-10-20 08:31</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web que presenta información sobre Jose Vicente Carratala, destacando sus roles como formador, desarrollador y diseñador. La página incluye varias secciones para diferentes aspectos de su trabajo, como "Sobre mí", "Docencia", "Desarrollo", "Diseño" y un formulario de contacto.
+Este código HTML crea una página web personal para José Vicente Carratala, que incluye secciones sobre su información personal, experiencia en docencia, desarrollo y diseño. La estructura de la página sigue un esquema estándar con una cabecera (`<header>`), contenido principal (`<main>`) y un pie de página (`<footer>`). En el `<head>` del documento, hay varias etiquetas importantes que ayudan a describir y optimizar la página para motores de búsqueda (SEO) e integraciones sociales como Facebook.
 
-En la parte superior del código, encontramos las etiquetas HTML que establecen el tipo de documento (HTML5) y especifican el idioma (español). Además, hay varias etiquetas `meta` que proporcionan información adicional sobre la página, como descripciones, palabras clave para los motores de búsqueda, y datos específicos para redes sociales.
+La sección `<style>` dentro del `<head>` define estilos CSS personalizados para centrar visualmente los elementos principales de la página (`header`, `main` y `footer`) con un ancho fijo y margen automático, así como establecer colores y una fuente personalizada llamada "ubuntu". Además, se incluyen enlaces a diversas redes sociales dentro del `<footer>` para permitir que los visitantes interactúen directamente con José Vicente Carratala. La página también tiene un formulario de contacto integrado en la sección correspondiente y mapas incrustados que muestran su ubicación.
 
-El bloque `<style>` dentro del `<head>` incluye reglas CSS para estilizar el contenido. Por ejemplo, se importa una fuente personalizada llamada "Ubuntu" desde un archivo local, y se definen colores y formatos para los títulos (h1, h2, h3) y la página en general.
+Este tipo de estructura es muy común en sitios web personales o profesionales, ya que proporciona una organización clara del contenido y permite a los visitantes navegar fácilmente por diferentes áreas de interés.
 
-En la parte del cuerpo (`<body>`), vemos una estructura clara que comienza con una cabecera `<header>`, seguida de un contenido principal `<main>`, y finalmente un pie de página `<footer>`. Dentro del bloque principal, cada sección (como "Inicio", "Sobre mi", etc.) está marcada con etiquetas `section` y utiliza elementos HTML como títulos (`h3`) para organizar el texto y las imágenes.
-
-Esta estructura ayuda a que la página sea fácil de navegar tanto para los usuarios como para motores de búsqueda, lo que es crucial para mejorar la visibilidad en Internet.
+`010-geometria.html`
 
 ```html
 <!doctype html>
@@ -4098,16 +4371,17 @@ Este código proporciona un buen punto de partida para tu sitio web. Asegúrate 
 ¡Buena suerte con tu proyecto! 🚀
 
 ### continuamos
+<small>Creado: 2025-10-20 08:32</small>
 
 #### Explicación
 
-Este fragmento de código HTML es el esqueleto de una página web que presenta la información personal y profesional de Jose Vicente Carratala. La estructura principal comienza con la declaración del doctype, seguida por las etiquetas `<html>` y `<head>`, donde se incluyen elementos como el título de la página, metadatos para SEO (como descripciones y palabras clave), enlaces a fuentes personalizadas y datos para redes sociales.
+Este código HTML representa la estructura de una página web personal, que sirve como un portfolio para mostrar las habilidades y experiencia de Jose Vicente Carratala. La página comienza con la declaración DOCTYPE seguida por el marcado básico de HTML5, incluyendo elementos como `<html>`, `<head>` y `<body>`. En el encabezado (`<head>`), se encuentran los metadatos importantes para SEO (Search Engine Optimization) como `title`, descripción del sitio web, palabras clave y datos específicos para redes sociales. Además, hay un bloque de estilo en línea que define la fuente personalizada "Ubuntu" desde un archivo local y establece estilos básicos para el cuerpo de la página, encabezados y secciones principales.
 
-En el cuerpo (`<body>`), la estructura sigue un patrón común con una cabecera (`<header>`), contenido principal (`<main>`) que incluye múltiples secciones para diferentes aspectos de su carrera (como docencia, desarrollo, diseño, portafolio y contacto) y un pie de página (`<footer>`). Cada sección está bien organizada con encabezados (`h1`, `h2`, `h3`), párrafos (`<p>`) y elementos como imágenes (`<img>`) y formularios (`<form>`).
+En el cuerpo (`<body>`), la estructura principal incluye una cabecera `<header>`, que contiene información general del sitio web como el título y menú de navegación. La sección `<main>` está dividida en varias subsecciones utilizando elementos `<section>`, cada uno con un id específico para enlaces internos, y proporciona detalles sobre la persona, sus habilidades profesionales y trabajos pasados. Finalmente, la página tiene un pie de página (`<footer>`), que incluye enlaces a las redes sociales del autor.
 
-Esta estructura es importante porque facilita la navegación, mejora el SEO y proporciona una interfaz de usuario agradable. Además, incluye estilos CSS directamente en el bloque `<style>` para personalizar visualmente la página con colores y tipografías específicas.
+Este diseño es importante porque no solo presenta información claramente estructurada para los visitantes humanos sino también proporciona metadatos útiles para motores de búsqueda y plataformas sociales, lo cual puede mejorar la visibilidad online del sitio web.
 
-La inclusión de redes sociales y un formulario de contacto ayuda a que los visitantes interactúen fácilmente con Jose Vicente Carratala y accedan a su contenido. Esto es crucial para profesionales en línea, ya que fomenta la interacción y el establecimiento de relaciones profesionales.
+`001-continuamos.html`
 
 ```html
 <!doctype html>
@@ -4249,16 +4523,19 @@ La inclusión de redes sociales y un formulario de contacto ayuda a que los visi
 ```
 
 ### anulo estilos de lista
+<small>Creado: 2025-10-20 08:35</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web personal. En él, se define cómo se verá y funcionará la página en un navegador. La cabecera (`<head>`) contiene información sobre el documento como su título, metadatos para mejorar el SEO (como descripciones e íconos), y estilos CSS directamente incrustados que determinan cómo se ven los elementos de la página, como encabezados y listas.
+Este fragmento de código HTML es la estructura básica de una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus roles como formador, desarrollador y diseñador. La página incluye elementos clásicos como el encabezado (header), el cuerpo principal (main) con secciones para diferentes áreas de su trabajo y experiencia, y un pie de página (footer).
 
-En la sección principal del cuerpo (`<body>`), hay una estructura que incluye una cabecera (`<header>`), un menú de navegación con enlaces a diferentes partes de la página, y varias secciones (`<section>`) que contienen contenido específico como información sobre el autor, su experiencia profesional, portafolio y un formulario de contacto. Cada sección tiene encabezados (`<h1>, <h2>, <h3>`), párrafos y enlaces.
+En la parte superior del archivo HTML, se encuentra una serie de metadatos importantes que describen la página, como título (`<title>`), autor (`meta name="author"`), descripción (`meta name="description"`) y palabras clave (`meta name="keywords"`). Estos elementos son cruciales para el posicionamiento en motores de búsqueda (SEO).
 
-El código también incluye una parte del pie de página (`<footer>`) con enlaces a perfiles sociales. Es importante porque organiza visualmente la información, facilita el acceso al contenido mediante un menú de navegación y mejora la experiencia del usuario con estilos personalizados que reflejan profesionalismo y coherencia.
+Además, hay un bloque de estilos CSS incorporados en la sección `<style>` del archivo HTML. Entre los estilos definidos, destaca cómo anula los estilos predeterminados de las listas (`nav ul {list-style-type:none; margin:0px; padding:0px;}`), lo que permite una mayor personalización visual para el menú de navegación.
 
-La anulación de los estilos de lista (`list-style-type:none;`, `margin:0px;`, `padding:0px;`) en el código CSS asegura que las listas desordenadas (`<ul>`) no tengan viñetas o puntos por defecto, creando así un diseño más limpio y profesional para el menú de navegación.
+Este tipo de página web es fundamental para profesionales freelance o individuos que quieren mostrar sus habilidades y servicios en línea, proporcionando a los visitantes información clara sobre quién es la persona detrás del sitio y qué pueden ofrecer.
+
+`002-anulo estilos de lista.html`
 
 ```html
 <!doctype html>
@@ -4405,16 +4682,17 @@ La anulación de los estilos de lista (`list-style-type:none;`, `margin:0px;`, `
 ```
 
 ### anulo estilos de hipervinculo
+<small>Creado: 2025-10-20 08:36</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web personal para Jose Vicente Carratala. En el `<head>` se incluyen metadatos importantes como el título, las descripciones y palabras clave que ayudan en los motores de búsqueda (SEO), además de etiquetas específicas para redes sociales (Open Graph) que permiten compartir la página con un aspecto atractivo.
+Este código HTML representa la estructura completa de una página web personal, dedicada a Jose Vicente Carratala, quien se presenta como un profesor, desarrollador y diseñador. La página incluye elementos esenciales como el encabezado (header), contenido principal (main) y pie de página (footer). En la parte superior del archivo, se encuentran las etiquetas meta que proporcionan información sobre la página para motores de búsqueda y redes sociales, asegurando una mejor visibilidad y SEO. 
 
-Además, hay una sección de hoja de estilos (`<style>`) dentro del `<head>` donde se definen las reglas CSS. Estas reglas personalizan elementos visuales como el color y el ancho de los bloques principales, eliminan los estilos por defecto en las listas y los hipervínculos (con `list-style-type: none`, `text-decoration: none`), y añaden una fuente personalizada (`@font-face`). Estos detalles mejoran la apariencia y la legibilidad de la página web.
+El estilo CSS incluido dentro de `<style>` en el `<head>`, define cómo se verán varios elementos de la página: los encabezados (h1, h2, h3) son de color índigo, mientras que el cuerpo del documento tiene un fondo blanco y utiliza una fuente personalizada llamada "ubuntu". Además, se anulan estilos predeterminados para las listas en la navegación (`nav ul`) y los hipervínculos dentro de estas listas (`.nav ul li a`), asegurando que los enlaces no tengan subrayado ni color diferente al del texto por defecto. 
 
-En el `<body>`, se estructuran diferentes secciones como el encabezado, la barra de navegación (nav) con hipervínculos que enlazan a las distintas partes de la página. También hay una sección principal (main) que contiene párrafos y bloques de contenido sobre el autor y su trabajo, así como un formulario para enviar mensajes directamente desde la web.
+Esta página web incluye secciones dedicadas a presentar información sobre el autor, sus actividades docentes y de desarrollo, su portafolio y cómo ponerse en contacto con él, proporcionando una visión completa de sus habilidades y experiencia profesional.
 
-Esta estructura ayuda a los visitantes a navegar fácilmente por la información, proporcionando una experiencia de usuario amigable e informativa.
+`003-anulo estilos de hipervinculo.html`
 
 ```html
 <!doctype html>
@@ -4564,16 +4842,21 @@ Esta estructura ayuda a los visitantes a navegar fácilmente por la información
 ```
 
 ### menu es flex
+<small>Creado: 2025-10-20 08:39</small>
 
 #### Explicación
 
-Este código HTML crea una página web personal para Jose Vicente Carratala, que incluye información sobre su perfil profesional y permite a los visitantes interactuar con él. En el encabezado (`<head>`), se establecen metadatos importantes como la descripción de la página, las palabras clave, y datos específicos para redes sociales como Facebook o LinkedIn. También se define una fuente personalizada para dar un toque distintivo a la web.
+Este código HTML es la estructura de una página web personal que presenta a Jose Vicente Carratala, destacando sus roles como profesor, desarrollador y diseñador. La página incluye varios elementos clave:
 
-En el cuerpo principal (`<body>`), hay varias secciones que presentan diferentes aspectos del trabajo de Jose Vicente, desde su perfil profesional hasta sus proyectos recientes y cómo contactar con él. El menú de navegación está diseñado usando etiquetas `<nav>` e `<ul>`, permitiendo a los usuarios moverse fácilmente por la página gracias a enlaces que apuntan a diferentes partes del documento.
+1. **Métadatos (Metadata)**: En el encabezado (`<head>`), hay etiquetas que proporcionan información sobre la página al navegador y motores de búsqueda, como descripciones del contenido, palabras clave para SEO, autoría, títulos en redes sociales y un ícono personalizado.
 
-El diseño es responsivo, lo que significa que se adapta automáticamente al tamaño de la pantalla para proporcionar una buena experiencia tanto en ordenadores como en teléfonos móviles. Además, el uso de `@font-face` asegura que la página utilice una fuente específica y personalizable, mejorando así su aspecto visual.
+2. **Estilos CSS Internos**: También dentro del `<head>`, se define el estilo de la página usando CSS. Esto incluye la carga de una fuente personalizada (Ubuntu), estilos básicos para las etiquetas `h1` a `h3` y configuraciones específicas para los elementos `header`, `main` y `footer`. Además, se utiliza Flexbox en el menú (`nav ul`) para alinear horizontalmente los ítems del menú.
 
-En resumen, este código es un ejemplo clásico de cómo combinar HTML para estructurar contenido, CSS para estilizarlo, y elementos interactivos como formularios y mapas incrustados para mejorar la experiencia del usuario.
+3. **Estructura de la Página**: La estructura principal se compone de una cabecera (`<header>`), un cuerpo central (`<main>`) dividido en secciones que describen diferentes aspectos de las habilidades y experiencias de Jose Vicente Carratala, y un pie de página (`<footer>`). En el `<main>`, cada sección tiene un título h3 y contenido relevante, como una descripción personal, experiencia docente, proyectos de desarrollo, diseño e incluso un formulario para contacto.
+
+Este tipo de estructura HTML es crucial para crear sitios web bien organizados y semánticamente correctos, lo que mejora la accesibilidad y el SEO.
+
+`004-menu es flex.html`
 
 ```html
 <!doctype html>
@@ -4724,14 +5007,19 @@ En resumen, este código es un ejemplo clásico de cómo combinar HTML para estr
 ```
 
 ### gap
+<small>Creado: 2025-10-20 08:42</small>
 
 #### Explicación
 
-Este código HTML es el diseño básico de una página web personal para Jose Vicente Carratala, donde se presentan sus habilidades como profesor, desarrollador y diseñador. La estructura del documento incluye elementos clave que son comunes en todas las páginas web modernas: `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`. En la parte superior (`<head>`), encontramos los metadatos importantes como el título de la página, el conjunto de caracteres (UTF-8) para garantizar que todos los símbolos se muestren correctamente, etiquetas adicionales para SEO, enlaces a íconos y estilos personalizados. Además, se define una fuente personalizada "Ubuntu" que se utiliza en toda la página.
+Este código HTML crea una página web para Jose Vicente Carratala, que incluye secciones para mostrar información sobre él mismo y sus diferentes campos de trabajo como formador, desarrollador y diseñador. La estructura principal del documento está compuesta por elementos HTML comunes: `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`.
 
-El cuerpo (`<body>`) está dividido principalmente entre la cabecera (`<header>`), el contenido principal (`<main>`), y el pie de página (`<footer>`). En la cabecera, hay un título principal con subtítulos y una barra de navegación que contiene enlaces a diferentes secciones del sitio. La parte central (principal) está compuesta por varias secciones, cada una dedicada a aspectos específicos de la carrera de Jose Vicente Carratala: desde su introducción hasta su portafolio y un formulario de contacto.
+En la sección `<head>`, el código incluye metadatos importantes que describen la página para motores de búsqueda, como las etiquetas `description` y `keywords`. Además, proporciona información sobre cómo debe verse la página en diferentes dispositivos a través del uso de `viewport`. También hay un bloque de CSS incorporado dentro del `<head>` que define el estilo visual de la página, incluyendo fuentes personalizadas y colores específicos para los encabezados.
 
-Este diseño es importante porque proporciona una estructura clara que mejora la navegabilidad del sitio web para los visitantes. Además, incluir estilos CSS directamente en el código HTML permite al desarrollador controlar completamente cómo se ve cada elemento, desde las fuentes hasta el color y la disposición de los elementos en la página.
+En la sección `<body>`, hay tres bloques principales: `header`, `main` e `footer`. La cabecera (`<header>`) contiene un título principal con su nombre y una breve descripción de sus roles profesionales, seguido por una barra de navegación que permite a los usuarios moverse entre las diferentes secciones del sitio. El contenido principal (`<main>`), divide la página en varias secciones, cada una correspondiente a aspectos distintos de su trabajo como formador, desarrollador y diseñador.
+
+Finalmente, el pie de página (`<footer>`) proporciona enlaces a sus perfiles en redes sociales para que los visitantes puedan seguirlo o ponerse en contacto con él. Este diseño simple pero efectivo ayuda a estructurar la información y hace que la navegación sea intuitiva para cualquier usuario que visite la página web.
+
+`005-gap.html`
 
 ```html
 <!doctype html>
@@ -4884,14 +5172,19 @@ Este diseño es importante porque proporciona una estructura clara que mejora la
 ```
 
 ### mas estilo al menu
+<small>Creado: 2025-10-20 08:47</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web para Jose Vicente Carratala, que incluye información personal y profesional. La estructura básica del documento se define con etiquetas como `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`. Dentro del encabezado (`<head>`), hay varias metainformaciones importantes: el título de la página, las etiquetas meta para el posicionamiento en motores de búsqueda (como descripción y palabras clave), propiedades Open Graph para redes sociales, y un estilo personalizado que carga una fuente externa llamada "Ubuntu". También se incluyen íconos, imágenes, y características específicas del sitio web.
+Este fragmento de código HTML representa una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus roles como profesor, desarrollador y diseñador. La estructura del documento incluye partes claramente definidas: encabezado (`header`), contenido principal (`main`) y pie de página (`footer`). 
 
-En la parte principal del cuerpo (`<body>`), el código organiza la información en bloques claramente definidos como `<header>`, `<main>`, y `<footer>`. El encabezado contiene un título, una subcategoría que describe a Jose Vicente Carratala, y un menú de navegación con varios enlaces. Cada sección del contenido principal (`<section>`), como "Inicio", "Sobre mi", "Docencia", etc., proporciona detalles sobre diferentes aspectos de su trabajo y carrera. Finalmente, el pie de página incluye vínculos a sus perfiles en redes sociales y plataformas profesionales.
+En el `head`, se definen metadatos importantes para mejorar la visibilidad en motores de búsqueda (como título, descripción y palabras clave) y una hoja de estilos interna que personaliza la apariencia del sitio web. Además, se utiliza Open Graph para configurar cómo será compartido este contenido en redes sociales.
 
-Este código es crucial porque establece la estructura completa de una página web, desde los metadatos hasta las secciones interactivas como formularios de contacto y menús de navegación. Además, incorpora estilos CSS directamente dentro del archivo HTML para darle a la página un aspecto profesional e integrado.
+El `body` contiene una barra de navegación (`nav`) con varios enlaces a diferentes secciones del sitio, como inicio, sobre mí, docencia, desarrollo, diseño y portafolio. Cada sección tiene un encabezado (`h3`) que indica el tema principal y contenido específico. Por ejemplo, la sección "Docencia" muestra una imagen junto con texto descriptivo en un bloque.
+
+Finalmente, hay una sección de contacto que incluye un mapa incorporado desde Google Maps para facilitar la ubicación y un formulario básico donde los visitantes pueden enviar sus datos a través del sitio web. Este diseño ayuda a estructurar claramente el contenido y mejora la experiencia del usuario al navegar por la página.
+
+`006-mas estilo al menu.html`
 
 ```html
 <!doctype html>
@@ -5052,16 +5345,19 @@ Este código es crucial porque establece la estructura completa de una página w
 ```
 
 ### adapto la imagen al contenedor
+<small>Creado: 2025-10-20 08:52</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web personal que incluye la estructura básica y el contenido para presentar a Jose Vicente Carratala como formador, desarrollador y diseñador. Comienza con las etiquetas `<!doctype html>` y `<html>`, estableciendo que es un documento HTML5 escrito en español.
+Este código HTML representa una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus roles como formador, desarrollador y diseñador. La estructura de la página está bien organizada con secciones para cada aspecto profesional, lo que facilita a los visitantes navegar fácilmente por su contenido.
 
-En la sección de encabezado (`<head>`), se incluyen metadatos importantes para el navegador y motores de búsqueda, como título, descripción, palabras clave y datos de autor. También se define una fuente personalizada `@font-face` que utiliza un archivo TTF localizado en "Ubuntu-R.ttf". Además, se establecen estilos CSS directamente en la etiqueta `<style>` para controlar el diseño del sitio, incluyendo la apariencia de los encabezados y el texto general.
+En la cabecera (`<header>`), se encuentra un título principal y una descripción breve seguida de un menú desplegable que permite al usuario acceder rápidamente a diferentes partes del sitio. El contenido principal (`<main>`) está dividido en varias secciones, cada una dedicada a aspectos específicos de la carrera profesional de Jose Vicente Carratala, como docencia, desarrollo y diseño.
 
-El cuerpo (`<body>`) contiene las partes principales de la página: un encabezado con una imagen de perfil y menú navegacional, contenido principal dividido en secciones que describen a Jose Vicente Carratala, su experiencia profesional y cómo contactarlo. Cada sección está bien estructurada usando etiquetas `<section>`, cada una con sus propios subtítulos (`<h3>`), imágenes y texto descriptivo.
+Lo importante es que el CSS incorporado en la etiqueta `<style>` dentro del bloque `<head>` establece tanto estilos globales (como los colores de fondo y fuente) como estilos más específicos para diferentes elementos. Por ejemplo, las imágenes se adaptan al contenedor asegurando que no sobrepasen el tamaño deseado y que queden visualmente atractivas en cualquier dispositivo.
 
-La página también incluye un pie de página que proporciona enlaces a perfiles sociales y repositorios, ayudando a los visitantes a conectarse o seguir las actividades profesionales del autor. Este diseño es crucial para proporcionar una experiencia de usuario coherente y atractiva, asegurando que la información sea fácilmente accesible y presentada de manera profesional.
+Además, se incluyen metadatos adicionales (propiedades Open Graph) para mejorar cómo la página aparece cuando es compartida en redes sociales. Esto ayuda a dar una mejor impresión de la web al compartir sus contenidos online.
+
+`007-adapto la imagen al contenedor.html`
 
 ```html
 <!doctype html>
@@ -5225,18 +5521,19 @@ La página también incluye un pie de página que proporciona enlaces a perfiles
 ```
 
 ### arreglo mis erorres
+<small>Creado: 2025-10-20 09:00</small>
 
 #### Explicación
 
-Este fragmento de código es una página web simple en HTML que utiliza CSS integrado para estilizar elementos. La estructura básica incluye la declaración `<!doctype html>`, indicando que el documento sigue las reglas del lenguaje HTML5.
+Este código HTML representa una página web completa con varias secciones que describen las diferentes áreas de trabajo y habilidades de Jose Vicente Carratala, como profesor, desarrollador y diseñador. La estructura básica del documento incluye elementos clave como `<head>`, donde se especifican metadatos importantes para la página (como título, descripción, autor, palabras clave), así como enlaces a fuentes personalizadas y íconos de redes sociales.
 
-En el encabezado (`<head>`), se especifican metadatos importantes como la codificación de caracteres, descripción del sitio y propiedades para redes sociales (Open Graph). También se carga una fuente personalizada desde un archivo `.ttf` llamada "Ubuntu".
+En el cuerpo (`<body>`), se organiza la información en tres bloques principales: `header` (encabezado), `main` (contenido principal) y `footer` (pie de página). El `header` incluye una imagen del logo, un título y subtitulo, junto con un menú de navegación que permite al usuario acceder a diferentes secciones del sitio web. Cada sección en el bloque `main` contiene información detallada sobre la experiencia profesional de Carratala en docencia, desarrollo e ingeniería de diseño.
 
-El cuerpo (`<body>`) contiene la estructura principal de la página dividida en secciones: encabezado `<header>` con información sobre el autor y menú de navegación, contenido principal `<main>` que incluye varias secciones para presentar detalles del profesional, y un pie de página `<footer>` con enlaces a redes sociales.
+Finalmente, el `footer` proporciona enlaces a las redes sociales y plataformas profesionales de Carratala para que los visitantes puedan seguir su trabajo. El uso de CSS integrado dentro del `<style>` permite personalizar el aspecto visual del sitio web, como la fuente utilizada, colores, tamaños de elementos y disposición en flexbox, asegurando una presentación profesional y atractiva.
 
-El CSS interno define estilos específicos como colores, tipografía, dimensiones y disposición de elementos, asegurando una apariencia coherente y centrada visualmente. La sección principal presenta varias áreas temáticas (inicio, sobre mí, docencia, desarrollo, diseño, portafolio y contacto) con contenido variado incluyendo texto, imágenes e incluso un formulario interactivo para el usuario.
+Este tipo de diseño es importante porque facilita la navegación y mejora la experiencia del usuario en la página web.
 
-Este tipo de estructura HTML es crucial para crear páginas web responsivas y atractivas visualmente, proporcionando una base sólida para el diseño y la interactividad en sitios web profesionales.
+`008-arreglo mis erorres.html`
 
 ```html
 <!doctype html>
@@ -5400,16 +5697,19 @@ Este tipo de estructura HTML es crucial para crear páginas web responsivas y at
 ```
 
 ### flexbox en el contenido
+<small>Creado: 2025-10-20 09:05</small>
 
 #### Explicación
 
-Este código HTML crea una página web personal de un profesional llamado Jose Vicente Carratala, que es profesor, desarrollador y diseñador. La estructura básica del documento se define con elementos como `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`. En el encabezado (`<head>`), hay varias etiquetas meta que proporcionan información sobre la página, incluyendo descripciones para motores de búsqueda y redes sociales. También se carga un estilo personalizado para las fuentes del texto a través de `@font-face`.
+Este código HTML es una plantilla básica para un sitio web personal que incluye varias secciones y elementos de diseño moderno. La página comienza con la declaración doctype seguida del encabezado donde se especifican metadatos importantes como el título, descripción y palabras clave del sitio, además de enlaces a fuentes externas (en este caso, una fuente personalizada llamada Ubuntu). También hay etiquetas meta para compartir en redes sociales que permiten algoritmos como los de Facebook entender mejor la página.
 
-En el cuerpo principal (`<body>`), encontramos una estructura común en sitios web: una cabecera que contiene un título y un menú con hipervínculos a diferentes secciones de la página. La sección principal (`<main>`) está dividida en varias partes, cada una dedicada a aspectos específicos del profesional como "Sobre mí", "Docencia", "Desarrollo" y "Diseño". Cada parte incluye texto e imágenes que describen su experiencia en esos campos. También hay un formulario de contacto y un mapa integrado para facilitar la localización.
+En la parte visual, se utiliza CSS directamente dentro del HTML para aplicar estilos específicos. Por ejemplo, el código establece un fondo blanco y una fuente personalizada para toda la página. Además, se usa Flexbox para centrar y organizar elementos en la pantalla de manera dinámica, como el menú que fluye horizontalmente y los bloques de texto e imágenes alineados verticalmente.
 
-El código utiliza CSS para estilizar la página, incluyendo el uso de Flexbox en varias partes para alinear los elementos de forma limpia y profesional. Esto ayuda a crear una estructura visual clara y funcional, adaptada para ser vista tanto en dispositivos móviles como en computadoras.
+El cuerpo del documento contiene las estructuras principales: encabezado (header), contenido principal (main) y pie de página (footer). Cada sección tiene su propio título (h1, h2 o h3) seguido por párrafos o listas que proporcionan información detallada sobre el profesor, sus trabajos y cómo contactar con él. Los elementos flexbox permiten una disposición eficiente de imágenes y texto, ajustándose automáticamente para diferentes tamaños de pantalla.
 
-La importancia de este código radica en cómo combina HTML y CSS para construir una página web interactiva y fácil de navegar, que refleja las habilidades y experiencia del usuario.
+Este diseño es importante porque ofrece una estructura clara y visualmente atractiva que facilita la navegación del usuario por el sitio web.
+
+`009-flexbox en el contenido.html`
 
 ```html
 <!doctype html>
@@ -5587,16 +5887,21 @@ La importancia de este código radica en cómo combina HTML y CSS para construir
 ```
 
 ### juego un poco con flex
+<small>Creado: 2025-10-20 09:18</small>
 
 #### Explicación
 
-Este código HTML es un ejemplo de una página web personal que incluye elementos básicos como el encabezado, el contenido principal y el pie de página. La estructura comienza con la declaración `<!doctype html>` para indicar que se trata de un documento HTML5.
+Este código HTML representa una página web personal que presenta información sobre Jose Vicente Carratala, destacando sus roles como formador, desarrollador y diseñador. La estructura principal de la página incluye elementos como el encabezado (header), el contenido principal (main) y el pie de página (footer). El archivo comienza con las declaraciones meta necesarias para optimizar su visibilidad en motores de búsqueda y redes sociales. 
 
-En la sección `<head>`, se encuentran metadatos importantes como el título de la página (`<title>`), caracteres admitidos (`<meta charset="utf-8">`), y etiquetas adicionales para mejorar la visibilidad en motores de búsqueda, incluyendo elementos Open Graph que son esenciales para compartir contenido en redes sociales. También se define una hoja de estilos interna dentro del bloque `<style>` para dar formato a varios componentes de la página.
+En la sección del encabezado, hay un menú de navegación creado mediante una lista desordenada `<ul>`, donde cada ítem de la lista es un hipervínculo que enlaza a diferentes partes de la página (como "Inicio", "Sobre mi", etc.). El estilo CSS incluido define cómo se deben visualizar estos elementos, como centrarlos y darles un espacio entre sí.
 
-La estructura principal de la página está formada por un encabezado (`<header>`) con información básica y menú, el cuerpo (`<main>`) que contiene varias secciones diferentes como presentación, sobre mí, docencia, desarrollo, diseño, portafolio y contacto, cada una con sus propios elementos HTML para proporcionar contenido específico. Finalmente, hay un pie de página (`<footer>`) que incluye enlaces a las redes sociales del autor.
+El contenido principal consta de varias secciones (`<section>`) que contienen información detallada sobre Jose Vicente Carratala en diferentes aspectos: quien es él ("Sobre mi"), su actividad docente ("Docencia") y sus proyectos de desarrollo, diseño y portafolio. En cada una de estas secciones, utiliza la clase CSS `.bloque` para organizar el texto e imágenes juntos usando técnicas flexbox.
 
-El código muestra cómo utilizar CSS Flexbox (como en el menú) y otras técnicas modernas para organizar el diseño visual de la página web, asegurando que sea responsivo y fácil de navegar.
+La página también incluye un formulario en la sección "Contacto" donde los visitantes pueden enviar mensajes directamente al autor de la página a través del correo electrónico. Finalmente, el pie de página ofrece enlaces a las cuentas sociales y perfiles de Jose Vicente Carratala para que los usuarios puedan conectar con él.
+
+Este código es importante porque demuestra cómo usar HTML y CSS juntos para crear una estructura web coherente e interactiva, además de mostrar cómo aplicar técnicas modernas como flexbox para la disposición del contenido.
+
+`010-juego un poco con flex.html`
 
 ```html
 <!doctype html>
@@ -5807,16 +6112,17 @@ El código muestra cómo utilizar CSS Flexbox (como en el menú) y otras técnic
 ```
 
 ### duplico para grid
+<small>Creado: 2025-10-20 09:20</small>
 
 #### Explicación
 
-Este código HTML es una plantilla para una página web personal que contiene varias secciones para mostrar información sobre el usuario y sus habilidades. La estructura de la página incluye una cabecera (header) con un título, subtítulo y menú de navegación, un cuerpo principal (main) dividido en múltiples secciones como "Inicio", "Sobre mí", "Docencia", etc., y un pie de página (footer).
+Este código HTML crea una página web personal para Jose Vicente Carratala, que es un profesor y desarrollador. La estructura de la página incluye elementos como el encabezado (`header`), el contenido principal (`main`) y el pie de página (`footer`). El código también utiliza etiquetas `meta` para proporcionar información relevante sobre la página, como su descripción, palabras clave, autor y configuración móvil.
 
-En el encabezado del documento, se encuentran varios metadatos importantes que proporcionan información adicional sobre la página. Estos incluyen descripciones para motores de búsqueda, autoría, tamaños de pantalla ajustados al dispositivo utilizado por el usuario, y etiquetas Open Graph para compartir en redes sociales. Además, hay una definición personalizada de una fuente (Ubuntu) que se carga desde un archivo TTF local.
+El estilo personalizado se define dentro del bloque `<style>`, donde se utilizan reglas CSS para estilizar elementos específicos. Por ejemplo, se establece un tipo de fuente personalizado (`@font-face`), colores y tamaños de texto para las etiquetas `h1`, `h2`, `h3`. También hay configuraciones específicas para el menú (`nav ul`) que usan flexbox para alinear los elementos del menú horizontalmente. Además, se utilizan clases CSS como `.bloque` para estilizar párrafos y imágenes en formato flexible.
 
-En la parte visual, los estilos CSS incorporados dentro del elemento `<style>` definen colores, espaciado, alineación y disposición de elementos para asegurar que la página sea atractiva y funcional en diferentes tamaños de pantalla. Por ejemplo, las secciones principales utilizan un diseño flexible (flexbox) con imágenes al lado de textos y algunos ajustes específicos en ciertas áreas como el menú de navegación.
+Esta página web incluye una estructura clara con secciones separadas para cada área de experiencia profesional (sobre mí, docencia, desarrollo, diseño, portafolio y contacto), proporcionando un marco visual atractivo y funcional que facilita la navegación del usuario.
 
-Este tipo de estructura es importante porque permite que la información sea fácilmente accesible para los visitantes de la página, y proporciona un buen marco para SEO (optimización para motores de búsqueda) y compartir contenido en redes sociales.
+`011-duplico para grid.html`
 
 ```html
 <!doctype html>
@@ -6027,18 +6333,23 @@ Este tipo de estructura es importante porque permite que la información sea fá
 ```
 
 ### aplico grid
+<small>Creado: 2025-10-20 09:37</small>
 
 #### Explicación
 
-Este código HTML es la estructura básica de una página web personal para Jose Vicente Carratala, que incluye información sobre él y sus actividades profesionales. La página utiliza varios elementos HTML como `header`, `main` y `footer` para organizar el contenido en secciones lógicas y facilitar su mantenimiento.
+Este fragmento de código HTML es una página web completa que presenta el currículum y proyectos del profesional Jose Vicente Carratala. La estructura principal incluye elementos como `<header>`, `<main>` y `<footer>`, proporcionando una base sólida para la organización del contenido.
 
-En la parte superior del código, encontramos las etiquetas `<meta>` que proporcionan metadatos adicionales sobre el documento, tales como descripciones, palabras clave, autor y datos de visualización. Esto es importante porque ayuda a los motores de búsqueda a entender mejor qué contiene la página web y cómo debería aparecer en diferentes dispositivos.
+En la sección `<head>`, encontramos varias etiquetas importantes:
+- Las metainformaciones (`<meta>`) proporcionan detalles sobre el autor, descripción de la página, palabras clave y posicionamiento en dispositivos móviles.
+- La etiqueta `<style>` contiene hojas de estilo CSS internas que definen cómo se presentará el contenido visualmente. Esto incluye la configuración del tipo de letra personalizado (Ubuntu), colores para las cabeceras (`h1`, `h2`, etc.), estilos flexibles y grilla (`display: flex` y `display: grid`) para organizar elementos en bloques o rejillas, respectivamente.
 
-El CSS incluido en la sección `<style>` del `head` define estilos específicos para la fuente (Ubuntu), colores, tamaños de letra y disposición. Por ejemplo, utiliza Flexbox para alinear elementos horizontalmente y Grid Layout para organizar un portafolio en varias columnas.
+En el cuerpo (`<body>`), se estructuran diferentes secciones como `<header>`, que incluye la cabecera de la página con un menú desplegable; `<main>`, donde están las páginas principales del sitio web (inicio, sobre mí, docencia, desarrollo, diseño y portafolio); y el `<footer>`, que proporciona enlaces a redes sociales.
 
-La estructura principal de la página se crea con las etiquetas `<header>`, `<nav>` que contiene una barra de navegación, y `<main>` donde están las diferentes secciones del contenido. Cada sección está dividida por etiquetas `<section>` y dentro de ellas hay enlaces a subsecciones como 'Inicio', 'Sobre mí', 'Docencia', etc.
+La sección `#portafolio` es particularmente interesante porque utiliza CSS Grid para organizar varios artículos en tres columnas con espacio entre ellos. Esto permite una visualización limpia y estructurada de los elementos del portafolio.
 
-Finalmente, el pie de página (`<footer>`) contiene enlaces a redes sociales y plataformas profesionales que permiten al usuario interactuar con Jose Vicente Carratala fuera del sitio web. Este diseño permite una navegación fácil para los visitantes y presenta la información de manera visualmente atractiva y funcional.
+Este diseño combina flexibilidad y grilla, proporcionando un aspecto moderno y funcional que se adapta bien a diferentes tamaños de pantalla gracias a las propiedades CSS y las etiquetas meta para la responsividad.
+
+`012-aplico grid.html`
 
 ```html
 <!doctype html>
@@ -6260,18 +6571,21 @@ Finalmente, el pie de página (`<footer>`) contiene enlaces a redes sociales y p
 ```
 
 ### flex en contacto
+<small>Creado: 2025-10-20 09:50</small>
 
 #### Explicación
 
-Este código HTML es la estructura completa de una página web personal que presenta información sobre Jose Vicente Carratala, destacando su papel como formador, desarrollador y diseñador. La página incluye elementos básicos como un encabezado (`header`), contenido principal (`main`) y un pie de página (`footer`). Además, utiliza estilos en línea para personalizar la apariencia de la página, incluyendo la definición de una fuente personalizada (Ubuntu) y el uso de CSS flexbox y grid para organizar los elementos visualmente.
+Este código HTML es una página web personal de un profesional que incluye diversos elementos como encabezados, navegación, secciones con contenido y un pie de página. La estructura principal utiliza etiquetas semánticas para mejorar la accesibilidad y el SEO (Posicionamiento en motores de búsqueda). 
 
-En el encabezado, se encuentra un menú con enlaces a diferentes secciones de la página. El contenido principal (`main`) está dividido en varias secciones que describen la biografía del autor, su experiencia en docencia, desarrollo y diseño, así como un portafolio con trabajos previos y una sección dedicada al contacto.
+En la cabecera, se define un menú de navegación que utiliza CSS Flexbox para alinear los elementos de manera horizontal y centrarlos visualmente. Cada elemento del menú es un enlace con estilos específicos que eliminan subrayados e incluyen un fondo de color índigo.
 
-El CSS incluye reglas específicas para centrar los elementos principales en la página (`header`, `main` y `footer`) y estilizar el menú de navegación. También se utiliza flexbox para organizar de manera eficiente las imágenes junto con el texto en ciertas partes del contenido, permitiendo que tanto las imágenes como el texto se adapten dinámicamente a diferentes tamaños de pantalla.
+El contenido principal está dividido en secciones, cada una con su propio encabezado (H3) y diversos elementos como imágenes, párrafos y bloques Flexbox para combinar texto e imágenes. Se utiliza también CSS Grid para organizar el portafolio del profesional en tres columnas, asegurando que las imágenes no sobrepasan los límites establecidos.
 
-Además, la página incluye etiquetas meta para mejorar la visibilidad y clasificación en motores de búsqueda (SEO) y propiedades Open Graph para compartir información sobre la página en redes sociales. Esto es crucial para que los usuarios encuentren fácilmente el sitio web tanto en búsquedas como en comparticiones directas.
+En la sección de contacto, hay un formulario que utiliza etiquetas HTML5 modernas y estilos adicionales para mejorar su apariencia. El formulario incluye una etiqueta "label" asociada a cada entrada de texto y una área de texto para mensajes más largos. Además, incorpora un mapa incrustado utilizando un iframe.
 
-En resumen, este código HTML junto con sus estilos CSS proporciona una estructura robusta y visualmente atractiva para presentar un perfil profesional completo de Jose Vicente Carratala, facilitando la navegación por su experiencia y habilidades.
+Esta página web demuestra cómo combinar HTML estructurado con CSS moderno (Flexbox y Grid) para crear interfaces web responsivas y estéticamente agradables, además de incluir elementos como metadatos Open Graph que permiten compartir la página en redes sociales.
+
+`013-flex en contacto.html`
 
 ```html
 <!doctype html>
@@ -6501,40 +6815,22 @@ En resumen, este código HTML junto con sus estilos CSS proporciona una estructu
 </html>
 ```
 
-### Como publicar en GitHub Pages
-
-#### Explicación
-
-Este fragmento de texto en Markdown proporciona una serie de pasos claros para publicar un sitio web estático usando GitHub Pages, que es una plataforma de hospedaje de sitios web administrada por GitHub. Los estudiantes aprenderán cómo crear y mantener un repositorio de código en GitHub, clonarlo localmente o subir archivos manualmente, asegurándose de que el archivo principal se llame `index.html`. Posteriormente, ingresan a la configuración del repositorio para habilitar la opción "Pages", lo cual publica automáticamente su sitio web. Finalmente, una vez activado, deben esperar unos minutos antes de poder acceder al sitio web publicado desde un URL específico que incluye el nombre de usuario y el nombre del repositorio en GitHub. Esta guía es muy útil para estudiantes que desean compartir fácilmente sus proyectos web o documentos HTML/CSS con el mundo a través de una plataforma segura y ampliamente utilizada como GitHub.
-
-```markdown
-1.-Vamos a GitHub.com
-2.-Creamos un nuevo repositorio (web)
-3.-O bien:
-  3.1.-Lo clonamos en nuestro equipo con GitHub Desktop
-  3.2.-O bien subimos los archivos a mano al repositorio + Commit
-3/4.-Tu archivo principal se tiene que llamar index.html
-4.-Nos vamos settings en el repositorio
-5.-En el panel izquierdo vamos a Pages
-6.-Activamos pages desde la rama main
-7.-ESPERAMOS CINCO MINUTOS
-
-https://[tuusuario].github.io/[repo]
-
-https://jocarsa.github.io/web/
-```
-
 ### index
+<small>Creado: 2025-10-20 09:56</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea la estructura y el diseño básico de una página web personal, incluyendo metadatos importantes para SEO (posicionamiento en motores de búsqueda) y un estilo personalizado. En la sección `<head>`, encontramos elementos como los metadatos `description`, `keywords` y `author`, que ayudan a describir el contenido de la página y favorecen su visibilidad en búsquedas. También hay varias etiquetas Open Graph (`og:title`, `og:description`, etc.) para compartir la página en redes sociales.
+Este código HTML es una página web que presenta la información personal y profesional de Jose Vicente Carratala. La estructura del documento comienza con las etiquetas `<!DOCTYPE html>` para indicar que estamos trabajando con HTML5, seguido por el elemento raíz `<html lang="es">` que especifica el idioma del contenido.
 
-El CSS incrustado proporciona un diseño limpio con colores y fuentes específicos. La cabecera (`header`) incluye una barra de navegación con varios enlaces a secciones diferentes del sitio, como "Inicio", "Sobre mí", "Docencia" y más. Cada sección en la etiqueta `<main>` tiene un formato similar: contiene encabezados H3 para títulos de subsección y contenido descriptivo o imágenes.
+En la sección `<head>`, se incluyen metadatos importantes como el título de la página (`<title>`), los caracteres permitidos (`<meta charset="utf-8"`), y otras etiquetas para mejorar la indexación en motores de búsqueda (descripción, palabras clave). También se incorpora un enlace a una fuente personalizada (`@font-face`) y estilos CSS directamente dentro del archivo HTML para definir el diseño visual.
 
-En la sección "Portafolio", el CSS utiliza `grid` para organizar los artículos en tres columnas con espacios definidos. La sección "Contacto" incluye un formulario interactivo con campos para nombre, correo electrónico y mensaje, junto a un mapa incrustado de Google Maps.
+La sección `<body>` contiene la estructura completa de la página, dividida en varias secciones que representan diferentes partes del contenido como la cabecera (`<header>`), el menú navegación, el contenido principal (`<main>`) con subsecciones como "Inicio", "Sobre mi", "Docencia", y otros apartados. Finalmente, se incluye una sección de pie de página (`<footer>`) con enlaces a redes sociales.
 
-Este código es importante porque proporciona una estructura clara y legible tanto para el usuario como para los motores de búsqueda, permitiendo así que la página web funcione bien en diferentes dispositivos y esté optimizada para aparecer correctamente en búsquedas online.
+El CSS aplicado define la apariencia visual del sitio web, como el tamaño de las fuentes, los colores, la disposición de los elementos (usando flexbox y grid), y estilos específicos para diferentes secciones y componentes del diseño. Esto asegura que la página sea responsiva y tenga una presentación coherente en diversos dispositivos.
+
+Este tipo de estructura es común en páginas web personales o profesionales, ya que permite organizar claramente el contenido y proporcionar una experiencia visual atractiva para los visitantes del sitio.
+
+`index.html`
 
 ```html
 <!doctype html>
@@ -7056,18 +7352,19 @@ The main change was ensuring the `html` property in the CSS is correctly closed 
 If you have any specific styling or content adjustments required beyond these basics, please let me know!
 
 ### curriculum pero en html
+<small>Creado: 2025-10-22 10:24</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de una página web escrita en HTML (Hypertext Markup Language), que es el lenguaje estándar para crear páginas web. El código define la estructura básica de una página, incluyendo elementos como el título de la página y la codificación del texto.
+Este fragmento de código es el esqueleto básico de un documento HTML, que es el lenguaje utilizado para crear páginas web. La estructura básica está compuesta por la etiqueta `<!doctype html>` en la primera línea, que indica al navegador que este archivo sigue las reglas del HTML5.
 
-La línea `<!doctype html>` indica al navegador que este documento sigue las reglas del HTML5. Luego, `<html lang="es">` marca el inicio del documento HTML y especifica que el idioma principal es español (es). Dentro del elemento `<html>`, hay dos secciones principales: la cabecera (`<head>`) y el cuerpo (`<body>`).
+Dentro de esta estructura principal se encuentra la etiqueta `<html lang="es">`, donde "es" especifica el idioma del contenido, en este caso español. El elemento `<head>` contiene metadatos sobre la página web como su título y configuración de caracteres (`<meta charset="utf-8">`), que asegura que todos los caracteres puedan ser visualizados correctamente.
 
-En la cabecera, encontramos las líneas `<title>Curriculum</title>` y `<meta charset="utf-8">`. El título "Curriculum" aparecerá en la pestaña del navegador o en los resultados de búsqueda. La línea `<meta charset="utf-8">` asegura que el texto se interprete correctamente, permitiendo la visualización correcta de caracteres especiales y acentos.
+El cuerpo principal de la página se encuentra entre las etiquetas `<body>...</body>`, aunque en este caso está vacío. Aquí es donde irían todas las partes visibles del documento, como texto, imágenes y otros elementos interactivos.
 
-El cuerpo de la página (`<body>`) está vacío en este ejemplo, lo cual significa que no hay contenido visible para los visitantes de la página web. Aquí es donde normalmente irían las imágenes, texto y otros elementos visibles del sitio web.
+Esta estructura es fundamental para cualquier página web basada en HTML ya que establece la base sobre la cual se construirá el contenido visual e interactivo de la página.
 
-Esta estructura básica es importante porque proporciona una forma ordenada y consistente de organizar el contenido de una página web, facilitando su interpretación por navegadores y motores de búsqueda.
+`001-curriculum pero en html.html`
 
 ```html
 <!doctype html>
@@ -7083,12 +7380,17 @@ Esta estructura básica es importante porque proporciona una forma ordenada y co
 ```
 
 ### dos secciones
+<small>Creado: 2025-10-22 10:25</small>
 
 #### Explicación
 
-Este código es un ejemplo básico de una página web escrita en HTML. En él, se establece la estructura base y dos secciones principales que ocuparán el cuerpo de la página. La etiqueta `<head>` contiene elementos importantes como el título de la página (`<title>Curriculum</title>`), que aparecerá en la pestaña del navegador, y una declaración de codificación de caracteres (`<meta charset="utf-8">`) para garantizar que los caracteres especiales se muestren correctamente.
+Este fragmento de código HTML crea una página web simple que contiene dos secciones, una en la parte izquierda y otra en la derecha. La estructura básica del documento incluye elementos como `<!DOCTYPE html>` para indicar que el documento es un archivo HTML5, `<html lang="es">` para declarar que el contenido está en español, y una sección de encabezado (`<head>`) donde se define el título de la página y los caracteres usados.
 
-En el cuerpo de la página (`<body>`), hay dos elementos `<section>`, cada uno con un atributo `id` único: "izquierda" y "derecha". Estos identificadores permiten a otros desarrolladores o estilos CSS (hojas de estilo en cascada) seleccionar y manipular estos bloques específicos. Sin embargo, hay un error en el código: la sección derecha no está cerrada correctamente, lo que podría causar problemas al renderizar la página. Para solucionarlo, simplemente debes agregar una etiqueta de cierre `</section>` justo antes del final de la etiqueta `</body>`. Es importante tener los elementos HTML bien cerrados para asegurar que la página web funcione correctamente y se muestre como estaba planeado en el diseño.
+En el cuerpo (`<body>`), hay dos elementos `section`, cada uno con un atributo `id` único: "izquierda" para la sección izquierda y "derecha" para la sección derecha. Sin embargo, hay un error en el código ya que falta cerrar correctamente la etiqueta de apertura del segundo `<section>` con una etiqueta de cierre `</section>`. Este tipo de estructura es común cuando se desea dividir visualmente una página web en diferentes áreas para organizar contenido, como información personal y profesional en un currículum.
+
+Es importante corregir el error sintáctico antes de poder utilizar esta plantilla de HTML en la web.
+
+`002-dos secciones.html`
 
 ```html
 <!doctype html>
@@ -7108,16 +7410,15 @@ En el cuerpo de la página (`<body>`), hay dos elementos `<section>`, cada uno c
 ```
 
 ### foto
+<small>Creado: 2025-10-22 10:26</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una estructura básica de un documento web que incluye información personal en formato currículum. Comenzamos con la declaración `<!doctype html>` que indica al navegador que el documento está escrito usando las últimas especificaciones del lenguaje HTML.
+Este código HTML crea una página web sencilla con dos secciones principales: una a la izquierda y otra a la derecha. La parte importante es que en la sección de la izquierda, hay una imagen que se muestra gracias al elemento `<img src="josevicente.jpg">`, donde `src` especifica el nombre del archivo de imagen. Sin embargo, hay un problema en esta página porque falta el cierre del tag para la segunda sección y el cierre de la etiqueta `</html>`.
 
-En el `<head>` se encuentra el título del sitio "Curriculum" y una meta etiqueta para establecer el juego de caracteres como UTF-8, lo cual es importante para asegurar que todos los caracteres especiales o no anglosajones se muestren correctamente en la página.
+El propósito principal es estructurar una página web con dos áreas principales y mostrar una foto en la parte izquierda. Es importante tener cuidado con la correcta apertura y cierre de las etiquetas HTML para que el navegador pueda renderizar correctamente la página, evitando errores como este que pueden hacer que la página no funcione como se espera.
 
-El contenido principal está dentro de la etiqueta `<body>`, donde hay dos secciones (`<section>`): una identificada con "izquierda" y otra con "derecha". En la sección izquierda, se muestra una imagen llamada "josevicente.jpg", pero es importante notar que falta cerrar correctamente esta segunda sección ya que solo se abre con `<section id="derecha">` sin un cierre correspondiente (`</section>`).
-
-Esta estructura básica ayuda a organizar el contenido de la página, permitiendo al lector visualizar fácilmente una imagen y probablemente otra información en otro lado del diseño. Sin embargo, es necesario corregir la falta de cierre para que el código sea válido y funcione correctamente en los navegadores web.
+`003-foto.html`
 
 ```html
 <!doctype html>
@@ -7137,16 +7438,17 @@ Esta estructura básica ayuda a organizar el contenido de la página, permitiend
 ```
 
 ### estilo inicial
+<small>Creado: 2025-10-22 10:30</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple con un diseño básico en dos columnas, aunque por ahora solo se ha implementado la columna izquierda. La estructura del documento comienza con las declaraciones necesarias como `<!doctype html>` y `<html lang="es">`, que indican que el documento es un archivo HTML escrito en español.
+Este fragmento de código HTML crea una página web sencilla que muestra un currículum o perfil personal. La estructura principal se define con etiquetas como `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`. Dentro del `<head>`, se especifica el idioma del documento (`lang="es"`), el título de la página ("Curriculum"), y un conjunto básico de estilos CSS directamente en la etiqueta `<style>`.
 
-En la parte superior de la página (en la etiqueta `<head>`), se encuentra un bloque de estilo CSS que define cómo debe verse la página. Aquí, establece que el fondo del documento sea gris y limita el ancho del cuerpo a 600 píxeles con un fondo blanco y centrado en la pantalla gracias al margen automático (`margin:auto`). También especifica que las imágenes dentro de una sección identificada por `id="izquierda"` deben ocupar todo el ancho disponible.
+En la parte inferior, dentro del `<body>`, hay dos secciones (`<section>`): una llamada "izquierda" que contiene una imagen (`<img>`) cuyo tamaño se ajusta al 100% del ancho de la sección (gracias a los estilos CSS), y otra sección llamada "derecha", por ahora vacía, donde probablemente se añadirán detalles adicionales sobre el perfil profesional.
 
-En el `<body>` del documento, hay dos secciones: una etiquetada como `#izquierda` que contiene una imagen con la ruta "josevicente.jpg", y otra llamada `#derecha` que está vacía por ahora. El estilo CSS aplicado asegura que la imagen en la columna izquierda ocupe todo el espacio disponible, creando un diseño equilibrado y limpio.
+Este archivo es un buen punto de partida para aprender cómo estructurar una página web básica utilizando HTML y aplicar estilo con CSS directamente en la etiqueta `<style>`.
 
-Este código es importante porque muestra cómo combinar HTML para estructurar una página web con CSS para controlar su apariencia visual, proporcionando a los usuarios una experiencia de navegación intuitiva.
+`004-estilo inicial.html`
 
 ```html
 <!doctype html>
@@ -7171,16 +7473,17 @@ Este código es importante porque muestra cómo combinar HTML para estructurar u
 ```
 
 ### flex
+<small>Creado: 2025-10-22 10:31</small>
 
 #### Explicación
 
-Este código HTML es un ejemplo sencillo de cómo estructurar una página web que muestra el currículum de alguien, en este caso utilizando flexbox para diseñar la disposición de elementos. La página se abre con `<!doctype html>` para indicar que estamos usando HTML5 y establece el idioma del documento como español con `<html lang="es">`. 
+Este código HTML crea una página web simple que muestra un curriculum o currículum. La estructura principal de la página está diseñada para dividir el contenido en dos secciones principales, una a la izquierda y otra a la derecha. En la sección izquierda, se coloca una imagen del usuario (en este caso, suponemos que es "josevicente.jpg"), mientras que la sección derecha queda vacía en este ejemplo pero está preparada para ser rellenada con información sobre el currículum.
 
-En la parte de encabezado (`<head>`), hay un título que aparecerá en la pestaña del navegador (en este caso "Curriculum"), y se define el conjunto de caracteres (`charset`) que usa la página para representar texto. También incluye CSS directamente dentro de etiquetas `<style>`, donde establece estilos básicos: el fondo del HTML es gris, la anchura del cuerpo (`body`) es de 600 píxeles y está centrado en la pantalla gracias a `margin:auto`. 
+El estilo de la página se define directamente dentro de las etiquetas `<style>` en la parte superior del documento, usando CSS (Cascading Style Sheets). Esto incluye configuraciones como el color de fondo gris para toda la página (`html{background:grey;}`), un ancho de 600 píxeles y centrado automático para el cuerpo de la página (`body{width:600px;background:white;margin:auto;}`).
 
-Lo más interesante es que se usa flexbox para dividir la página en dos columnas. La etiqueta `<section>` con id "izquierda" y otra con id "derecha", ambas dentro del cuerpo (`<body>`), son las áreas donde se mostrarán contenidos. En CSS, `#izquierda` tiene un espacio flexible de 1 unidad (`flex:1;`) mientras que `#derecha` es más ancho con 4 unidades (`flex:4;`). Esto significa que la columna derecha ocupará aproximadamente el doble del espacio que la izquierda.
+Lo más relevante es cómo se utiliza `display:flex` en el cuerpo, lo que permite a las dos secciones (izquierda y derecha) distribuirse horizontalmente. La propiedad `flex` en los elementos `<section>` define la relación de tamaño entre ambas columnas: la columna izquierda tiene un espacio mínimo (`#izquierda{flex:1;}`), mientras que la derecha ocupa más del doble de ese espacio (`#derecha{flex:4;}`). Esto permite una disposición flexible y atractiva para el contenido del curriculum, adaptándose bien tanto en pantallas grandes como pequeñas.
 
-Esta estructura es útil para organizar contenidos visualmente atractivos y equilibrados, especialmente cuando quieres mostrar una imagen en una columna y texto o más detalles en otra.
+`005-flex.html`
 
 ```html
 <!doctype html>
@@ -7207,16 +7510,19 @@ Esta estructura es útil para organizar contenidos visualmente atractivos y equi
 ```
 
 ### padding para la hoja
+<small>Creado: 2025-10-22 10:38</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que utiliza CSS (hoja de estilos en cascada) para dar estilo a los elementos. La página está dividida en dos secciones: una a la izquierda y otra a la derecha, donde la imagen del curriculum se coloca en la sección de la izquierda.
+Este fragmento de código HTML crea una página web simple que se utiliza para mostrar un currículum o resumen personal. La estructura principal de la página está compuesta por dos secciones divididas en la parte izquierda y derecha utilizando CSS Flexbox, que es un método moderno para organizar el diseño de páginas web.
 
-En el `<head>` del documento, hay un bloque de CSS que define cómo debe verse la página. Por ejemplo, establece el fondo del `html` como gris para dar una apariencia base a toda la página y asegura que el texto pueda representar cualquier carácter usando UTF-8. Además, el cuerpo (`body`) tiene un ancho definido en píxeles (600px), está centrado horizontalmente gracias al margen automático (`margin:auto`), y usa flexbox para distribuir los elementos dentro de él.
+En la cabecera del archivo (head), hay un estilo incorporado (style) que define cómo se verá la página. Aquí, la etiqueta `html` tiene un fondo gris (`background:grey;`), lo cual establece un color de fondo para toda la página. La etiqueta `body`, que representa el contenido principal visible en la pantalla, tiene características específicas como su anchura (600px), margen automático para centrarlo en la pantalla, y un padding de 20 píxeles alrededor del contenido para darle espacio. Además, utiliza Flexbox (`display:flex;`) para organizar sus secciones internas.
 
-Las dos secciones `<section>` con ids "izquierda" y "derecha" son las áreas principales del contenido. La imagen en la sección izquierda ocupa todo el ancho disponible debido a la declaración CSS `#izquierda img{width:100%;}`. El estilo CSS también define que la sección derecha tenga más espacio (proporción 4) que la izquierda (proporción 1), creando así una disposición asimétrica en la página.
+Las dos `section` dentro del body tienen ids únicos: "izquierda" e "izquierda". La sección con id "izquierda" muestra una imagen que ocupa todo el ancho de la sección. Las proporciones entre las dos secciones están definidas en CSS mediante el uso de la propiedad `flex`, donde la sección izquierda tiene un valor de 1 y la derecha tiene un valor de 4, lo que significa que la sección derecha será cuatro veces más ancha que la izquierda.
 
-Este tipo de diseño es útil cuando necesitas mostrar información de forma clara y atractiva, asegurándote de que el contenido visual (como imágenes o iconos) se vea adecuadamente junto al texto.
+Este código es importante porque demuestra cómo combinar HTML para estructurar el contenido y CSS para diseñar y estilizar esa estructura, creando una página web atractiva y bien organizada.
+
+`006-padding para la hoja.html`
 
 ```html
 <!doctype html>
@@ -7245,14 +7551,19 @@ Este tipo de diseño es útil cuando necesitas mostrar información de forma cla
 ```
 
 ### color de fondo para el izquierdo
+<small>Creado: 2025-10-22 10:40</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple con un diseño de dos columnas, donde la columna izquierda tiene un fondo azul índigo y contiene una imagen. La estructura básica del documento incluye la declaración `<!DOCTYPE html>` que indica que se trata de un documento HTML5, seguido por las etiquetas `<html>` y `<head>`. Dentro de `<head>`, encontramos el título de la página "Curriculum" y un meta tag para establecer la codificación de caracteres como UTF-8.
+Este código HTML crea una página web simple que utiliza CSS para diseñar dos secciones principales: una a la izquierda y otra a la derecha. La estructura principal de la página es muy básica, pero el estilo (CSS) añade funcionalidades importantes.
 
-El estilo CSS está incluido directamente en el código, dentro de una etiqueta `<style>`. Aquí se definen las reglas que determinan cómo se ve la página: el fondo del documento es gris, el cuerpo tiene un ancho fijo y margen automático para centrarlo, además utiliza flexbox para organizar dos secciones (izquierda y derecha). La columna izquierda ocupa menos espacio en relación con la derecha gracias a las proporciones de "flex:1" y "flex:4", respectivamente. Además, tiene un fondo azul índigo, un padding que da margen interno y contiene una imagen cuyo ancho se ajusta al 100% del contenedor.
+En el encabezado (`<head>`), se define un título para la página que será "Curriculum". También hay una declaración `<!doctype html>`, que indica que este documento sigue las reglas HTML5. En `<style>`, encontramos varias instrucciones CSS que controlan cómo se ve cada parte de la página.
 
-Este diseño es importante porque permite organizar el contenido en dos columnas de manera equilibrada, lo cual puede ser útil para presentar información de manera visualmente atractiva, como un currículum donde la columna izquierda podría mostrar una foto y datos personales mientras que la derecha presenta detalles profesionales.
+En el cuerpo (`<body>`), hay dos secciones: `#izquierda` e `#derecha`. La primera contiene una imagen y tiene un fondo azul índigo, mientras que la segunda está vacía pero será donde probablemente añadas información más adelante. Ambas están contenidas en un contenedor principal con estilo CSS que las dispone de manera flexible (con el uso de `display: flex;`), permitiendo que cada sección tenga un tamaño relativo según los valores definidos (`flex:1` para la izquierda y `flex:4` para la derecha). Esto significa que la parte derecha ocupará cuatro veces más espacio que la izquierda.
+
+Este código es útil porque muestra cómo combinar HTML con CSS básico para crear una página web con diseño responsivo, permitiendo centrar el contenido automáticamente en cualquier tamaño de pantalla.
+
+`007-color de fondo para el izquierdo.html`
 
 ```html
 <!doctype html>
@@ -7281,14 +7592,19 @@ Este diseño es importante porque permite organizar el contenido en dos columnas
 ```
 
 ### articulos genericos
+<small>Creado: 2025-10-22 10:43</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que muestra información sobre un currículum. La estructura principal utiliza dos secciones divididas en dos columnas, donde la columna de la izquierda contiene una imagen y algunos elementos listados, mientras que la columna derecha está vacía pero预留空间以待补充完整回答。由于指示要求解释不能超过三个段落，当前的回答已经简洁地介绍了代码的整体结构和布局功能，接下来可以继续描述CSS样式的作用及其重要性。
+Este fragmento de código HTML crea una página web simple que utiliza CSS en línea para dar estilo a la página. La estructura principal se compone de dos secciones, una en el lado izquierdo y otra en el derecho, que están alineadas horizontalmente gracias a la propiedad `display: flex` aplicada al cuerpo (`body`) de la página.
 
-En el código, puedes observar una serie de estilos CSS que controlan cómo se visualiza la página. Estos estilos definen que toda la página tenga un fondo gris y aseguran que la columna de la izquierda sea más pequeña y tenga un color de fondo índigo con una imagen en ella que ocupa todo el ancho disponible, mientras que la columna derecha es cuatro veces más ancha y está vacía pero listo para ser utilizado. Esto permite a los diseñadores web organizar visualmente la información de manera clara y estructurada.
+La sección de la izquierda contiene una imagen que ocupa todo el ancho disponible (gracias a `width: 100%`) y un artículo con un título (`h3`) seguido de una lista desordenada con cuatro elementos. Esta sección tiene un color de fondo índigo (`indigo`) y un espacio padding de 20 píxeles en todos los lados.
 
-Este tipo de diseño bidireccional con dos columnas (generalmente llamado "columnas flotantes") es muy común en páginas de currículum o portafolios personales porque ayuda a presentar datos importantes y visuales de manera eficaz, facilitando la navegación del usuario y mejorando la experiencia general.
+La sección de la derecha está vacía para el momento, pero ha sido diseñada para tener cuatro veces más ancho que la sección izquierda gracias a `flex: 4`, mientras que la sección izquierda tiene un valor de flexibilidad de 1 (`flex: 1`). Ambas secciones tienen bordes de relleno (padding) de 20 píxeles.
+
+Este diseño es útil para presentar información en dos columnas con una estructura visual clara, siendo típico en currículos o páginas de perfil personal donde la foto y datos personales ocupan un lado y detalles adicionales el otro.
+
+`008-articulos genericos.html`
 
 ```html
 <!doctype html>
@@ -7326,20 +7642,21 @@ Este tipo de diseño bidireccional con dos columnas (generalmente llamado "colum
 ```
 
 ### duplicamos articulo
+<small>Creado: 2025-10-22 10:46</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que muestra un currículum en dos secciones: una parte izquierda y otra derecha. La estructura de la página comienza con las declaraciones básicas como `<!doctype html>` para indicar que el documento es un archivo HTML5, seguido del elemento `<html lang="es">` que especifica que el contenido está en español.
+Este código HTML crea una página web simple que se divide en dos secciones: una a la izquierda y otra a la derecha. La estructura utiliza un marcado semántico, donde cada elemento tiene un significado claro para el contenido del sitio web.
 
-En la sección `<head>`, encontramos los metadatos importantes: una etiqueta `<title>` para establecer el título de la página (en este caso "Curriculum") y un `<meta charset="utf-8">` para definir la codificación de caracteres utilizada, asegurando que todos los caracteres especiales estén correctamente representados.
+En el `<head>` del documento, encontramos los metadatos básicos como el `<!DOCTYPE html>`, que indica al navegador que se trata de una página HTML5. También hay una definición del título de la página (`<title>Curriculum</title>`) y un conjunto básico de estilos CSS directamente en la etiqueta `<style>` para controlar cómo se ve la página.
 
-Además, se incluye una etiqueta `<style>` dentro del encabezado que contiene el código CSS (Cascading Style Sheets) para personalizar el diseño y apariencia de la página. Por ejemplo, define que todo el contenido de la página tiene un fondo gris, mientras que la sección `<body>` tiene un ancho específico y está centrada en la pantalla gracias a `margin:auto`.
+El cuerpo principal de la página está dividido en dos `section` con id "izquierda" e "izquierda". La sección izquierda contiene una imagen seguida de tres artículos, cada uno con un título y una lista desordenada (`<ul>`) que incluye cuatro elementos. Esta disposición podría ser útil para mostrar información personal o profesional en un currículum.
 
-En el cuerpo (`<body>`) de la página, hay dos elementos `<section>` con los id "izquierda" e "izquierda". La primera sección (izquierda) contiene una imagen llamada 'josevicente.jpg' y tres artículos, cada uno con un título seguido por una lista desordenada (`<ul>`) que muestra cuatro elementos. Esta estructura visualiza claramente las secciones del currículum.
+La estructura CSS dentro del `<style>` define el diseño visual: utiliza flexbox para alinear las secciones izquierda y derecha horizontalmente, con la sección de la derecha teniendo más ancho que la izquierda debido a los valores de `flex`. Además, añade estilos específicos como colores de fondo y márgenes para mejorar el aspecto visual.
 
-La segunda sección (derecha), aún no tiene contenido en el código proporcionado, pero está preparada para agregar más información o detalles adicionales según sea necesario. La utilización de CSS permite dar un diseño específico a estas dos secciones, por ejemplo, la sección izquierda ocupa menos espacio que la derecha debido al uso del valor `flex:1` y `flex:4`, respectivamente.
+Este código es útil para entender cómo combinar HTML y CSS básico para diseñar una página web con elementos flexibles y semánticamente correctos.
 
-Esta estructura de HTML y CSS es importante para entender cómo combinar diferentes tecnologías web para crear una página con un diseño atractivo y funcional.
+`009-duplicamos articulo.html`
 
 ```html
 <!doctype html>
@@ -7395,14 +7712,17 @@ Esta estructura de HTML y CSS es importante para entender cómo combinar diferen
 ```
 
 ### color blanco para el fondo
+<small>Creado: 2025-10-22 10:48</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que utiliza estilos CSS para darle un diseño atractivo y estructurado. La página tiene un fondo gris generalmente, con dos secciones principales: una en la izquierda y otra en la derecha. La sección de la izquierda tiene un color de fondo índigo oscuro (un tono azul púrpura) y contiene imágenes y listas desordenadas que representan diferentes artículos o secciones del currículum. Cada artículo comienza con un título y lista cuatro elementos sin orden específico.
+Este código HTML crea una página web con un diseño en dos columnas, donde la columna izquierda tiene información personal y profesional presentada de manera estilizada y la derecha está vacía para ser llenada en futuras etapas del proyecto. La estructura principal utiliza etiquetas `<section>` para dividir el contenido en secciones lógicas.
 
-El estilo CSS aplicado asegura que la página web esté centrada en la pantalla, tenga una anchura fija de 600 píxeles para toda su estructura principal (el cuerpo) y un color de fondo blanco. Además, las imágenes dentro de esta sección izquierda ocupan el 100% del ancho disponible, proporcionando un aspecto visual agradable.
+El estilo del diseño incluye un fondo gris generalmente, con una sección central que tiene un ancho de 600 píxeles y un fondo blanco. Dentro de esta sección central hay dos partes: la izquierda y la derecha. La parte izquierda ocupa menos espacio en comparación con la derecha (que es cuatro veces más grande) y está diseñada para mostrar imágenes y listas ordenadas con estilos específicos como un color de fondo índigo y texto blanco. 
 
-La importancia de este código radica en cómo combina HTML y CSS para crear una estructura web semántica y estéticamente atractiva. Esto es crucial porque permite organizar información de manera clara y fácil de leer para los visitantes del sitio, así como facilita la accesibilidad y el SEO (optimización para motores de búsqueda).
+Este diseño ayuda a destacar información importante en una página web profesional, utilizando CSS directamente dentro del documento HTML para controlar aspectos visuales como el tamaño, el padding (espacio interior) y los colores, lo que permite una personalización precisa de cómo se ve la página en el navegador.
+
+`010-color blanco para el fondo.html`
 
 ```html
 <!doctype html>
@@ -7459,16 +7779,17 @@ La importancia de este código radica en cómo combina HTML y CSS para crear una
 ```
 
 ### tipo de fuente
+<small>Creado: 2025-10-22 10:50</small>
 
 #### Explicación
 
-Este código HTML crea una página web sencilla que muestra un currículum personal. La estructura principal del documento se define con etiquetas como `<html>`, `<head>` y `<body>`. Dentro de la cabecera, se especifica el título de la página "Curriculum" y se establece el conjunto de caracteres UTF-8 para asegurar que cualquier texto pueda ser representado correctamente. 
+Este código HTML crea una página web simple que se estructura en dos columnas, con un lado izquierdo y otro derecho. La columna de la izquierda tiene un diseño oscuro con fondo índigo (un tono de azul), mientras que el área de la derecha es más clara. En esta parte del código, la columna izquierda incluye una imagen personal y varios artículos con títulos y listas desordenadas (ul) que contienen elementos.
 
-El estilo visual de la página está definido mediante CSS directamente en la etiqueta `<style>` dentro del bloque `<head>`. Aquí, se configuran propiedades como colores de fondo, tipo y tamaño de fuente, así como la disposición en flexbox que permite organizar el contenido en dos columnas principales: una para imágenes y otro conjunto de información a su derecha.
+El estilo aplicado al documento define cómo se verá la página en el navegador, especificando colores de fondo, tamaño de fuente y disposición del contenido usando flexbox. El código asegura que toda la página tenga un tamaño de letra de tipo sans-serif y se muestre con un fondo gris. La sección izquierda tiene una imagen que se ajusta al 100% del ancho disponible, mientras que cada artículo incluye un título (h3) seguido por una lista no ordenada.
 
-En el cuerpo del documento (`<body>`), hay un contenedor `<section id="izquierda">` donde se muestra una imagen (supuestamente "josevicente.jpg") y varios bloques (`<article>`) que incluyen títulos y listas desordenadas de elementos. Al lado, en la sección con el id `derecha`, está vacío pero preparado para contener más información si fuera necesario.
+Esta estructura es común en páginas de currículum o portafolios personales donde el contenido importante se organiza visualmente para destacar información clave y hacerla fácil de leer. La división en columnas ayuda a presentar la información de manera equilibrada y estéticamente atractiva, permitiendo que los visitantes del sitio web naveguen por su contenido de forma intuitiva.
 
-Este diseño es importante porque permite a los visitantes de la página visualizar de manera clara y organizada las distintas secciones del currículum sin necesidad de desplazarse demasiado o perderse en una gran cantidad de texto.
+`011-tipo de fuente.html`
 
 ```html
 <!doctype html>
@@ -7525,18 +7846,21 @@ Este diseño es importante porque permite a los visitantes de la página visuali
 ```
 
 ### parte derecha
+<small>Creado: 2025-10-22 10:53</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que representa un currículum o perfil profesional. La estructura principal utiliza dos secciones (`<section>`), una con el identificador `izquierda` y otra con `derecha`. Esta disposición en columnas permite organizar información visualmente atractiva.
+Este fragmento de código HTML crea una página web con un diseño en dos columnas: la izquierda y la derecha. La estructura principal se logra usando etiquetas `<section>` para dividir el contenido en diferentes secciones, cada una con su propio `id` que ayuda a identificarlas fácilmente.
 
-La parte izquierda muestra tres artículos (`<article>`) que contienen títulos (`<h3>`) y listas desordenadas de elementos (`<ul>`). Cada artículo tiene cuatro puntos en una lista, lo cual podría representar distintos aspectos del currículum como experiencia laboral o habilidades. Además, esta sección incluye una imagen al comienzo, cuyo tamaño se ajusta para llenar completamente el ancho de la imagen.
+En la parte izquierda de la página (identificada por el `id="izquierda"`), se muestra un perfil profesional con una imagen del titular al inicio. A continuación, hay varios artículos (`<article>`) que presentan títulos y listas desordenadas (`<ul>`). Estos elementos ayudan a organizar información como experiencias profesionales o habilidades.
 
-La parte derecha presenta información más detallada sobre un individuo, probablemente "Jose Vicente Carratala Sanchis", con su título profesional y una breve descripción utilizando texto en latín ficticio (`Lorem ipsum`), que es comúnmente usado como sustituto para mostrar cómo se vería el contenido de la página.
+La parte derecha de la página (identificada por el `id="derecha"`) contiene un perfil más detallado con una breve biografía, que incluye detalles sobre quién es Jose Vicente Carratala Sanchis y sus roles como profesor, desarrollador e diseñador. Este texto se encuentra dentro de una etiqueta `<p>`.
 
-El estilo CSS incrustado dentro del código HTML personaliza la apariencia de la página, incluyendo colores de fondo y tipografía, además de definir las propiedades flexibles para que ambas secciones (`izquierda` y `derecha`) estén en una fila horizontal y tengan un tamaño relativo diferente. Esto ayuda a mantener el diseño equilibrado y legible.
+El estilo visual de la página está definido directamente en el bloque `<style>` del encabezado (`<head>`). Aquí se especifican reglas CSS que determinan cómo debe verse cada sección, como los colores de fondo y las fuentes utilizadas. La disposición en dos columnas se logra usando flexbox, un método popular para organizar elementos en HTML.
 
-Esta página es útil como ejemplo práctico del uso de HTML y CSS para estructurar y diseñar información web de manera profesional y visualmente apetecible.
+Este tipo de diseño es común en portafolios o currículos web donde la información es presentada de manera clara y estructurada, facilitando así que los visitantes puedan entender rápidamente quién es el titular del perfil y qué hace.
+
+`012-parte derecha.html`
 
 ```html
 <!doctype html>
@@ -7596,14 +7920,17 @@ Esta página es útil como ejemplo práctico del uso de HTML y CSS para estructu
 ```
 
 ### divisiones
+<small>Creado: 2025-10-22 10:54</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que se divide en dos partes principales: la izquierda e la derecha. En la parte izquierda, hay un área donde se muestra una imagen y tres artículos con títulos y listas desordenadas de cuatro elementos cada uno. La estructura visual es importante porque utiliza CSS (hoja de estilos en cascada) para darle estilo a los elementos HTML.
+Este fragmento de código HTML crea una página web sencilla que se divide en dos partes principales: la izquierda e la derecha. La estructura de la página utiliza elementos `<section>` y dentro de ellas varios bloques de contenido como imágenes, artículos con listas no ordenadas (`<ul>`) y párrafos. En el encabezado del documento (`<head>`), se define el estilo utilizando CSS directamente en una etiqueta `<style>`. Este estilo especifica cómo se debe visualizar la página, incluyendo el color de fondo, tamaño de fuente y diseño basado en flexbox para que las dos secciones ocupen espacios proporcionalmente.
 
-El bloque de código `<style>` dentro del `<head>` define la apariencia general de la página, incluyendo colores y tamaño de fuente. Específicamente, establece que el área izquierda tendrá un color de fondo índigo con texto blanco, mientras que la parte derecha será más grande y blanca. Ambas secciones están alineadas horizontalmente gracias a la propiedad `display: flex` aplicada al cuerpo (`body`). Esto significa que la página web mostrará dos columnas distintas cuando se visualice en un navegador.
+En la parte central del documento (`<body>`), hay una sección con `id="izquierda"` que contiene una imagen seguida de tres artículos con un título y cuatro elementos en listas no ordenadas. La otra sección, con `id="derecha"`, presenta información sobre un individuo llamado Jose Vicente Carratala Sanchis, incluyendo su profesión y un párrafo descriptivo utilizando texto ficticio "Lorem ipsum". Ambas partes están diseñadas para ser visualmente distintas gracias a las reglas CSS aplicadas en el encabezado del documento.
 
-Esta estructura es importante porque permite una disposición visual clara de información, facilitando así su lectura y comprensión para el usuario. La parte izquierda puede utilizarse para destacar detalles o imágenes relevantes, mientras que la derecha proporciona texto detallado sobre el curriculum vitae del titular de la página, en este caso "Jose Vicente Carratala Sanchis".
+Este diseño es típico de una página web personal o profesional que presenta información de manera estructurada y estéticamente atractiva, utilizando HTML y CSS juntos para organizar contenido y controlar la apariencia visual.
+
+`013-divisiones.html`
 
 ```html
 <!doctype html>
@@ -7669,16 +7996,19 @@ Esta estructura es importante porque permite una disposición visual clara de in
 ```
 
 ### titulares
+<small>Creado: 2025-10-22 10:55</small>
 
 #### Explicación
 
-Este código HTML es un ejemplo básico de cómo estructurar una página web personal, en este caso, probablemente el curriculum vitae (CV) de alguien llamado Jose Vicente Carratala Sanchis. La página se divide principalmente en dos secciones: la izquierda y la derecha.
+Este fragmento de código HTML crea una página web con un diseño en flexbox que se divide en dos columnas. La página tiene un título "Curriculum" y establece el idioma como español. En la parte superior, hay un estilo CSS incorporado que define cómo debería verse y comportarse la página.
 
-La sección de la izquierda está diseñada para mostrar información resumida con un estilo visual destacado, incluyendo una imagen del titular (posiblemente una foto), seguida de varias listas desordenadas que probablemente representan diferentes áreas temáticas o categorías relacionadas con el CV. Cada categoría tiene un título y cuatro elementos subordinados.
+En la sección izquierda (identificada por `id="izquierda"`), tienes una imagen de perfil seguida por varios artículos, cada uno con un título y una lista desordenada (`<ul>`) que contiene cuatro elementos. Esto probablemente representa información resumida o categorías en el currículum.
 
-Por otro lado, la sección derecha contiene información más detallada sobre Jose Vicente Carratala Sanchis, incluyendo su nombre completo, ocupación y una breve descripción en estilo "Lorem ipsum" que simula texto para mostrar cómo sería el contenido real. También hay dos bloques adicionales, uno dedicado a la experiencia profesional y otro a la formación académica.
+La sección derecha (identificada por `id="derecha"`) presenta la biografía de Jose Vicente Carratala Sanchis, incluyendo su título profesional y una descripción general utilizando un párrafo con texto "Lorem ipsum". Además, hay dos divs que representan secciones separadas para la experiencia laboral y la formación académica.
 
-Este diseño es importante porque combina elementos visuales llamativos con información textual detallada, haciendo que el CV sea fácil de navegar visualmente mientras proporciona detalles importantes sobre el titular del documento. El uso de CSS incorporado (anotaciones dentro de `<style>` en el encabezado) permite personalizar la apariencia de estas secciones, como cambiar los colores y el tamaño del texto para mejorar la legibilidad y atractivo visual.
+Este diseño es importante porque proporciona una estructura clara e intuitiva de información, usando HTML semántico y CSS para mejorar la accesibilidad y el aspecto visual del currículum en línea.
+
+`014-titulares.html`
 
 ```html
 <!doctype html>
@@ -7744,14 +8074,19 @@ Este diseño es importante porque combina elementos visuales llamativos con info
 ```
 
 ### experiencias profesionales
+<small>Creado: 2025-10-22 10:58</small>
 
 #### Explicación
 
-Este código HTML crea una página web con un diseño en dos columnas que muestra el currículum de Jose Vicente Carratala Sanchis. La columna izquierda, más estrecha, contiene una foto y varios bloques estructurados que representan diferentes secciones del curriculum (como títulos y elementos listados). Estos bloques están organizados dentro de etiquetas `<article>`, cada uno con un título `<h3>` seguido por una lista desordenada `<ul>` de cuatro elementos.
+Este código HTML es la estructura de una página web que presenta el currículum profesional de un individuo. En el encabezado, se establece el título y las configuraciones básicas del documento como el conjunto de caracteres UTF-8 para garantizar la visualización correcta de todos los caracteres.
 
-La columna derecha, más ancha, contiene información más detallada sobre Jose Vicente, como su nombre y roles profesionales. Incluye un párrafo largo escrito en "Lorem ipsum", que es texto simulado comúnmente usado para probar diseño web. También presenta secciones para la experiencia profesional y la formación académica, cada una con logos de empresas o instituciones e información detallada sobre puestos y roles ocupados.
+La parte central del código utiliza CSS directamente en el bloque `<style>` dentro de `<head>`, lo que define estilos generales para toda la página, incluyendo colores de fondo y fuentes. Importante es cómo se usa `display: flex;` en el cuerpo (`<body>`), lo cual permite dividir visualmente la página en dos secciones principales alineadas horizontalmente: una a la izquierda y otra a la derecha.
 
-El uso de CSS integrado dentro del `<head>` define estilos básicos para el layout y la apariencia visual, como colores de fondo, tamaño de fuente y espaciado. Este diseño en dos columnas ayuda a organizar claramente los datos, haciendo que sea fácil para un visitante de la página encontrar información específica sobre las experiencias profesionales y académicas del individuo.
+La sección de la izquierda (identificada con `<section id="izquierda">`) contiene varias imágenes y artículos estructurados que incluyen títulos y listas desordenadas. En la parte derecha, el código presenta detalles biográficos del profesional, como su nombre, roles y un párrafo de descripción. Además, se incluye una sección dedicada a la experiencia laboral (con identificador `id="experiencia"`) que muestra entradas para cada puesto con logos de empresas, fechas e información sobre las responsabilidades en esos puestos. También hay una sección para la formación académica.
+
+Este diseño permite un presentación visual clara y estructurada del currículum, facilitando a los lectores identificar rápidamente diferentes aspectos profesionales y educativos de la persona que presenta el documento.
+
+`015-experiencias profesionales.html`
 
 ```html
 <!doctype html>
@@ -7865,16 +8200,21 @@ El uso de CSS integrado dentro del `<head>` define estilos básicos para el layo
 ```
 
 ### css para control visual
+<small>Creado: 2025-10-22 11:06</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web que representa un currículum o hoja de vida. La estructura utiliza dos secciones principales divididas en la mitad izquierda y derecha del contenedor principal, donde el contenido está bien organizado con estilos CSS integrados directamente en la etiqueta `<style>` dentro de la sección `<head>`. 
+Este fragmento de código HTML y CSS se utiliza para crear una página web que representa un currículum en formato visualmente atractivo. La estructura principal del documento es una combinación de etiquetas HTML como `<head>` para la información general y `<body>` para el contenido visible.
 
-En la parte izquierda, se muestra una imagen seguida por varias entradas que usan estructuras HTML como `<article>` y `<ul>` para listar información. En la derecha, hay detalles más descriptivos sobre el titular del currículum, incluyendo un breve resumen biográfico y bloques de experiencia profesional y formación académica.
+En la parte superior, el archivo establece estilos básicos utilizando CSS directamente dentro del bloque `<style>`. Estos estilos incluyen la configuración de un fondo gris en todo el documento (`html{background:grey}`) y una fuente sin serifa con un tamaño de letra pequeño. Además, se define que el cuerpo de la página tenga un ancho fijo de 600 píxeles, centrado horizontalmente en la pantalla, utilizando `margin:auto`.
 
-El uso del CSS aplicado directamente en la etiqueta `<style>` ayuda a definir estilos específicos para cada elemento, como colores de fondo, tamaños de texto, márgenes, padding y disposición en flexbox, lo que permite un diseño responsivo e intuitivo. Esta página es importante porque muestra cómo se pueden combinar HTML y CSS para crear una página web profesional y atractiva visualmente.
+La estructura principal del currículum está compuesta por dos `<section>`: una para "izquierda" y otra para "derecha". La sección izquierda utiliza CSS Flexbox para organizar sus contenidos de manera flexible. Cada artículo dentro de esta sección tiene un título seguido de una lista desordenada con cuatro elementos, todos presentados en un color de fondo índigo y letras blancas.
 
-Esta estructura ayuda a organizar claramente la información del curriculum, facilitando su lectura y comprensión para los visitantes de la página, lo que puede ser crucial en situaciones de búsqueda de empleo.
+La sección derecha es más detallada, incluyendo información personal como el nombre y profesión del individuo, además de una sección para la experiencia profesional y formación académica. Cada uno de estos apartados utiliza estructuras similares a las de la sección izquierda pero con estilos específicos para adaptarse al contenido.
+
+Este diseño combina HTML para definir el marcado semántico del currículum y CSS para controlar su apariencia, creando así una página web funcional y visualmente atractiva que sirve como un ejemplo práctico de cómo integrar estos lenguajes.
+
+`016-css para control visual.html`
 
 ```html
 <!doctype html>
@@ -7991,14 +8331,25 @@ Esta estructura ayuda a organizar claramente la información del curriculum, fac
 ```
 
 ### ajustes visuales
+<small>Creado: 2025-10-22 11:09</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web que presenta un currículum visualmente atractivo y bien estructurado. La página está dividida en dos secciones principales: una a la izquierda que muestra fotografías y listas ordenadas de elementos, y otra a la derecha que incluye información personal como el nombre del candidato, sus habilidades profesionales, un párrafo de presentación y detalles sobre su experiencia laboral y formación académica.
+Este código HTML está diseñado para crear una página web que presenta un currículum de manera visualmente atractiva. La estructura principal utiliza dos secciones: una en la izquierda y otra en la derecha, cada una con características estilísticas distintas.
 
-El código utiliza CSS (hoja de estilo en cascada) directamente dentro del archivo HTML para controlar la apariencia visual. Por ejemplo, establece el ancho del cuerpo a 600 píxeles, centra la página con `margin: auto`, y usa flexbox para alinear las dos secciones izquierda y derecha en una fila horizontal. Las listas de elementos y los detalles sobre la experiencia laboral y formación están estructurados usando etiquetas `<article>` que contienen imágenes pequeñas y texto.
+En la cabecera `<head>` del documento, se define el título de la página como "Curriculum" y se establece el conjunto de caracteres UTF-8 para permitir la visualización correcta de caracteres especiales. También incluye un bloque de CSS en línea que controla aspectos visuales clave, como el color de fondo gris del HTML, la disposición en flexbox del cuerpo y el diseño específico para las imágenes y los artículos dentro de las secciones izquierda y derecha.
 
-Este diseño es importante porque mejora la presentación del currículum, haciéndolo más atractivo visualmente para los empleadores. La utilización de flexbox permite una disposición elegante y equilibrada de los elementos en la pantalla, lo cual es crucial cuando se presenta información personal en línea para fines profesionales.
+El cuerpo `<body>` contiene dos secciones principales identificadas por sus IDs "izquierda" y "derecha". La sección de la izquierda presenta una imagen方形框内部的内容为根据给定的HTML代码片段用西班牙语撰写的解释。该解释概述了文档结构、CSS样式以及页面布局，但未包含实际的HTML代码本身。由于任务要求直接在西班牙语中进行解释，以下是对所提供HTML代码功能和重要性的总结翻译：
+
+此HTML代码旨在创建一个具有视觉吸引力的职业简历网页。它主要由两个部分组成：左侧显示图片和个人信息列表；右侧展示个人简介、职业经历与教育背景。
+
+头部`<head>`标签内设置文档字符集为UTF-8，确保了特殊字符的正确显示，并通过内嵌样式定义了一些重要的CSS规则，如灰色背景、600px宽的白色主体以及分隔左右区域的关键布局。这使得网页能够有一个统一且专业的外观。
+
+在主体`<body>`部分，两个主要部分分别由ID为"izquierda"(左边)和"derecha"(右边)的<section>标签定义。左区以一张照片开头，并列出多个标题及相应列表项（如“元素1”、“元素2”等）。右区则包含个人介绍、工作经历和教育背景的信息，采用灵活布局来排列各项内容，并通过内联图像与文本信息相结合的方式丰富视觉效果。
+
+总体来说，这段代码展示了如何利用HTML标签结构结合CSS样式来创建一个简单但功能强大的简历网页。这种技术不仅美化了页面，还确保了内容组织的逻辑性和可读性。
+
+`017-ajustes visuales.html`
 
 ```html
 <!doctype html>
@@ -8115,32 +8466,60 @@ Este diseño es importante porque mejora la presentación del currículum, haci�
 ```
 
 ### prueba
+<small>Creado: 2025-10-22 14:08</small>
 
 #### Explicación
 
-El fragmento que has proporcionado no parece ser un código programático, sino simplemente texto plano. En este caso, se trata de la frase "Esto es una prueba" escrita en un archivo llamado `prueba.txt`. Si estuviéramos trabajando con archivos y codificación en entornos web o sistemas informáticos, este tipo de contenido podría servir como un ejemplo básico para entender cómo leer y escribir archivos.
+El fragmento de código que has proporcionado no es realmente un código, sino texto en su estado más simple. En este caso, solo se muestra el texto "Esto es una prueba" sin ninguna etiqueta HTML o sintaxis especial. 
 
-En contextos más avanzados, este tipo de archivo puede utilizarse como punto de partida para aprender a manejar archivos de texto dentro de programas que necesiten interactuar con el sistema de archivos, por ejemplo, cuando se quiere guardar o recuperar información en una aplicación web. Sin embargo, dado que el contenido no es código ejecutable, su utilidad está más relacionada con ejemplos didácticos que con la realización de tareas específicas.
+En el contexto del curso de Lenguajes de Marcas para la Sindicación de Contenidos, este archivo probablemente está siendo utilizado como un punto de partida sencillo antes de pasar a otros ejercicios más complejos. Su propósito puede ser simplemente verificar que estás configurado correctamente y puedes abrir y ver archivos básicos en tu entorno de desarrollo.
 
-Es importante entender cómo leer y manipular archivos porque esto permite a las aplicaciones interactuar directamente con el sistema operativo, permitiendo almacenar datos permanentemente o recuperar información guardada en estos archivos.
+Es importante entender que aunque este contenido es muy básico, forma parte del proceso de aprendizaje gradual hacia conceptos más avanzados como la estructura HTML y el uso de lenguajes de marcadores para sindicación web.
+
+`prueba.txt`
 
 ```
 Esto es una prueba
 ```
 
 ### prueba2
+<small>Creado: 2025-10-22 14:10</small>
 
 #### Explicación
 
-El fragmento que has proporcionado no parece ser un código programático, sino simplemente texto sin formato. En este caso, solo se muestra el texto "Esto es una prueba" en una línea separada.
+El fragmento de código que has proporcionado no contiene ninguna estructura de programación o lenguaje de marcado específico; simplemente muestra un texto plano "Esto es una prueba". En el contexto de archivos HTML, CSS o JavaScript, este tipo de contenido sería irrelevante ya que estos lenguajes requieren sintaxis específica para funcionar correctamente. El objetivo de este archivo podría ser servir como punto de partida para escribir código más complejo o simplemente actuar como un marcador temporal mientras se desarrolla el proyecto.
 
-Dicho esto, si nos centramos únicamente en su contexto y lo que podría significar para tu trabajo con lenguajes de marcas (como XML o RSS), podríamos interpretarlo como un ejemplo muy básico. En entornos web y cuando se manejan lenguajes de marcas para sindicación de contenidos, este texto podría representar el comienzo de una entrada en un archivo que luego sería procesado por un programa o script para convertirlo en contenido presentable en la web.
+Es importante entender que cada archivo en la carpeta de ejercicios tiene una estructura y propósito únicos, lo cual sugiere que "prueba2.txt" podría estar esperando ser reescrito con contenido relacionado a los temas mencionados (como HTML, CSS para estilos visuales, etc.).
 
-Es importante destacar que, como este es solo texto sin formato y no código ejecutable ni lenguaje de marca definido, su utilidad directa es limitada. Sin embargo, sirve como punto de partida para entender cómo el contenido bruto puede ser transformado y utilizado más adelante en un proceso más complejo de publicación web o sindicación de contenidos.
+`prueba2.txt`
 
 ```
 Esto es una prueba
 ```
+
+### Actividades propuestas
+
+It seems like you've shared snippets of HTML files and a couple of text file contents. Based on the context, it appears that you're working on building an HTML curriculum page for Jose Vicente Carratala Sanchis with various styles being applied through inline CSS in the `<style>` tag within the document's head (`<head></head>`).
+
+You've made several updates to the layout and styling of this document:
+
+1. **Initial Layout**: You started by defining a basic structure where you divided the content into two main sections: `#izquierda` (left section) for personal details, skills, etc., and `#derecha` (right section) presumably for professional experience and education.
+
+2. **Flexbox Introduction**: To create a more responsive layout, you utilized CSS Flexbox to align items within these sections better, especially within the right section which is displaying articles horizontally with images and descriptions side by side.
+
+3. **CSS Styles Adjustment**: You've applied various style adjustments such as setting dimensions for images (`width:50px;height:50px;`), creating spacing between elements using `gap`, applying padding and margin to all elements within the article tags, etc., to enhance visual appeal and readability of your curriculum page.
+
+However, it looks like there might have been a minor typo or an unfinished line in one of your CSS styles where you have:
+
+```css
+html{background:grey;font-family:sans-serif;font-size:11px;text-}
+```
+
+It's unclear what `text-` was intended to be. If this is a placeholder for further styling, such as `text-align`, `text-transform`, etc., it should be completed or removed.
+
+Additionally, the text files (`prueba.txt` and `prueba2.txt`) contain simple content indicating they are test files without any specific relation to your HTML curriculum project based on the provided snippets. 
+
+If you need further assistance with completing your CSS rules, refining layouts, or have questions about a particular aspect of styling this page, please feel free to ask!
 
 
 <a id="simulacro-examen-miercoles"></a>
@@ -8153,16 +8532,19 @@ Este conjunto de ejercicios está diseñado para familiarizarte con la estructur
 A través de estos ejercicios, practicarás la creación de estructuras semánticas utilizando etiquetas HTML5 como `<header>`, `<main>` y `<footer>`, así como el uso de elementos `<article>` para encapsular contenidos individuales. Además, aprenderás a aplicar estilos con CSS para mejorar la apariencia de tus páginas web, desde ajustes básicos hasta diseños más complejos utilizando conceptos como `display: grid`.
 
 ### comenzamos
+<small>Creado: 2025-11-05 13:22</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo muy básico y común en HTML, que define la estructura básica de una página web. Comienza con `<!doctype html>`, lo cual indica al navegador que el documento debe ser interpretado según las reglas del lenguaje HTML5.
+Este fragmento de código es la estructura básica de un archivo HTML, que es el lenguaje utilizado para crear páginas web. Comienza con `<!doctype html>`, una declaración que indica al navegador que debe esperar información en formato HTML5.
 
-Dentro de esta declaración, encontramos la etiqueta `<html lang="es">` que establece que este archivo está en español y envuelve todo el contenido de la página. La sección `<head>` contiene información crucial pero no visible para los usuarios, como por ejemplo, la codificación del texto con `<meta charset="utf-8">`, lo cual asegura que todos los caracteres especiales (como acentos) sean mostrados correctamente.
+Dentro del bloque `<html lang="es">` se define que el documento está escrito en español (`lang="es"`). Este contenedor incluye dos secciones principales: la cabecera (`<head>`) y el cuerpo (`<body>`).
 
-En la parte central, dentro de la etiqueta `<body>`, es donde se colocarían todos los elementos visibles en la página web. En este caso, el cuerpo está vacío, pero aquí podrías añadir texto, imágenes, listas, enlaces y muchos otros componentes que conforman el diseño de tu sitio.
+En la cabecera, encontramos un título de página definido por `<title>Examen</title>`, lo cual aparecerá en la barra superior del navegador o en las pestañas cuando la página esté abierta. También hay una etiqueta `<meta charset="utf-8">` que especifica el conjunto de caracteres utilizado, permitiendo que la página soporte texto y símbolos internacionales.
 
-Esta estructura básica es fundamental para cualquier página web ya que proporciona un marco sólido sobre el cual construir la interfaz del usuario.
+El cuerpo (`<body>`) está vacío en este ejemplo, pero es aquí donde se colocarían todos los elementos visibles para el usuario cuando visita la página web, como textos, imágenes o videos.
+
+`001-comenzamos.html`
 
 ```html
 <!doctype html>
@@ -8177,16 +8559,19 @@ Esta estructura básica es fundamental para cualquier página web ya que proporc
 ```
 
 ### secciones
+<small>Creado: 2025-11-05 13:22</small>
 
 #### Explicación
 
-Este fragmento de código es una estructura básica de un documento HTML que representa la página web del examen. La etiqueta `<!doctype html>` al inicio indica que el documento sigue las reglas de HTML5, lo cual es importante para que los navegadores lo interpreten correctamente.
+Este fragmento de código HTML es el esqueleto básico de una página web, que se utiliza para estructurar el contenido. Comienza con la declaración `<!doctype html>`, que indica al navegador que debe esperar un documento HTML5. La etiqueta `<html>` envuelve todo el contenido de la página y especifica que el idioma del texto es español mediante el atributo `lang="es"`.
 
-En la sección `<head>`, encontramos metadatos importantes como el título de la página ("Examen") y una declaración de codificación (`<meta charset="utf-8">`) que asegura que todos los caracteres del documento puedan ser mostrados correctamente, incluyendo acentos y caracteres especiales.
+En la sección `<head>`, encontramos tres elementos importantes: `<title>`, que establece el título de la página que aparecerá en la pestaña del navegador; `<meta charset="utf-8">`, que define la codificación de caracteres para asegurar que todos los símbolos y caracteres especiales se muestren correctamente.
 
-La sección `<body>` contiene tres bloques principales: `<header>`, `<main>`, y `<footer>`. Estas etiquetas representan diferentes partes de la estructura de la página web. El bloque `<header>` generalmente alberga información como el logo o el nombre del sitio, aunque en este caso está vacío. La sección `<main>` es donde iría el contenido principal del examen y es crucial para que los motores de búsqueda y lectores de pantalla entiendan la estructura y el propósito de la página. Finalmente, el bloque `<footer>` normalmente incluiría información como derechos de autor o enlaces a otras páginas relevantes.
+La estructura principal de la página está dividida en tres partes clave dentro del cuerpo (`<body>`): el encabezado (`<header>`), donde normalmente irían elementos como el logo o información sobre quién es el autor; el contenido principal (`<main>`), que sería donde colocarías las secciones principales del texto o imágenes; y el pie de página (`<footer>`), utilizado para incluir información adicional al final, como enlaces a otras páginas o derechos de autor.
 
-Esta estructura HTML5 es importante porque ayuda a organizar el contenido de una manera clara y accesible tanto para los usuarios finales como para las máquinas que interpretan la página, como motores de búsqueda.
+Esta estructura ayuda a mantener la claridad y accesibilidad de la página web, permitiendo que tanto los usuarios como las herramientas de búsqueda (como motores de búsqueda) puedan entender fácilmente cómo está organizado el contenido.
+
+`002-secciones.html`
 
 ```html
 <!doctype html>
@@ -8208,16 +8593,19 @@ Esta estructura HTML5 es importante porque ayuda a organizar el contenido de una
 ```
 
 ### cabecera
+<small>Creado: 2025-11-05 13:22</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de una página HTML que se utiliza para estructurar el contenido en la web. La parte inicial, `<!doctype html>`, indica al navegador que está trabajando con la versión más reciente del lenguaje HTML. Luego, `<html lang="es">` especifica que el idioma principal de esta página es español.
+Este fragmento de código es un archivo HTML que representa una página web sencilla. La estructura principal se define con etiquetas como `<html>`, `<head>` y `<body>`. Dentro del cuerpo (`<body>`), hay tres secciones principales: la cabecera (`<header>`), el contenido principal (`<main>`), y el pie de página (`<footer>`).
 
-En la sección `<head>` encontramos metadatos importantes para la página: una etiqueta `<title>` establece el título de la página que aparecerá en la pestaña del navegador como "Examen", y la etiqueta `<meta charset="utf-8">` asegura que todos los caracteres (como acentos o signos de puntuación específicos) se muestren correctamente.
+La cabecera contiene dos elementos de encabezado, `<h1>` e `<h2>`, que proporcionan información sobre quién es el autor (en este caso, "Jose Vicente Carratala") y un correo electrónico asociado (info@jocarsa.com). Estos elementos son importantes porque ayudan a los visitantes de la página a entender quién creó el contenido y cómo ponerse en contacto con él.
 
-El cuerpo principal de la página, `<body>`, contiene tres partes clave: una cabecera (`<header>`), el contenido principal (`<main>`), y un pie de página (`<footer>`). En este ejemplo, dentro del encabezado están incluidos dos títulos: un gran título que dice "Jose Vicente Carratala" y un subtitular que muestra un correo electrónico. El `<main>` está vacío en este caso, lo cual indica que ahí es donde se añadiría el contenido específico de la página. Finalmente, hay una etiqueta de cierre para el pie de página (`<footer>`) que actualmente no contiene nada.
+La sección `<main>` está vacía en este ejemplo, lo que significa que es donde generalmente iría el contenido principal del artículo o la información relevante para el usuario. Por último, el pie de página (`<footer>`) también está vacío, pero típicamente aquí se incluirían enlaces a otras partes del sitio web, créditos legales y otros datos relevantes.
 
-Este tipo de estructura HTML ayuda a los desarrolladores web a organizar y mantener claramente separados diferentes elementos de una página web, lo cual es crucial tanto para la presentación visual como para el funcionamiento correcto del sitio en motores de búsqueda (SEO) y lectores de pantalla para personas con discapacidades visuales.
+Este tipo de estructura es importante porque sigue las mejores prácticas recomendadas para la creación de páginas web accesibles e informativas.
+
+`003-cabecera.html`
 
 ```html
 <!doctype html>
@@ -8241,14 +8629,13 @@ Este tipo de estructura HTML ayuda a los desarrolladores web a organizar y mante
 ```
 
 ### pie de pagina
+<small>Creado: 2025-11-05 13:23</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo HTML básico que define la estructura y el contenido de una página web simple. Comienza con `<!doctype html>`, lo cual indica que este documento sigue las reglas del lenguaje HTML5, necesario para que los navegadores web interpreten correctamente todos sus elementos.
+Este fragmento de código HTML es un ejemplo sencillo de una página web que incluye una estructura básica con elementos como el título, encabezado y pie de página. La etiqueta `<!doctype html>` al inicio indica que la página está escrita en HTML5. El bloque `<head>` contiene información sobre la página, como su título ("Examen") y especificaciones técnicas (el conjunto de caracteres "utf-8" permite mostrar cualquier carácter). En el `<body>`, se encuentran las partes visibles de la página: un encabezado (`<header>`) que incluye el nombre del autor y una dirección de correo electrónico, y un pie de página (`<footer>`), donde se muestra información legal como los derechos de autor con el año "2025". La etiqueta `<main>` está vacía en este ejemplo, lo que significa que aquí es donde normalmente irían los contenidos principales del artículo o la página web. Esta estructura ayuda a organizar y mejorar la accesibilidad de una página web para navegadores y motores de búsqueda.
 
-La etiqueta `<html>` envuelve todo el contenido de la página, mientras que `<head>` contiene metadatos sobre la página (como su título y codificación de caracteres) y `<body>` incluye lo que se ve en la pantalla del usuario. En este caso, dentro del `<header>`, se presentan información como el nombre y los datos de contacto del autor. El bloque `<main>` está vacío en esta versión del código, pero aquí es donde normalmente iría el contenido principal de la página web.
-
-El elemento `<footer>` al final contiene información adicional, en este caso, una mención de derechos de autor con el año 2025 y el nombre del autor. Este diseño básico ayuda a organizar el contenido de manera clara y estándar para que los usuarios puedan navegar fácilmente por la página web.
+`004-pie de pagina.html`
 
 ```html
 <!doctype html>
@@ -8273,16 +8660,19 @@ El elemento `<footer>` al final contiene información adicional, en este caso, u
 ```
 
 ### articulo
+<small>Creado: 2025-11-05 13:23</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de una página web en HTML. La estructura comienza con la declaración `<!doctype html>`, que informa al navegador que el documento está escrito usando las reglas del lenguaje HTML5.
+Este fragmento de código HTML es un ejemplo sencillo pero completo del esqueleto básico de una página web. Comienza con la declaración `<!doctype html>`, que indica al navegador que el documento que sigue se debe interpretar como HTML5.
 
-En el `<head>` de la página, encontramos la definición del idioma (`<html lang="es">`) y se establece el título de la página con `<title>Examen</title>`. Además, hay un metadato que especifica la codificación de caracteres utilizada en el documento (`<meta charset="utf-8"`), lo cual es crucial para garantizar que todos los caracteres especiales o no latinos se muestren correctamente.
+El contenido principal está estructurado dentro de las etiquetas `<html>` y `<body>`. La parte superior, conocida como encabezado (`<head>`), contiene metadatos importantes como la codificación de caracteres (`utf-8`), que garantiza que los caracteres especiales o no latinos se muestren correctamente, y el título de la página, que aparece en la pestaña del navegador.
 
-El cuerpo principal de la página, `<body>`, contiene tres secciones principales: un encabezado (`<header>`), un contenido principal (`<main>`), y un pie de página (`<footer>`). En el encabezado, se proporcionan detalles sobre una persona, incluyendo su nombre y correo electrónico. El contenido principal está dentro del elemento `<article>`, que es donde normalmente iría la información específica del artículo, en este caso, se ha dejado una estructura vacía con un título (`<h3>`), descripción (`<p>`), categoría (`<p>`), y una imagen (`<img src="josevicente.jpg">`). Finalmente, el pie de página muestra la información legal y los derechos de autor del creador.
+El cuerpo (`<body>`) es donde realmente comienza a verse la página web. Incluye una cabecera (`<header>`), un contenido principal (`<main>`), y un pie de página (`<footer>`). En este caso, el `<header>` contiene información sobre el autor, mientras que el `<main>` alberga un artículo con sus respectivos elementos como título (h3), descripción (p) e imagen del autor. El `<footer>` tiene la información de derechos de autor.
 
-Esta estructura es importante porque ayuda a organizar y etiquetar claramente diferentes partes del documento web, facilitando así su interpretación tanto para los navegadores como para las personas que utilizan tecnologías de asistencia.
+Este diseño ayuda a las páginas web a ser más accesibles y comprensibles para los usuarios, ya que sigue una estructura clara y estándar, además de facilitar el trabajo de motores de búsqueda y lectores de pantalla utilizados por personas con discapacidades visuales.
+
+`005-articulo.html`
 
 ```html
 <!doctype html>
@@ -8312,14 +8702,17 @@ Esta estructura es importante porque ayuda a organizar y etiquetar claramente di
 ```
 
 ### muchos articulos
+<small>Creado: 2025-11-05 13:24</small>
 
 #### Explicación
 
-Este fragmento de código HTML representa la estructura básica de una página web que contiene múltiples artículos. La página tiene un encabezado con información sobre el autor, incluyendo su nombre y dirección de correo electrónico, seguido por una sección principal donde se muestran varios artículos.
+Este código HTML representa una página web simple que muestra múltiples artículos. La estructura de la página comienza con las declaraciones básicas necesarias como `<!DOCTYPE html>`, seguida del etiquetado inicial `<html>` y la especificación del idioma en el atributo `lang="es"`. En la sección `<head>`, encontramos una definición de título para la página (`<title>`), que aparecerá en la barra superior del navegador, y un metadato (`<meta charset="utf-8">`) que establece cómo debe interpretarse el contenido del texto en la página.
 
-Cada artículo está compuesto por tres elementos: la categoría (denominada como "p" en HTML), el título (con etiqueta "h3"), y la descripción (otra vez con etiqueta "p"). Además, cada artículo incluye una imagen con la fuente establecida a un archivo llamado "josevicente.jpg". Este diseño permite mostrar de manera clara y organizada varios artículos en la misma página web.
+La estructura principal de la página se define entre las etiquetas `<body>`. Comienza con una cabecera (`<header>`), donde se incluyen el nombre "Jose Vicente Carratala" y un enlace de correo electrónico. A continuación, se encuentra una sección `<main>` que contiene varios artículos (`<article>`). Cada artículo presenta información similar: una categoría, un título, una descripción y una imagen del mismo archivo `josevicente.jpg`. Esta repetición sugiere la presentación de múltiples entradas o noticias en una página web.
 
-Al final de la página, se encuentra el pie de página que contiene información sobre los derechos de autor. Es importante tener esta estructura porque ayuda a organizar el contenido de una forma legible para los usuarios y cumple con las mejores prácticas del diseño web moderno.
+Finalmente, el pie de página (`<footer>`) incluye un texto que indica los derechos de autor para el año 2025. Este código es útil porque muestra cómo estructurar contenido dinámico en HTML, con un diseño claro y fácil de entender para los visitantes del sitio web.
+
+`006-muchos articulos.html`
 
 ```html
 <!doctype html>
@@ -8416,14 +8809,19 @@ Al final de la página, se encuentra el pie de página que contiene información
 ```
 
 ### estilo estiloso
+<small>Creado: 2025-11-05 13:25</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo HTML que crea una página web simple con un diseño básico pero claro. En la parte superior, se declara el tipo de documento como HTML y se establece el idioma en español. La etiqueta `<head>` contiene información sobre la página, incluyendo el título y el conjunto de caracteres utilizado (UTF-8), que asegura que todos los caracteres especiales sean visibles correctamente. Además, hay una sección de estilo CSS directamente dentro del archivo HTML para estilizar las partes principales de la página: `html`, `body`, `header`, `main` y `footer`.
+Este código HTML crea una página web sencilla con tres secciones principales: encabezado (`header`), contenido principal (`main`) y pie de página (`footer`). La página tiene un diseño claro que usa estilos CSS directamente incorporados en la etiqueta `<style>` dentro del bloque `<head>`. Estos estilos definen el fondo gris para toda la página y proporcionan un aspecto uniforme a las secciones `header`, `main` y `footer`, como un color de fondo blanco, un relleno interno de 20 píxeles, una anchura fija de 800 píxeles, un margen automático para centrarlas en la página y un alineamiento del texto en el centro.
 
-El cuerpo (`<body>`) de la página contiene tres bloques principales divididos por etiquetas `<header>`, `<main>` y `<footer>`. El encabezado (`<header>`) muestra los datos personales del autor, incluyendo su nombre y un correo electrónico. La sección principal (`<main>`) está compuesta por múltiples artículos que presentan categorías, títulos, descripciones y una imagen representativa para cada uno de ellos.
+En la sección principal (`main`), hay varios artículos (`article`) que siguen la misma estructura: categoría (en un párrafo `p`), título (en una etiqueta `h3`), descripción (otro párrafo `p`) y una imagen con el mismo nombre de archivo. Este patrón se repite diez veces, lo que sugiere una galería o lista de artículos similares.
 
-Finalmente, el pie de página (`<footer>`) proporciona información adicional como los derechos de autor del sitio web. Este diseño es importante porque organiza la información en secciones claras y permite a los visitantes navegar fácilmente por diferentes partes del contenido, manteniendo un aspecto visual coherente con las áreas de fondo gris y blanco para el texto principal.
+El encabezado (`header`) contiene información de contacto como un nombre en formato h1 y un correo electrónico en formato h2. El pie de página (`footer`) tiene una línea simple que indica el copyright del año 2025 con el nombre del autor.
+
+Este diseño es útil para entender cómo organizar contenido web en secciones distintas y cómo aplicar estilos uniformes utilizando CSS dentro de la etiqueta `<style>`.
+
+`007-estilo estiloso.html`
 
 ```html
 <!doctype html>
@@ -8530,14 +8928,19 @@ Finalmente, el pie de página (`<footer>`) proporciona información adicional co
 ```
 
 ### grid
+<small>Creado: 2025-11-05 13:25</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que utiliza CSS para diseñar la disposición y el estilo del contenido. La estructura principal incluye tres secciones: `header`, `main` y `footer`. Cada uno tiene estilos específicos aplicados directamente en la etiqueta `<style>` dentro de la sección `<head>`, lo que afecta aspectos como los colores, el tamaño, el ancho y la ubicación del contenido.
+Este fragmento de código HTML crea una página web sencilla con tres secciones principales: encabezado (`header`), contenido principal (`main`) y pie de página (`footer`). La sección `main` utiliza CSS para organizar los artículos en un diseño de cuadrícula (grid) que contiene varios bloques de contenido. Cada artículo incluye una categoría, un título, una descripción y una imagen.
 
-En particular, la parte más relevante es la utilización de CSS Grid para organizar las `article` (artículos) en el bloque principal. Esta técnica permite distribuir automáticamente estos elementos en una cuadrícula con tres columnas, manteniendo un espacio definido entre cada artículo y asegurando que todo quede centrado en la página.
+En la parte superior del archivo HTML, hay una declaración DOCTYPE seguida por las etiquetas `<html>` e `<head>`, donde se especifican el idioma de la página (`es`) y se define el título de la página. Dentro del bloque `<style>` en la sección `<head>`, se establecen estilos CSS para dar formato a los elementos como colores de fondo, márgenes automáticos para centrar las áreas principales y un diseño de cuadrícula que divide el contenido principal en tres columnas.
 
-El uso de esta técnica es importante porque facilita la creación de diseños web modernos y responsivos sin necesidad de usar tantos contenedores o tablas HTML. Además, ayuda a mantener el código más limpio y estructurado, lo cual es clave para un mantenimiento sencillo y una presentación visualmente atractiva del sitio web.
+La estructura del archivo HTML es típica para páginas web estáticas. La sección `header` contiene información sobre el autor o la fuente de la página, mientras que la sección `footer` incluye los créditos y derechos de autor. En la sección `main`, cada artículo tiene un formato similar con una imagen que ocupa todo el ancho del artículo.
+
+Este diseño es importante porque permite organizar y presentar varios artículos en una página web de manera clara y ordenada, usando la tecnología CSS Grid para gestionar espacios y alineaciones.
+
+`008-grid.html`
 
 ```html
 <!doctype html>
@@ -8648,6 +9051,36 @@ El uso de esta técnica es importante porque facilita la creación de diseños w
 </html>
 ```
 
+### Actividades propuestas
+
+### Actividades Propuestas
+
+1. **Estructura Básica de una Página Web**
+   - **Descripción:** Crea un archivo HTML que incluya las etiquetas básicas como `<doctype>`, `<html>`, `<head>`, y `<body>`. Añade un título en el `<title>` y un elemento `meta` para la codificación. Esta actividad te ayudará a entender la estructura básica de una página web.
+
+2. **Incluir Secciones (Header, Main, Footer)**
+   - **Descripción:** En base al archivo 002-secciones.html, completa el esqueleto HTML con las secciones `header`, `main` y `footer`. Aprenderás a organizar el contenido en diferentes partes de la página.
+
+3. **Añadir Contenido a la Cabecera**
+   - **Descripción:** Utilizando el archivo 003-cabecera.html como referencia, añade un título principal (`<h1>`) y una subsección (`<h2>`). Aprenderás a estructurar información relevante en la cabecera de tu página.
+
+4. **Incluir Pie de Página**
+   - **Descripción:** Modifica el archivo 003-cabecera.html para incluir un pie de página con copyright y año actual, como se muestra en 004-pie de pagina.html. Aprenderás a incorporar información legal y derechos de autor en tu sitio web.
+
+5. **Crear Artículos Individuales**
+   - **Descripción:** Inspirado en 005-articulo.html, crea un archivo HTML que contenga una estructura básica para un artículo con categoría, título y descripción. Aprenderás a organizar el contenido de manera clara utilizando etiquetas adecuadas.
+
+6. **Manejo de Múltiples Artículos**
+   - **Descripción:** Utilizando 006-muchos articulos.html como ejemplo, agrega varios artículos con categorías, títulos y descripciones en la sección principal. Aprenderás a gestionar múltiples bloques de contenido dentro de un sitio web.
+
+7. **Estilo Básico con CSS Interno**
+   - **Descripción:** Inspirado en 007-estilo estiloso.html, añade una hoja de estilo interna para definir el color de fondo del `body`, y margen y ancho para las secciones principales (`header`, `main` y `footer`). Aprenderás a mejorar la apariencia visual básica utilizando CSS.
+
+8. **Diseño Grid con CSS**
+   - **Descripción:** Con base en 008-grid.html, añade reglas de CSS grid a tu página para organizar los artículos en columnas. Aprenderás a utilizar la disposición por grillas para presentar información de manera visualmente atractiva y organizada.
+
+Estas actividades están diseñadas para que los estudiantes de Formación Profesional adquieran conocimientos prácticos sobre cómo estructurar, organizar e implementar estilos en páginas web utilizando HTML y CSS.
+
 
 <a id="ejercicio-de-final-de-unidad"></a>
 ## Ejercicio de final de unidad
@@ -8657,24 +9090,30 @@ El uso de esta técnica es importante porque facilita la creación de diseños w
 Este conjunto de ejercicios en Python aborda los conceptos básicos de programación, incluyendo impresión de texto, uso y manipulación de variables, entrada de datos del usuario, tipos de datos, operadores aritméticos y de comparación, así como la conversión entre diferentes tipos de datos. Los ejercicios van desde simples saludos hasta cálculos más complejos como calcular impuestos, lo que permite a los estudiantes familiarizarse con flujo básico de programas y buenas prácticas en programación, como el uso adecuado de comentarios y estructuración del código.
 
 ### Holamundo
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código es muy sencillo y se utiliza comúnmente como el primer programa que escriben los estudiantes de programación. La función `print()` en Python se encarga de mostrar o "imprimir" lo que le indiques entre paréntesis en la pantalla. En este caso, el programa está diciendo "Hola mundo desde Python". Esta frase es un saludo clásico que ayuda a confirmar que el entorno de programación está configurado correctamente y que puedes ejecutar comandos básicos en Python. Es importante porque te familiariza con cómo funciona la función `print()` y te da confianza para pasar a programas más complejos.
+Este fragmento de código en Python es muy sencillo y básico. La función `print()` se utiliza para mostrar texto o datos en la pantalla. En este caso, el programa imprime "Hola mundo desde Python" directamente en la consola cuando se ejecuta. Este ejemplo clásico de "Hola Mundo" sirve como un punto de partida perfecto para aprender a programar, ya que muestra cómo hacer una salida básica al usuario y te ayuda a verificar que tu entorno de desarrollo está configurado correctamente para ejecutar scripts Python.
+
+`001-Holamundo.py`
 
 ```python
 print("Hola mundo desde Python")
 ```
 
 ### variables
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código es una parte básica de un programa en Python que se encarga de asignar valores a dos variables. La primera línea, `nombre = "Jose Vicente"`, crea una variable llamada `nombre` y le da como valor la cadena de texto `"Jose Vicente"`. Las comillas indican que este valor es un texto (o cadena) en lugar de un número.
+Este fragmento de código en Python está creando dos variables y asignándoles valores específicos. La primera línea `nombre = "Jose Vicente"` crea una variable llamada `nombre` e inicializa esta variable con el texto `"Jose Vicente"`. En programación, este tipo de dato se llama cadena (string), que es simplemente un conjunto de caracteres entre comillas.
 
-La segunda línea, `edad = 47`, hace lo mismo pero para otra variable. Aquí, se crea una variable llamada `edad` y le asigna el valor numérico 47. Este tipo de dato se conoce como entero o int en programación.
+La segunda línea `edad = 47` crea otra variable llamada `edad`, pero en lugar de asignarle una cadena, le da un número entero (`47`). Este valor representa la edad del individuo cuyo nombre está almacenado en la variable `nombre`.
 
-Estas dos líneas son fundamentales porque permiten que tu programa almacene e identifique información importante sobre una persona (como su nombre y edad), lo cual es útil para muchas aplicaciones, desde bases de datos hasta juegos interactivos.
+Este código es importante porque muestra cómo se pueden definir y utilizar variables para almacenar diferentes tipos de datos (cadenas y números) que luego puedes usar en otras partes de tu programa, por ejemplo, para mostrar información o realizar cálculos.
+
+`002-variables.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -8682,14 +9121,15 @@ edad = 47
 ```
 
 ### salidas
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código en Python muestra cómo imprimir información en la pantalla del ordenador. Primero, se crea una variable llamada `nombre` y se le asigna el valor `"Jose Vicente"`. Esto significa que estamos guardando el texto "Jose Vicente" en un espacio de memoria que ahora podemos referirnos a él como `nombre`.
+Este código en Python muestra cómo se imprime información en la pantalla usando una función llamada `print()`. Primero, se crea una variable llamada `nombre` y se le asigna el valor `"Jose Vicente"`, que es simplemente un texto entre comillas. Luego, con la instrucción `print("Mi nombre es", nombre)`, se hace que Python muestre en pantalla dos cosas: el texto "Mi nombre es" seguido del contenido de la variable `nombre`. Esto significa que cuando ejecutas este código, verás algo como "Mi nombre es Jose Vicente" en la consola o terminal. Es una forma básica pero importante de mostrar información al usuario mientras usa un programa.
 
-Luego, la función `print()` es utilizada para mostrar por pantalla el mensaje `"Mi nombre es"` seguido del contenido de la variable `nombre`, que hemos definido antes. En otras palabras, cuando ejecutas este código, verás en la pantalla: "Mi nombre es Jose Vicente".
+Este tipo de código es fundamental porque te permite comunicar información desde tu programa hacia el mundo exterior, lo cual es crucial cuando deseas que tus programas interactúen con los usuarios o generen reportes y salidas de datos.
 
-Es importante porque muestra cómo se pueden combinar texto y variables para crear mensajes personalizados. Esto te permite hacer programas más interactivos y útiles ya que puedes usar diferentes valores para `nombre` sin tener que cambiar todo el mensaje de salida.
+`003-salidas.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -8697,14 +9137,17 @@ print("Mi nombre es",nombre)
 ```
 
 ### variar una variable
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código Python muestra cómo se puede cambiar el valor de una variable durante la ejecución del programa. En primer lugar, la variable `nombre` se inicializa con el valor "Jose Vicente". Luego, se imprime en pantalla un mensaje que indica "Mi nombre es" seguido del valor actual de la variable `nombre`, que en este caso sería "Jose Vicente".
+Este código muestra cómo se pueden cambiar y utilizar variables en Python. Inicialmente, la variable `nombre` se asigna con el valor `"Jose Vicente"`. Luego, se imprime en pantalla un mensaje que incluye esta variable utilizando la función `print()`, lo que resulta en "Mi nombre es Jose Vicente".
 
-Después, el código cambia el valor de la variable `nombre` a "Juan", y vuelve a imprimir el mismo mensaje pero ahora con el nuevo valor de la variable. Esto demuestra cómo las variables pueden ser modificadas y cómo esos cambios afectan al comportamiento del programa.
+Después de esto, la variable `nombre` cambia su valor a `"Juan"`. De nuevo, el código utiliza la función `print()` para mostrar este cambio, generando el mensaje "Mi nombre es Juan". 
 
-Este tipo de ejemplos es importante porque te ayuda a entender que en programación, las variables son como cajas donde puedes guardar información y cambiarla cuando sea necesario para hacer diferentes cosas con ella durante la ejecución del programa.
+Este ejemplo ilustra cómo las variables pueden almacenar diferentes valores durante la ejecución del programa y cómo estos cambios afectan los resultados mostrados en pantalla. Es importante entender que una vez que se cambia el valor de una variable, todas las referencias posteriores a esa variable utilizarán el nuevo valor asignado.
+
+`004-variar una variable.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -8715,10 +9158,17 @@ print("Mi nombre es",nombre)
 ```
 
 ### identificadores permitidos
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código en Python está mostrando ejemplos de cómo definir variables con diferentes nombres y formas, pero también destaca cuáles son las reglas para nombrar variables válidas en Python. Primero, se crean dos variables llamadas `nombre` e `nombre2`, que almacenan cadenas como "Jose" y "Vicente". Luego, hay varias líneas comentadas que muestran ejemplos de nombres de variables que no son permitidos por el lenguaje Python: una variable con un número al principio (`2nombre`), una con guiones bajos en lugar de espacios (`nombre-completo`) y otra con espacios dentro del nombre (`nombre completo`). Finalmente, se muestra una variable llamada `nombreCompleto`, la cual es válida pero no recomendada debido a su falta de claridad. Es importante entender estas reglas para nombrar variables correctamente y escribir código legible y mantenible.
+Este código muestra ejemplos de cómo definir variables en Python y cuáles son los nombres válidos para ellas. Se definen varias variables llamadas `nombre`, `nombre2`, `nombre_completo` e `nombreCompleto`, cada una asignada con un valor string (cadenas de texto). El código también incluye comentarios que indican nombres de variables que no son permitidos en Python, como `2nombre`, `nombre-completo` y `nombre completo`.
+
+En Python, los nombres de las variables deben comenzar con una letra o el carácter subrayado `_`. No pueden empezar con un número ni contener caracteres especiales como guiones (-) o espacios. Además, aunque la combinación de palabras sin espacios en mayúsculas (como `nombreCompleto`) es válida y puede ser usada para definir variables, esta convención se suele reservar para constantes o valores que no cambian durante la ejecución del programa.
+
+Este ejemplo es importante porque ayuda a entender las reglas de nomenclatura en Python, lo cual es fundamental para escribir código legible y mantener un buen estilo de programación.
+
+`005-identificadores permitidos.py`
 
 ```python
 nombre = "Jose"
@@ -8731,16 +9181,31 @@ nombreCompleto = "Jose Vicente" # Es legal pero no se recomienda
 ```
 
 ### comentarios
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código te muestra dos tipos diferentes de comentarios que se utilizan en Python. Los comentarios son muy importantes porque ayudan a explicar qué hace el código y por qué está escrito de cierta manera, especialmente para otros programadores o para ti mismo en un futuro cuando tengas que revisarlo.
+Este fragmento de código muestra dos tipos diferentes de comentarios en Python. Los comentarios son bloques de texto que el intérprete de Python ignora y no ejecuta como parte del programa, pero que sirven para documentar o explicar partes específicas del código para otros programadores (o para ti mismo más adelante).
 
-El primer tipo es un comentario de una sola línea, iniciado con el símbolo numeral (#). Todo lo que escribas después del numeral en esa línea no será ejecutado por Python y sirve para anotar cualquier información relevante sobre ese código específico.
+El primer tipo es un comentario de una sola línea. En este caso, se usa el símbolo de almohadilla (`#`) al principio de la línea para indicar que todo lo que sigue en esa línea hasta el final es un comentario. Por ejemplo:
 
-El segundo tipo son los comentarios multilinea. Se inician y terminan con tres apóstrofes (""") o comillas triples ('''). Todo lo que esté entre estos marcadores se considerará un comentario, permitiéndote explicar conceptos más complejos o añadir descripciones detalladas sobre varias líneas de código.
+```python
+# Esto es un comentario de una única línea
+```
 
-Ambos tipos de comentarios son esenciales para mantener tu código limpio y fácil de entender.
+El segundo tipo son los comentarios multilinea o bloques de comentarios, que se encierran entre triples comillas simples (```''' ... '''```) al inicio y fin del bloque. Estos pueden extenderse a través de varias líneas para proporcionar información más detallada:
+
+```python
+'''
+    Esto es un comentario
+    Esto sigue siendo un comentario
+    Y esto también lo es
+'''
+```
+
+Estos comentarios son especialmente útiles cuando necesitas documentar partes complejas del código o añadir explicaciones adicionales sobre cómo funciona cierta parte del programa. Es importante usarlos de manera adecuada para mejorar la legibilidad y mantenimiento del código.
+
+`006-comentarios.py`
 
 ```python
 # Esto es un comentario de una única línea
@@ -8753,10 +9218,13 @@ Ambos tipos de comentarios son esenciales para mantener tu código limpio y fác
 ```
 
 ### Explicacion del codigo
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código en Python define una variable llamada `edad` y le asigna un valor numérico. En esta línea, `edad` es el nombre que elegimos para la variable, a la cual podemos referirnos más tarde en nuestro programa para obtener o modificar este valor. El signo igual (`=`) no significa "es igual a" matemáticamente, sino que es el operador de asignación, lo que indica que queremos guardar el número 47 (el valor literal) en la variable `edad`. Es importante entender esto porque nos permite manipular datos dentro del programa, por ejemplo, para realizar cálculos o tomar decisiones basadas en este valor.
+Este fragmento de código en Python define una variable llamada `edad` y le asigna un valor específico. En esta línea, `edad` es el nombre del elemento que estás creando o utilizando en tu programa; puedes pensar en él como un contenedor donde guardas información. El signo igual (`=`) se utiliza para decirle a Python que quieras guardar o modificar lo que está después de este signo dentro del contenedor `edad`. En este caso, el valor que estás almacenando es `47`, que es un número entero y en programación se conoce como "literal" porque representa directamente el valor que quieres usar. Este código es importante porque te permite guardar datos específicos para referirte a ellos más tarde durante la ejecución del programa, lo cual es fundamental para realizar cálculos o tomar decisiones basadas en estos valores.
+
+`007-Explicacion del codigo.py`
 
 ```python
 edad = 47
@@ -8766,10 +9234,15 @@ edad = 47
 ```
 
 ### Tipos de datos
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código es fundamental para entender cómo se declaran variables y los tipos de datos básicos en Python. Aquí, el programa establece cuatro variables: `nombre`, `edad`, `altura` y `vivo`. Cada una representa un tipo de dato diferente: `nombre` almacena un texto (o cadena) que es "Jose Vicente", `edad` contiene un número entero, en este caso 47, `altura` guarda un valor decimal o flotante con el número 1.78 y finalmente `vivo` utiliza un dato booleano para indicar un estado verdadero (True). Este tipo de declaraciones es crucial porque permite a los programas manejar diferentes tipos de información de manera efectiva, siendo cada tipo adecuado para representar datos específicos según las necesidades del programa.
+Este fragmento de código está asignando valores diferentes a varias variables en Python, cada una representando un tipo de dato distinto. La primera variable se llama `nombre` y almacena el texto "Jose Vicente", lo que significa que es una cadena (string) de caracteres. Luego, la variable `edad` contiene el número 47, que es un entero o int en lenguaje técnico. La variable `altura` tiene asignado el valor 1.78, que es un número decimal también conocido como float en Python. Finalmente, se declara una variable llamada `vivo`, la cual almacena un valor booleano True, indicando probablemente que la persona está viva.
+
+Este bloque de código es importante porque demuestra cómo manejar diferentes tipos de datos en Python: strings para texto, int para números enteros, float para números con decimales y bool para valores lógicos (verdadero o falso). Es fundamental entender estos conceptos para trabajar eficazmente con variables en programación.
+
+`008-Tipos de datos.py`
 
 ```python
 nombre = "Jose Vicente" # Cadena
@@ -8779,14 +9252,15 @@ vivo = True # Booleano
 ```
 
 ### Entradas
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código te permite interactuar con el usuario para recoger información. En este caso, la primera línea `input("Dime tu nombre: ")` muestra un mensaje en pantalla pidiendo al usuario que introduzca su nombre. El texto entre paréntesis es lo que se ve en pantalla como una invitación al usuario.
+Este fragmento de código en Python te permite interactuar con el usuario para obtener su nombre y luego mostrarlo en la pantalla. La primera línea usa la función `input()`, que espera que el usuario introduzca un texto a través del teclado. Cuando se introduce el nombre, Python almacena ese texto en una variable llamada `nombre`. La segunda línea utiliza la función `print()` para mostrar en pantalla el mensaje "Tu nombre es: ", seguido del contenido de la variable `nombre`, que es el nombre introducido por el usuario.
 
-Cuando el usuario teclea su nombre y pulsa Enter, el programa guarda esa entrada (el nombre) en la variable `nombre`. Luego, con la línea `print("Tu nombre es: ", nombre)`, el programa muestra por pantalla un mensaje que indica qué ha introducido el usuario. De esta manera, ves cómo Python permite recibir datos del usuario y luego procesar o mostrar esa información de forma inmediata.
+Este código es importante porque muestra cómo capturar información del usuario y luego procesarla o visualizarla. Es una habilidad fundamental cuando se trabaja con programas interactivos en Python, ya sea para crear formularios web sencillos o aplicaciones de consola que necesiten interactuar directamente con el usuario.
 
-Esta interacción básica entre el programa y el usuario es fundamental en la programación para crear aplicaciones interactivas que respondan a lo que introduce una persona.
+`009-Entradas.py`
 
 ```python
 nombre = input("Dime tu nombre: ")
@@ -8794,12 +9268,17 @@ print("Tu nombre es: ",nombre)
 ```
 
 ### Entrada y problema
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código en Python solicita al usuario que introduzca su edad y luego muestra por pantalla el doble de esa edad, aunque hay un pequeño error en la lógica. Primero, el programa utiliza la función `input()` para pedirle al usuario que ingrese su edad; esta entrada es capturada como una cadena de texto (es decir, entre comillas) y se guarda en la variable `edad`. Luego, el programa imprime por pantalla un mensaje que indica "El doble de tu edad es:" seguido del valor almacenado en `edad`, sin realizar ningún cálculo para calcular realmente el doble. Es importante notar que si quisieras mostrar efectivamente el doble de la edad, deberías convertir primero el texto ingresado a un número y luego multiplicarlo por dos antes de imprimirlo.
+Este fragmento de código en Python solicita al usuario que ingrese su edad y luego muestra por pantalla el doble de esa edad. Primero, la línea `edad = input("Dime tu edad: ")` crea una ventana o campo en la consola donde se le pide al usuario que introduzca su edad. El valor ingresado por el usuario se guarda en la variable llamada `edad`. Es importante notar que, aunque normalmente pensamos en la edad como un número entero, esta entrada es de tipo cadena (string) porque `input` siempre devuelve una cadena.
 
-Este código es útil para aprender cómo interactuar con el usuario (mediante `input`) y cómo manipular y mostrar datos en Python. Sin embargo, está incompleto ya que no realiza la operación matemática requerida ni muestra correctamente el doble de la edad del usuario.
+Luego, con la línea `print("El doble de tu edad es: "+edad)`, el programa imprime por pantalla un mensaje junto con el valor que el usuario ingresó. Sin embargo, hay un error conceptual aquí ya que este código muestra simplemente el número que se introdujo dos veces en lugar del doble del número ingresado realmente. Para calcular el doble de la edad, necesitaríamos convertir `edad` a un tipo numérico (por ejemplo, entero o float) antes de hacer la operación matemática.
+
+Este código es importante porque demuestra cómo interactuar con el usuario para recoger información y luego presentarla nuevamente. Sin embargo, debe corregirse para cumplir adecuadamente con su propósito de mostrar el doble del valor numérico ingresado por el usuario.
+
+`010-Entrada y problema.py`
 
 ```python
 edad = input("Dime tu edad: ")
@@ -8807,12 +9286,15 @@ print("El doble de tu edad es: "+edad)
 ```
 
 ### Cambio de tipo de dato
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código Python realiza una serie de pasos para interactuar con el usuario y realizar cálculos sencillos. En primer lugar, el programa solicita al usuario que ingrese su edad a través del teclado. La entrada proporcionada por el usuario se guarda en la variable `edad` como un texto (string). Luego, es crucial convertir esta entrada de texto en un número entero para poder hacer operaciones matemáticas con él; esto se logra usando la función `int()`, que transforma el valor de `edad` a un número entero y lo almacena en la variable `entero`. Finalmente, el programa calcula el doble de este número entero y trata de mostrarlo en pantalla. Sin embargo, aquí hay un error: cuando intentamos combinar (concatenar) un texto con un número usando el operador `+`, Python necesita que ambos sean del mismo tipo; por lo tanto, es necesario convertir el resultado a texto antes de imprimirlo.
+Este fragmento de código te ayuda a entender cómo convertir datos ingresados por el usuario en diferentes tipos y realizar operaciones con ellos. Primero, el programa pide al usuario que ingrese su edad, pero la entrada del usuario siempre se guarda como una cadena (texto), aunque el usuario introduzca un número. Luego, para poder hacer cálculos matemáticos con esa edad, convierte la cadena en un número entero usando `int(edad)`. Después de eso, calcula el doble de esa edad multiplicando el número por 2. Finalmente, intenta mostrar el resultado por pantalla usando `print`, pero hay un error aquí porque no se puede concatenar directamente una cadena (`"El doble de tu edad es: "`) con un número entero sin convertir primero el número a cadena o usar la función `format`.
 
-Es importante corregir ese último paso para que el programa funcione correctamente.
+Es importante aprender este proceso para poder realizar cálculos con los datos que los usuarios ingresan en tus programas, y también para entender cómo manejar errores como el que se muestra aquí.
+
+`011-Cambio de tipo de dato.py`
 
 ```python
 # Le pregunto al usuario por su edad
@@ -8826,12 +9308,19 @@ print("El doble de tu edad es: "+doble)
 ```
 
 ### literales
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código muestra ejemplos simples de cómo se definen variables en Python. En primer lugar, la línea `nombre = "Jose Vicente"` crea una variable llamada `nombre` que almacena un texto específico entre comillas, lo cual significa que el valor es del tipo cadena (string). Luego, con la línea `edad = 47`, se define otra variable llamada `edad` que contiene el número entero 47. Aquí, "Jose Vicente" y 47 son ejemplos de literales; en otras palabras, son valores específicos codificados directamente en el código, no generados por cálculos o entradas del usuario.
+Este código Python define dos variables, `nombre` e `edad`, y les asigna valores literales. Un valor literal en programación es simplemente un dato que se especifica directamente sin la necesidad de cálculos o transformaciones previas.
 
-Es importante entender cómo trabajar con diferentes tipos de datos como cadenas (para texto) e inteiros (números enteros), ya que estos forman la base para realizar operaciones más complejas en programas de Python.
+En el primer bloque, `nombre = "Jose Vicente"`, se está creando una variable llamada `nombre` y se le asigna una cadena de texto (string) `"Jose Vicente"`. Esto significa que cuando se utilice la variable `nombre` en otras partes del programa, siempre se referirá a esta frase específica.
+
+En el segundo bloque, `edad = 47`, también se crea una variable llamada `edad` pero esta vez almacena un número entero (integer) con el valor 47. Este tipo de dato numérico es utilizado comúnmente para representar cantidades discretas, como en este caso la edad.
+
+Estos ejemplos son fundamentales porque muestran cómo almacenamos información básica en variables utilizando tipos de datos diferentes, lo que permite a los programas manejar y procesar distintos tipos de información según sea necesario.
+
+`012-literales.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -8842,10 +9331,17 @@ edad = 47
 ```
 
 ### constantes
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código en Python muestra cómo se puede cambiar el valor de una variable que inicialmente pretendía ser constante. Comenzamos definiendo `PI` como un número, específicamente 3.1415, y luego imprimimos su valor para mostrar lo que contiene actualmente. El propósito principal de este código es ilustrar la diferencia entre conceptos teóricos y la realidad en programación: aunque en matemáticas π (pi) se considera una constante cuyo valor no cambia, en Python podemos cambiar el valor de cualquier variable, incluso si pretendemos que sea constante. Posteriormente, reasignamos a `PI` un nuevo valor, 4, y lo volvemos a imprimir para demostrar que efectivamente su valor ha cambiado. Es importante entender esta diferencia ya que, aunque es una buena práctica en programación nombrar variables con mayúsculas si se supone que son constantes (como aquí con `PI`), el lenguaje de Python no impide cambiar este valor por completo.
+Este código es un ejemplo sencillo sobre cómo se utilizan las constantes y las variables en Python. Al principio, el programa define una variable llamada `PI` y le asigna el valor de 3.1415, que es una aproximación del número π (pi). Luego imprime este valor en pantalla.
+
+Después, vuelve a definir la misma variable `PI`, pero esta vez le cambia el valor a 4 e imprime nuevamente el valor actual de `PI`. Aunque se recomienda usar mayúsculas para indicar que una variable es una constante (es decir, un valor que no debería cambiar durante la ejecución del programa), en realidad en Python puedes cambiar el valor de cualquier variable en cualquier momento. Sin embargo, seguir esta convención ayuda a otros programadores a entender mejor tu código y evitar posibles errores al suponer que ciertos valores son invariables.
+
+Es importante recordar siempre usar mayúsculas para las constantes y minúsculas para las variables propiamente dichas para mantener la claridad en el código.
+
+`013-constantes.py`
 
 ```python
 PI = 3.1415
@@ -8860,14 +9356,15 @@ print("PI vale",PI)
 ```
 
 ### Diferencia
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código en Python muestra cómo se pueden reasignar variables, pero también plantea un problema importante que debes entender. Primero, se define una constante llamada `PI` y se le asigna el valor numérico 3.1416, que es una aproximación del número matemático π (pi). Este valor está pensado para representar la circunferencia de un círculo divida por su diámetro en matemáticas.
+Este código Python muestra una diferencia importante entre cómo se manejan las constantes y los literales en programación. Al principio, se define `PI` como un número decimal con el valor de 3.1416, lo que comúnmente usamos para representar la constante matemática π (pi) aproximadamente. Sin embargo, después se cambia ese mismo nombre (`PI`) a una cadena de texto ("unnumero"). Esto demuestra que en Python, y en la mayoría de los lenguajes de programación, puedes reasignar un valor a una variable sin restricciones sobre su tipo previo. 
 
-Sin embargo, en la segunda línea, el código cambia radicalmente: se reasigna a `PI` con una cadena de texto "unnumero". Esto significa que después de esta asignación, `PI` ya no es un número decimal, sino una cadena de caracteres. Este cambio puede causar errores graves si el resto del programa espera que `PI` sea un valor numérico para realizar cálculos matemáticos.
+Lo importante aquí es entender que aunque inicialmente `PI` fue considerado como un número (literal numérico), se puede cambiar fácilmente para que sea otra cosa, en este caso, un texto ("unnumero"). Esto ilustra la falta de tipos estáticos en Python y cómo las variables pueden ser flexibles en términos de almacenar diferentes tipos de datos a lo largo del tiempo. Sin embargo, es una mala práctica en programación cambiar el tipo de dato de una variable que inicialmente representaba un valor específico, ya que puede llevar a errores difíciles de depurar más adelante en el código.
 
-Es crucial entender este código porque muestra cómo en Python (y en la mayoría de los lenguajes de programación) las variables pueden cambiar su tipo y valor durante la ejecución. Asegurarse de que tus variables mantengan el tipo correcto es fundamental para evitar errores en tu programa.
+`014-Diferencia.py`
 
 ```python
 
@@ -8880,14 +9377,23 @@ PI = "unnumero"
 ```
 
 ### operadores aritmeticos
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código Python muestra cómo usar diferentes operadores aritméticos en la programación. Los operadores que se están utilizando son: suma (+), resta (-), multiplicación (*), división (/) y el operador módulo (%). Cada línea del código realiza una operación matemática básica entre los números 4 y 3, imprimiendo el resultado de cada cálculo en la consola. 
+Este fragmento de código en Python muestra cómo se utilizan varios operadores aritméticos básicos. Los operadores aritméticos permiten realizar cálculos matemáticos entre números. En este caso, el código realiza cinco tipos diferentes de operaciones:
 
-La primera línea suma 4 y 3 para dar como resultado 7. La segunda resta 3 de 4, resultando en 1. La tercera multiplica 4 por 3, dando un total de 12. La cuarta divide 4 entre 3, lo que da una aproximación decimal de 1.333333. Finalmente, el operador módulo (%), calcula el resto de la división entre 4 y 3, resultando en 1.
+1. La primera línea suma 4 y 3.
+2. La segunda resta 3 de 4.
+3. La tercera multiplica 4 por 3.
+4. La cuarta divide 4 entre 3.
+5. Finalmente, la quinta línea calcula el residuo (resto) cuando se divide 4 entre 3.
 
-Este tipo de código es fundamental para comprender cómo los lenguajes de programación manejan cálculos matemáticos básicos, lo que es crucial para desarrollar aplicaciones más complejas que requieren operaciones aritméticas.
+Estos ejemplos son fundamentales para entender cómo realizar operaciones matemáticas en Python y son útiles en una variedad de situaciones donde necesites hacer cálculos simples o más complejos.
+
+ÚLTIMO PÁRRAFO: Comparado con el archivo anterior, este código ha cambiado completamente la idea. Mientras que antes se centraba en mostrar la diferencia entre constantes y literales, ahora introduce conceptos básicos de operaciones matemáticas mediante operadores aritméticos.
+
+`014-operadores aritmeticos.py`
 
 ```python
 print(4+3)
@@ -8898,12 +9404,15 @@ print(4%3)
 ```
 
 ### operadores de comparacion
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código está utilizando operadores de comparación en Python para evaluar diferentes relaciones entre los números 4 y 3. Los operadores '<', '>', '==' (igual a), '!=' (distinto de), '<=' (menor o igual que) y '>=' (mayor o igual que) son usados para comparar estos dos valores numéricos. Cada línea del código compara los números 4 y 3 utilizando uno de estos operadores y luego imprime el resultado en la consola, que será True (verdadero) si la condición es cierta, y False (falso) si no lo es.
+Este código muestra cómo usar diferentes operadores de comparación en Python para verificar relaciones entre números. Cada línea compara el número 4 con el número 3 utilizando un operador diferente (menor que `<`, menor o igual `<=`, mayor que `>`, mayor o igual `>=`, igual a `==` y distinto de `!=`). Cuando se ejecuta, el programa imprime en la pantalla si cada comparación es verdadera (`True`) o falsa (`False`). Por ejemplo, al comprobar `4 < 3`, el resultado será `False` porque cuatro no es menor que tres. Estos operadores son fundamentales para tomar decisiones en programas de computadora y formar parte del control lógico del flujo de ejecución en la programación.
 
-Este tipo de comparaciones son fundamentales en programación para tomar decisiones basadas en condiciones. Por ejemplo, puedes usar estos operadores dentro de estructuras como 'if' para ejecutar código solo cuando una condición específica sea verdadera. Es importante entender cómo funcionan estas comparaciones porque te permiten controlar el flujo de tu programa y hacer que haga cosas útiles según diferentes situaciones.
+Estos operadores ayudan a los desarrolladores a establecer condiciones dentro del código, lo cual es crucial para la implementación de estructuras condicionales como `if`, `elif` y `else`. Conocer cómo funcionar con estos operadores permite crear programas más dinámicos que pueden reaccionar a diferentes situaciones según las entradas o los cálculos realizados.
+
+`015-operadores de comparacion.py`
 
 ```python
 print(4 < 3)
@@ -8915,14 +9424,15 @@ print(4 != 3)
 ```
 
 ### operadores arimeticos abreviados
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código muestra cómo modificar el valor de una variable llamada `edad` utilizando operaciones aritméticas básicas. Primero, se establece que la edad es 47 años. Luego, se muestran dos formas diferentes de hacer las mismas operaciones: primero usando operadores tradicionales y luego usando operadores abreviados (también conocidos como operadores compuestos).
+Este fragmento de código muestra cómo modificar un valor usando operadores aritméticos en Python. En el código, la variable `edad` comienza con el valor 47. Primero se realiza una serie de operaciones donde se suma y resta 2 unidades a la edad utilizando tanto los operadores tradicionales (+ para sumar, - para restar) como las versiones abreviadas (+= y -= respectivamente). Luego, muestra cómo duplicar el valor de `edad` usando la multiplicación con y sin la versión abreviada (*=), y finalmente cómo dividirlo por dos utilizando tanto el operador / como /=.
 
-Por ejemplo, para sumar dos unidades a `edad`, el código inicialmente escribe `edad = edad + 2` y luego usa una versión más corta y rápida: `edad += 2`. Esto hace lo mismo pero de una manera más concisa. Este patrón se repite con la resta (`-=`), multiplicación (`*=`) y división (`/=`).
+Estos operadores abreviados son útiles porque hacen que el código sea más conciso y fácil de leer. Por ejemplo, `edad += 2` es una manera rápida de escribir `edad = edad + 2`, lo cual no solo ahorra espacio sino también tiempo al simplificar la escritura del código. Este tipo de operaciones son comunes en programación cuando se necesitan actualizar valores de variables con cálculos sencillos y frecuentes.
 
-Estos operadores abreviados son útiles porque hacen que el código sea más fácil de leer y escribir, especialmente cuando estamos haciendo ajustes pequeños a variables como `edad`. Además, facilitan la programación al reducir la cantidad de teclado necesario para realizar cambios en las variables.
+`016-operadores arimeticos abreviados.py`
 
 ```python
 edad = 47
@@ -8941,18 +9451,19 @@ edad /= 2
 ```
 
 ### operadores booleanos
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código es una introducción a los operadores booleanos en Python, que son herramientas importantes para controlar la lógica en tus programas. Los operadores `and` y `or` se utilizan para combinar múltiples condiciones y evaluar si todas ellas (con `and`) o al menos una de ellas (con `or`) es verdadera.
+Este código muestra cómo funcionan los operadores booleanos en Python, que son fundamentales para la lógica condicional. Los operadores `and` y `or` se utilizan para combinar varias condiciones y determinar si todas o alguna de ellas es verdadera.
 
-En las primeras líneas, el código compara números iguales entre sí y luego utiliza el operador `and` para comprobar si todas las comparaciones son verdaderas. Por ejemplo, en la primera línea se comprueba si 4 es igual a 4, y también si 3 es igual a 3, y finalmente si 2 es igual a 2. Como todas estas comparaciones son ciertas, el resultado será `True`.
+En el primer bloque, las líneas `print(4 == 4 and 3 == 3 and 2 == 2)` e `print(4 == 4 and 3 == 3 and 2 == 1)` evalúan expresiones que combinan tres condiciones con el operador `and`. El resultado será `True` solo si todas las comparaciones son verdaderas. En la primera línea, todas las comparaciones son correctas (verdaderas), por lo que se imprimirá `True`. Sin embargo, en la segunda línea, una de las comparaciones (`2 == 1`) es falsa, por lo que el resultado será `False`.
 
-En contraste, la segunda línea incluye una comparación falsa (`2 == 1`), por lo que toda la expresión evaluada con `and` dará como resultado `False`.
+En el segundo bloque, varias expresiones combinan condiciones con el operador `or`, que devuelve `True` si al menos una de las condiciones es verdadera. Por ejemplo, en la línea `print(4 == 4 or 3 == 3 or 2 == 1)`, todas las comparaciones son correctas excepto la última (`2 == 1`). Aunque esta condición es falsa, el primer par (4 == 4 y 3 == 3) hace que todo sea verdadero. En cambio, en `print(4 == 3 or 3 == 2 or 2 == 1)` ninguna comparación es correcta, por lo que la salida será `False`.
 
-Las últimas líneas usan el operador `or`, que sólo necesita una de las condiciones ser verdadera para devolver `True`. Por ejemplo, en la línea con `4 == 4 or 3 == 2 or 2 == 1`, aunque dos de las comparaciones son falsas (`3 == 2` y `2 == 1`), el resultado será `True` porque `4 == 4` es verdadera.
+Estos ejemplos son cruciales para entender cómo funcionan los operadores booleanos en Python y cómo pueden ser utilizados para controlar el flujo de un programa basado en varias condiciones.
 
-Este tipo de operaciones te permitirá crear programas más inteligentes que pueden tomar decisiones basadas en varias condiciones al mismo tiempo.
+`017-operadores booleanos.py`
 
 ```python
 print(4 == 4 and 3 == 3 and 2 == 2)
@@ -8964,14 +9475,15 @@ print(4 == 3 or 3 == 2 or 2 == 1)
 ```
 
 ### Ejercicio1-Calculadora de impuestos
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código es la cabecera o el encabezado de un archivo Python que contiene una pequeña aplicación llamada "Calculadora de Impuestos". La descripción indica que esta herramienta permite al usuario introducir una base imponible (es decir, el precio antes del impuesto) y luego calcula automáticamente el IVA (Impuesto sobre el Valor Añadido) y el total a pagar después de incluir el impuesto.
+Este fragmento de código es la cabecera o "docstring" de un programa escrito en Python llamado "Calculadora de Impuestos". Esta parte del código describe brevemente qué hace el programa, quién lo creó y cómo funciona. En este caso, el programa permite al usuario introducir una cantidad base imponible (es decir, el precio original antes de aplicar impuestos) y calcula automáticamente cuánto es el IVA sobre esa cantidad y cuál es la suma total después de incluir el IVA.
 
-La cabecera proporciona información valiosa como la versión del programa (v0.1 en este caso), el autor del código (Jose Vicente Carratalá) y una breve descripción de lo que hace la aplicación, lo cual es crucial para entender rápidamente el propósito del archivo sin necesidad de leer todo el código.
+La cabecera del código es importante porque ayuda a otros desarrolladores o al mismo autor en un futuro para recordar rápidamente el propósito y el funcionamiento básico del programa sin tener que analizar todo el código.
 
-Este tipo de encabezado ayuda a otros programadores a comprender fácilmente qué esperar del código cuando lo abren por primera vez y facilita el trabajo en equipo si se trabaja en un proyecto conjunto.
+`018-Ejercicio1-Calculadora de impuestos.py`
 
 ```python
 '''
@@ -8982,14 +9494,17 @@ Este tipo de encabezado ayuda a otros programadores a comprender fácilmente qu�
 ```
 
 ### Calculadora
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código es el inicio de un programa en Python que sirve como una simple calculadora para calcular impuestos, específicamente el IVA (Impuesto sobre Valor Añadido) y el total de una factura. El programa comienza con comentarios que explican su propósito: permite al usuario ingresar la base imponible de una factura y luego calcula el IVA y el total de la factura.
+Este fragmento de código es el inicio del programa en Python que sirve para calcular impuestos, específicamente IVA y total de una factura. El objetivo principal es permitir al usuario introducir la cantidad de la base imponible (el monto inicial antes de aplicar el IVA) y luego realizar cálculos basados en esa entrada.
 
-Las variables `base_imponible`, `total_iva` y `total_factura` son inicializadas en cero para almacenar los valores correspondientes. La parte importante es donde se solicita al usuario que introduzca la base imponible de la factura mediante la función `input()`. Esta línea de código toma el valor ingresado por el usuario (que será una cadena de texto) y lo asigna a la variable `base_imponible`.
+El código comienza con un comentario que describe brevemente lo que hace el programa: pide al usuario que ingrese la base imponible de una factura y calcula tanto el IVA como el total a pagar. Luego, declara tres variables (`base_imponible`, `total_iva` e `total_factura`) todas inicializadas en cero. Estas variables van a almacenar los diferentes valores durante el cálculo.
 
-Es importante notar que esta versión del programa aún no incluye la lógica para calcular realmente el IVA o el total, ya que esa parte sería implementada en las funciones o clases que se mencionan pero no se codifican en este fragmento.
+La línea final del código es donde se utiliza la función `input()` para solicitar al usuario que introduzca el valor de la base imponible. La entrada proporcionada por el usuario será asignada a la variable `base_imponible`. Es importante notar que, en este punto, `base_imponible` todavía está almacenando una cadena de texto (el dato ingresado como texto) y no un número. Para poder realizar cálculos matemáticos, es necesario convertir esta entrada en un tipo numérico adecuado (por ejemplo, entero o flotante).
+
+`019-Calculadora.py`
 
 ```python
 '''
@@ -9012,14 +9527,19 @@ base_imponible = input("Introduce la base imponible de la factura: ")
 ```
 
 ### Calculadora
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este fragmento de código es parte de un programa sencillo en Python que ayuda a calcular impuestos basándose en la base imponible. El programa comienza mostrando mensajes al usuario para explicar su función y obtener la entrada del usuario, en este caso, la base imponible de una factura. Las variables `base_imponible`, `total_iva` y `total_factura` son inicializadas con cero para almacenar los valores que se calculan más adelante.
+Este fragmento de código es un programa en Python que se utiliza para calcular el impuesto sobre la base imponible introducida por el usuario. El programa comienza mostrando al usuario información básica como el nombre del programa y los derechos de autor, seguido de instrucciones sobre lo que hace. Luego, solicita al usuario que ingrese la base imponible de una factura.
 
-El código muestra cómo interactuar con el usuario a través de la consola usando la función `print()` para mostrar mensajes informativos y la función `input()` para solicitar al usuario que introduzca la base imponible. Esta entrada es luego asignada a la variable `base_imponible`. Es importante destacar que este código solo recoge la información del usuario hasta el momento, y los cálculos de IVA y total aún no se realizan en esta parte del programa.
+El código inicializa tres variables: `base_imponible`, `total_iva` y `total_factura`. Estas variables se utilizarán para almacenar respectivamente el valor introducido por el usuario, el cálculo del IVA (que aún no está implementado en este fragmento) y el total de la factura incluyendo el impuesto.
 
-Este tipo de estructura es fundamental para entender cómo interactuar con el usuario mediante entradas y salidas estándar en Python, y sirve como punto de partida para expandir el programa añadiendo la lógica necesaria para calcular el IVA y el total de la factura.
+El programa utiliza la función `print()` varias veces para mostrar mensajes al usuario. Luego, usa la función `input()` para recibir un valor introducido por el usuario y almacenarlo en la variable `base_imponible`. Es importante destacar que esta entrada no se convierte a un tipo numérico (como float o int) y permanece como una cadena de texto.
+
+Este código es útil para entender cómo interactuar con el usuario mediante la consola en Python, recoger datos de entrada y prepararse para realizar cálculos más adelante.
+
+`020-Calculadora.py`
 
 ```python
 '''
@@ -9045,12 +9565,17 @@ base_imponible = input("Introduce la base imponible de la factura: ")
 ```
 
 ### Calculo de IVA
+<small>Creado: 2025-11-03 08:29</small>
 
 #### Explicación
 
-Este código es un programa sencillo que calcula el Impuesto sobre Valor Añadido (IVA) y el total de una factura a partir de la base imponible introducida por el usuario. Al ejecutarse, muestra en pantalla un mensaje de bienvenida y solicita al usuario que ingrese la cantidad sin IVA de una operación comercial. El programa entonces multiplica esta cifra por 21% (la tasa del IVA general), calculando así el monto del IVA. Luego suma este valor al importe base para obtener el total a pagar.
+Este código es un programa simple en Python que calcula el Impuesto sobre Valor Añadido (IVA) y el total de una factura basándose en la base imponible introducida por el usuario. El programa inicia mostrando información básica como un encabezado y instrucciones para el usuario. Luego, solicita al usuario que ingrese la base imponible de la factura.
 
-Es importante destacar que, aunque el código no incluye funciones o clases, sigue un esquema claro de entrada, procesamiento y salida, lo cual es una buena práctica en la programación. Además, esta herramienta puede ser útil en situaciones donde se necesita calcular rápidamente cuánto IVA se debe aplicar a un precio base, como en transacciones comerciales o para fines personales de contabilidad básica.
+El IVA se calcula aplicando un 21% (0.21 en decimal) a la base imponible, y se suma este valor al total de la base imponible para obtener el monto total de la factura. Finalmente, muestra en pantalla tanto el monto del IVA como el total de la factura.
+
+Este programa es útil para entender cómo manejar entradas y salidas de datos en Python, realizar operaciones aritméticas básicas y aprender a estructurar un código simple que soluciona problemas cotidianos relacionados con finanzas.
+
+`021-Calculo de IVA.py`
 
 ```python
 '''
@@ -9085,6 +9610,42 @@ print("El IVA de la factura es: ",total_iva)
 print("El total de la factura es: ",total_factura)
 ```
 
+### Actividades propuestas
+
+### Actividades Propuestas para Estudiantes de Formación Profesional
+
+#### 1. **Saludos y Bienvenida**
+- **Descripción:** El alumnado debe crear un programa que imprima en pantalla un saludo personalizado (por ejemplo, "¡Hola, [nombre]!"). Se espera que los estudiantes entiendan cómo imprimir texto en una consola o terminal y aprendan a usar variables para almacenar e incorporar nombres.
+
+#### 2. **Introducción de Datos**
+- **Descripción:** Los estudiantes deben crear un programa que solicite al usuario su nombre y edad, y luego muestre estos datos por pantalla. Se espera que los alumnos comprendan la entrada de datos con `input()` y cómo utilizar variables para almacenar dichos datos.
+
+#### 3. **Cálculo Básico**
+- **Descripción:** Diseñen un programa en Python que calcule el doble de una edad proporcionada por el usuario. Los estudiantes deben aprender a convertir entradas de texto en números enteros y realizar operaciones matemáticas básicas.
+
+#### 4. **Uso de Variables y Tipos de Datos**
+- **Descripción:** El objetivo es crear un programa que declare variables con diferentes tipos de datos (cadenas, enteros, decimales, booleanos) y muestre el tipo de cada una en la consola para entender mejor cómo funcionan los tipos de datos en Python.
+
+#### 5. **Operaciones Aritméticas**
+- **Descripción:** Los estudiantes deben escribir un programa que permita al usuario ingresar dos números enteros, luego realizar las operaciones básicas (suma, resta, multiplicación y división) y mostrar el resultado de cada una.
+
+#### 6. **Comparaciones Lógicas**
+- **Descripción:** El objetivo es crear un programa que evalúe expresiones lógicas utilizando los operadores de comparación (`==`, `!=`, `<`, `>`, etc.) e imprima si las condiciones son verdaderas o falsas.
+
+#### 7. **Operaciones Aritméticas Simplificadas**
+- **Descripción:** Los alumnos deben modificar un código base para que utilice los operadores de asignación simplificados (`+=`, `-=`) en lugar de las operaciones básicas estándar, aprendiendo así a optimizar el uso de variables.
+
+#### 8. **Operadores Booleanos Compuestos**
+- **Descripción:** Diseñen un programa que use combinaciones de `and` y `or` para evaluar condiciones complejas y muestre en la consola si las condiciones son verdaderas o falsas, ayudando a entender cómo funcionan los operadores booleanos.
+
+#### 9. **Calculadora Simples**
+- **Descripción:** Los estudiantes deben crear una calculadora simple que permita al usuario ingresar dos números y seleccionar entre suma, resta, multiplicación y división para realizar el cálculo correspondiente.
+
+#### 10. **Cálculo de IVA**
+- **Descripción:** El objetivo es implementar un programa que calcule el IVA (21%) de una base imponible proporcionada por el usuario y muestre tanto el importe del IVA como el total a pagar, familiarizándose con conceptos matemáticos en programación.
+
+Estas actividades están diseñadas para introducir gradualmente los estudiantes a diferentes aspectos de la programación Python, desde fundamentos básicos hasta aplicaciones prácticas, adaptadas al nivel y contexto de los ciclos formativos.
+
 
 <a id="examen-final"></a>
 ## Examen final
@@ -9096,16 +9657,13 @@ Esta carpeta contiene una serie de ejercicios que te guían a través del manejo
 A través de estos ejercicios, practicarás competencias esenciales como el diseño de bases de datos relacionales, manipulación de datos con SQL, creación de relaciones entre diferentes entidades, así como la gestión de usuarios y permisos en un servidor de base de datos.
 
 ### crear tablas
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL está configurado para crear una base de datos y dos tablas relacionadas dentro del entorno web. Primero, se crea la base de datos llamada `portafolioceac` con el comando `CREATE DATABASE`. Luego, cambiamos a esta nueva base de datos utilizando `USE portafolioceac`.
+Este código SQL está creando una base de datos llamada `portafolioceac` y dos tablas dentro de ella: `Piezas` y `Categorias`. La tabla `Piezas` almacena información sobre piezas individuales, como su título, descripción, imagen, URL y la categoría a la que pertenece. Cada pieza tiene un identificador único autoincremental. Por otro lado, la tabla `Categorias` contiene datos de las diferentes categorías disponibles, con cada categoría también teniendo un identificador único y campos para el título y la descripción. Este diseño es importante porque permite organizar y relacionar piezas en categorías específicas, facilitando así la búsqueda y la gestión de contenido en una aplicación web o sistema de portafolio.
 
-Dentro de la base de datos, creamos dos tablas: una tabla llamada `Piezas` y otra llamada `Categorias`. La tabla `Piezas` almacena información sobre diferentes piezas, como el título, descripción, imagen, URL, y su respectiva categoría (`id_categoria`). La columna `Identificador` en la tabla `Piezas` es una clave primaria que se autogenera automáticamente con cada nueva entrada (esto significa que cuando añades un nuevo registro a esta tabla, SQL creará automáticamente un número único para el campo `Identificador`).
-
-Por otro lado, la tabla `Categorias` almacena información básica sobre las diferentes categorías disponibles en la base de datos, como el título y descripción. Al igual que con `Piezas`, cada categoría también tiene su propio identificador único generado automáticamente.
-
-Este diseño es importante porque permite organizar de manera efectiva los datos relacionados a través de una clave externa (`id_categoria`), lo cual facilita la consulta y manipulación de información en el sistema, como mostrar todas las piezas pertenecientes a una categoría específica.
+`001-crear tablas.sql`
 
 ```sql
 CREATE DATABASE portafolioceac;
@@ -9130,14 +9688,17 @@ CREATE TABLE Categorias(
 ```
 
 ### insertar
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este código SQL está realizando inserciones en dos tablas diferentes llamadas `Categorias` y `Piezas`. En cada caso, se están añadiendo nuevos registros a estas tablas. La primera línea de la inserción para `Categorias` tiene un valor `NULL`, lo que indica que el campo correspondiente es automático (generalmente una clave primaria autoincrementada). Después del ID, se especifican los detalles de la categoría: su nombre y descripción. Para la tabla `Piezas`, también hay un valor `NULL` inicial, seguido por el nombre de la pieza, una descripción, un archivo de imagen y una URL, además del identificador de la categoría a la que pertenece esa pieza.
+Este fragmento de código SQL se utiliza para insertar datos en dos tablas diferentes: `Categorias` y `Piezas`. En el caso de la tabla `Categorias`, se está agregando una nueva categoría con el nombre 'General' y una descripción que indica que es la categoría general. La primera columna (`id`) se establece en `NULL`, lo cual permite al sistema automatizar el ID, ya sea usando un valor autoincremental o cualquier otra estrategia de gestión de identificadores.
 
-Este tipo de operaciones es crucial en bases de datos para crear nuevos registros desde cero o cargar datos iniciales cuando se crea una nueva aplicación web. Asegura que las tablas tengan información básica antes de comenzar con interacciones más dinámicas y complejas, como agregar nuevas entradas a través de un formulario web.
+En la tabla `Piezas`, también hay una inserción de datos similar. Se añade una pieza con el nombre 'Primera pieza' y su descripción correspondiente. Además, se especifica una imagen asociada a la pieza (en este caso, un archivo llamado 'josevicente.jpg') y un enlace web ('https://jocarsa.com'). El último valor `1` hace referencia al ID de categoría que ha sido previamente insertado en la tabla `Categorias`, lo cual vincula esta pieza a la categoría 'General'.
 
-En resumen, este código es importante porque establece los cimientos para el uso futuro del sistema, permitiendo que tanto la categoría 'General' como una pieza específica estén disponibles desde el inicio en las respectivas tablas.
+Este tipo de inserción es importante porque permite llenar las tablas con datos iniciales, permitiendo así que una aplicación o sistema funcione correctamente desde el principio. Es común encontrar estos scripts SQL en proyectos donde se necesitan establecer registros básicos antes de proceder con operaciones más complejas sobre la base de datos.
+
+`002-insertar.sql`
 
 ```sql
 INSERT INTO Categorias VALUES(
@@ -9157,12 +9718,17 @@ INSERT INTO Piezas VALUES(
 ```
 
 ### fk
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para modificar una tabla llamada "Piezas" en una base de datos. Lo que hace específicamente es añadir una restricción de tipo FOREIGN KEY, la cual establece una relación entre dos tablas: "Piezas" y "Categorias". La columna 'id_categoria' en la tabla "Piezas" se conecta con la columna 'identificador' en la tabla "Categorias", asegurando que cada pieza tenga asociada una categoría válida.
+Este fragmento de código SQL se utiliza para añadir una restricción llamada "clave foránea" a una tabla existente en una base de datos. En este caso, la tabla es "Piezas". La clave foránea, también conocida como FK, se llama `fk_piezas_categorias` y está vinculada a otra tabla llamada "Categorias". Específicamente, esta restricción asegura que el campo `id_categoria` en la tabla "Piezas" debe coincidir con los valores del campo `identificador` en la tabla "Categorias".
 
-La importancia de esta operación radica en mantener la integridad referencial de la base de datos, es decir, garantizar que no haya registros inconsistentes entre las tablas relacionadas. Las opciones ON DELETE CASCADE y ON UPDATE CASCADE indican cómo debe manejar el sistema estas acciones: si se elimina o se actualiza un registro en la tabla "Categorias", la base de datos automáticamente realizará la misma acción para todos los registros en "Piezas" que dependen de esa categoría, evitando así inconsistencias.
+Además de establecer la relación entre estas dos tablas, este código también especifica qué debería hacerse si se eliminan o actualizan registros en la tabla relacionada (en este caso, "Categorias"). Las opciones `ON DELETE CASCADE` y `ON UPDATE CASCADE` indican que si un registro en "Categorias" es borrado o modificado, cualquier cambio debe ser automáticamente reflejado en las referencias correspondientes en "Piezas". Esto ayuda a mantener la integridad de los datos entre las dos tablas.
+
+Es importante entender este tipo de restricciones cuando se trabaja con bases de datos relacionales para garantizar que toda la información sea consistente y coherente.
+
+`003-fk.sql`
 
 ```sql
 ALTER TABLE Piezas
@@ -9173,14 +9739,17 @@ ON UPDATE CASCADE;
 ```
 
 ### selecciones
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL está compuesto por dos consultas separadas que se utilizan para extraer datos de una base de datos. La primera consulta, `SELECT * FROM Categorias;`, selecciona todos los campos y registros de la tabla llamada "Categorias". Esto significa que obtendrás toda la información almacenada en esa tabla sin especificar columnas particulares. De manera similar, la segunda consulta, `SELECT * FROM Piezas;`, hace lo mismo pero con la tabla "Piezas".
+Este fragmento de código SQL consta de dos consultas simples que se utilizan para recuperar datos de dos tablas diferentes en una base de datos. La primera consulta, `SELECT * FROM Categorias;`, selecciona todos los campos y todas las filas de la tabla llamada "Categorias". Esto significa que obtendrás toda la información almacenada en esta tabla sin hacer ninguna selección específica.
 
-Estos comandos son útiles para tener una visión general de los datos que se almacenan en las tablas específicas mencionadas. Al usar el asterisco (`*`), estás pidiendo a SQL que te devuelva todas las columnas disponibles en cada tabla, lo cual es especialmente práctico cuando aún no tienes claro cuáles son exactamente los campos necesarios para tu trabajo o simplemente deseas revisar todos los datos de una sola vez.
+La segunda consulta, `SELECT * FROM Piezas;`, hace lo mismo pero para una tabla distinta llamada "Piezas". Al igual que con la primera consulta, esta recuperará todos los datos de todas las filas y columnas presentes en la tabla "Piezas".
 
-Estos tipos de consultas son comunes al inicio del análisis de un sistema de base de datos existente y pueden ser el primer paso antes de realizar operaciones más específicas y detalladas en la tabla.
+Estos tipos de consultas son útiles cuando se necesita un vistazo general a toda la información almacenada en una o más tablas, lo cual puede ser especialmente importante durante la fase inicial del desarrollo web o la resolución de problemas en una base de datos. Sin embargo, es crucial entender que seleccionar todos los campos (*), especialmente en entornos de producción, puede no ser eficiente debido al posible alto volumen de datos que se recuperan y al potencial impacto en el rendimiento del sistema.
+
+`004-selecciones.sql`
 
 ```sql
 SELECT * FROM Categorias;
@@ -9189,14 +9758,17 @@ SELECT * FROM Piezas;
 ```
 
 ### left join
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL realiza una operación llamada "left join" entre dos tablas, que en este caso son `Piezas` y `Categorias`. La idea principal es combinar datos de ambas tablas basándose en la relación existente entre ellas a través del campo `id_categoria` en la tabla `Piezas` y el campo `Identificador` en la tabla `Categorías`.
+Este fragmento de código SQL realiza una operación llamada "left join" entre dos tablas, `Piezas` y `Categorias`. La función principal del left join es combinar filas de ambas tablas basándose en la relación definida por las columnas `id_categoria` (de la tabla `Piezas`) e `Identificador` (de la tabla `Categorias`). 
 
-En términos simples, este código recupera todos los registros de la tabla `Piezas`, junto con cualquier información adicional disponible en la tabla `Categorias`. Si una pieza no tiene ninguna categoría asignada (es decir, si `id_categoria` es nulo), el resultado incluirá un registro para esa pieza pero sin datos correspondientes de la tabla `Categorías`.
+El comando selecciona todas las columnas (`*`) de la tabla resultante después del left join, lo que significa que incluirá todos los registros de la tabla `Piezas`, y para cada registro de `Piezas`, intentará encontrar una correspondencia en la tabla `Categorias` basándose en el valor de `id_categoria`. Si no hay un match en `Categorias`, las columnas correspondientes serán llenadas con valores nulos.
 
-Esta operación es importante porque permite que los desarrolladores obtengan toda la información disponible sobre las piezas, incluso cuando no hay una categoría asociada. Esto ayuda a mantener la integridad y claridad de los datos en el sistema web, asegurando que ninguna información valiosa se pierda por falta de correspondencia exacta entre tablas.
+Esta consulta es importante porque permite ver toda la información disponible sobre las piezas, incluyendo los detalles de su categoría si están presentes. Esto puede ser útil para entender cómo se relacionan las piezas con sus respectivas categorías en un sistema de gestión de inventario o similar.
+
+`005-left join.sql`
 
 ```sql
 SELECT 
@@ -9207,18 +9779,17 @@ ON Piezas.id_categoria = Categorias.Identificador;
 ```
 
 ### ahora creo la vista
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL se usa para crear una vista en la base de datos que combina información de dos tablas diferentes: `Piezas` y `Categorias`. La vista creada se llama `piezas_y_categorias`.
+Este fragmento de código SQL sirve para crear una vista llamada `piezas_y_categorias` en una base de datos. Una vista es como un atajo a una consulta compleja, permitiendo acceder fácilmente a los resultados de esa consulta como si fuera una tabla normal.
 
-Lo primero que hace es seleccionar varios campos específicos, incluyendo los nombres (titulos) y descripciones tanto de las piezas como de sus respectivas categorías. También obtiene información adicional como la imagen asociada a cada pieza y su URL.
+La primera parte del código ejecuta la sentencia `CREATE VIEW`, que crea esta vista basada en el resultado de una consulta SQL específica. Esta consulta selecciona información desde dos tablas: `Categorias` y `Piezas`. Utiliza un `LEFT JOIN` para combinar estas dos tablas, asegurándose de que todas las piezas se incluyan en los resultados, incluso si no tienen una categoría asociada (lo que resultaría en filas con valores nulos para la información de la categoría). Los campos seleccionados incluyen títulos y descripciones tanto de las categorías como de las piezas, así como una imagen y un URL.
 
-Luego, se utiliza una operación `LEFT JOIN` para unir ambas tablas basándose en el ID de categoría de las piezas (`id_categoria`) con el identificador único de la tabla Categorias (`Identificador`). Esto permite que cada pieza esté asociada a su respectiva categoría en la vista.
+Después de crear esta vista, el código ejecuta `SELECT * FROM piezas_y_categorias;`, lo que significa que se consultan todos los datos almacenados en la vista recién creada. Esta consulta te permite ver cómo quedó estructurada la información combinada entre las tablas `Piezas` y `Categorias`. Esto es útil para tener una visión unificada de piezas junto con sus categorías, facilitando la consulta y visualización de datos relacionados en futuras consultas SQL.
 
-Finalmente, se selecciona todo el contenido recién creado en la vista `piezas_y_categorias`, lo que significa que cualquier consulta futura sobre esta vista obtendrá todos los datos combinados de las dos tablas originales.
-
-Esta técnica es útil para simplificar consultas complejas y facilitar la visualización del conjunto de datos relacionado entre piezas y sus categorías en una sola tabla virtual.
+`006-ahora creo la vista.sql`
 
 ```sql
 CREATE VIEW piezas_y_categorias AS 
@@ -9237,10 +9808,19 @@ SELECT * FROM piezas_y_categorias;
 ```
 
 ### usuario
+<small>Creado: 2025-11-12 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para crear un nuevo usuario en una base de datos MySQL y otorgarle ciertos permisos. Comenzamos definiendo al usuario 'portafolioceac' con una contraseña específica, permitiendo que este usuario acceda desde el localhost (el mismo servidor). Luego, le quitamos todos los límites por defecto a este usuario para maximizar su capacidad de realizar consultas y conexiones sin restricciones horarias. Finalmente, otorgamos al usuario 'portafolioceac' acceso completo (todos los privilegios) a una base de datos llamada 'portafolioceac'. El comando `FLUSH PRIVILEGES` es importante porque asegura que todos estos cambios en los permisos se actualicen y apliquen inmediatamente. Es crucial para garantizar la seguridad y el funcionamiento correcto del sistema de gestión de base de datos MySQL.
+Este código SQL se utiliza para crear un nuevo usuario en una base de datos MySQL y asignarle ciertos permisos. Primero, crea un usuario llamado 'portafolioceac' con una contraseña específica y lo configura para que pueda conectarse desde el localhost (el mismo servidor donde está instalada la base de datos). Luego, se le otorga acceso limitado inicialmente mediante el comando `GRANT USAGE`, que permite al usuario conectarse pero no ejecutar ninguna consulta. 
+
+A continuación, se ajustan las restricciones del usuario eliminando todos los límites existentes para permitir un uso más flexible de la base de datos sin restricciones en términos de velocidad o cantidad de consultas, conexiones y actualizaciones por hora.
+
+Finalmente, se otorgan todos los privilegios a este usuario sobre una base de datos específica llamada 'portafolioceac', lo que significa que el usuario puede realizar cualquier operación (lectura, escritura, etc.) en esa base de datos. El comando `FLUSH PRIVILEGES` asegura que estos cambios se apliquen inmediatamente.
+
+Este tipo de script es importante cuando necesitas configurar un entorno de desarrollo o producción para que diferentes usuarios tengan acceso controlado a las bases de datos según sus necesidades y roles.
+
+`007-usuario.sql`
 
 ```sql
 -- crea usuario nuevo con contraseña
@@ -9269,6 +9849,48 @@ TO 'portafolioceac'@'localhost';
 -- recarga la tabla de privilegios
 FLUSH PRIVILEGES;
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Creación y Configuración de Base de Datos
+
+**Descripción:** Crea una base de datos llamada "mi_portafolio" con las tablas necesarias para almacenar información sobre piezas (obras) y categorías. Asegúrate de establecer la relación entre estas dos tablas mediante claves foráneas.
+
+### Actividad 2: Inserción de Datos
+
+**Descripción:** Inserta al menos una categoría y varias piezas en las tablas que has creado en la actividad anterior. Cada pieza debe estar asociada a una o más categorías existentes.
+
+### Actividad 3: Consultas Básicas
+
+**Descripción:** Escribe consultas SQL para seleccionar todos los registros de las tablas "piezas" y "categorias". Asegúrate de entender cómo se relacionan estos datos en tu base de datos.
+
+### Actividad 4: Uso de INNER JOIN
+
+**Descripción:** Realiza una consulta que combine (JOIN) la tabla "piezas" con la tabla "categorias", mostrando solo las piezas y sus respectivas categorías. Aprende a filtrar los resultados para obtener información relevante.
+
+### Actividad 5: Creación de Vistas
+
+**Descripción:** Crea una vista que muestre una combinación entre las tablas "piezas" y "categorias". La vista debe proporcionar un resumen fácilmente accesible de todas las piezas junto con sus categorías asociadas.
+
+### Actividad 6: Manejo de Usuarios en MySQL
+
+**Descripción:** Crea un nuevo usuario llamado “mi_usuario” que tenga acceso a tu base de datos “mi_portafolio”. Asegúrate de establecer los privilegios adecuados para este usuario y verifica que pueda acceder sin problemas.
+
+### Actividad 7: Configuración de Contraseñas Seguras
+
+**Descripción:** Modifica el usuario creado en la actividad anterior para asignarle una contraseña segura con requisitos específicos (por ejemplo, longitud mínima y uso de mayúsculas/minúsculas, números y caracteres especiales).
+
+### Actividad 8: Uso de LEFT JOIN
+
+**Descripción:** Escribe un script que utilice LEFT JOIN entre las tablas "piezas" y "categorias". Aprende a manejar situaciones donde algunas piezas pueden no tener categorías asociadas.
+
+### Actividad 9: Consultas Avanzadas con LEFT JOIN
+
+**Descripción:** Basándote en la vista creada anteriormente, escribe una consulta que muestre todas las piezas y sus respectivas categorías. Si alguna pieza no tiene categoría definida, asegúrate de que la consulta maneje adecuadamente este caso.
+
+### Actividad 10: Análisis de Datos
+
+**Descripción:** Escribe consultas para analizar los datos en tu base de datos “mi_portafolio”. Por ejemplo, puedes contar cuántas piezas hay por cada categoría o listar todas las categorías que no tienen ninguna pieza asociada.
 
 
 
@@ -9515,14 +10137,17 @@ It looks like you've provided a series of JavaScript code snippets that cover va
 These snippets demonstrate a wide range of JavaScript concepts and provide good practice for building dynamic web applications.
 
 ### empezamos
+<small>Creado: 2025-11-17 08:38</small>
 
 #### Explicación
 
-Este fragmento de código HTML es la estructura básica de una página web que contiene un bloque de script (JavaScript) dentro del cuerpo (tag `<body>`) de la página. La línea `<!doctype html>` al inicio indica que el documento es de tipo HTML5, lo cual significa que seguirá las reglas y características específicas de este estándar web.
+Este fragmento de código es una página HTML básica que incluye un bloque de JavaScript. La parte importante está dentro del tag `<script>` en la sección `<body>`. Este tipo de colocación de JavaScript dentro de un archivo HTML se llama "JavaScript interno" y permite que el script interactúe directamente con los elementos del documento HTML.
 
-El contenido entre las etiquetas `<head></head>` generalmente contiene información sobre la página como el título o enlaces a hojas de estilo, pero aquí está vacío. Por otro lado, dentro del bloque `<!— Esto se conoce como Javascript interno —>`, aunque no se muestra el código JavaScript real, se indica que éste se encuentra incrustado directamente en la página web (llamado "JavaScript interno"). Este enfoque permite ejecutar código interactivo y dinámico de forma inmediata cuando la página carga.
+El comentario `// Esto se conoce como Javascript interno` dentro del bloque `<script>` indica simplemente la ubicación del código JavaScript en relación al resto del contenido HTML. En este caso, no hay ninguna instrucción de programación real en el bloque `<script>`, solo un comentario informativo.
 
-Incluir scripts dentro del cuerpo de una página HTML es útil para aplicaciones simples, ya que facilita el manejo y prueba del código JavaScript directamente en el contexto web. Sin embargo, en proyectos más grandes o complejos, se prefiere externalizar los archivos .js para mantener un código limpio y reutilizable.
+La importancia de colocar scripts de esta manera es que permite una integración directa entre el contenido visual de la página (HTML) y sus funcionalidades interactivas (JavaScript), facilitando así la manipulación dinámica del DOM (Modelo de Objeto del Documento).
+
+`001-empezamos.html`
 
 ```html
 <!doctype html>
@@ -9538,10 +10163,15 @@ Incluir scripts dentro del cuerpo de una página HTML es útil para aplicaciones
 ```
 
 ### comentario de una linea
+<small>Creado: 2025-11-17 08:39</small>
 
 #### Explicación
 
-Este código HTML muestra cómo incorporar comentarios en un script dentro de una página web. Los comentarios son líneas de texto que el navegador no muestra al usuario y que sirven para documentar o anotar partes del código, lo que puede ayudarte a ti como programador a entender mejor qué hace cada parte del código más adelante. En este caso, las líneas "// Esto es un comentario de una linea" y "// Y esto es otro comentario" son comentarios de línea en JavaScript, que se escriben dentro de la etiqueta `<script>` entre las etiquetas HTML `<body>`. Estos comentarios no afectan el funcionamiento del código pero sí ayudan a mantenerlo limpio y fácil de entender.
+Este fragmento de código HTML contiene un archivo web básico que incluye dos líneas de comentarios en JavaScript dentro de una etiqueta `<script>`. Los comentarios en JavaScript se utilizan para anotar el código y hacerlo más legible, pero no afectan la ejecución del programa. En este caso, cada línea que empieza con `//` es un comentario de una sola línea, lo que significa que todo después del símbolo `//` hasta el final de esa línea será ignorado por el navegador cuando ejecute el código JavaScript.
+
+Es importante entender los comentarios en programación porque ayudan a documentar el código, explicando qué hace cada parte del mismo y proporcionando contextos para futuras modificaciones. Esto es especialmente útil cuando trabajas en equipos o vuelves a mirar tu propio código después de un tiempo.
+
+`002-comentario de una linea.html`
 
 ```html
 <!doctype html>
@@ -9558,10 +10188,20 @@ Este código HTML muestra cómo incorporar comentarios en un script dentro de un
 ```
 
 ### comentarios multilinea
+<small>Creado: 2025-11-17 08:40</small>
 
 #### Explicación
 
-Este código HTML muestra cómo se utilizan los comentarios en JavaScript dentro de una página web. Los comentarios son piezas de texto que no afectan al funcionamiento del programa, pero ayudan a la legibilidad y comprensión del mismo para otros desarrolladores o para uno mismo más adelante. En este caso, hay dos tipos de comentarios: el comentario de una línea, que comienza con "//", y los comentarios multilínea, encerrados entre "/*" y "*/". Los comentarios unilinea sirven para anotar rápidamente ideas o explicaciones breves sobre qué hace una línea específica de código. Por otro lado, los comentarios multilínea son útiles cuando necesitas añadir una descripción más detallada o documentar partes grandes del código, como funciones complejas. En esta página HTML, el bloque de script está incluyendo estos comentarios para explicar o marcar partes del código que se ejecutará en el navegador al cargar la página.
+Este código HTML contiene un bloque básico que incluye la estructura de una página web simple, pero con énfasis en cómo se utilizan los comentarios tanto en JavaScript como en HTML. En el cuerpo del documento (`<body>`), hay un script etiquetado (`<script>`) que incluye varios tipos de comentarios.
+
+Los comentarios en el código sirven para documentar el propósito o la funcionalidad de diferentes partes del programa, facilitando su entendimiento y mantenimiento a futuro. En este ejemplo, se muestra cómo escribir dos tipos de comentarios:
+
+1. Comentarios de una línea: Comienzan con `//` y llegan hasta el final de esa misma línea.
+2. Comentarios multilinea: Se encierran entre `/*` al inicio y `*/` al final del comentario, permitiendo descripciones más largas que pueden abarcar varias líneas.
+
+Estos comentarios son útiles para explicar brevemente qué hace cada parte del código o proporcionar notas sobre la implementación de características específicas. En un entorno profesional, incluir buenos comentarios es una práctica recomendada ya que mejora la legibilidad y el mantenimiento del código fuente.
+
+`003-comentarios multilinea.html`
 
 ```html
 <!doctype html>
@@ -9583,17 +10223,23 @@ Este código HTML muestra cómo se utilizan los comentarios en JavaScript dentro
 ```
 
 ### salidas a consola
+<small>Creado: 2025-11-17 08:43</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene cuatro instrucciones JavaScript que se ejecutan en la consola del navegador. La etiqueta `<script>` dentro del cuerpo (`<body>`) del documento HTML incluye las líneas que utilizan funciones como `console.log`, `console.warn`, `console.error` y `console.table`. Estas funciones permiten mostrar diferentes tipos de mensajes o información en la consola del desarrollador del navegador.
+Este fragmento de código HTML incluye la integración básica de JavaScript en un documento web. En el cuerpo del documento (`<body>`), se encuentra un bloque `<script>...</script>` que contiene cuatro líneas de código JavaScript destinadas a registrar mensajes en la consola del navegador.
 
-- `console.log("Esto es un mensaje")`: Imprime un simple mensaje en la consola. Es útil para seguir el flujo del programa y comprobar los valores de variables.
-- `console.warn("Esto es una advertencia")`: Muestra un aviso, que aparece con fondo amarillo en la consola, indicando que algo podría estar mal pero no necesariamente impide que el código funcione correctamente.
-- `console.error("Esto es un error")`: Proporciona información sobre errores importantes o fallos en la ejecución del script. Los mensajes de error se muestran con fondo rojo para destacar problemas críticos.
-- `console.table("Esto es una tabla")`: Intenta crear una representación tabular en la consola, aunque en este caso el parámetro no es apropiado porque debe ser un objeto o matriz para que funcione correctamente.
+`console.log()` es una función usada para imprimir cualquier tipo de mensaje o dato en la consola, útil durante la depuración y el desarrollo. En este caso, se utiliza para mostrar un simple texto: "Esto es un mensaje".
 
-Este código es importante porque ayuda a los desarrolladores a depurar y entender mejor cómo se comportan sus programas web.
+Luego, `console.warn()` sirve para emitir un aviso importante que podría indicar problemas potenciales pero no errores críticos.
+
+`console.error()`, por otro lado, registra un mensaje como si fuera un error técnico grave del sistema, ayudando a identificar rápidamente problemas graves durante el desarrollo o la ejecución del programa.
+
+Finalmente, `console.table()` intenta mostrar los datos proporcionados en forma de tabla. Sin embargo, al pasar una cadena ("Esto es una tabla") en lugar de un objeto que pueda convertirse en una tabla, este último comando no funcionará como se espera y solo registrará el texto sin formatear.
+
+Este tipo de código es fundamental para estudiantes porque enseña cómo interactuar con la consola del navegador y cómo usar diferentes métodos de `console` para depurar y mejorar sus scripts JavaScript.
+
+`004-salidas a consola.html`
 
 ```html
 <!doctype html>
@@ -9612,12 +10258,17 @@ Este código es importante porque ayuda a los desarrolladores a depurar y entend
 ```
 
 ### salidas a documento
+<small>Creado: 2025-11-17 08:44</small>
 
 #### Explicación
 
-Este código HTML muestra cómo incorporar JavaScript en una página web para modificar su contenido dinámicamente. La parte central del código está dentro de la etiqueta `<script>`, que se encuentra dentro del cuerpo (`<body>`). Dentro del script, se utiliza el método `document.write()` para escribir un texto visible en la página: "Esto es un texto visible". 
+Este código HTML muestra cómo insertar y ejecutar un pequeño script en una página web que utiliza la función `document.write()` para escribir directamente texto en el documento. Cuando se carga la página, el navegador interpreta el bloque de código dentro de las etiquetas `<script>` y escribe "Esto es un texto visible" en lugar del script.
 
-`document.write()` inserta directamente el texto proporcionado en la posición exacta donde está escrito en el código HTML. Aunque este método puede ser útil para entender los conceptos básicos de cómo JavaScript interactúa con una página web, se recomienda evitar su uso en aplicaciones más complejas porque puede sobrescribir todo lo que ya ha sido cargado en la página si se utiliza después del final de la etiqueta `</body>`.
+El uso de `document.write` es una manera simple de insertar texto o HTML en el cuerpo de la página desde un script. En este ejemplo, el mensaje se muestra directamente donde está ubicado el bloque de código en el archivo HTML. Es importante entender que esta técnica es útil para aprender y probar scripts básicos, pero en desarrollos más complejos puede ser menos preferible por razones de rendimiento y organización del código.
+
+Este tipo de práctica ayuda a los estudiantes a familiarizarse con cómo interactúan los scripts JavaScript con la estructura HTML de una página web.
+
+`005-salidas a documento.html`
 
 ```html
 <!doctype html>
@@ -9633,14 +10284,17 @@ Este código HTML muestra cómo incorporar JavaScript en una página web para mo
 ```
 
 ### entradas
+<small>Creado: 2025-11-17 08:46</small>
 
 #### Explicación
 
-Este código es un ejemplo sencillo de una página web en HTML que utiliza JavaScript para interactuar con el usuario. La estructura principal del documento está hecha con etiquetas HTML, donde `<!doctype html>` indica al navegador que debe esperar recibir una página web en formato HTML5.
+Este fragmento de código HTML incluye una pequeña porción de JavaScript que solicita al usuario que introduzca su nombre. Cuando se carga la página en un navegador, el script dentro de las etiquetas `<script>` ejecuta la función `prompt()`, que muestra una ventana emergente con un cuadro de texto donde el usuario puede escribir su nombre y un botón para confirmar. La función `prompt()` no devuelve ningún valor al código HTML o JavaScript, simplemente solicita entrada del usuario.
 
-Dentro del cuerpo (`<body>`) de la página web, hay un bloque `<script>` que contiene código JavaScript. En este caso, el código dentro del script usa la función `prompt`, que muestra una ventana emergente con un mensaje solicitando al usuario que introduzca su nombre. Aunque la página solicita información, no hace nada más con esa entrada; simplemente aparece y desaparece.
+Es importante porque esta es una forma básica en la que los scripts interactivos pueden interactuar con los usuarios, permitiéndoles proporcionar información directamente desde su navegador a un sitio web o aplicación. Sin embargo, debes tener cuidado ya que `prompt()` puede ser inseguro si se usa para recibir información sensible del usuario.
 
-Este tipo de interacción básica entre el navegador y el usuario es importante porque permite que las páginas web reciban información del usuario, lo cual es fundamental para muchas aplicaciones web que requieren datos del visitante.
+Este código es una introducción a cómo insertar y ejecutar scripts en páginas HTML, así como al uso de funciones básicas de JavaScript para interactuar con el navegador del usuario.
+
+`006-entradas.html`
 
 ```html
 <!doctype html>
@@ -9656,10 +10310,17 @@ Este tipo de interacción básica entre el navegador y el usuario es importante 
 ```
 
 ### el molesto alert
+<small>Creado: 2025-11-17 08:46</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que muestra un cuadro de diálogo emergente cuando se carga en el navegador. La etiqueta `<!doctype html>` al principio indica al navegador que el documento debe ser interpretado como HTML5, lo cual es importante para asegurar su compatibilidad con los estándares actuales. Dentro del cuerpo (`<body>`) de la página, hay un bloque de código JavaScript encapsulado entre las etiquetas `<script></script>`. Este fragmento de código ejecuta una función llamada `alert()` que muestra un cuadro de diálogo emergente con el mensaje "Este es un mensaje flotante". Esta técnica es útil para proporcionar notificaciones sencillas o mensajes informativos al usuario mientras navega por la página.
+Este fragmento de código HTML contiene una estructura básica de página web que incluye la función `alert()` en JavaScript. La función `alert()` se utiliza para mostrar una ventana emergente (popup) con un mensaje al usuario. En este caso, cuando el navegador carga esta página, aparecerá una alerta con el texto "Este es un mensaje flotante". Este tipo de código es útil para dar mensajes importantes o notificaciones a los usuarios mientras interactúan con la página web.
+
+La inclusión del script dentro de la etiqueta `<body>` asegura que la función `alert()` se ejecute después de que todo el contenido HTML haya sido cargado en el navegador. Esto significa que la ventana emergente aparecerá una vez que la página esté completamente visible para el usuario, proporcionando un mensaje justo cuando él o ella está listo para interactuar con el sitio web.
+
+Es importante tener cuidado con el uso excesivo de `alert()`, ya que puede interrumpir la experiencia del usuario si se utiliza demasiado frecuentemente. Sin embargo, en contextos educativos como este ejercicio, es una herramienta útil para aprender cómo ejecutar código JavaScript y mostrar mensajes a los usuarios de manera efectiva.
+
+`007-el molesto alert.html`
 
 ```html
 <!doctype html>
@@ -9675,14 +10336,15 @@ Este código HTML crea una página web simple que muestra un cuadro de diálogo 
 ```
 
 ### declaracion de variable global
+<small>Creado: 2025-11-17 08:47</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de cómo declarar una variable en JavaScript dentro de un archivo HTML. La variable se llama `nombre` y se le asigna el valor `"Jose Vicente"`. Lo especial de esta declaración es que la palabra clave `var` hace que la variable sea global, lo que significa que puede ser accedida desde cualquier parte del documento HTML, tanto en otros scripts como directamente en etiquetas HTML.
+Este código HTML contiene un script dentro de la etiqueta `<body>` que declara una variable llamada `nombre` y le asigna el valor `"Jose Vicente"`. La palabra clave `var` se usa para declarar variables en JavaScript, y al colocar este fragmento de código dentro de las etiquetas `<script>...</script>` en la parte del cuerpo (`<body>`) del documento HTML, aseguramos que el navegador ejecutará esta declaración cuando cargue la página. La variable `nombre` es global porque se declara fuera de cualquier función y estará disponible para todo el script que siga después de su declaración.
 
-El código está incrustado dentro de una etiqueta `<script>`, que indica al navegador que el contenido entre estas etiquetas es un código JavaScript. Al colocar esta etiqueta en la sección `<body>` del archivo HTML, aseguramos que todo lo que esté antes en el documento haya sido completamente cargado por el navegador antes de que este script sea ejecutado.
+Es importante destacar que este tipo de declaración dentro del cuerpo del documento permite almacenar información como nombres, datos personales u otro tipo de datos que pueden ser necesarios para la interacción dinámica con el usuario a través de scripts en JavaScript.
 
-Esta práctica es importante porque permite almacenar información relevante para la página web (como nombres o otros datos) en variables accesibles desde cualquier lugar del código JavaScript presente en esa misma página.
+`008-declaracion de variable global.html`
 
 ```html
 <!doctype html>
@@ -9698,12 +10360,17 @@ Esta práctica es importante porque permite almacenar información relevante par
 ```
 
 ### variable de ambito local
+<small>Creado: 2025-11-17 08:48</small>
 
 #### Explicación
 
-Este fragmento de código HTML muestra cómo definir una variable en el lenguaje de programación JavaScript dentro de un documento web. La parte relevante es la etiqueta `<script>`, que contiene un código JavaScript donde se declara una variable llamada `nombre` y se le asigna el valor "Jose Vicente". Este fragmento ejemplifica cómo las variables declaradas con `let` tienen un ámbito local, lo que significa que solo están disponibles dentro del bloque de código en el que fueron definidas. En este caso, la variable está disponible en todo el script donde fue creada pero no fuera de él.
+Este fragmento de código HTML contiene un script que declara una variable llamada `nombre` y le asigna el valor `"Jose Vicente"`. La variable está declarada usando la palabra clave `let`, lo cual indica que es una variable local, limitada al bloque de código donde se ha definido. Esto significa que solo puede ser utilizada dentro del script o función en el que fue creada, y no estará disponible fuera de ese contexto.
 
-La importancia de esto radica en que permite manejar datos y comportamientos específicos para partes individuales de una página web sin interferir con otras partes del documento o scripts externos. Aprender a declarar variables correctamente es fundamental para escribir código JavaScript eficiente y mantenible, especialmente cuando trabajas en proyectos más grandes donde múltiples desarrolladores pueden contribuir al mismo tiempo.
+La declaración de variables con `let` ayuda a evitar conflictos si hay otras partes del programa que también usan la misma variable, ya que cada instancia de la variable es independiente. En este caso, la variable `nombre` se utiliza para almacenar un nombre de persona como cadena de texto y no tiene efecto directo en el HTML mostrado al usuario.
+
+Es importante entender cómo declarar variables correctamente porque esto afecta cómo tu código JavaScript interactúa con otras partes del documento HTML y con otros scripts que puedan estar presentes.
+
+`009-variable de ambito local.html`
 
 ```html
 <!doctype html>
@@ -9719,10 +10386,17 @@ La importancia de esto radica en que permite manejar datos y comportamientos esp
 ```
 
 ### una variable se puede variar
+<small>Creado: 2025-11-17 08:48</small>
 
 #### Explicación
 
-Este código HTML te muestra cómo se pueden manipular variables en el lenguaje de programación JavaScript dentro de una página web. Al principio, la variable `nombre` es inicializada con el valor "Jose Vicente". Luego, este valor se imprime en la página usando la función `document.write()`. Después, cambiamos el valor de la variable `nombre` a "Juan" y volvemos a imprimirla en la pantalla. Este ejemplo demuestra que las variables en JavaScript son dinámicas; puedes cambiarles su valor durante la ejecución del código, lo cual es útil para actualizar información en tiempo real en una página web.
+Este fragmento de código HTML incluye un pequeño script que muestra cómo se pueden cambiar y actualizar las variables en JavaScript. Primero, el código define una variable llamada `nombre` con el valor "Jose Vicente" y luego utiliza la función `document.write()` para mostrar este nombre en la página web. Después, cambia el valor de la variable `nombre` a "Juan" y vuelve a usar `document.write()` para imprimir este nuevo nombre.
+
+Esta demostración es importante porque muestra que las variables en JavaScript son mutables, lo que significa que puedes cambiar su valor durante la ejecución del programa. Esto te permite adaptar dinámicamente el contenido de una página web según diferentes condiciones o eventos.
+
+El uso de `document.write()` para mostrar información es útil para principiantes, pero en situaciones más complejas, se recomienda usar otros métodos como modificar directamente elementos HTML por su ID o clase.
+
+`010-una variable se puede variar.html`
 
 ```html
 <!doctype html>
@@ -9741,12 +10415,17 @@ Este código HTML te muestra cómo se pueden manipular variables en el lenguaje 
 ```
 
 ### constantes
+<small>Creado: 2025-11-17 08:51</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un script que ilustra el uso de constantes en JavaScript. La página web comienza declarando una constante llamada `nombre` y le asigna el valor "Jose Vicente". Luego, utiliza la función `document.write()` para escribir este nombre en la página web.
+Este fragmento de código HTML contiene una sección de script que demuestra cómo utilizar y manipular constantes en JavaScript. En el código, se declara una constante llamada `nombre` con el valor inicial "Jose Vicente". Luego, esta constante es mostrada en la página web usando `document.write(nombre)`. Después, intenta cambiar el valor de `nombre` a "Juan", lo que debería generar un error ya que las constantes no pueden ser modificadas una vez declaradas. Este ejemplo ayuda a entender la diferencia entre variables y constantes en JavaScript y cómo el uso correcto de tipos de datos puede evitar errores comunes al escribir código.
 
-Lo importante a destacar es que después intenta cambiar el valor de la constante `nombre` a "Juan" utilizando otra llamada a `document.write()`. Sin embargo, esto debería generar un error porque una vez declarada como constante, el valor no puede ser modificado. Este código sirve para enseñarte que en JavaScript, las constantes son inmutables y cualquier intento de cambiar su valor generará un error en la consola del navegador, lo cual es crucial entender al trabajar con programación web.
+El propósito principal de este fragmento es enseñar a los estudiantes que, cuando declaras algo como `const`, estás estableciendo un valor que no debe cambiar durante la ejecución del programa. Si intentas hacerlo, el navegador devolverá un error en la consola para informarte de esto.
+
+Este tipo de práctica es fundamental para entender cómo funcionan las constantes y por qué son importantes al programar en JavaScript, ya que ayudan a mantener el código limpio y libre de errores relacionados con la modificación inesperada de datos.
+
+`011-constantes.html`
 
 ```html
 <!doctype html>
@@ -9766,10 +10445,20 @@ Lo importante a destacar es que después intenta cambiar el valor de la constant
 ```
 
 ### tipos de datos
+<small>Creado: 2025-11-17 08:53</small>
 
 #### Explicación
 
-Este fragmento de código HTML muestra cómo incorporar variables en JavaScript dentro de un documento HTML. En la parte superior, se declara el tipo de documento como HTML5 usando `<!doctype html>`. La estructura básica del HTML incluye una etiqueta `<html>` que envuelve todo el contenido, una sección `<head>` (vacía en este caso) y una sección `<body>` donde va el contenido visible para los usuarios. Dentro del cuerpo del documento, hay un bloque de código entre las etiquetas `<script>...</script>` que define cuatro variables: `nombre` como una cadena de texto con el valor "Jose Vicente", `edad` como un número entero con el valor 47, `altura` como un número en coma flotante (decimal) con el valor 1.78 y `vivo` como un booleano que toma el valor verdadero (`true`). Estas variables representan diferentes tipos de datos básicos utilizados en JavaScript: texto, números enteros, números decimales y valores lógicos. Es importante entender estos tipos de datos porque te permiten almacenar y manipular información de manera efectiva en tus páginas web.
+Este fragmento de código HTML contiene un script que define cuatro variables en el lenguaje JavaScript. Cada variable tiene un propósito diferente y representa diferentes tipos de datos:
+
+- `nombre` es una cadena de texto (string) que almacena "Jose Vicente".
+- `edad` es un número entero (integer) con valor 47, representando la edad de una persona.
+- `altura` es un número de punto flotante (float) con valor 1.78, lo cual probablemente representa la altura en metros.
+- `vivo` es un booleano que tiene el valor `true`, indicando que la condición evaluada por esta variable es verdadera.
+
+Este código sirve para introducir a los estudiantes a cómo declarar y usar variables de diferentes tipos en JavaScript dentro de una página HTML. Es importante entender estos conceptos ya que las variables son fundamentales para almacenar datos y manipularlos en cualquier programa o script, permitiendo así una interacción más dinámica con el usuario y la página web.
+
+`012-tipos de datos.html`
 
 ```html
 <!doctype html>
@@ -9788,10 +10477,23 @@ Este fragmento de código HTML muestra cómo incorporar variables en JavaScript 
 ```
 
 ### operadores aritmeticos
+<small>Creado: 2025-11-17 08:56</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de script que realiza operaciones aritméticas básicas. Dentro del script, se utilizan comandos para sumar (4+3), restar (4-3), multiplicar (4*3) y dividir (4/3) dos números. Además, también se calcula el resto de la división entera usando el operador módulo (4%3). Estas operaciones aritméticas son imprescindibles en programación para realizar cálculos matemáticos dentro del navegador web, y `console.log()` es una función que muestra los resultados de estas operaciones en la consola del navegador. Esto ayuda a los desarrolladores a verificar rápidamente si sus cálculos funcionan correctamente durante el proceso de prueba y depuración del código.
+Este fragmento de código HTML contiene un bloque de JavaScript que se ejecuta en el navegador cuando la página web se carga. Dentro del bloque `<script>`, hay cinco llamadas a `console.log()`, una función que imprime información en la consola del desarrollador del navegador.
+
+Cada línea dentro de `console.log()` utiliza diferentes operadores aritméticos para realizar cálculos matemáticos básicos:
+
+1. La primera línea suma dos números: `4 + 3`, lo que produce el resultado `7`.
+2. La segunda línea resta un número del otro: `4 - 3`, resultando en `1`.
+3. La tercera línea multiplica dos números: `4 * 3`, dando como resultado `12`.
+4. La cuarta línea divide uno por el otro: `4 / 3`, lo que produce un número decimal aproximado de `1.3333333333333333`.
+5. La quinta línea utiliza el operador módulo `%` para obtener el resto de la división entre dos números: `4 % 3`, dando como resultado `1`.
+
+Estos ejemplos son útiles para entender cómo funcionan los operadores aritméticos en JavaScript y cómo se pueden utilizar para realizar cálculos básicos dentro del código. La consola del navegador es una herramienta valiosa que te permite ver el resultado de estos cálculos mientras estás trabajando en tu código, facilitándote la depuración y el aprendizaje.
+
+`013-operadores aritmeticos.html`
 
 ```html
 <script>
@@ -9804,14 +10506,17 @@ Este fragmento de código HTML contiene un bloque de script que realiza operacio
 ```
 
 ### operadores
+<small>Creado: 2025-11-17 08:53</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene una estructura básica de un documento web, pero con un toque especial en la parte del cuerpo donde se incluye un script JavaScript simple. El propósito principal es declarar variables y asignarles valores, lo que demuestra cómo puedes combinar HTML con JavaScript directamente dentro de una página web.
+Este fragmento de código es una página HTML básica que contiene un bloque de script en su interior. Dentro del script, se declaran y asignan valores a cuatro variables: `nombre`, `edad`, `altura` y `vivo`. La variable `nombre` almacena el nombre "Jose Vicente", la variable `edad` tiene el valor numérico 47, la variable `altura` contiene un número decimal que representa una altura (1.78 metros), y la variable `vivo` es un booleano con el valor `true`, lo cual indica que la persona a quien se refiere vive.
 
-En el `<head>` del documento, no hay ninguna información adicional como títulos o enlaces a estilos o scripts externos. Sin embargo, la verdadera acción ocurre dentro del `<body>`, donde se abre un bloque de código entre las etiquetas `<script></script>`. Dentro de este bloque, cuatro variables son declaradas y asignados valores: `nombre` es una cadena de texto que contiene el nombre "Jose Vicente", `edad` es un número entero con valor 47, `altura` es un número en punto flotante (decimal) con valor 1.78, y `vivo` es un valor booleano (`true`) indicando que la persona está viva.
+Este código no realiza ninguna operación ni muestra nada en pantalla; simplemente declara variables para almacenar información sobre una persona. Sin embargo, esta práctica de definir variables y asignarles valores es fundamental en programación ya que permite al programa recordar e interactuar con datos específicos.
 
-Esta combinación de tipos de datos demuestra cómo puedes almacenar diferentes tipos de información relevante para un programa o una página web interactiva utilizando JavaScript en un documento HTML. Es importante porque permite a las páginas web interactuar directamente con el usuario y manipular elementos del DOM (Document Object Model) para crear experiencias más dinámicas.
+En relación con el archivo anterior (`013-operadores aritmeticos.html`), este código introduce un cambio significativo: en lugar de utilizar operadores matemáticos para realizar cálculos y mostrar resultados por consola, ahora se centra en la declaración y asignación de variables. Esto demuestra cómo los scripts en JavaScript pueden ser utilizados para almacenar información importante antes de manipularla o presentarla más adelante en el programa.
+
+`013-operadores.html`
 
 ```html
 <!doctype html>
@@ -9830,14 +10535,17 @@ Esta combinación de tipos de datos demuestra cómo puedes almacenar diferentes 
 ```
 
 ### operadores de comparacion
+<small>Creado: 2025-11-17 08:56</small>
 
 #### Explicación
 
-Este código HTML contiene un bloque de script que utiliza operadores de comparación para hacer distintas evaluaciones entre números y luego muestra los resultados en la consola del navegador. Los operadores `>` (mayor que), `<` (menor que), `>=` (mayor o igual que) y `<=` (menor o igual que) se usan para determinar si un número es mayor, menor o igual a otro. Por ejemplo, `4 < 3` evalúa a falso porque 4 no es menor que 3.
+Este fragmento de código HTML contiene un bloque `<script>` que utiliza varios operadores de comparación en JavaScript para evaluar expresiones y luego muestra el resultado de estas evaluaciones en la consola del navegador. Los operadores utilizados son menor que (`<`), menor o igual que (`<=`), mayor que (`>`), mayor o igual que (`>=`), igualdad (`==`), y desigualdad (`!=`). 
 
-Además, el código también usa los operadores de igualdad `==` y desigualdad `!=`. El operador `==` comprueba si dos valores son iguales, mientras que `!=` verifica si son distintos. En este caso, `4 == 3` devuelve falso ya que 4 no es igual a 3.
+Cada línea compara dos números: 4 y 3, y usa `console.log()` para imprimir el resultado booleano de la comparación. Esto ayuda a entender cómo funcionan estos operadores en JavaScript y qué tipo de resultados se obtienen cuando los números son diferentes o iguales entre sí.
 
-Este tipo de evaluaciones son fundamentales en programación para tomar decisiones dentro del código y controlar el flujo de ejecución basado en condiciones específicas.
+Es importante notar que este código sirve como un ejemplo básico pero crucial para comprender las comparaciones numéricas en programación, lo cual es fundamental para la lógica condicional y el control de flujo en scripts JavaScript.
+
+`014-operadores de comparacion.html`
 
 ```html
 <script>
@@ -9851,16 +10559,19 @@ Este tipo de evaluaciones son fundamentales en programación para tomar decision
 ```
 
 ### operadores booleanos
+<small>Creado: 2025-11-17 09:00</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque `<script>` que utiliza operadores booleanos en JavaScript para realizar comprobaciones lógicas. Los operadores `&&` (AND) y `||` (OR) son usados aquí para evaluar expresiones condicionales.
+Este fragmento de código en JavaScript utiliza operadores booleanos para evaluar condiciones y mostrar los resultados en la consola del navegador. Los operadores que se usan aquí son el operador AND (`&&`) y el operador OR (`||`).
 
-En el caso del operador AND (`&&`), la salida será verdadera sólo si todas las condiciones dentro de él son verdaderas. Por ejemplo, en la línea `console.log(4 == 4 && 3 == 3 && 2 == 2);`, como cada una de las comparaciones es cierta (verdadera), el resultado final también es cierto.
+El operador AND devuelve `true` solo si todas las expresiones lógicas dentro de él son verdaderas. En el ejemplo, se comparan igualdades numéricas como `4 == 4 && 3 == 3 && 2 == 2`, que resulta en `true` porque cada una de las condiciones es cierta.
 
-Por otro lado, cuando se utiliza el operador OR (`||`), al menos una de las condiciones debe ser verdadera para que la expresión sea verdadera. Por ejemplo, en `console.log(4 == 4 || 3 == 2 || 2 == 1);`, aunque dos de las comparaciones son falsas, la primera es cierta (verdadera), por lo tanto, el resultado final es cierto.
+El operador OR devuelve `true` si al menos una de las expresiones lógicas dentro de él es verdadera. En los ejemplos con el operador OR, como `4 == 4 || 3 == 3 || 2 == 1`, la primera condición (`4 == 4`) ya basta para que todo sea `true`.
 
-Estos operadores son fundamentales para controlar el flujo de ejecución en programas y permiten construir condiciones complejas basadas en múltiples criterios.
+Estos operadores son fundamentales en JavaScript y otros lenguajes de programación para combinar múltiples condiciones en una sola expresión, lo cual es muy útil al crear programas más complejos y decidir sobre diferentes rutas del código según las condiciones establecidas.
+
+`015-operadores booleanos.html`
 
 ```html
 <script>
@@ -9877,10 +10588,15 @@ Estos operadores son fundamentales para controlar el flujo de ejecución en prog
 ```
 
 ### Operadores matematicos abreviados
+<small>Creado: 2025-11-17 09:05</small>
 
 #### Explicación
 
-Este código HTML contiene un bloque de script que demuestra cómo trabajar con variables y operadores matemáticos en JavaScript. En primer lugar, se crea una variable llamada `edad` y se inicializa con el valor 47. Luego, se muestra este valor en la consola utilizando la función `console.log()`. A continuación, se incrementa la edad añadiendo 5 años de dos formas: primero usando un operador matemático común (`edad = edad + 5`), y después mediante el uso del operador abreviado `+=`, que es más corto y directo para incrementar una variable. El código también muestra cómo decrementar, multiplicar y dividir la edad utilizando los operadores abreviados `-=` (decremento), `*=` (multiplicación) y `/=` (división). Estos operadores simplifican el código al combinar dos acciones en una sola línea: modificar una variable basándose en su valor actual. Esto es muy útil para mantener el código limpio y legible, especialmente cuando se realizan cálculos repetidos o secuenciales.
+Este fragmento de código HTML contiene un bloque de script que demuestra el uso de operadores matemáticos abreviados. En primer lugar, se declara una variable llamada `edad` y se le asigna el valor 47. Luego, se imprime en la consola la frase "Mi edad es de [edad] años". Después, aumentamos la edad en 5 años utilizando la forma tradicional (`edad = edad + 5`) y mostramos nuevamente la nueva edad. Posteriormente, el código muestra cómo utilizar operadores abreviados para realizar las mismas operaciones matemáticas: `+=` (suma), `-=` (resta), `*=` (multiplicación) y `/=` (división). Estos operadores simplifican el incremento o decremento de variables, lo que hace que el código sea más conciso y fácil de leer.
+
+Estos operadores abreviados son importantes porque permiten realizar cálculos matemáticos directamente sobre las variables sin necesidad de escribir todo el código completo para sumar, restar, multiplicar o dividir. Esto no solo hace que el código sea más corto y legible, sino también menos propenso a errores tipográficos.
+
+`016-Operadores matematicos abreviados.html`
 
 ```html
 <script>
@@ -9900,12 +10616,15 @@ Este código HTML contiene un bloque de script que demuestra cómo trabajar con 
 ```
 
 ### incrementos y decrementos
+<small>Creado: 2025-11-17 09:05</small>
 
 #### Explicación
 
-Este código HTML contiene una sección de JavaScript que maneja y muestra el incremento y decremento de una variable llamada `edad`. Inicialmente, la variable `edad` se establece en 47. Luego, se imprime en la consola la frase "Mi edad es de 47 años". Después, el código utiliza operadores especiales para cambiar el valor de `edad`: primero incrementa su valor en uno utilizando el símbolo `++`, lo que convierte `edad` a 48. A continuación, vuelve a imprimir en la consola "Mi edad es de 48 años". Finalmente, resta un año a la edad con el operador `--`, y vuelve a mostrar la nueva edad, que será 47 nuevamente.
+Este código en JavaScript muestra cómo usar los operadores de incremento y decremento para modificar el valor de una variable. En este caso, la variable `edad` inicialmente tiene el valor 47. Primero, se imprime esta edad original usando `console.log`. Luego, se utiliza `edad++`, que es un operador de incremento que aumenta en uno el valor actual de la variable `edad`. Después de esto, vuelve a imprimirse la nueva edad con `console.log`. Finalmente, el código disminuye en uno el valor de `edad` usando `edad--`, otro operador conocido como decremento. De nuevo, se imprime el valor actualizado de `edad`.
 
-Esta parte del código es importante porque demuestra cómo manipular variables utilizando operadores de incremento (`++`) y decremento (`--`). Estos son comandos útiles en programación para simplificar el aumento o disminución de valores numéricos.
+Estos incrementos y decrementos son útiles cuando necesitas cambiar rápidamente los valores numéricos en tu programa, lo que es especialmente útil en bucles o cualquier lugar donde requieras iterar sobre una secuencia de números.
+
+`017-incrementos y decrementos.html`
 
 ```html
 <script>
@@ -9919,17 +10638,17 @@ Esta parte del código es importante porque demuestra cómo manipular variables 
 ```
 
 ### bucle for de incremento controlado
+<small>Creado: 2025-11-17 09:08</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene una sección `<script>` que incluye un bucle `for` en JavaScript. El propósito del bucle es imprimir la frase "Hoy es el día [número] del mes" para cada número entre 1 y 30, inclusive.
+Este fragmento de código utiliza un bucle `for` en JavaScript para imprimir una secuencia de mensajes en la consola del navegador. El propósito principal es mostrar cómo se incrementa un contador dentro del bucle y cómo este contador controla cuántas veces se ejecuta el código.
 
-El bucle `for` tiene tres partes separadas por punto y coma: 
-- La primera parte inicializa una variable llamada `dia` con un valor de 1.
-- La segunda parte establece la condición que debe cumplirse para continuar en el bucle, es decir, mientras `dia` sea menor a 31 (lo que significa que incluye los días del 1 al 30).
-- La tercera parte incrementa el valor de `dia` en uno después de cada iteración.
+El bucle comienza estableciendo la variable `dia` a 1. Luego, mientras `dia` sea menor que 31 (es decir, durante los primeros 30 días del mes), el bucle continuará ejecutándose. Después de cada iteración, se incrementa en uno el valor de `dia`. Dentro del cuerpo del bucle, la función `console.log()` es llamada para imprimir un mensaje que indica qué día del mes es actualmente.
 
-El cuerpo del bucle, encerrado entre llaves `{}`, utiliza la función `console.log()` para imprimir en la consola del navegador o entorno de desarrollo un mensaje que indica qué día es. Este código es útil para entender cómo funcionan los ciclos y cómo manipular variables en JavaScript, lo cual es fundamental para el desarrollo web interactivo.
+Este tipo de estructura es muy útil cuando necesitas realizar una tarea repetitiva con variaciones sucesivas (en este caso, contar los días). Es importante entender cómo funciona el incremento controlado (`dia++`) y la condición de finalización (`dia<31`), ya que permiten gestionar eficazmente ciclos iterativos.
+
+`018-bucle for de incremento controlado.html`
 
 ```html
 <script>
@@ -9944,14 +10663,13 @@ El cuerpo del bucle, encerrado entre llaves `{}`, utiliza la función `console.l
 ```
 
 ### calendario javascript
+<small>Creado: 2025-11-17 09:11</small>
 
 #### Explicación
 
-Este código HTML crea una página web sencilla que muestra los números del 1 al 31 en bloques separados, representando días de un mes. La parte importante está dentro de la etiqueta `<script>`, donde se usa JavaScript para generar estos números.
+Este fragmento de código HTML crea una página web simple que muestra los números del 1 al 31 en bloques separados utilizando JavaScript. La parte crucial es el bucle `for` dentro del script, que itera desde el día 1 hasta el día 31. En cada iteración, utiliza la función `document.write()` para escribir un `<div>` que contiene el número actual del día. Esto significa que cuando se carga la página en un navegador, verás una lista de 31 bloques div, cada uno con un número del calendario. Este código es útil para aprender cómo combinar HTML y JavaScript básicos, mostrando cómo los scripts pueden manipular directamente el contenido de una página web.
 
-El bucle `for` es fundamental aquí: comienza con `let dia = 1`, que establece la variable `dia` a 1. Luego, mientras `dia` sea menor o igual a 31, el código dentro del bucle se ejecuta repetidamente. En cada iteración, `document.write("<div>"+dia+"</div>")` añade un nuevo elemento `<div>` al documento con el número actual de la variable `dia`. Al final del ciclo, `dia++` incrementa su valor en 1 para pasar al siguiente día hasta completar los 31 días.
-
-Este tipo de código es importante porque demuestra cómo JavaScript puede manipular y generar contenido dinámicamente en una página web, proporcionando un ejemplo básico pero útil de programación orientada a eventos en el cliente.
+`019-calendario javascript.html`
 
 ```html
 <!doctype html>
@@ -9970,14 +10688,17 @@ Este tipo de código es importante porque demuestra cómo JavaScript puede manip
 ```
 
 ### un poco de estilo
+<small>Creado: 2025-11-17 09:15</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que muestra un calendario de estilo gráfico. En la parte superior, dentro del bloque `<style>`, se define cómo debe verse el cuerpo (`body`) de la página. Se usa `display: grid` para organizar los elementos en cuadrículas y `grid-template-columns: repeat(7, 40px)` para crear siete columnas con un ancho fijo de 40 píxeles, que representa los días de la semana.
+Este código HTML crea una página web que muestra los números del 1 al 31 en forma de un calendario simplificado. La parte importante es el bloque `<style>` dentro de la sección `<head>`, donde se define cómo deben verse y organizarse las cajas (divs) que representan los días del mes.
 
-En el cuerpo del documento (`<body>`), hay un script JavaScript que es responsable de generar un calendario. El script utiliza un bucle `for` que cuenta desde 1 hasta 31, representando los posibles días de un mes con 31 días. Para cada número en este rango, se añade una caja (`div`) al documento utilizando la función `document.write()`, dentro de la cual se escribe el número del día.
+En el cuerpo (`<body>`) del documento, hay un script que utiliza un bucle `for` para generar 31 elementos div consecutivos. Cada uno de estos elementos tiene el número del día impreso dentro. El bucle comienza en 1 y termina cuando llega a 31.
 
-Este código demuestra cómo combinar HTML, CSS y JavaScript para crear contenidos dinámicos y visualmente atractivos. Es importante porque enseña a los estudiantes cómo manipular y estilizar elementos en una página web usando diferentes tecnologías de cliente.
+La importancia radica en cómo se combinan HTML, CSS y JavaScript para crear una interfaz visualmente estructurada que representa un calendario básico. Esto es útil para entender cómo manipular elementos del DOM (Document Object Model) con JavaScript para añadir interactividad o estilos dinámicos a páginas web simples.
+
+`020-un poco de estilo.html`
 
 ```html
 <!doctype html>
@@ -10003,12 +10724,17 @@ Este código demuestra cómo combinar HTML, CSS y JavaScript para crear contenid
 ```
 
 ### bucle while
+<small>Creado: 2025-11-17 09:24</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de JavaScript que utiliza una estructura de control llamada `while`. La idea principal del código es imprimir en la consola (usando `console.log`) una frase que indica cuál día del mes es, desde el primer día hasta el día 30. Sin embargo, para que este código funcione correctamente, se necesita definir y inicializar la variable `dia` antes de llegar al bucle `while`. En su estado actual, si no se ha declarado `dia` con un valor numérico menor a 31, el programa entrará en un bucle infinito.
+Este fragmento de código utiliza un bucle `while` en JavaScript para repetir una acción mientras la condición especificada sea verdadera. En este caso, el bucle imprimirá en la consola del navegador un mensaje que indica cuál es el día actual dentro del mes hasta que el valor de la variable `dia` llegue a 31 o más.
 
-Es importante entender que este código por sí solo está incompleto y debe corregirse para especificar cuál es el valor inicial de la variable `dia`. Además, aprender a usar correctamente los bucles como `while` es crucial en programación ya que nos permite automatizar tareas repetitivas, lo cual es muy útil cuando trabajamos con elementos dinámicos en una página web.
+El bucle comienza verificando si `dia` es menor que 31. Si es así, imprime un mensaje que muestra qué día es en el formato "Hoy es el dia [valor] del mes". Luego, después de la ejecución de esta línea de código dentro del bucle, se espera que haya una instrucción (que no está mostrada en este fragmento) para incrementar el valor de `dia` en 1. Sin ese incremento, el bucle se convertiría en un bucle infinito porque la condición siempre sería verdadera.
+
+Es importante destacar que para que este código funcione correctamente, debe haber una declaración previa donde se inicialice la variable `dia` con un valor numérico, generalmente comenzando desde 1. Además, asegúrate de que dentro del bucle haya una instrucción para aumentar el valor de `dia`, por ejemplo, `dia++`, para evitar entrar en un bucle infinito.
+
+`022-bucle while.html`
 
 ```html
 <script>
@@ -10019,12 +10745,15 @@ Es importante entender que este código por sí solo está incompleto y debe cor
 ```
 
 ### la variable se declara antes del bucle
+<small>Creado: 2025-11-17 09:24</small>
 
 #### Explicación
 
-Este código HTML contiene un bloque de script que utiliza JavaScript para mostrar en la consola del navegador una frase repetida durante varios ciclos. La variable `dia` se inicializa con el valor 1, y luego entra en un bucle `while` que se ejecuta mientras `dia` sea menor a 31. En cada iteración del bucle, imprime por consola la frase "Hoy es el dia" seguido del número actual de la variable `dia`, y finalmente "del mes". El valor de `dia` aumenta en uno al final de cada ciclo para evitar un loop infinito.
+Este fragmento de código HTML contiene un script que utiliza JavaScript para imprimir en la consola del navegador una frase que indica los días del mes. La variable `let dia` se inicializa con el valor 1, lo que significa que comienza contando desde el primer día del mes. Luego, se crea un bucle `while`, que seguirá ejecutándose mientras el valor de `dia` sea menor a 31. En cada iteración del bucle, la función `console.log()` imprime en la consola una frase que indica cuál es el día actual ("Hoy es el día X del mes"), donde X es el número del día que va incrementando con cada vuelta del bucle.
 
-Este tipo de código es importante porque muestra cómo se manejan los ciclos (bucles) en JavaScript, que son fundamentales para automatizar tareas que requieren repetir una misma acción varias veces. En este caso, el bucle permite imprimir mensajes consecutivos por consola, cambiando solo un parámetro numérico (`dia`).
+Este código es importante porque muestra cómo declarar y usar variables antes de un bucle, y cómo utilizar un ciclo `while` para realizar una tarea repetitiva. Además, ilustra la importancia de controlar las condiciones dentro del bucle para evitar que este se ejecute indefinidamente (en este caso, asegurando que el valor de `dia` no llegue a 31).
+
+`023-la variable se declara antes del bucle.html`
 
 ```html
 <script>
@@ -10036,10 +10765,17 @@ Este tipo de código es importante porque muestra cómo se manejan los ciclos (b
 ```
 
 ### aumento la variable dentro del bucle
+<small>Creado: 2025-11-17 09:26</small>
 
 #### Explicación
 
-Este fragmento de código está escrito en HTML, pero contiene un bloque de JavaScript que se ejecuta dentro del navegador. El objetivo principal es imprimir en la consola una frase que indica el día actual para cada día del mes hasta llegar al día 30. La variable `dia` comienza con el valor 1 y va incrementándose en uno en cada iteración gracias a la instrucción `dia++`. Esto permite ejecutar el código dentro de un bucle `while`, que continúa mientras `dia` sea menor que 31. En resumen, este script muestra cómo usar un bucle para realizar una tarea repetitiva y cómo manipular variables para controlar el flujo del programa.
+Este fragmento de código HTML contiene un bloque de JavaScript que imprime en la consola del navegador los días sucesivos de un mes, desde el día 1 hasta el día 30. Aquí es cómo funciona:
+
+Primero, se declara una variable `dia` y se inicializa con el valor 1. Luego, comienza un bucle `while` que se ejecuta mientras la variable `dia` sea menor a 31. Dentro del bucle, se utiliza la función `console.log()` para imprimir en la consola una frase que indica qué día es del mes actual (por ejemplo, "Hoy es el día 1 del mes"). Después de imprimir esta información, se incrementa la variable `dia` en uno con el operador `++`.
+
+Este código es importante porque muestra cómo utilizar un bucle para realizar tareas repetitivas y cómo manipular variables dentro del bucle. Es una forma simple pero efectiva de entender los conceptos básicos de control de flujo y estructuras de datos en JavaScript, lo que es crucial para programar más avanzado en este lenguaje.
+
+`024-aumento la variable dentro del bucle.html`
 
 ```html
 <script>
@@ -10052,10 +10788,13 @@ Este fragmento de código está escrito en HTML, pero contiene un bloque de Java
 ```
 
 ### estructura if
+<small>Creado: 2025-11-17 09:27</small>
 
 #### Explicación
 
-Este fragmento de código HTML incluye una pequeña porción de JavaScript que se ejecuta en el navegador del usuario. En él, primero se declara una variable llamada `edad` y se le asigna el valor de 47 usando la palabra clave `let`. Luego, con una estructura condicional `if`, el código verifica si la edad es menor a 30 años. Si este criterio se cumple (que en este caso no ocurre porque 47 no es menor que 30), muestra un mensaje "Eres un joven" en la consola del navegador mediante la función `console.log()`. Esta estructura de control `if` es muy útil para tomar decisiones basadas en diferentes condiciones, lo cual es fundamental en el desarrollo web interactivo.
+Este fragmento de código es una simple estructura condicional en JavaScript que se incluye dentro de una etiqueta `<script>` en un archivo HTML. La variable `edad` es declarada y asignada el valor de 47. Luego, con la estructura `if`, se comprueba si la edad del usuario es menor a 30 años. Si esta condición es verdadera (es decir, si la edad fuera por ejemplo 25), entonces se ejecuta el código dentro del bloque `{}`, que en este caso imprime en consola ("console.log") el texto "Eres un joven". Es importante entender estas estructuras condicionales porque nos permiten hacer que nuestro script tome decisiones basadas en diferentes condiciones, lo cual es fundamental para la programación interactiva y dinámica de páginas web.
+
+`025-estructura if.html`
 
 ```html
 <script>
@@ -10067,14 +10806,17 @@ Este fragmento de código HTML incluye una pequeña porción de JavaScript que s
 ```
 
 ### caso else
+<small>Creado: 2025-11-17 09:29</small>
 
 #### Explicación
 
-Este fragmento de código HTML incluye una parte que se ejecuta cuando el navegador abre la página web. Dentro del bloque `<script>`, hay una variable llamada `edad` que contiene el número 47, lo que significa que está representando a alguien de 47 años.
+Este fragmento de código en JavaScript se utiliza para determinar si una persona es considerada joven basándose en su edad. En el código, primero se declara una variable llamada `edad` y se le asigna el valor de 47 años. Luego, se utiliza la estructura condicional `if-else` para evaluar esta edad.
 
-Después, hay un condicional (`if`) que comprueba si la edad es menor que 30. Si esto fuera cierto (en este caso no lo es porque es 47), mostraría en consola el mensaje "Eres un joven". Como la condición no se cumple, el navegador pasa a ejecutar el bloque de código dentro del `else`, que imprime "Ya no eres un joven" en la consola.
+Si la edad es menor a 30 (que sería la condición `edad < 30`), el código imprimirá en la consola "Eres un joven". Sin embargo, si la edad es igual o mayor a 30 años, como en este caso con una edad de 47 años, se ejecutará la parte del `else`, y se mostrará en la consola el mensaje "Ya no eres un joven".
 
-Este tipo de estructuras condicionales son importantes porque permiten al programa tomar decisiones basadas en diferentes valores o condiciones, lo cual es fundamental para añadir interactividad y personalización a las páginas web.
+Esta estructura condicional es importante porque permite que los programas realicen diferentes acciones basadas en ciertas condiciones, lo cual es fundamental para añadir lógica compleja a tus aplicaciones web.
+
+`026-caso else.html`
 
 ```html
 <script>
@@ -10088,14 +10830,17 @@ Este tipo de estructuras condicionales son importantes porque permiten al progra
 ```
 
 ### else if
+<small>Creado: 2025-11-17 09:30</small>
 
 #### Explicación
 
-Este código es una pequeña parte de JavaScript que se ejecuta dentro del archivo HTML. Su función principal es determinar a qué categoría pertenece una persona en base a su edad, y luego mostrar el resultado en la consola del navegador (donde se puede ver información sobre cómo funciona el código al hacer clic derecho y seleccionar "Inspeccionar" o similar).
+Este código JavaScript se encarga de determinar y mostrar en la consola del navegador una descripción sobre el estado de vida de una persona basándose en su edad. La variable `edad` está inicializada con el valor de 47 años.
 
-El programa comienza definiendo que `edad` es igual a 47. Luego usa una estructura de control llamada `if-else if`, que comprueba varias condiciones secuenciales para determinar cuál mensaje mostrar. Si la edad es menor que 10, se muestra "Eres un niño". Como la edad en este caso es 47, esa condición no se cumple y el código pasa a comprobar las siguientes: si `edad` está entre 10 y 20 (no incluyendo 20), se mostrará que eres adolescente; si está entre 20 y 30 (no incluyendo 30), se muestra "Eres un joven". Como la edad es 47, ninguna de las condiciones anteriores se cumple y se ejecuta el bloque `else` por defecto, lo cual muestra en la consola que ya no eres un joven.
+El programa utiliza un conjunto de condiciones `if`, `else if` y `else` para clasificar la edad proporcionada en diferentes categorías: niño, adolescente, joven o adulto mayor (no joven). Cada condición comprueba un rango específico de edades. Si la persona tiene menos de 10 años, se muestra "Eres un niño". Si su edad está entre 10 y 20 años (inclusive), se imprime "Eres un adolescente". Para las personas de entre 20 y 30 años, aparece el mensaje "Eres un joven". En cualquier otro caso, es decir, si la persona tiene más de 30 años, el programa muestra "Ya no eres un joven".
 
-Esta estructura es importante porque permite tomar decisiones basadas en diferentes rangos o categorías de datos, permitiendo una interacción más personalizada y detallada con los usuarios a través del código.
+Este tipo de estructura condicional es muy útil en aplicaciones web para personalizar la interacción según las características específicas del usuario.
+
+`027-else if.html`
 
 ```html
 <script>
@@ -10113,12 +10858,13 @@ Esta estructura es importante porque permite tomar decisiones basadas en diferen
 ```
 
 ### switch
+<small>Creado: 2025-11-17 09:38</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de JavaScript que determina y muestra en consola una descripción del día de la semana basada en el valor de la variable `dia`. La función clave aquí es la estructura `switch`, que funciona como una serie de opciones para comparar el valor de `dia` con varios casos posibles. Si `dia` es "lunes", por ejemplo, se ejecutará el código dentro del bloque correspondiente a ese caso y mostrará en consola un mensaje diciendo que hoy es "el peor día de la semana". Cada caso tiene su propio mensaje diferente asociado. El uso de `break` al final de cada caso evita que el programa continúe comprobando los casos restantes una vez encontrado un match, lo cual es crucial para evitar errores y hacer que el código sea más eficiente.
+Este fragmento de código HTML contiene un script que utiliza una estructura `switch` para determinar qué día de la semana es y muestra un mensaje en la consola según el valor del día. La variable `dia` se inicializa con el valor "lunes". Luego, el bloque `switch` evalúa si `dia` coincide con cada uno de los casos ("lunes", "martes", etc.). Si hay una coincidencia, muestra un mensaje específico en la consola y usa `break` para salir del bloque `switch`. Esto permite al código mostrar mensajes personalizados dependiendo del día de la semana seleccionado. Esta estructura es útil cuando se necesita manejar múltiples condiciones basadas en el valor de una variable.
 
-Este tipo de estructura es importante porque permite tomar decisiones en función de varios posibles valores, lo que mejora la flexibilidad del programa sin necesidad de escribir múltiples `if` anidados. Es una forma muy clara y concisa de manejar selecciones múltiples en JavaScript.
+`028-switch.html`
 
 ```html
 <script>
@@ -10150,16 +10896,21 @@ Este tipo de estructura es importante porque permite tomar decisiones en funció
 ```
 
 ### objeto matematico
+<small>Creado: 2025-11-17 09:40</small>
 
 #### Explicación
 
-Este fragmento de código es una sección de un archivo HTML que incluye algunas líneas de JavaScript para ilustrar cómo usar diferentes métodos y propiedades del objeto `Math`. El objetivo principal es mostrar cómo realizar operaciones matemáticas básicas dentro de un documento web.
+Este fragmento de código es una parte importante del aprendizaje básico sobre JavaScript, específicamente cómo trabajar con el objeto `Math`. Este objeto proporciona varias funciones y constantes matemáticas útiles.
 
-Primero, el código utiliza varios métodos del objeto `Math` como `round`, `ceil` y `floor` para redondear números. Por ejemplo, `Math.round(4.7)` redondea 4.7 al número entero más cercano, que es 5. En cambio, `Math.ceil(4.7)` siempre redondea hacia arriba a 5, mientras que `Math.floor(4.7)` redondea hacia abajo a 4.
+Primero, el código utiliza varios métodos del objeto `Math` para realizar operaciones matemáticas. Por ejemplo, `Math.round(4.7)` redondea el número 4.7 al entero más cercano, que es 5. Luego, `Math.ceil(4.7)` redondea hacia arriba al siguiente entero completo (en este caso, 5), mientras que `Math.floor(4.7)` redondea hacia abajo al entero anterior (es decir, 4). Estos métodos son útiles para manipular números de manera precisa en aplicaciones web.
 
-Además, se muestra cómo generar un número aleatorio usando el método `random()`, lo que es útil cuando necesitas valores no predeterminados para operaciones diversas dentro de una página web.
+Además, el código muestra cómo generar un número aleatorio con `Math.random()`. Este método devuelve un número pseudoaleatorio entre 0 y 1, que es muy útil cuando se necesita agregar elementos de azar a una página web, como juegos o simulaciones.
 
-Finalmente, la propiedad `PI` del objeto `Math` se utiliza para mostrar el valor exacto de pi (π), que es un valor constante ampliamente utilizado en cálculos matemáticos y geométricos. Estos métodos y propiedades son fundamentales para realizar operaciones matemáticas en JavaScript, lo cual puede ser crucial cuando estás desarrollando funciones más complejas o interactivas en tus páginas web.
+Finalmente, se utiliza la propiedad `PI` del objeto `Math`, que contiene el valor numérico de pi (π), aproximadamente 3.14159. Este valor es crucial en cálculos trigonométricos y geométricos, tal como lo demuestra con `Math.cos(2)`, que calcula el coseno de un ángulo en radianes.
+
+En resumen, este código sirve para introducir a los estudiantes al manejo del objeto `Math` en JavaScript, mostrando cómo se pueden realizar operaciones matemáticas complejas y obtener constantes matemáticas esenciales.
+
+`029-objeto matematico.html`
 
 ```html
 <script>
@@ -10178,14 +10929,17 @@ Finalmente, la propiedad `PI` del objeto `Math` se utiliza para mostrar el valor
 ```
 
 ### random entre rango
+<small>Creado: 2025-11-17 09:43</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de JavaScript que se encarga de generar un número aleatorio dentro de un rango específico. El propósito principal es crear un número pseudoaleatorio entre los valores de `minimo` y `maximo`, incluyendo ambos extremos del intervalo (aunque técnicamente, dado el funcionamiento interno del método `Math.random()`, no puede garantizar que siempre se incluya exactamente el valor máximo). 
+Este fragmento de código HTML contiene una sección `<script>` que genera un número aleatorio dentro de un rango específico. En este caso, el número generado estará entre 5 (inclusive) y 10 (inclusive), aunque técnicamente puede ser ligeramente menor a 10 debido a la naturaleza de los números generados por `Math.random()`.
 
-Primero, se declaran dos variables: `minimo` con un valor de 5 y `maximo` con un valor de 10. Luego, la línea clave es `let aleatorio = Math.random()*(maximo-minimo)+minimo;`. Aquí, el método `Math.random()` genera un número decimal entre 0 (incluido) y 1 (excluido), que se multiplica por la diferencia entre `maximo` e `minimo`, para luego sumarle el valor de `minimo`. Esto ajusta el rango del número aleatorio generado a estar dentro del intervalo deseado, en este caso, desde 5 hasta menos de 10 (dado que no incluye exactamente el 1).
+El código establece dos variables: `minimo` con un valor de 5 y `maximo` con un valor de 10. Luego, se calcula un número aleatorio dentro del rango definido usando la función `Math.random()`, que devuelve un número entre 0 (inclusive) y 1 (exclusivo). Multiplicando este número por el ancho del rango (`maximo - minimo`), obtenemos un valor entre 0 y 5. Finalmente, sumamos `minimo` para desplazar ese intervalo a uno que va desde 5 hasta (casi) 10.
 
-Finalmente, el código imprime el resultado obtenido en la consola usando `console.log(aleatorio);`, lo cual es útil para ver el número aleatorio generado durante el desarrollo y depuración del programa. Este tipo de procedimiento es común cuando se necesita un valor variado pero dentro de ciertos límites, como por ejemplo seleccionar una opción al azar en juegos o aplicaciones interactivas.
+Este tipo de código es muy útil cuando necesitas tomar decisiones basadas en datos aleatorios, como simular eventos impredecibles en un juego o elegir elementos al azar en una lista. La función `console.log(aleatorio)` sirve para imprimir el número generado en la consola del navegador, lo que ayuda a verificar que todo funciona correctamente durante la depuración.
+
+`030-random entre rango.html`
 
 ```html
 <script>
@@ -10199,14 +10953,17 @@ Finalmente, el código imprime el resultado obtenido en la consola usando `conso
 ```
 
 ### random entero
+<small>Creado: 2025-11-17 09:44</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de script que genera un número entero aleatorio dentro de un rango específico. En este caso, el número generado estará entre 5 (inclusive) y 10 (inclusive). 
+Este fragmento de código HTML contiene un script que genera un número entero aleatorio dentro de un rango especificado. En este caso, el rango está definido por dos variables: `minimo`, que vale 5, y `maximo`, que vale 10.
 
-Lo que hace el código es primero crear dos variables: `minimo` con valor 5 y `maximo` con valor 10. Luego, se calcula un número aleatorio decimal usando la función `Math.random()`, que produce un número entre 0 (inclusive) y 1 (excluyente). Este número se ajusta al rango deseado multiplicándolo por la diferencia entre el máximo y el mínimo (`maximo-minimo`), luego se suma el valor del mínimo para asegurar que el resultado esté en el rango correcto.
+El código primero crea un número decimal aleatorio entre 0 (inclusive) y 1 (exclusivo) usando la función `Math.random()`. Luego, ajusta este valor para que se encuentre dentro del rango especificado por las variables `minimo` y `maximo`. Finalmente, convierte ese número decimal en un entero mediante la función `Math.round()`.
 
-Finalmente, el código redondea este número decimal a un entero usando `Math.round()` y muestra el resultado en la consola. Este tipo de script es útil cuando necesitas generar números aleatorios dentro de ciertos límites, por ejemplo, para juegos o simulaciones.
+El resultado de esta operación aleatoria es luego mostrado en la consola del navegador utilizando `console.log()`, lo que te permite ver el número entero generado cuando ejecutas este código. Esto es útil para entender cómo generar valores numéricos aleatorios y limitarlos a un rango específico, una habilidad comúnmente usada en juegos o aplicaciones interactivas.
+
+`031-random entero.html`
 
 ```html
 <script>
@@ -10221,14 +10978,19 @@ Finalmente, el código redondea este número decimal a un entero usando `Math.ro
 ```
 
 ### fechas
+<small>Creado: 2025-11-17 09:46</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene una pequeña porción de JavaScript que se encarga de trabajar con la fecha actual del sistema. Cuando el navegador ejecuta este script, lo primero que hace es crear un objeto llamado `hoy` utilizando la función `Date()`, precedida por la palabra clave `new`. Esto significa que estamos creando una nueva instancia del objeto `Date`, que contiene toda la información sobre la fecha y hora actuales en el momento de ejecutar el código.
+Este fragmento de código en JavaScript crea una nueva fecha basada en la hora actual del sistema y luego muestra esa fecha en la consola. 
 
-Después, con la línea `console.log(hoy);`, se imprime en el panel de consola del navegador todos los detalles del objeto `hoy`, incluyendo la fecha y la hora exactas. Esto es útil para ver cómo maneja JavaScript las fechas y horarios, y puede ser una herramienta valiosa cuando necesitas trabajar con datos temporales en tus páginas web.
+Primero, se utiliza la palabra clave `new` junto con el constructor `Date()`. Esto significa que estamos creando un nuevo objeto de tipo `Date`, que representa la fecha y la hora actuales del sistema donde está ejecutándose el script.
 
-Este código es importante porque muestra cómo interactuar con objetos internos de JavaScript y cómo visualizar información útil durante el proceso de desarrollo.
+Luego, esta nueva fecha es asignada a una variable llamada `hoy`. Finalmente, se usa `console.log(hoy)` para imprimir en la consola del navegador o del entorno de desarrollo (como Chrome DevTools) toda la información relacionada con esa fecha y hora, como día, mes, año, horas, minutos y segundos.
+
+Este código es importante porque muestra cómo trabajar con objetos en JavaScript y cómo obtener la fecha actual desde el sistema utilizando un objeto `Date`, lo cual puede ser muy útil para aplicaciones que necesitan registrar fechas o tiempos específicos.
+
+`032-fechas.html`
 
 ```html
 <script>
@@ -10239,14 +11001,13 @@ Este código es importante porque muestra cómo interactuar con objetos internos
 ```
 
 ### metodos
+<small>Creado: 2025-11-17 09:48</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de script que trabaja con la fecha y hora actuales del sistema. En el código, se crea una instancia de la clase `Date`, llamada `hoy`. Esta instancia representa la fecha y hora actuales en el momento en que el navegador ejecuta este script.
+Este código HTML incluye un bloque de JavaScript que demuestra cómo obtener diferentes partes de la fecha y hora actual usando el objeto `Date`. En primer lugar, se crea una nueva instancia del objeto `Date` llamada `hoy`, lo que básicamente obtiene la fecha y hora actuales en el momento en que el código se ejecuta. Luego, utiliza varios métodos del objeto `Date` para extraer detalles específicos como el año (con `getYear()` y `getFullYear()`, aunque es importante notar que `getYear()` puede ser inexacto dependiendo de la configuración regional), el mes (`getMonth()`), el día de la semana (`getDay()`), el día del mes (`getDate()`), las horas (`getHours()`), los minutos (`getMinutes()`), y los segundos (`getSeconds()`). Estos métodos permiten a los programadores acceder fácilmente a distintas partes de la fecha y hora, lo que es muy útil para tareas como mostrar la fecha actual en una página web o realizar cálculos basados en fechas.
 
-El script luego utiliza diferentes métodos del objeto `Date` para mostrar distintas partes de la fecha y hora actual en la consola del navegador. Por ejemplo, `getYear()` debería devolver el año, pero es mejor usar `getFullYear()` porque proporciona el año completo (como 2023) en lugar del año relativo a la época de centenares (como 113 para el siglo XXI). Otros métodos como `getMonth()`, `getDay()`, y `getDate()` muestran, respectivamente, el mes (número), día de la semana (número donde 0 es domingo) y el día del mes.
-
-Finalmente, también se utilizan los métodos `getHours()`, `getMinutes()`, y `getSeconds()` para obtener las horas, minutos y segundos actuales. Estos métodos son útiles cuando necesitas trabajar con la fecha y hora en aplicaciones web que requieren rastrear fechas o sincronizar eventos según el tiempo real del usuario.
+`033-metodos.html`
 
 ```html
 <script>
@@ -10265,16 +11026,15 @@ Finalmente, también se utilizan los métodos `getHours()`, `getMinutes()`, y `g
 ```
 
 ### calculo del mes
+<small>Creado: 2025-11-17 09:55</small>
 
 #### Explicación
 
-Este fragmento de código es una parte importante del script que se ejecuta en el navegador web. Lo que hace principalmente es calcular cuántos días tiene el mes actual. 
+Este fragmento de código JavaScript realiza un cálculo para determinar cuántos días tiene el mes actual. Comienza creando una instancia de la fecha actual y luego extrae el año y el mes actuales. La parte clave es cuando calcula la cantidad de días en el mes actual, usando la función `getMonth()` del objeto Date que devuelve un número entre 0 (que significa enero) y 11 (diciembre). Para obtener el último día del mes, crea una nueva instancia de Date para un mes después (usando `mes + 1`) pero establece el día al primer día del siguiente mes (`0`), luego usa la función `getDate()` que devuelve el número del último día del mes anterior. Finalmente, imprime en la consola este valor calculado.
 
-Primero, el código crea un objeto `Date` llamado `hoy`, que captura la fecha y hora actuales cuando se carga la página. A continuación, extrae dos valores del objeto `hoy`: el año completo (almacenado en `anio`) y el número de mes actual (almacenado en `mes`). En este sistema, los meses van desde 0 para enero hasta 11 para diciembre.
+Este tipo de código es importante para aplicaciones web dinámicas donde se necesita mostrar información basada en fechas actuales o calcular datos relacionados con calendarios y tiempos específicos.
 
-Luego, utiliza estos datos para calcular cuántos días tiene exactamente el mes que estamos viendo. Esto se logra con la línea `new Date(anio, mes + 1, 0).getDate();`. El truco está en pasar un valor de mes +1 y una fecha del día anterior al primer día siguiente al último día del mes actual (es decir, un día después del último día del mes), lo que nos permite obtener el número correcto de días sin necesidad de conocer previamente cuántos días tiene cada mes.
-
-Finalmente, imprime en la consola del navegador este número de días. Esta funcionalidad es útil para diseñar calendarios dinámicos o aplicaciones que dependen de información precisa sobre fechas y temporizadores basados en el tiempo actual.
+`034-calculo del mes.html`
 
 ```html
 <script>
@@ -10291,14 +11051,23 @@ Finalmente, imprime en la consola del navegador este número de días. Esta func
 ```
 
 ### calendario real
+<small>Creado: 2025-11-17 10:04</small>
 
 #### Explicación
 
-Este código HTML crea una página web que muestra los días del mes actual en formato de calendario. En el encabezado, se define un estilo CSS que organiza las celdas del calendario en una cuadrícula con siete columnas (una para cada día de la semana). El cuerpo del documento contiene JavaScript que escribe en la página dinámicamente.
+Este fragmento de código HTML crea un calendario para un mes específico utilizando JavaScript. Aquí está una explicación detallada:
 
-El script primero comienza creando una sección HTML. Luego, calcula el número de días que tiene el mes actual usando un objeto `Date` y almacenándolo en la variable `dias_en_mes`. Después, el script itera a través del número total de días en ese mes utilizando un bucle `for`, escribiendo cada día como un cuadro dentro de la sección. Finalmente, cierra la sección HTML.
+1. La sección `<style>` en la cabecera del documento define cómo debe verse el contenido generado por JavaScript. Específicamente, establece que los contenidos deberán ser presentados en forma de cuadrícula con 7 columnas (una para cada día de la semana), y que cada celda de esta cuadrícula será un `<div>` con ciertos estilos predeterminados.
 
-Este código es importante porque demuestra cómo combinar CSS y JavaScript para generar contenido dinámico basado en la fecha actual del navegador, lo que permite a los usuarios visualizar fácilmente el calendario correspondiente al mes en curso sin necesidad de introducir datos manualmente.
+2. Dentro del cuerpo del documento, el código JavaScript se encarga de generar los días del mes en cuestión. Primero, utiliza una función `new Date(anio, mes + 1, 0).getDate()` para calcular cuántos días tiene ese mes específico (dado por las variables `anio` y `mes`). Esta técnica aprovecha el comportamiento natural de la función `Date` que retorna al último día del mes anterior cuando se le proporciona un día futuro que no existe.
+
+3. A continuación, utiliza un bucle `for` para iterar desde 1 hasta el número total de días en ese mes (`dias_en_mes`). En cada iteración del bucle, añade a la página una etiqueta `<div>` con el número del día actual dentro de ella usando la función `document.write()`. Cada uno de estos elementos `<div>` se inserta directamente en un elemento `<section>` que también fue creado por JavaScript.
+
+4. Finalmente, después de terminar de escribir todos los días, el código cierra la etiqueta de cierre del elemento `<section>`, asegurando así que toda la estructura sea válida HTML y visualmente coherente con la cuadrícula definida en CSS anteriormente.
+
+Este código es útil para enseñar cómo combinar JavaScript con HTML y CSS para manipular dinámicamente el contenido de una página web, creando efectivamente un calendario que se puede personalizar fácilmente para mostrar diferentes meses simplemente modificando las variables `anio` y `mes`.
+
+`035-calendario real.html`
 
 ```html
 <!doctype html>
@@ -10323,19 +11092,21 @@ Este código es importante porque demuestra cómo combinar CSS y JavaScript para
 ```
 
 ### superbucle
+<small>Creado: 2025-11-17 10:11</small>
 
 #### Explicación
 
-Este código HTML crea una página web que muestra los meses y días del año 2025 utilizando un diseño grid para organizar visualmente la información. En el bloque de `<head>`, se definen estilos CSS que organizan las secciones en columnas iguales para representar cada día del mes.
+Este código HTML contiene un script que genera una estructura de calendario para todo el año 2025. La página web se compone principalmente del código HTML y CSS básico, pero la funcionalidad principal viene del código JavaScript incluido en la etiqueta `<script>`.
 
-El código JavaScript dentro del bloque `<script>` hace uso de dos bucles anidados para generar contenido dinámicamente:
+El código JavaScript utiliza dos bucles anidados: un bucle exterior que itera a través de cada mes del año (del 0 al 11), y un bucle interior para generar los días de cada mes. Dentro del bucle exterior, se crea un encabezado con el nombre del mes en formato "2025-#", donde # es el número del mes basado en la iteración actual.
 
-1. El primer bucle `for` recorre todos los meses del año, desde enero (mes 0) hasta diciembre (mes 11).
-2. Para cada mes, el código crea una cabecera `<h1>` que indica el mes con formato "año-mes" (por ejemplo, "2025-01").
-3. Luego, dentro de un contenedor `section`, se calcula cuántos días tiene ese mes específico en 2025 utilizando la función `new Date(2025, mes+1, 0).getDate()`. Esta línea obtiene el último día del mes siguiente y resta uno para obtener el número correcto de días en el mes actual.
-4. Un segundo bucle `for` se utiliza para escribir un bloque `<div>` para cada día dentro del mes.
+Para determinar cuántos días tiene cada mes, se utiliza una instancia de `Date` que consulta al sistema para obtener la cantidad correcta de días. Esto implica crear un objeto `Date` con el año y el mes siguiente (ya que los meses están indexados desde 0 en JavaScript) y obtiene el número del día anterior a este último mes, lo que efectivamente proporciona el total de días para el mes actual.
 
-Este tipo de estructura es útil para visualizar calendarios o patrones temporales en un formato interactivo y atractivo, permitiendo a los usuarios comprender fácilmente el flujo de días y meses en un año determinado.
+Dentro del bucle interior, se genera una caja (`<div>`) para cada día del mes con su número correspondiente. Todo esto se envuelve en una estructura CSS Grid definida en la sección `<style>` para organizar visualmente los días en filas de siete (una por cada día de la semana).
+
+Este tipo de código es útil cuando se desea generar contenido dinámico basado en fechas o periodos específicos, permitiendo que el navegador cree y muestre un calendario interactivo directamente desde el script JavaScript.
+
+`036-superbucle.html`
 
 ```html
 <!doctype html>
@@ -10363,16 +11134,23 @@ Este tipo de estructura es útil para visualizar calendarios o patrones temporal
 ```
 
 ### años
+<small>Creado: 2025-11-17 10:16</small>
 
 #### Explicación
 
-Este código HTML crea una página web que muestra los años desde el año 2000 hasta el año 2025, y para cada mes de esos años, presenta sus días correspondientes en cuadritos ordenados. La parte más relevante es el bloque de script dentro del cuerpo (`<body>`), donde se utilizan bucles `for` anidados para recorrer primero los años, luego los meses y finalmente los días.
+Este código HTML contiene un script que crea una representación de los meses y días entre los años 2000 y 2025 en la página web. Aquí te explico cómo funciona:
 
-El primer bucle `for` itera sobre cada año desde 2000 hasta 2025. Dentro de este bucle, hay otro bucle que se encarga de iterar por todos los meses del año (de enero a diciembre). Para cada mes, el código crea una nueva sección HTML y calcula cuántos días tiene ese mes utilizando la función `new Date(anio, mes+1, 0).getDate()`, que devuelve el último día del mes anterior, es decir, el número de días en el mes actual.
+1. **Configuración del estilo**: En el encabezado (`<head>`), se define un estilo CSS que establece un diseño gráfico para una sección de la página, donde cada mes es representado como una cuadrícula con siete columnas.
 
-Finalmente, dentro del tercer bucle `for`, por cada día del mes se genera un cuadro con el número correspondiente. Los elementos HTML son escritos directamente al documento mediante `document.write`, creando una estructura visual que muestra los años y meses organizados en una cuadrícula de días.
+2. **Bucle de años y meses**: El script JavaScript comienza creando dos bucles anidados: uno recorre todos los años desde 2000 hasta 2025 (inclusive), y el segundo bucle dentro de este itera sobre cada mes del año actual, representado por números del 0 al 11.
 
-Este tipo de código es útil para entender cómo manipular fechas y generar contenido dinámico basado en datos temporales, lo cual puede ser muy práctico para aplicaciones como calendarios o registros de eventos.
+3. **Generación dinámica de contenido**: Para cada combinación de año y mes especificada en los bucles, se crea un título (`<h1>`) que muestra el año seguido del número del mes (aumentando en uno para corregir la numeración). Luego, dentro de una etiqueta `<section>` con estilo CSS previamente definido, se genera una cuadrícula que contiene los días correspondientes al mes actual. Esto se hace calculando primero el número total de días en ese mes usando el objeto `Date` y luego creando un bucle que imprime cada día desde 1 hasta el número total.
+
+4. **Uso de document.write**: Dentro del script, la función `document.write()` es utilizada para insertar directamente estos elementos HTML en la página web durante su carga, lo cual genera una representación visual del calendario para todos los meses entre 2000 y 2025.
+
+Este código es importante porque muestra cómo se puede combinar JavaScript con HTML y CSS para crear contenido dinámico y estructurado que cambia según las necesidades específicas del script, en este caso, la representación de un calendario extendido.
+
+`037-años.html`
 
 ```html
 <!doctype html>
@@ -10402,12 +11180,13 @@ Este tipo de código es útil para entender cómo manipular fechas y generar con
 ```
 
 ### funciones
+<small>Creado: 2025-11-19 10:13</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene una función llamada `diHola` que se define dentro de las etiquetas `<script>`. Cuando esta función se ejecuta en un navegador web, ella utiliza el método `document.write()` para imprimir "Hola, ¿como estás?" directamente en la página web. Es importante notar que este código debe ser llamado o ejecutado en algún lugar del documento HTML, ya sea invocándolo directamente después de su definición (`diHola();`) o mediante un evento como el clic de un botón.
+Este fragmento de código es una función en JavaScript llamada `diHola`. Lo que hace esta función es escribir el texto "Hola, ¿cómo estás?" directamente en la página web utilizando la función `document.write()`. Cuando se llama a la función `diHola`, aparecerá este saludo en la página. Es importante destacar que aunque este ejemplo muestra cómo definir una función y cómo esta puede interactuar con el contenido de una página web, en la práctica no es recomendable usar `document.write()` para escribir texto después de que la página haya comenzado a cargarse, ya que esto podría sobrescribir todo el contenido de la página.
 
-Es relevante mencionar que `document.write()` se utiliza principalmente para fines didácticos y es menos común en la práctica moderna debido a sus limitaciones. En proyectos más avanzados, se recomienda usar métodos alternativos para manipular el contenido del documento web, como los objetos `DOM` (Document Object Model), que permiten un control mucho más fino sobre la estructura y el contenido de las páginas web.
+`038-funciones.html`
 
 ```html
 <script>
@@ -10418,12 +11197,15 @@ Es relevante mencionar que `document.write()` se utiliza principalmente para fin
 ```
 
 ### Llamada a la funcion
+<small>Creado: 2025-11-19 10:14</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene una pequeña sección de script que hace uso de JavaScript para interactuar con la página web. En él, se define una función llamada `diHola()`, cuya tarea es escribir un saludo en el documento web utilizando la instrucción `document.write()`. Cuando se llama a esta función al final del bloque de código, la frase "Hola, ¿cómo estás?" aparece directamente en la página. Es importante notar que `document.write()` inserta texto o HTML dentro del cuerpo principal de la página donde el script está situado.
+Este fragmento de código HTML contiene una pequeña sección de script que hace uso de JavaScript. En primer lugar, se define una función llamada `diHola()`. Dentro de esta función, el método `document.write()` es utilizado para escribir en la página web un mensaje que dice "Hola, ¿cómo estás?". Inmediatamente después de definir la función, se llama a ella con `diHola();`, lo cual significa que el contenido de la función será ejecutado, y por tanto aparecerá el saludo en la página. Este código es sencillo pero ilustra cómo una función puede ser creada y luego invocada para modificar dinámicamente el contenido del documento web.
 
-Esta práctica es útil para aprender cómo las funciones pueden ser definidas y utilizadas en páginas web y cómo JavaScript puede manipular contenido visible en tiempo real. Sin embargo, se debe tener cuidado con `document.write()`, ya que si se utiliza después del final de la carga de una página, podría borrar todo el contenido existente o no funcionar como esperamos. Para situaciones más avanzadas, los desarrolladores suelen optar por métodos alternativos y más seguros para modificar el contenido de las páginas web dinámicamente.
+Es importante destacar que aunque `document.write()` puede parecer útil para escribir texto en un sitio web, su uso no es recomendado para actualizaciones de página después de que la página se haya cargado completamente, ya que podría sobrescribir todo el contenido de la página si se utiliza después del evento `onload`.
+
+`039-Llamada a la funcion.html`
 
 ```html
 <script>
@@ -10435,10 +11217,13 @@ Esta práctica es útil para aprender cómo las funciones pueden ser definidas y
 ```
 
 ### parametro de la funcion
+<small>Creado: 2025-11-19 10:17</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene un bloque de script que define y utiliza una función llamada `diHola`. La función toma un parámetro (un nombre), en este caso "Jose Vicente", y escribe en la página web un saludo personalizado utilizando ese nombre. Cuando se ejecuta, esta función añade el texto "Hola, Jose Vicente ¿cómo estás?" directamente al documento HTML mediante el método `document.write`. Es importante entender que aunque este código es sencillo, muestra cómo las funciones JavaScript pueden interactuar con el contenido de una página web para personalizarla o dinamizarla.
+Este fragmento de código HTML contiene una función llamada `diHola` que recibe un parámetro llamado `nombre`. La función se encarga de escribir en el documento web, usando la instrucción `document.write`, un saludo personalizado que incluye el nombre proporcionado como argumento. En este caso, cuando la función es invocada con "Jose Vicente" como argumento, el navegador mostrará una frase como "Hola, Jose Vicente ¿cómo estás?". Este tipo de código es importante porque demuestra cómo las funciones pueden recibir y utilizar información externa para personalizar su comportamiento o salida.
+
+`040-parametro de la funcion.html`
 
 ```html
 <script>
@@ -10450,10 +11235,17 @@ Este fragmento de código HTML contiene un bloque de script que define y utiliza
 ```
 
 ### varios parametros en la funcion
+<small>Creado: 2025-11-19 10:17</small>
 
 #### Explicación
 
-Este fragmento de código HTML contiene una función simple en JavaScript que muestra un mensaje personalizado en la página web. La función se llama `diHola` y toma dos parámetros: `nombre` (el nombre de la persona) y `edad` (la edad de esa persona). Dentro de la función, se utiliza el método `document.write` para escribir en la página un saludo que incluye tanto el nombre como la edad del usuario proporcionados por los argumentos. En este caso específico, cuando la función `diHola("Jose Vicente",47);` es llamada, aparecerá en la página web un mensaje que dice: "Hola, Jose Vicente tienes 47 años, ¿como estás?". Este código es importante para entender cómo pasar datos a funciones y cómo estas pueden modificar dinámicamente el contenido de una página web.
+Este fragmento de código HTML incluye una función llamada `diHola` que toma dos parámetros: `nombre` y `edad`. La función utiliza la instrucción `document.write()` para imprimir en el documento web un mensaje personalizado que incluye el nombre proporcionado y la edad del usuario. En este caso, cuando se llama a la función al final del script con los argumentos `"Jose Vicente"` y `47`, se genera un saludo específico para una persona llamada Jose Vicente de 47 años.
+
+Esta técnica es útil en situaciones donde necesitas personalizar el contenido que se muestra en una página web según la información específica de cada usuario. La función simplifica el proceso de escribir ese mismo código cada vez que quieras mostrar un saludo personalizado, permitiendo reutilizarlo fácilmente con diferentes datos.
+
+Es importante destacar cómo los parámetros pasados a la función (`"Jose Vicente"` y `47`) son utilizados dentro del cuerpo de la función para construir el mensaje final. Esto demuestra una forma básica pero efectiva de pasar información entre distintas partes del código en JavaScript, lo que es fundamental para el desarrollo web dinámico.
+
+`041-varios parametros en la funcion.html`
 
 ```html
 <script>
@@ -10465,12 +11257,17 @@ Este fragmento de código HTML contiene una función simple en JavaScript que mu
 ```
 
 ### Salida con return
+<small>Creado: 2025-11-19 10:20</small>
 
 #### Explicación
 
-Este fragmento de código HTML incluye un script que define una función llamada `diHola` y la utiliza para mostrar un mensaje en la página web. La función `diHola` toma dos parámetros: `nombre` y `edad`. Dentro de la función, se construye un string con información personalizada, incorporando el nombre y la edad proporcionados como argumentos, y luego retorna ese string.
+Este fragmento de código HTML contiene una función llamada `diHola` que toma dos parámetros: `nombre` y `edad`. La función se encarga de construir un mensaje personalizado utilizando estos parámetros y luego devuelve el resultado mediante la palabra clave `return`.
 
-Después de definir la función, el código llama a `diHola`, pasándole los valores "Jose Vicente" para el nombre y 47 para la edad. El resultado que devuelve la función se pasa a la función `document.write()`, lo cual inserta directamente en el HTML del documento una frase como: "Hola, Jose Vicente tienes 47 años, ¿como estás?". Este tipo de código es útil para personalizar mensajes y hacer que las páginas web sean más interactivas o informativas según la información proporcionada.
+Después de definir la función, se utiliza la instrucción `document.write()` para llamar a `diHola`, pasándole los argumentos "Jose Vicente" y 47. Esto hace que el mensaje construido por la función (`"Hola, Jose Vicente tienes 47 años, ¿como estás?"`) sea mostrado directamente en la página web.
+
+Esta práctica es útil para aprender cómo definir funciones en JavaScript y cómo pasar parámetros a ellas. Además, muestra cómo una función puede devolver un valor que luego se puede utilizar de diversas maneras, en este caso, mostrándolo directamente en el documento HTML.
+
+`042-Salida con return.html`
 
 ```html
 <script>
@@ -10482,10 +11279,17 @@ Después de definir la función, el código llama a `diHola`, pasándole los val
 ```
 
 ### creacion de una clase
+<small>Creado: 2025-11-19 10:23</small>
 
 #### Explicación
 
-Este fragmento de código HTML muestra cómo se define una clase en JavaScript dentro de un bloque `<script>`. En este caso, la clase se llama `Gato` y está vacía porque no tiene ninguna propiedad o método definidos por ahora. Las clases en JavaScript son esenciales para organizar el código, crear objetos con características similares y facilitar el mantenimiento del mismo. Aunque aquí solo vemos la declaración de la clase sin contenido, este bloque sirve como punto de partida para añadir más detalles a medida que se necesiten.
+Este fragmento de código HTML contiene una declaración básica de clase en JavaScript. Una clase es un modelo o plantilla que se usa para crear objetos con características similares en la programación orientada a objetos. En este caso, la clase se llama "Gato" y está vacía, lo que significa que no tiene propiedades ni métodos definidos todavía.
+
+El código `<script>` envuelve el bloque de JavaScript donde se define la clase. Aunque la clase "Gato" no hace nada en esta versión inicial, es importante entender cómo estructurar clases en JavaScript para cuando comiences a agregar más detalles como atributos y funciones que serán específicas del gato, por ejemplo.
+
+Crear una clase vacía te permite comenzar a planificar qué características tendrá tu objeto Gato sin preocuparte inmediatamente de implementarlas. Esto es útil en el proceso de diseño y desarrollo de aplicaciones web interactivas.
+
+`043-creacion de una clase.html`
 
 ```html
 <script>
@@ -10496,10 +11300,17 @@ Este fragmento de código HTML muestra cómo se define una clase en JavaScript d
 ```
 
 ### instanciacion
+<small>Creado: 2025-11-19 10:23</small>
 
 #### Explicación
 
-Este fragmento de código está dentro de una etiqueta `<script>`, lo que indica que es JavaScript y no HTML. El código define una clase llamada `Gato` y luego crea dos instancias o objetos de esa clase, llamadas `gato1` y `gato2`. Las clases en JavaScript son un modo moderno de organizar el código para definir plantillas de objetos con características similares. En este caso, la clase `Gato` no tiene ninguna propiedad ni método dentro (es decir, está vacía), pero aún así puedes crear instancias de ella usando la palabra clave `new`. Esto es importante porque aunque las clases pueden ser sencillas o complejas, su uso permite estructurar mejor el código y reutilizar plantillas para objetos similares como animales, juguetes, personajes de videojuegos, entre otros.
+Este fragmento de código HTML contiene un script que utiliza JavaScript para crear una clase llamada `Gato` y luego instanciar dos objetos a partir de esta clase. 
+
+Primero, se define la clase `Gato` con `{}` pero sin incluir detalles específicos dentro (esto es común si aún no has definido las propiedades o métodos que tendrá el gato). Luego, creas dos nuevas instancias de este objeto `Gato`, llamadas `gato1` y `gato2`. Esto se hace usando la palabra clave `new`, seguida del nombre de la clase (`Gato`). Cada una de estas variables (`gato1` y `gato2`) ahora es un objeto independiente que puede contener propiedades y métodos definidos en la clase `Gato`.
+
+Este código es importante porque ilustra cómo se pueden crear objetos basados en clases en JavaScript, lo cual es fundamental para entender el concepto de orientación a objetos en este lenguaje.
+
+`044-instanciacion.html`
 
 ```html
 <script>
@@ -10512,14 +11323,15 @@ Este fragmento de código está dentro de una etiqueta `<script>`, lo que indica
 ```
 
 ### propiedades
+<small>Creado: 2025-11-19 10:28</small>
 
 #### Explicación
 
-Este fragmento de código está escrito en HTML, pero contiene un bloque de script que utiliza JavaScript. Aquí se define una clase llamada `Gato` con algunas propiedades básicas: color, edad y raza. Estas propiedades están inicializadas dentro del constructor de la clase, es decir, cuando creamos una nueva instancia (o objeto) de `Gato`, estas variables se establecen en valores predeterminados (`undefined` para el color y la raza, y `0` para la edad).
+Este código HTML incluye un fragmento de JavaScript que define y utiliza una clase llamada `Gato`. La clase tiene un constructor, que es una función especial que se ejecuta automáticamente cuando creas una nueva instancia de la clase. En este caso, el constructor inicializa tres propiedades del objeto: `color`, `edad` y `raza`, todas establecidas en valores por defecto (`undefined` para `color` y `raza`, y `0` para `edad`). Luego, se crean dos instancias de la clase `Gato`: `gato1` e `gato2`. Finalmente, el código imprime en consola los detalles del objeto `gato1`.
 
-Después de definir la clase, se crean dos objetos: `gato1` e `gato2`. Ambos son instancias de la clase `Gato`, lo que significa que tienen las mismas propiedades (color, edad, raza) pero pueden tener valores diferentes si nosotros los configuramos. Finalmente, el código imprime en la consola (`console.log(gato1)`) una representación del objeto `gato1`. Esto es útil para debuggear y entender cómo está estructurado el objeto.
+Este ejemplo ilustra cómo definir una clase con propiedades y crear objetos a partir de ella. Es importante entender esto porque permite organizar y reutilizar código de manera efectiva cuando estás trabajando con JavaScript para manipular elementos del documento web o agregar interactividad a páginas HTML.
 
-Este tipo de práctica es importante porque nos permite crear objetos complejos que pueden contener información relevante y manipular esa información mediante métodos adicionales que podríamos añadir a la clase más adelante.
+`045-propiedades.html`
 
 ```html
 <script>
@@ -10538,14 +11350,17 @@ Este tipo de práctica es importante porque nos permite crear objetos complejos 
 ```
 
 ### metodos
+<small>Creado: 2025-11-19 10:29</small>
 
 #### Explicación
 
-Este fragmento de código es una mezcla de HTML y JavaScript. En el interior de las etiquetas `<script></script>`, se define una clase llamada `Gato` que representa un objeto gato con algunas características básicas. La clase incluye un constructor, que es un método especial que se ejecuta cuando se crea una nueva instancia del objeto. En este caso, el constructor inicializa tres propiedades: `color`, `edad` y `raza`, asignándoles valores por defecto como indefinidos o cero.
+Este código HTML contiene un bloque de script que define una clase llamada `Gato`. En esta clase, se crean tres propiedades: `color`, `edad` y `raza`, todas inicializadas en el constructor de la clase con valores específicos (por ejemplo, `undefined` para `color` y `0` para `edad`). Luego, se define un método llamado `maulla()` que devuelve una cadena "Miau", representando el sonido que hace el gato.
 
-Además de las propiedades, la clase define un método llamado `maulla()`, que simplemente devuelve una cadena de texto "Miau". Esto simula el sonido que hace un gato. Luego del bloque de definición de la clase, se crean dos instancias de `Gato` llamadas `gato1` y `gato2`. Finalmente, el código muestra en la consola del navegador las propiedades e interacciones con estos objetos: primero imprime el valor por defecto de `color` de `gato1`, que es indefinido, y luego llama al método `maulla()` de `gato1`, mostrando "Miau" en la consola.
+Después de definir la clase, se crean dos instancias del objeto Gato: `gato1` y `gato2`. Finalmente, se utilizan las funciones `console.log()` para imprimir en la consola del navegador la propiedad `color` del primer gato (`gato1`) y el resultado de llamar al método `maulla()`.
 
-Este tipo de código es importante para aprender cómo estructurar datos complejos y cómo encapsular comportamientos dentro de objetos usando JavaScript, lo cual es fundamental en el desarrollo web interactivo.
+Este ejemplo es importante porque muestra cómo crear una clase en JavaScript que encapsula propiedades y métodos relacionados con un objeto específico (en este caso, un gato), y cómo se pueden instanciar objetos a partir de esa clase para representar diferentes entidades.
+
+`046-metodos.html`
 
 ```html
 <script>
@@ -10568,12 +11383,19 @@ Este tipo de código es importante para aprender cómo estructurar datos complej
 ```
 
 ### set y get
+<small>Creado: 2025-11-19 10:40</small>
 
 #### Explicación
 
-Este código HTML incluye una sección de script que define y utiliza un objeto llamado "Gato". En esta clase, el constructor inicializa tres propiedades: color, edad y raza, todas las cuales comienzan sin valores específicos (es decir, son indefinidas o cero). También hay dos métodos definidos dentro del objeto Gato: `maulla()`, que simplemente devuelve la palabra "Miau", simulando el sonido que hace un gato; y dos funciones getter/setter para gestionar el color del gato (`setColor()` y `getColor()`).
+Este código HTML contiene una sección de JavaScript que define una clase llamada `Gato` y muestra cómo utilizar métodos específicos para manipular propiedades del objeto. La clase `Gato` tiene un constructor que inicializa tres propiedades: color, edad y raza, estableciéndolas como indefinidas o a cero por defecto.
 
-Después de crear esta clase, se instancian dos objetos Gato llamados `gato1` y `gato2`. Luego, a través de la función setter `setColor()`, se establece el color de `gato1` como "naranja". Finalmente, se utiliza la función getter `getColor()` para mostrar por pantalla el color del gato1 (que es "naranja") y también se imprime en consola el sonido que hace este objeto cuando llamamos al método `maulla()`. Este código ilustra cómo crear objetos personalizables con propiedades y métodos, así como cómo acceder a ellos usando funciones getter y setter.
+Además de las propiedades, la clase incluye dos métodos adicionales: `maulla()` y dos métodos para gestionar el color del gato (`setColor` y `getColor`). El método `setColor(nuevocolor)` cambia el valor del color del gato a un nuevo valor proporcionado por el usuario. Por otro lado, `getColor()` devuelve la propiedad `color`.
+
+En el código principal, se crean dos instancias de la clase `Gato`, llamadas `gato1` y `gato2`. Se establece el color de `gato1` en "naranja" usando el método `setColor()`. Luego, se imprime el color del gato1 en el documento HTML utilizando `document.write(gato1.getColor())` y también se muestra un mensaje de prueba con la función `console.log()` llamando al método `maulla()`.
+
+Este ejemplo demuestra cómo utilizar métodos getter (`getColor`) y setter (`setColor`) para manipular propiedades encapsuladas dentro de una clase en JavaScript, lo cual es una práctica común y segura en el desarrollo de software orientado a objetos.
+
+`047 set y get.html`
 
 ```html
 <script>
@@ -10598,6 +11420,139 @@ Después de crear esta clase, se instancian dos objetos Gato llamados `gato1` y 
 </script>
 ```
 
+### Actividades propuestas
+
+Te proporcionaré una descripción detallada de cada uno de los archivos JavaScript que has incluido, explicando su contenido y cómo funcionan.
+
+### Archivos Básicos
+
+#### `028-switch.html`
+Este archivo utiliza el operador `switch` para manejar diferentes casos basados en la variable `dia`. Cada caso imprime un mensaje diferente dependiendo del valor de `dia`.
+
+```javascript
+let dia = "lunes";
+switch(dia){
+  case "lunes":
+    console.log("Hoy es el peor dia de la semana");
+    break;
+  // Otros casos similares...
+}
+```
+
+#### `029-objeto matematico.html`
+Este archivo muestra cómo se pueden usar métodos y propiedades del objeto `Math` en JavaScript.
+
+```javascript
+console.log(Math.round(4.7));
+console.log(Math.random());
+```
+
+### Fechas
+
+#### `032-fechas.html`
+Este archivo crea un nuevo objeto de fecha (`Date`) e imprime la fecha actual.
+
+```javascript
+let hoy = new Date();
+console.log(hoy);
+```
+
+#### `033-metodos.html`
+Extiende el uso del objeto `Date` para mostrar cómo se pueden obtener diferentes partes de una fecha como el año, mes, día, horas, minutos y segundos.
+
+```javascript
+const hoy = new Date();
+console.log(hoy.getFullYear());
+console.log(hoy.getMonth());
+```
+
+#### `034-calculo del mes.html`
+Calcula cuántos días tiene un mes específico basado en la fecha actual usando métodos de `Date`.
+
+```javascript
+let anio = hoy.getFullYear();
+let mes = hoy.getMonth(); // 0 = enero, 11 = diciembre
+const dias_en_mes = new Date(anio, mes + 1, 0).getDate();
+console.log(dias_en_mes);
+```
+
+#### `035-calendario real.html`
+Genera un calendario visual de la fecha actual utilizando HTML y JavaScript.
+
+```javascript
+for(let dia = 1;dia<=dias_en_mes;dia++){
+  document.write("<div>"+dia+"</div>");
+}
+```
+
+### Programación Orientada a Objetos (POO)
+
+#### `045-propiedades.html`
+Este archivo muestra cómo declarar propiedades en una clase usando el constructor.
+
+```javascript
+class Gato{
+  constructor(){
+    this.color = undefined;
+    this.edad = 0;
+    this.raza = undefined;
+  }
+}
+```
+
+#### `046-metodos.html`
+Además de las propiedades, muestra cómo declarar métodos en una clase y utilizarlos.
+
+```javascript
+class Gato{
+  constructor(){
+    // Propiedades...
+  }
+
+  maulla(){
+    return "Miau";
+  }
+}
+```
+
+#### `047 set y get.html`
+Este archivo muestra cómo crear getters (`getColor`) y setters (`setColor`) para propiedades en una clase, proporcionando un nivel adicional de encapsulamiento.
+
+```javascript
+class Gato{
+  constructor(){}
+
+  setColor(nuevocolor){this.color = nuevocolor;}
+  getColor(){return this.color;}
+}
+```
+
+### Funciones
+
+#### `042-Salida con return.html`
+Muestra cómo una función puede devolver un valor utilizando la palabra clave `return`.
+
+```javascript
+function diHola(nombre,edad){
+  return "Hola, "+nombre+" tienes "+edad+"años, ¿como estás?";
+}
+document.write(diHola("Jose Vicente",47));
+```
+
+### Estructuras de Control
+
+#### `036-superbucle.html`
+Este archivo genera múltiples calendarios (un para cada mes) usando ciclos anidados.
+
+```javascript
+for(let mes = 0;mes<=11;mes++){
+  document.write("<h1>2025-"+(mes+1)+"</h1>");
+  // Genera un calendario para el mes actual...
+}
+```
+
+Estos archivos proporcionan una variedad de ejemplos útiles que cubren desde la programación básica hasta conceptos avanzados como POO y manejo de fechas.
+
 
 <a id="seleccion-y-acceso-a-elementos"></a>
 ## Selección y acceso a elementos
@@ -10607,16 +11562,15 @@ Después de crear esta clase, se instancian dos objetos Gato llamados `gato1` y 
 Esta carpeta contiene ejercicios que te ayudarán a entender cómo seleccionar y manipular elementos en documentos web utilizando JavaScript. Los ejemplos exploran cómo acceder a párrafos, divs y otros elementos del DOM, cambiar su contenido y añadir nuevos elementos dinámicamente. A través de estos ejercicios, mejorarás tus habilidades para interactuar con la estructura HTML desde scripts JavaScript, lo que es fundamental para el desarrollo web interactiva.
 
 ### lectura
+<small>Creado: 2025-11-19 10:48</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una página web sencilla que utiliza JavaScript para interactuar con el contenido del documento. La parte importante ocurre en la sección `<script>` dentro del cuerpo del documento, donde se selecciona un elemento específico y luego muestra información sobre ese elemento.
+Este fragmento de código HTML muestra cómo seleccionar y manipular un elemento del documento web usando JavaScript. En la parte superior, tienes una página básica con un párrafo que dice "Soy un párrafo". Luego, en el bloque de script, se usa `document.querySelector("p")` para encontrar el primer párrafo (etiqueta `<p>`) en el documento y lo almacena en la variable llamada `elemento`. Después, utiliza `document.write(elemento)` para mostrar el elemento completo como texto HTML. Luego, vuelve a escribir solo el contenido dentro del párrafo utilizando `textContent`, que muestra "Soy un párrafo" directamente.
 
-En primer lugar, el código usa `document.querySelector("p")` para encontrar el primer párrafo (`<p>`) que aparece en la página. Este método devuelve una referencia al objeto HTML correspondiente, que es almacenado en la variable `elemento`. Luego, utiliza `document.write(elemento)` para mostrar en pantalla todos los detalles técnicos del elemento seleccionado, incluyendo su estructura HTML completa.
+Esta técnica es importante porque te permite interactuar con los elementos de una página web y modificarlos según sea necesario, lo cual es fundamental en la creación dinámica de sitios web.
 
-Después de eso, se llama a `elemento.textContent`, lo cual obtiene el texto literal dentro del párrafo sin ningún formato adicional y muestra solo "Soy un párrafo". Esto es útil para entender cómo acceder directamente al contenido textual de una etiqueta en lugar de toda la estructura HTML.
-
-Este código es importante porque demuestra cómo JavaScript puede interactuar con el DOM (Modelo de Objeto del Documento) de una página web, permitiendo a los desarrolladores manipular y consultar elementos específicos para realizar diversas tareas interactivas.
+`001-lectura.html`
 
 ```html
 <!doctype>
@@ -10638,10 +11592,17 @@ Este código es importante porque demuestra cómo JavaScript puede interactuar c
 ```
 
 ### escribir
+<small>Creado: 2025-11-19 10:53</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que utiliza JavaScript para añadir texto a tres cajas vacías (divs) con colores específicos. Primero, define estilos CSS dentro de la etiqueta `<style>` en la sección `<head>`, donde asigna los colores rojo, verde y azul a cada uno de los divs basándose en sus respectivas IDs: "rojo", "verde" y "azul". Luego, en la sección `<body>`, hay tres divs con dichas IDs que inicialmente están vacíos. Finalmente, en el bloque de código JavaScript incluido dentro del `<script>` al final del cuerpo, el documento selecciona cada uno de los elementos por su ID utilizando `document.querySelector()` y asigna un texto específico a su contenido mediante la propiedad `.textContent`. Esto significa que cuando se carga la página, verás tres divs con diferentes colores de fondo (según el CSS) y el texto "texto rojo", "texto verde" y "texto azul" dentro de ellos respectivamente. Este ejemplo es fundamental para entender cómo JavaScript puede manipular elementos HTML basándose en sus IDs y cambiar su contenido dinámicamente una vez que la página está cargada en el navegador.
+Este código HTML es un ejemplo básico que muestra cómo usar JavaScript para manipular el contenido de elementos en una página web. La estructura principal del documento incluye tres divisiones (div) con diferentes identificadores: "rojo", "verde" y "azul". Estos identificadores también se utilizan en la hoja de estilos incorporada para dar color a los textos que se añadirán más tarde.
+
+En el cuerpo del documento, justo antes de cerrar la etiqueta `</body>`, hay un bloque `<script>` que contiene código JavaScript. Este código selecciona cada uno de las divisiones por su identificador (ID) usando la función `document.querySelector()` y luego establece su contenido (`textContent`) a texto con el nombre del color correspondiente. Por ejemplo, para la división con ID "rojo", se añade el texto "texto rojo".
+
+Esta práctica es importante porque demuestra cómo JavaScript puede interactuar directamente con los elementos HTML y modificarlos en tiempo real, lo que permite una página web mucho más dinámica y reactiva a las acciones del usuario.
+
+`002-escribir.html`
 
 ```html
 <!doctype>
@@ -10669,10 +11630,17 @@ Este código HTML crea una página web simple que utiliza JavaScript para añadi
 ```
 
 ### escribir html
+<small>Creado: 2025-11-19 10:55</small>
 
 #### Explicación
 
-Este código HTML muestra cómo modificar el contenido de una página web utilizando JavaScript. La parte principal es un div vacío dentro del cuerpo (body) de la página. Posteriormente, en la etiqueta `<script>`, se utiliza `document.querySelector("div")` para seleccionar ese div específico y luego se cambia su contenido interno con `.innerHTML = "<h1>Hola</h1>";`. Esto significa que cuando la página se carga en un navegador, el div vacío será reemplazado por un encabezado de nivel 1 (h1) que dice "Hola". Este ejemplo ilustra cómo JavaScript puede manipular directamente los elementos del DOM (Document Object Model), permitiendo a los programadores cambiar dinámicamente la apariencia y contenido de una página web.
+Este fragmento de código HTML es un ejemplo sencillo que muestra cómo modificar el contenido de un elemento en una página web utilizando JavaScript. El código comienza creando una estructura básica de una página web con etiquetas HTML como `<head>` y `<body>`. Dentro del cuerpo (`<body>`), hay una sola etiqueta `<div>`, la cual es un contenedor sin formato que no tiene contenido visible.
+
+El truco ocurre en el script incluido justo antes de cerrar el cuerpo de la página. Aquí, se usa `document.querySelector("div")` para seleccionar el primer elemento div encontrado en la página web. Luego, este código establece el valor de `innerHTML`, que es una propiedad especial del objeto DOM (Modelo de Objetos de Documento), a un nuevo contenido HTML: `<h1>Hola</h1>`. Esto significa que el texto "Hola" aparecerá dentro de la página web envuelto en una etiqueta h1, lo cual cambia el aspecto visual de la página al darle mayor énfasis.
+
+Este código es importante porque demuestra cómo JavaScript puede interactuar directamente con los elementos del DOM y cambiar dinámicamente el contenido de una página web, permitiendo que las páginas sean más interactivas y responsivas.
+
+`003-escribir html.html`
 
 ```html
 <!doctype>
@@ -10693,10 +11661,17 @@ Este código HTML muestra cómo modificar el contenido de una página web utiliz
 ```
 
 ### microblog
+<small>Creado: 2025-11-19 11:02</small>
 
 #### Explicación
 
-Este código HTML contiene una estructura básica de una página web que utiliza JavaScript para dinamizar su contenido. En el cuerpo del documento, se define un contenedor principal (`main`) donde se van a insertar los artículos mediante una lista en JavaScript. La parte clave es la declaración `const articulos = [...]`, que crea un array con tres elementos: "Primer artículo", "Segundo artículo" y "Tercer artículo". Luego, el código selecciona el elemento `<main>` del documento usando `document.querySelector("main")` y lo guarda en la variable `contenedor`. A continuación, se ejecuta un bucle `for` que itera sobre cada elemento del array `articulos`, añadiendo uno a uno dentro del contenedor principal (`<main>`) como subtítulos encabezados con etiquetas `<h3>`. Esto es importante porque permite insertar contenido dinámicamente sin necesidad de cambiar directamente el HTML, facilitando la modificación y mantenimiento del código.
+Este código HTML contiene un documento web sencillo que utiliza JavaScript para añadir elementos a la página dinámicamente. En el cuerpo del documento, hay una estructura básica con un encabezado (`<header>`), un contenedor principal vacío (`<main>`) y un pie de página (`<footer>`). Lo importante es lo que sucede en el bloque `<script>`. Aquí se define un array llamado `articulos` que contiene los títulos de tres artículos. Luego, se selecciona el elemento `<main>` usando la función `document.querySelector`, que busca y devuelve el primer nodo HTML que coincida con el selector especificado.
+
+El bucle `for` recorre cada uno de los elementos en el array `articulos`. Para cada artículo en este array, añade un título (`<h3>`) dentro del contenedor principal. Esta adición se realiza mediante la propiedad `innerHTML`, que permite modificar directamente el contenido HTML de un elemento.
+
+Este código es importante porque muestra cómo JavaScript puede manipular y actualizar elementos de una página web después de que esta ya ha sido cargada, permitiendo a los desarrolladores crear páginas más interactivas y dinámicas.
+
+`004-microblog.html`
 
 ```html
 <!doctype>
@@ -10722,6 +11697,36 @@ Este código HTML contiene una estructura básica de una página web que utiliza
 </html>
 ```
 
+### Actividades propuestas
+
+### Actividades Propuestas
+
+1. **Selección de Elementos Básicos**
+   - **Descripción:** Los estudiantes deben seleccionar y manipular elementos HTML usando `document.querySelector()`. Se espera que practiquen con diferentes etiquetas (como párrafos, divs) para familiarizarse con este método.
+   
+2. **Acceso a Texto de Elementos**
+   - **Descripción:** A través de ejercicios similares al archivo 001-lectura.html, los estudiantes aprenderán a acceder y modificar el contenido textual de elementos HTML utilizando `textContent`.
+   
+3. **Establecimiento de Estilos con JavaScript**
+   - **Descripción:** Los alumnos deben completar un ejercicio en el que usen JavaScript para establecer estilos CSS en elementos del documento web, tal como se muestra en 002-escribir.html.
+   
+4. **Inserción Compleja de Elementos HTML**
+   - **Descripción:** Los estudiantes trabajarán con la inserción dinámica de contenido complejo (como títulos) dentro de elementos HTML utilizando `innerHTML`, siguiendo el ejemplo del archivo 003-escribir html.html.
+   
+5. **Manipulación de Contenedores y Elementos**
+   - **Descripción:** Los estudiantes tendrán que realizar una serie de operaciones en los contenedores HTML, como agregar múltiples elementos (por ejemplo, párrafos o encabezados) utilizando bucles `for`, basándose en el archivo 004-microblog.html.
+   
+6. **Práctica con Selectores CSS ID y Clase**
+   - **Descripción:** Los estudiantes seleccionarán elementos HTML específicos usando selectores CSS por ID y clase, mejorando sus habilidades de manipulación del DOM.
+   
+7. **Acceso a Múltiples Elementos**
+   - **Descripción:** A través de ejercicios similares al archivo 004-microblog.html, los estudiantes practicarán la selección y modificación de múltiples elementos HTML dentro de un contenedor principal.
+   
+8. **Desarrollo de Micrositios Dinámicos**
+   - **Descripción:** Los alumnos crearán micrositios simples que incluyan diferentes secciones como cabecera, cuerpo y pie de página, manipulando el contenido dinámicamente con JavaScript.
+
+Estas actividades están diseñadas para reforzar los conceptos de selección y acceso a elementos HTML mediante JavaScript, permitiendo a los estudiantes aplicar estos conocimientos en contextos prácticos similares a la carpeta proporcionada.
+
 
 <a id="creacion-y-modificacion-de-elementos"></a>
 ## Creación y modificación de elementos
@@ -10737,22 +11742,19 @@ El ejercicio final (`013-consumo datos de la base de datos.html`) lleva este pro
 En general, estos ejercicios cubren aspectos clave del desarrollo web moderno, como manipulación del DOM, manejo de eventos, consumo de APIs, estilización con CSS y la importancia de estructurar los datos utilizando JSON.
 
 ### crear elementos
+<small>Creado: 2025-11-24 08:40</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de cómo crear y manipular elementos HTML usando JavaScript dentro del mismo archivo HTML. La parte importante ocurre dentro del bloque `<script>`, donde se crea un botón que luego se agrega a la página.
+Este fragmento de código HTML crea una estructura básica para un sitio web donde se incluye JavaScript para manipular y agregar contenido dinámicamente. La parte importante es que, aunque no está completamente implementada en este ejemplo, el objetivo es crear botones dentro del elemento `<nav>` utilizando la lista `botones` que contiene tres elementos: 'clientes', 'productos' e 'pedidos'.
 
-Primero, el código define una variable llamada `botones` como un array (lista) de tres cadenas: 'clientes', 'productos' y 'pedidos'. Sin embargo, en este ejemplo específico solo se utiliza para ilustrar cómo podríamos manejar botones más adelante si lo necesitáramos.
+En el código, primero seleccionamos el contenedor de navegación usando `document.querySelector("nav")`, lo que nos permite acceder al elemento `<nav>` en el documento. Luego, creamos un botón utilizando la función `document.createElement("button")`. Este nuevo botón no está visible en la página web hasta ahora, ya que solo existe en memoria.
 
-Luego, selecciona el elemento `<nav>` que está vacío en la página HTML con `document.querySelector("nav")` y guarda esa referencia en la variable `contenedor`.
+Después de crear el botón, se le añade texto con `boton.textContent = "Pulsame";`, lo que establece el contenido textual del botón. Finalmente, para hacer que este botón sea visible en la página, usamos `contenedor.appendChild(boton);` para agregarlo al final del elemento `<nav>` seleccionado anteriormente.
 
-Después, crea un nuevo elemento de tipo `<button>` usando `document.createElement("button")`. Este botón es creado solo en memoria del navegador y no aparece en la página web todavía.
+Este proceso de creación y modificación de elementos es crucial cuando se trabaja con páginas web dinámicas o aplicaciones web basadas en JavaScript que requieren actualizar su contenido sin necesidad de recargar la página.
 
-Luego, se añade texto al botón recién creado con `boton.textContent = "Pulsame";`, lo que establece el contenido del botón como la frase 'Pulsame'.
-
-Finalmente, el botón es añadido a la página real en el navegador con `contenedor.appendChild(boton);`. Esto significa que el nuevo botón se agrega dentro del elemento `<nav>` que ya estaba vacío.
-
-Este proceso de crear elementos y manipular el DOM (Document Object Model) es crucial para interactuar dinámicamente con páginas web, permitiendo añadir, cambiar o eliminar contenido en tiempo real según las acciones del usuario.
+`001-crear elementos.html`
 
 ```html
 <!doctype html>
@@ -10778,10 +11780,17 @@ Este proceso de crear elementos y manipular el DOM (Document Object Model) es cr
 ```
 
 ### crear varios botones
+<small>Creado: 2025-11-24 08:42</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que contiene un menú de navegación con varios botones. En la sección `<nav>` vacía del cuerpo del documento, el script JavaScript añade tres botones automáticamente usando un array de texto y el método `forEach`. Cada elemento en el array (como 'clientes', 'productos' y 'pedidos') se convierte en el contenido de un nuevo botón, que luego se agrega al contenedor `<nav>` existente. Esto es útil para generar dinámicamente contenido HTML basado en datos estructurados, lo que puede ahorrar tiempo y hacer que el código sea más mantenible a medida que la aplicación crece.
+Este código HTML crea una página web sencilla que utiliza JavaScript para añadir varios botones en un contenedor llamado `<nav>`. En el bloque de script, primero se declara un array llamado `botones` que contiene tres elementos: `'clientes'`, `'productos'`, y `'pedidos'`. Luego, selecciona el elemento `<nav>` del documento para usarlo como contenedor donde se añadirán los botones.
+
+El código utiliza la función `forEach()` sobre el array `botones` para iterar a través de cada uno de sus elementos. Para cada elemento, crea un nuevo botón utilizando `document.createElement("button")`, establece su texto interno con `texto_boton` y finalmente lo añade al contenedor `<nav>` usando `contenedor.appendChild(boton)`. De esta manera, en la página web resultante, se ven tres botones etiquetados 'clientes', 'productos' y 'pedidos'.
+
+Este tipo de manipulación del DOM (Modelo de Objeto del Documento) es crucial para crear interfaces dinámicas en páginas web, permitiendo que el contenido pueda ser generado o modificado por JavaScript en tiempo real.
+
+`002-crear varios botones.html`
 
 ```html
 <!doctype html>
@@ -10804,21 +11813,17 @@ Este código HTML crea una página web simple que contiene un menú de navegaci�
 ```
 
 ### evento click
+<small>Creado: 2025-11-24 08:46</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que contiene un menú de navegación con tres botones. En la parte superior, las etiquetas `<!doctype html>` y `<html>` indican que estamos trabajando con HTML5. El bloque `<head>` está vacío en este ejemplo.
+Este fragmento de código HTML crea una página web sencilla que añade tres botones dentro del elemento `<nav>` utilizando JavaScript. El código comienza creando un array llamado `botones` con tres elementos: 'clientes', 'productos' y 'pedidos'. Luego, selecciona el elemento `<nav>` en la página usando `document.querySelector("nav")`.
 
-En el cuerpo (`<body>`) del documento, se encuentra una etiqueta `<nav>` que actúa como contenedor para nuestros elementos de navegación. Luego viene un script JavaScript que hace lo siguiente:
+Después, utiliza una función llamada `forEach()` para recorrer cada uno de los elementos del array `botones`. Para cada elemento, crea un botón nuevo con `document.createElement("button")` y establece su texto mediante `boton.textContent = texto_boton`. Este botón se añade al final del contenedor `<nav>` usando la propiedad `appendChild`.
 
-1. Se crea un array llamado `botones` que contiene tres cadenas: 'clientes', 'productos' y 'pedidos'.
-2. Se selecciona el elemento `<nav>` utilizando la función `document.querySelector()`.
-3. El método `forEach()` se utiliza para iterar sobre cada cadena en el array `botones`. Para cada cadena, se crea un botón con texto igual a esa cadena.
-4. Cada botón creado es añadido al contenedor `<nav>` usando `appendChild`.
+Lo más importante es que para cada botón creado, el código añade una función que se ejecutará cuando hagas clic en él. Esta función simplemente imprime "Has hecho click en el botón" en la consola del navegador. Esto demuestra cómo vincular eventos de clic a elementos HTML creados dinámicamente con JavaScript, lo cual es fundamental para crear interfaces web interactivas y reactivas.
 
-Además, se agrega una función de manejador de eventos que muestra un mensaje en la consola cada vez que se hace clic en cualquiera de los tres botones. Esto demuestra cómo podemos interactuar con elementos del DOM (Document Object Model) y responder a las acciones del usuario.
-
-Este código es importante porque ilustra cómo combinar HTML, CSS y JavaScript para crear interfaces web interactivas y dinámicas que responden a la acción del usuario haciendo clic en botones.
+`003-evento click.html`
 
 ```html
 <!doctype html>
@@ -10844,53 +11849,20 @@ Este código es importante porque ilustra cómo combinar HTML, CSS y JavaScript 
 </html>
 ```
 
-### Instalar apache
-
-#### Explicación
-
-Este código te guía sobre cómo instalar Apache, que es un servidor web muy popular y gratuito, en una máquina con sistema operativo basado en Linux. Primero, ejecutas el comando `sudo apt install apache2` para descargar e instalar Apache desde los repositorios de software disponibles.
-
-Una vez instalado Apache, todos tus archivos HTML deben almacenarse en la ruta `/var/www/html`. Esto es importante porque esta carpeta es el directorio raíz del servidor web y cualquier archivo que coloques aquí será accesible vía internet a través del navegador web. Para poder editar estos archivos sin restricciones, se utiliza `sudo chmod 777 -R html` para dar permisos totales de lectura, escritura y ejecución a todos los usuarios en la carpeta `/var/www/html`.
-
-Finalmente, el código también menciona instalar PHP utilizando el comando `sudo apt install php`. Esto es útil si planeas trabajar con archivos HTML que contienen código PHP, ya que necesitarás tener PHP instalado para poder interpretar este tipo de scripts.
-
-Este proceso es fundamental cuando estás configurando un entorno de desarrollo web en tu computadora y te permite servir contenido web localmente o incluso públicamente dependiendo del ajuste de Apache.
-
-```markdown
-En terminal:
-
-sudo apt install apache2
-
-De ahi en adelante, todos los archivos que hagáis tendrán que estar en:
-/var/www/html
-
-1.-Copiais vuestra a /var/www/html
-2.-A partir de ese momento editais el codigo dentro de esa carpeta
-
-Liberación de permisos:
-
-cd /var/www
-cd = Change directory (Win, Linux, macOS)
-sudo chmod 777 -R html
-
-sudo = El super usuario va a hacer algo
-chmod = cambiamos permisos de archivo y carpeta
-777 = los tres grupos pueden hacer de todo
--R = recursivo (se aplica a todo lo contenido)
-html = la carpeta de destino
-
-sudo apt install php
-```
-
 ### consumo json
+<small>Creado: 2025-11-24 09:12</small>
 
 #### Explicación
 
-Este código HTML muestra cómo un navegador web puede interactuar con un archivo externo llamado `botones.json` usando la función `fetch`. La función `fetch()` se utiliza para solicitar datos desde una URL y devuelve una promesa que resuelve a un objeto de respuesta. En este caso, el código busca el archivo `botones.json`, espera hasta que los datos sean recibidos, y luego intenta convertir esa respuesta en un formato JSON con `.json()`. Una vez que se ha completado la conversión del contenido en JSON, ese dato es mostrado en la consola del navegador con `console.log(datos);`.
+Este código HTML es un ejemplo básico de cómo se puede utilizar la función `fetch` para consumir datos de un archivo JSON y luego mostrarlos en el navegador. En este caso, la página web está configurada para cargar un archivo llamado `botones.json` cuando el usuario abre la página.
 
-Esta técnica es importante porque permite a las páginas web obtener datos dinámicos sin necesidad de recargar la página. En este ejemplo, aunque no está implementado directamente, estos datos JSON podrían usarse para modificar el contenido o el diseño de elementos en la página web, como por ejemplo llenar un menú desplegable con opciones específicas que vienen del archivo `botones.json`.
+El fragmento de código comienza con una etiqueta `<script>` dentro del cuerpo (`<body>`) de la página HTML. Dentro de esta etiqueta, se utiliza la función `fetch()` para hacer una solicitud a `botones.json`, que es un archivo local en tu carpeta de proyecto que contiene datos estructurados en formato JSON.
 
-Este tipo de interacción entre JavaScript y archivos externos es fundamental en desarrollo web moderno ya que permite a las páginas ser más dinámicas y responder a cambios o necesidades del usuario sin recargar la página completa.
+Una vez que el navegador recibe la respuesta del archivo JSON, el código espera y luego convierte esa respuesta a un objeto JavaScript con la función `.json()`. Finalmente, este objeto se imprime en la consola del navegador usando `console.log(datos)`, lo cual permite al desarrollador ver los datos obtenidos del archivo JSON.
+
+Esta técnica es importante porque permite a las páginas web interactuar y cargar información dinámica desde archivos o recursos externos sin necesidad de recargar toda la página. Es una parte fundamental en el desarrollo web moderno, especialmente cuando se trabaja con APIs (Interfaces de Programas) para integrar datos de diferentes fuentes en aplicaciones web.
+
+`005-consumo json.html`
 
 ```html
 <!doctype html>
@@ -10914,16 +11886,21 @@ Este tipo de interacción entre JavaScript y archivos externos es fundamental en
 ```
 
 ### botones desde el json
+<small>Creado: 2025-11-24 09:16</small>
 
 #### Explicación
 
-Este código HTML está diseñado para cargar información de un archivo JSON y usarla para crear botones en una página web. En la parte superior, el código incluye la etiqueta `<!DOCTYPE html>` que indica al navegador que se trata de un documento HTML5.
+Este fragmento de código es una página HTML que crea botones dinámicamente a partir de datos almacenados en un archivo JSON llamado `botones.json`. En la sección del `<head>` y `<body>`, no hay contenido específico, pero dentro del `<body>`, hay una etiqueta `<nav>` vacía que será utilizada para contener los botones creados.
 
-Dentro del cuerpo de la página (`<body>`), hay una etiqueta `<nav>`, que es un contenedor vacío donde luego se añadirán los botones. Luego, en el bloque de script, se usa la función `fetch` para obtener datos desde el archivo "botones.json" que contiene información sobre qué texto debería tener cada botón.
+En el bloque de código JavaScript incluido entre las etiquetas `<script>`, primero se utiliza la función `fetch()` para obtener datos desde el archivo `botones.json`. La función `fetch()` es una forma moderna y sencilla de realizar solicitudes HTTP en JavaScript. En este caso, espera recibir un objeto JSON con los datos necesarios.
 
-Una vez que se obtienen los datos del JSON (en formato JavaScript Object Notation), se itera a través de ellos utilizando la función `forEach`. Para cada entrada en este conjunto de datos, se crea un nuevo elemento `<button>` con el contenido del texto proporcionado y ese botón se añade al contenedor `<nav>` usando el método `appendChild`.
+Una vez que obtiene la respuesta del servidor (el archivo JSON), se utiliza el método `.json()` para convertir la respuesta en un formato legible como JSON. Luego, cuando esos datos están disponibles, se recorren usando `forEach()`, una función que permite ejecutar código para cada elemento dentro de ese conjunto de datos.
 
-Esta técnica es importante porque permite dinamizar una página web basándose en datos externos, lo que significa que puedes cambiar o actualizar la interfaz de usuario sin necesidad de modificar directamente el código HTML.
+Para cada dato del JSON (que en este caso es simplemente texto para el contenido de los botones), el script crea un nuevo botón (`document.createElement("button")`), establece su texto (`boton.textContent = texto_boton`) y finalmente lo añade al contenedor `<nav>` existente dentro del documento HTML (`contenedor.appendChild(boton)`).
+
+Este enfoque es útil para cuando se necesita manipular o mostrar datos que pueden cambiar frecuentemente sin necesidad de reescribir el código HTML manualmente, permitiendo así una aplicación más dinámica y fácil de mantener.
+
+`006-botones desde el json.html`
 
 ```html
 <!doctype html>
@@ -10953,14 +11930,17 @@ Esta técnica es importante porque permite dinamizar una página web basándose 
 ```
 
 ### recuperamos json tabla
+<small>Creado: 2025-11-24 09:34</small>
 
 #### Explicación
 
-Este fragmento de código HTML muestra cómo cargar y visualizar datos desde un archivo JSON utilizando la tecnología Fetch, que es una forma moderna de manejar solicitudes HTTP en JavaScript. El código empieza por declarar una estructura básica de HTML con etiquetas `<head>` vacías y un contenedor `<body>`. Dentro del cuerpo, hay una etiqueta `<nav>` vacía que podría ser utilizada para añadir un menú de navegación.
+Este código HTML está diseñado para cargar y mostrar datos desde un archivo JSON llamado `tabla.json`. Cuando se carga la página, el navegador ejecuta el script dentro de la etiqueta `<script>`. Este script usa la función `fetch()` para solicitar los datos del archivo `tabla.json` ubicado en el mismo directorio que el archivo HTML. 
 
-El corazón del código se encuentra dentro de la etiqueta `<script>`, donde se hace uso de la función `fetch()` para recuperar datos desde el archivo "tabla.json" que se supone está en la misma carpeta. Esta función devuelve una promesa que, cuando se resuelve, proporciona respuestas HTTP como objetos. En este caso, se espera recibir un JSON (JavaScript Object Notation), por lo que usamos `.then()` para convertir la respuesta HTTP a formato JSON con `respuesta.json()`. La siguiente línea de código dentro de otro bloque `.then()` simplemente imprime los datos recuperados en la consola del navegador.
+Una vez que la respuesta es recibida, se utiliza una promesa (`.then()`) para convertir esta respuesta en un formato JSON con la función `.json()`. Luego, otra promesa captura estos datos y los muestra en la consola del navegador usando `console.log(datos)`, donde 'datos' ahora contiene toda la información obtenida desde el archivo JSON.
 
-Esta técnica es muy importante porque permite interactuar dinámicamente con datos externos sin necesidad de recargar la página, lo que resulta en una mejor experiencia para el usuario y un manejo más eficiente de información en aplicaciones web.
+Esta técnica es importante porque permite a las páginas web interactuar dinámicamente con datos externos sin necesidad de recargar la página, lo cual mejora la experiencia del usuario y la eficiencia del sitio.
+
+`007-recuperamos json tabla.html`
 
 ```html
 <!doctype html>
@@ -10984,14 +11964,17 @@ Esta técnica es muy importante porque permite interactuar dinámicamente con da
 ```
 
 ### creamos tabla
+<small>Creado: 2025-11-24 09:44</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web que utiliza JavaScript para generar dinámicamente una tabla basada en datos obtenidos desde un archivo JSON llamado "tabla.json". El código comienza cargando este archivo JSON usando la función `fetch()`, lo que permite obtener los datos de forma asíncrona. Una vez que se obtienen los datos, el script selecciona el cuerpo del documento HTML (`body`) como contenedor para insertar una nueva tabla.
+Este fragmento de código crea una tabla dinámicamente en un documento HTML utilizando JavaScript. El proceso comienza cargando datos desde un archivo JSON llamado "tabla.json" gracias a la función `fetch`. Una vez que se obtienen los datos, el código selecciona el cuerpo del documento (`body`) como contenedor donde va a añadir la tabla.
 
-Luego, por cada línea en el conjunto de datos obtenido, se crea una fila de la tabla (elemento `<tr>`). Para cada celda dentro de esa línea, se crea un elemento `<td>` y se le asigna el contenido correspondiente. Finalmente, cada fila completa se añade a la tabla principal.
+Luego, se crea una tabla vacía y esta se inserta en el cuerpo de la página. Para cada línea de datos en el JSON, se genera una fila (`tr`) que representa esa línea en la tabla. Dentro de cada fila, por cada elemento en esa línea del JSON, se crea una celda (`td`) que contiene el valor de ese elemento. Finalmente, cada celda se agrega a su respectiva fila y luego cada fila se agrega a la tabla.
 
-Este tipo de código es importante porque permite la creación dinámica de contenido en una página web basada en datos externos, lo que facilita la actualización automática del contenido sin necesidad de recargar la página o modificar el HTML manualmente.
+Este código es importante porque permite generar tablas complejas basadas en datos externos (en este caso, un archivo JSON), lo cual es útil para visualizar información que puede cambiar frecuentemente o que está almacenada en una base de datos.
+
+`008-creamos tabla.html`
 
 ```html
 <!doctype html>
@@ -11036,16 +12019,17 @@ Este tipo de código es importante porque permite la creación dinámica de cont
 ```
 
 ### estilo en la tabla
+<small>Creado: 2025-11-24 09:55</small>
 
 #### Explicación
 
-Este código HTML crea una página web que muestra una tabla generada dinámicamente a partir de un archivo JSON. En la parte superior del documento, se define el estilo CSS para mejorar la apariencia de la tabla: establece bordes azules sólidos, fondo blanco y colores específicos para las celdas y filas.
+Este fragmento de código HTML crea una página web que muestra una tabla dinámica cargando datos desde un archivo JSON llamado `tabla.json`. En la sección `<head>` del documento, se define el estilo básico para la tabla, incluyendo bordes azules y configuraciones de color para las celdas y filas. 
 
-En la sección `<body>` hay un script que carga datos desde un archivo llamado "tabla.json" usando una función `fetch`. Una vez obtenidos los datos en formato JSON, el script selecciona el cuerpo del documento como contenedor principal. Luego, crea una tabla vacía y la añade al cuerpo de la página.
+En el bloque de script, el código utiliza la función `fetch` para obtener datos desde el archivo JSON "tabla.json". Una vez que los datos están cargados, se selecciona el cuerpo del documento como contenedor principal donde se insertará la tabla. Luego, por cada objeto en el array recibido del JSON, se crea una fila (`tr`) y dentro de ella tantas celdas (`td`) como elementos haya en esa línea del archivo JSON. Finalmente, todas estas filas con sus respectivas celdas se añaden a la tabla que fue creada inicialmente.
 
-Para cada línea en el JSON, se genera una fila (tr) de la tabla. Por cada celda dentro de esa línea, se crea un elemento `<td>` que recibe su contenido desde los datos del JSON. Finalmente, todas estas filas con sus respectivas celdas se añaden a la tabla principal.
+Este tipo de código es importante porque permite crear interfaces web dinámicas basadas en datos externos, lo cual es fundamental para aplicaciones web interactivas y actualizables sin necesidad de recargar la página.
 
-Este proceso permite crear tablas interactivas y dinámicas basadas en datos externos, lo cual es muy útil para presentar información de manera estructurada y actualizada en páginas web.
+`009-estilo en la tabla.html`
 
 ```html
 <!doctype html>
@@ -11095,14 +12079,17 @@ Este proceso permite crear tablas interactivas y dinámicas basadas en datos ext
 ```
 
 ### creo interfaz base
+<small>Creado: 2025-11-24 10:04</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple con un diseño flexible que utiliza dos secciones principales: una barra lateral (nav) y una área principal de contenido (main). La etiqueta `<style>` dentro del `<head>` define cómo debe verse la página, especificando estilos para el `html`, el `body`, la `nav` y la `main`. 
+Este fragmento de código HTML crea una página web simple con dos secciones principales: un menú lateral (llamado `nav`) y el área principal del contenido (llamada `main`). La estructura utiliza CSS para dar estilo a la página, creando una disposición en flexbox que ocupa todo el espacio disponible del navegador. 
 
-El CSS establecido asegura que toda la página ocupe todo el espacio disponible ajustándose al 100% de la altura y el ancho. La barra lateral (`nav`) tiene un fondo azul oscuro (indigo) y texto blanco, mientras que el área principal (`main`) es más grande y tiene un fondo en tonos pastel claro (aliceblue). Ambas secciones están dispuestas horizontalmente gracias a la propiedad CSS `display: flex`, creando una página con dos columnas distintas pero equilibradas.
+El código establece estilos específicos usando etiquetas `<style>` dentro de la sección `<head>`. Esto incluye configuraciones como eliminar cualquier margen o relleno automático (`padding` y `margin`) para asegurar que los elementos ocupen todo el espacio disponible, y usar flexbox para alinear los elementos horizontalmente. La barra lateral (nav) tiene un fondo de color índigo y texto blanco, mientras que la sección principal (main) es de color celeste claro (`aliceblue`), con ambos elementos teniendo diferentes tamaños proporcionales gracias a las propiedades `flex`.
 
-Este diseño es importante porque ayuda a organizar el contenido de manera clara, permitiendo que las páginas web sean visualmente atractivas y fáciles de navegar.
+Esta estructura básica ayuda en la creación de interfaces web más modernas y responsivas, permitiendo una fácil división del espacio para menús y contenido principal.
+
+`010-creo interfaz base.html`
 
 ```html
 <!doctype html>
@@ -11122,16 +12109,19 @@ Este diseño es importante porque ayuda a organizar el contenido de manera clara
 ```
 
 ### me traigo el menu
+<small>Creado: 2025-11-24 10:06</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una página web muy básica que utiliza CSS para darle estilo y estructura a los elementos. La página tiene dos secciones principales: una barra lateral (nav) en el lado izquierdo y un área principal (main) a la derecha.
+Este fragmento de código HTML crea una estructura básica para una página web que utiliza CSS flexbox para organizar el diseño. La página contiene dos secciones principales: una barra lateral (nav) y un área principal de contenido (main).
 
-El estilo del documento está definido dentro de las etiquetas `<style>` en la sección `<head>`. El CSS utilizado establece que tanto el `html` como el `body` deben ocupar todo el espacio disponible, eliminando cualquier margen o relleno innecesario para que la página ocupe toda la pantalla. Además, usa una propiedad llamada flexbox para distribuir los elementos de manera flexible dentro del contenedor.
+En la parte superior del documento, dentro de las etiquetas `<head>`, se define estilos utilizando CSS in-line entre las etiquetas `<style>`. Estos estilos definen que tanto el elemento HTML como el cuerpo tengan una altura del 100% y usen flexbox para distribuir los elementos horizontalmente. Además, establece el color de fondo y los márgenes interiores (padding) específicos para la barra lateral (`nav`) y el área principal (`main`).
 
-La etiqueta `<nav>` crea un bloque en azul índigo con texto blanco y una barra de color claro alrededor de él, mientras que la etiqueta `<main>` genera un área más grande y blanca clara a su derecha. Ambos tienen rellenos internos para darles espacio interno y mejor visualización.
+La estructura HTML en sí misma es muy sencilla: una etiqueta `nav` que representa la barra lateral y una etiqueta `main` que muestra el contenido principal de la página. Estas dos secciones están dispuestas horizontalmente debido a los estilos CSS aplicados, creando así un diseño moderno con una barra lateral flanqueada por un área más grande para mostrar información o interacción.
 
-Este diseño es útil en páginas web donde se necesita mostrar una barra lateral con enlaces o menús junto a un área principal que puede contener el contenido del sitio, como artículos o entradas de blog.
+Este tipo de estructura es común en sitios web dinámicos donde la barra lateral puede contener menús o acciones recurrentes y el área principal se utiliza para mostrar contenido específico o interactivo.
+
+`011-me traigo el menu`
 
 ```
 <!doctype html>
@@ -11151,14 +12141,19 @@ Este diseño es útil en páginas web donde se necesita mostrar una barra latera
 ```
 
 ### me traigo el menu
+<small>Creado: 2025-11-24 10:11</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web sencilla con un menú lateral y un área principal. La parte central del código es un script que utiliza la función `fetch` para cargar datos desde un archivo JSON llamado "botones.json". Este archivo contiene los textos para varios botones que se van a generar dinámicamente en el menú lateral.
+Este código HTML muestra una página web con un diseño simple que utiliza Flexbox para la distribución de elementos. La sección `<nav>` actúa como el menú lateral izquierdo y contiene texto "jocarsa | panel", mientras que la etiqueta `<main>` representa el área principal del contenido en la derecha.
 
-El proceso funciona así: primero, el navegador envía una solicitud HTTP al servidor para obtener el contenido del archivo "botones.json". Cuando la respuesta llega, el código convierte esa respuesta en un objeto JavaScript utilizando `response.json()`. Una vez que los datos están disponibles como un objeto JavaScript, se recorren con un bucle `forEach` y por cada elemento del array, se crea un nuevo botón usando `document.createElement("button")`, se le asigna el texto correspondiente del JSON al atributo `textContent` del botón creado y finalmente, este botón se agrega dentro de la etiqueta `<nav>` que sirve como contenedor para los elementos generados.
+En este código, se ha añadido estilos adicionales específicos para la sección de navegación (nav) que permiten al menú ser más interactivo y visualmente atractivo. Estos estilos establecen una dirección vertical flexible (`flex-direction: column`) con un espacio entre los elementos de 20 píxeles, y también definen cómo deben aparecer los botones dentro del menú (sin bordes, color de fondo blanco y texto azul oscuro).
 
-Este enfoque es importante porque permite crear interfaces dinámicas que pueden actualizarse fácilmente sin necesidad de cambiar manualmente el código HTML. Además, separa claramente las responsabilidades entre la representación visual (CSS) y la lógica del programa (JavaScript), lo cual facilita el mantenimiento y la escalabilidad del sitio web.
+El script incorporado en el código realiza una solicitud a un archivo JSON llamado "botones.json" para recuperar datos que luego utiliza para crear botones dinámicamente. Estos botones se añaden al contenedor nav usando JavaScript, lo cual permite personalizar la interfaz de usuario basada en los datos externos.
+
+En comparación con el código anterior, este archivo incluye estilos adicionales para el menú y una funcionalidad que permite crear elementos interactivos (botones) a partir de un archivo JSON. Esto introduce mayor flexibilidad en la creación dinámica del contenido de la página, permitiendo así personalizar la interfaz según datos externos sin necesidad de cambios manuales en el código HTML.
+
+`011-me traigo el menu.html`
 
 ```html
 <!doctype html>
@@ -11199,16 +12194,19 @@ Este enfoque es importante porque permite crear interfaces dinámicas que pueden
 ```
 
 ### ahora me traigo la tabla
+<small>Creado: 2025-11-24 10:16</small>
 
 #### Explicación
 
-Este fragmento de código es una página web simple que utiliza HTML, CSS y JavaScript para dinamizar su contenido. La estructura principal contiene dos secciones: un menú lateral (`nav`) y el contenido principal (`main`). El código carga datos desde archivos JSON para crear botones en el menú y una tabla con datos en la sección principal.
+Este código HTML crea una página web simple que incluye un menú lateral y una sección principal donde muestra información de clientes en forma de tabla. La página utiliza dos archivos JSON externos (`botones.json` y `tabla.json`) para cargar datos que luego se utilizan para crear botones dinámicamente en el menú lateral y para construir una tabla en la sección principal.
 
-En primer lugar, el script utiliza la función `fetch` para obtener datos de un archivo llamado "botones.json". Una vez que los datos son cargados correctamente, se itera sobre ellos para crear elementos `<button>` dinámicamente y añadirlos al menú lateral. Esto permite a la página adaptarse fácilmente si el contenido del menú necesita ser actualizado desde fuera del código HTML.
+En primer lugar, el código carga los datos del archivo `botones.json` utilizando la función `fetch()`. Una vez obtenidos estos datos, por cada elemento en el JSON, crea un botón HTML que luego añade al menú (`nav`). Esto permite a la página personalizarse de acuerdo con los datos proporcionados en el JSON, permitiendo flexibilidad y mantenimiento más fácil ya que no se necesita cambiar directamente el código HTML para modificar el contenido del menú.
 
-Posteriormente, otro script carga un archivo "tabla.json" que contiene datos estructurados en una lista de listas (donde cada sublista representa una fila en la tabla y sus elementos representan celdas). Estos datos se convierten en una tabla HTML real mediante la creación dinámica de elementos `<table>`, `<tr>` y `<td>`. Esto permite a la página mostrar información tabular compleja sin necesidad de escribir todo el contenido de forma manual.
+Posteriormente, se carga el archivo `tabla.json` utilizando una nueva llamada a `fetch()`. Los datos obtenidos son utilizados para crear una tabla dinámica en la sección principal de la página (`main`). Para cada línea del JSON, se crea una fila (`tr`) y por cada celda dentro de esa línea, se crea una columna (`td`). Esto permite que la tabla sea completamente generada basándose en el contenido del archivo JSON, lo cual es útil para datos que pueden cambiar con frecuencia o necesitar actualizaciones sin modificar el código HTML.
 
-Este tipo de enfoque es muy útil para páginas web que requieren actualización frecuente o grandes cantidades de datos, ya que simplifica el mantenimiento del código y facilita la integración con sistemas de gestión de información.
+Este tipo de abordaje es común en desarrollos web modernos ya que separa claramente las responsabilidades entre la estructura (HTML), estilos (CSS) y lógica de negocio y contenido dinámico (JavaScript).
+
+`012-ahora me traigo la tabla.html`
 
 ```html
 <!doctype html>
@@ -11285,18 +12283,23 @@ Este tipo de enfoque es muy útil para páginas web que requieren actualización
 ```
 
 ### consumo datos de la base de datos
+<small>Creado: 2025-11-24 11:04</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple con un menú lateral y una sección principal que muestra datos tabulares. La estructura de la página está diseñada usando CSS Flexbox para organizar el contenido en dos áreas principales: un panel de navegación (nav) y una zona de contenidos (main). 
+Este código HTML crea una página web simple que consume datos de dos fuentes JSON distintas y los representa en elementos interactivos dentro del documento. La página tiene una estructura básica con un `<nav>` (navegación) para contener botones y un `<main>` donde se mostrará la información tabular.
 
-En la parte del script, se utiliza la función `fetch` para obtener datos desde un servidor local (`http://127.0.0.1:5000`) que proporciona información en formato JSON. Los datos obtenidos son utilizados para dos propósitos principales:
+1. **Estilo básico**: En el encabezado, hay estilos CSS que definen cómo deben verse la página en general, así como el menú (`nav`) y el contenido principal (`main`). Estos estilos aplican colores de fondo y dimensiones para dar una apariencia coherente.
 
-1. Crear botones dinámicamente en el menú lateral. Cada botón se genera basándose en los textos proporcionados por la respuesta JSON, lo que permite al usuario acceder a diferentes partes del sistema de manera interactiva.
+2. **Carga de datos JSON**: En el cuerpo del documento, hay dos llamadas `fetch` que obtienen datos desde un servidor local en las URLs especificadas ("http://127.0.0.1:5000/tablas" y "http://127.0.0.1:5000/clientes"). Cada uno de estos end-points devuelve JSON con información que luego se utiliza para crear elementos HTML.
 
-2. Generar una tabla con datos de clientes recibidos desde el servidor. Los datos son insertados en filas y celdas HTML para crear un diseño tabular claro y legible en la sección principal de la página.
+3. **Creación de botones**: El primer bloque de JavaScript obtiene un array de strings desde el primer JSON y crea un botón en la página por cada string, añadiéndolos al menú (`nav`). Esto permite a los usuarios interactuar con diferentes opciones que podrían ser representadas por estos botones.
 
-Esta técnica es importante porque permite que las páginas web sean dinámicas, respondiendo a los cambios en los datos almacenados en una base de datos o servidor sin necesidad de recargar toda la página.
+4. **Generación de una tabla**: El segundo bloque de JavaScript obtiene datos desde el segundo JSON y utiliza esos datos para crear una tabla dentro del `<main>`. Para cada línea en la respuesta JSON, se crea una fila (`<tr>`), y para cada celda en esa fila (representada como un elemento en el array `linea`), se añade una columna (`<td>`). Esto permite mostrar datos tabulares de manera estructurada.
+
+En resumen, este código es útil porque combina la obtención de datos dinámicos desde un servidor con la manipulación del DOM para crear interacciones y visualizaciones ricas en HTML. Es especialmente relevante para estudiantes que están aprendiendo cómo integrar back-end y front-end en aplicaciones web simples.
+
+`013-consumo datos de la base de datos.html`
 
 ```html
 <!doctype html>
@@ -11373,10 +12376,13 @@ Esta técnica es importante porque permite que las páginas web sean dinámicas,
 ```
 
 ### botones
+<small>Creado: 2025-11-24 10:10</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo JSON que simplemente lista una serie de strings (cadenas de texto). Cada string representa el nombre de un recurso o sección en algún sistema, probablemente relacionado con una aplicación web o base de datos. En este caso, los recursos incluyen "clientes", "pedidos", "productos", "stock", "empleados" y "estanterias". Este tipo de archivo puede ser útil para definir categorías estáticas que se usarán en una aplicación, como opciones de configuración o menús en la interfaz del usuario. Es importante porque proporciona un punto centralizado donde todos estos nombres pueden ser gestionados fácilmente, lo cual es especialmente valioso si necesitas hacer cambios en múltiples partes de tu código.
+Este fragmento de código es un archivo JSON que contiene una lista de strings. Cada string en esta lista representa nombres o etiquetas de diferentes secciones o datos en una aplicación, probablemente relacionada con la gestión de una empresa o negocio. Los elementos dentro de la lista son "clientes", "pedidos", "productos", "stock", "empleados" y "estanterias". Estos términos indican que el archivo podría ser usado para proporcionar nombres a diferentes partes de un sitio web dinámico, como botones en una interfaz de usuario o secciones en un sistema de gestión empresarial. Es importante porque ayuda a organizar y nombrar claramente las diversas áreas de datos que un programa necesita manejar.
+
+`botones.json`
 
 ```json
 [
@@ -11390,10 +12396,19 @@ Este fragmento de código es un archivo JSON que simplemente lista una serie de 
 ```
 
 ### tabla
+<small>Creado: 2025-11-24 09:32</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo JSON que contiene información sobre varios registros o usuarios. Cada registro está representado como una lista interna dentro de la lista principal. La primera línea especifica los nombres de las columnas del conjunto de datos, tales como "id", "nombre", "email", "telefono", "direccion" y "fecha_alta". Las líneas siguientes contienen datos específicos para cada usuario, donde el primer valor es un identificador único, seguido por información personal como nombre, correo electrónico, teléfono, dirección y fecha de alta. Este tipo de estructura JSON es útil para manipular y visualizar fácilmente conjuntos de datos tabulares en aplicaciones web o bases de datos simples.
+Este archivo es un ejemplo de cómo se estructura la información en formato JSON (JavaScript Object Notation). En este caso, el archivo contiene datos sobre varios usuarios y está organizado como una lista de listas. La primera sublista incluye los nombres de las columnas que representan diferentes tipos de información para cada usuario: ID, nombre completo, correo electrónico, número telefónico, dirección y fecha de alta.
+
+Las sublistas siguientes contienen la información específica para cada usuario. Cada sublista contiene datos en el mismo orden que los nombres de columna proporcionados en la primera sublista. Por ejemplo, el primer usuario tiene un ID de 1, se llama María López García, su correo electrónico es maria.lopez@example.com y así sucesivamente.
+
+Este tipo de estructura JSON es común cuando se necesita almacenar y transmitir datos tabulares entre un servidor y un cliente en aplicaciones web o móviles. Es importante porque permite que los programas accedan fácilmente a la información del usuario para crear, mostrar y manipular registros en interfaces como tablas HTML o bases de datos.
+
+En el contexto de tus ejercicios, este archivo probablemente se utilizará para aprender cómo consumir datos JSON con JavaScript, cómo crear elementos HTML dinámicos basados en esos datos y cómo modificar la estructura y estilo del documento web según sea necesario.
+
+`tabla.json`
 
 ```json
 [
@@ -11406,6 +12421,233 @@ Este fragmento de código es un archivo JSON que contiene información sobre var
 ]
 ```
 
+### Actividades propuestas
+
+### Ejercicios de JavaScript y HTML para Manipulación del DOM
+
+#### 1. Crear Botones Dinámicamente desde JSON
+**Descripción:** Crea una página web que cargue datos desde un archivo `botones.json` usando la API Fetch y genere botones dinámicamente.
+
+**Ejemplo de Código:**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Botones Dinámicos</title>
+</head>
+<body>
+    <div id="boton-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('boton-container');
+
+            fetch('botones.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(botonTexto => {
+                        const button = document.createElement('button');
+                        button.textContent = botonTexto;
+                        button.style.padding = '10px';
+                        button.style.margin = '5px';
+                        container.appendChild(button);
+                    });
+                })
+                .catch(error => console.error('Error al cargar los botones:', error));
+        });
+    </script>
+</body>
+</html>
+```
+
+#### 2. Crear una Tabla Dinámica desde JSON
+**Descripción:** Crea una página web que cargue datos desde un archivo `tabla.json` usando la API Fetch y genere una tabla dinámicamente.
+
+**Ejemplo de Código:**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla Dinámica</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabla-container"></table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('tabla-container');
+
+            fetch('tabla.json')
+                .then(response => response.json())
+                .then(data => {
+                    let table = document.createElement('table');
+                    
+                    // Crear encabezado
+                    let headerRow = document.createElement('tr');
+                    data[0].forEach(columnTitle => {
+                        let th = document.createElement('th');
+                        th.textContent = columnTitle;
+                        headerRow.appendChild(th);
+                    });
+                    table.appendChild(headerRow);
+
+                    // Crear filas con datos
+                    data.slice(1).forEach(rowData => {
+                        let row = document.createElement('tr');
+
+                        rowData.forEach(cellData => {
+                            let cell = document.createElement('td');
+                            cell.textContent = cellData;
+                            row.appendChild(cell);
+                        });
+
+                        table.appendChild(row);
+                    });
+                    
+                    container.appendChild(table);
+                })
+                .catch(error => console.error('Error al cargar la tabla:', error));
+        });
+    </script>
+</body>
+</html>
+```
+
+#### 3. Integración de Botones y Tabla en una Página Completa
+**Descripción:** Crea una página web completa que integre los botones dinámicos del ejercicio anterior con una tabla dinámica.
+
+**Ejemplo de Código:**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding-top: 20px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+        }
+        button {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+        main {
+            flex-grow: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper" style="display: flex; height: calc(100vh - 20px);">
+        <nav id="boton-container"></nav>
+        <main id="tabla-container"></main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const botonContainer = document.getElementById('boton-container');
+            const tablaContainer = document.getElementById('tabla-container');
+
+            // Carga de botones
+            fetch('botones.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(botonTexto => {
+                        const button = document.createElement('button');
+                        button.textContent = botonTexto;
+                        button.style.padding = '10px';
+                        button.style.margin = '5px';
+                        botonContainer.appendChild(button);
+                    });
+                })
+                .catch(error => console.error('Error al cargar los botones:', error));
+
+            // Carga de tabla
+            fetch('tabla.json')
+                .then(response => response.json())
+                .then(data => {
+                    let table = document.createElement('table');
+                    
+                    // Crear encabezado
+                    let headerRow = document.createElement('tr');
+                    data[0].forEach(columnTitle => {
+                        let th = document.createElement('th');
+                        th.textContent = columnTitle;
+                        headerRow.appendChild(th);
+                    });
+                    table.appendChild(headerRow);
+
+                    // Crear filas con datos
+                    data.slice(1).forEach(rowData => {
+                        let row = document.createElement('tr');
+
+                        rowData.forEach(cellData => {
+                            let cell = document.createElement('td');
+                            cell.textContent = cellData;
+                            row.appendChild(cell);
+                        });
+
+                        table.appendChild(row);
+                    });
+                    
+                    tablaContainer.appendChild(table);
+                })
+                .catch(error => console.error('Error al cargar la tabla:', error));
+        });
+    </script>
+</body>
+</html>
+```
+
+Estos ejercicios te ayudarán a familiarizarte con la manipulación del DOM y el manejo de datos JSON en JavaScript.
+
 
 <a id="eliminacion-de-elementos"></a>
 ## Eliminación de elementos
@@ -11417,16 +12659,19 @@ En esta carpeta de ejercicios, los estudiantes van a trabajar con la manipulaci�
 Estos ejercicios permiten a los estudiantes mejorar sus habilidades en la interacción entre JavaScript y HTML/CSS, especialmente en el contexto del DOM (Document Object Model), lo que es fundamental para desarrollar sitios web interactivos.
 
 ### Primero creo un elemento
+<small>Creado: 2025-11-26 10:04</small>
 
 #### Explicación
 
-Este código HTML crea una página web sencilla que utiliza JavaScript para añadir un nuevo elemento a la estructura del documento. La página contiene un bloque `<div>` con el id "contenedor" en el cual se va a insertar un párrafo generado por JavaScript.
+Este código HTML crea una página web simple que utiliza JavaScript para añadir un párrafo nuevo dentro de la estructura existente del documento. La parte importante ocurre en el bloque `<script>`, donde se define y manipula dinámicamente el contenido de la página.
 
-En primer lugar, dentro de la etiqueta `<script>`, se crea un nuevo elemento `<p>` usando `document.createElement("p")`. Luego, al interior de este nuevo párrafo, se agrega texto que dice "Contenido desde JS" utilizando `elemento.textContent = "Contenido desde JS";`.
+Primero, el script crea un elemento `<p>` utilizando `document.createElement("p")`. Luego, se establece el texto dentro de este nuevo párrafo mediante `elemento.textContent = "Contenido desde JS";`, lo que significa que el texto "Contenido desde JS" será mostrado en la página web.
 
-El siguiente paso es seleccionar el div con id "contenedor" del documento HTML mediante la función `document.querySelector("#contenedor")` y almacenarlo en la variable `contenedor`. Finalmente, se utiliza el método `appendChild()` para insertar el párrafo recién creado dentro de este contenedor.
+Finalmente, el código busca un elemento con el ID `"contenedor"` en la página y utiliza `appendChild(elemento)` para añadir el nuevo párrafo dentro de este contenedor. Esto resultará en que el texto "Contenido desde JS" aparezca dentro del `<div id="contenedor">` en la página web cuando se cargue.
 
-Este código es importante porque demuestra cómo interactuar dinámicamente con los elementos del DOM (Modelo de Objeto de Documento) usando JavaScript, permitiendo a los desarrolladores modificar y manipular la estructura y contenido de una página web en tiempo real.
+Esta técnica es fundamental en la manipulación dinámica de documentos web, permitiendo a los desarrolladores modificar fácilmente el contenido y estructura de una página sin necesidad de recargarla.
+
+`001-Primero creo un elemento.html`
 
 ```html
 <!doctype html>
@@ -11446,10 +12691,17 @@ Este código es importante porque demuestra cómo interactuar dinámicamente con
 ```
 
 ### eliminamos el elemento
+<small>Creado: 2025-11-26 10:06</small>
 
 #### Explicación
 
-Este código HTML muestra cómo crear un elemento del lado del cliente usando JavaScript y luego eliminarlo. Primero, se crea un párrafo (`<p>`) en JavaScript y se le añade texto ("Contenido desde JS"). Luego, este párrafo se inserta dentro de un div con el id "contenedor". Finalmente, después de haber agregado el párrafo a la página, se usa el método `remove()` para eliminar ese mismo párrafo del documento HTML. Esto es útil en situaciones donde necesitas modificar dinámicamente el contenido de una página web según las acciones del usuario o cambios específicos en el estado de la aplicación.
+Este código HTML crea una página web sencilla que utiliza JavaScript para manipular elementos en ella. En primer lugar, se declara un contenedor vacío en la parte visible del documento usando una etiqueta `<div>` con el atributo `id="contenedor"`. Luego, en el bloque de script, se crea un párrafo (`<p>`) mediante JavaScript y se le añade texto que dice "Contenido desde JS". Este párrafo es insertado dentro del contenedor previamente declarado usando la función `appendChild()`, lo que hace que aparezca en pantalla.
+
+Lo importante de este código es la última línea: `elemento.remove();`. Esta línea elimina el párrafo recién creado del documento, haciendo que desaparezca de la página. Esta habilidad de eliminar elementos en tiempo real es muy útil para construir interfaces interactivas donde los elementos pueden cambiar dependiendo de las acciones del usuario o eventos específicos.
+
+En resumen, este código ilustra cómo crear y después eliminar dinámicamente un elemento HTML usando JavaScript, proporcionando una base sólida para aprender manipulación de documentos web más avanzada.
+
+`002-eliminamos el elemento.html`
 
 ```html
 <!doctype html>
@@ -11471,10 +12723,13 @@ Este código HTML muestra cómo crear un elemento del lado del cliente usando Ja
 ```
 
 ### creo tabla
+<small>Creado: 2025-11-26 10:09</small>
 
 #### Explicación
 
-Este código HTML crea una página web con una tabla que se llena dinámicamente usando JavaScript. En el cuerpo del documento, hay un elemento `<table>` vacío donde se añadirán filas de datos más tarde. El script comienza seleccionando esta tabla mediante `document.querySelector("table")` y almacena la referencia en la variable `tabla`. Luego, utilizando un bucle `for`, se crean 20 filas (representadas por elementos `<tr>`), cada una con tres celdas (`<td>`) que contienen el texto "Prueba". Cada fila creada se agrega a la tabla existente mediante `tabla.appendChild(fila)`. Este fragmento de código es importante porque demuestra cómo manipular y añadir contenido dinámico a elementos HTML utilizando JavaScript, lo cual es una habilidad fundamental para interactuar con páginas web.
+Este código HTML crea una tabla dinámicamente en la página web utilizando JavaScript. En el cuerpo del documento, hay un elemento `<table>` vacío al que se le añaden filas con contenido mediante un bucle `for`. El script selecciona esta tabla vacía y luego itera 20 veces para crear nuevas filas (`<tr>`) usando el método `document.createElement()`. A cada fila creada se le asigna una cadena de texto HTML que incluye tres celdas (`<td>`), todas con la misma etiqueta "Prueba". Después, estas filas se añaden al final del elemento `<table>` utilizando el método `appendChild()`. Como resultado, cuando se carga la página, se genera una tabla completa en el documento web con 20 filas y cada fila tiene tres celdas idénticas. Esto demuestra cómo JavaScript puede manipular el contenido de un documento HTML después de que este ya ha sido cargado en el navegador, permitiendo así la creación de interfaces más dinámicas y interactivas.
+
+`003-creo tabla.html`
 
 ```html
 <!doctype html>
@@ -11497,14 +12752,17 @@ Este código HTML crea una página web con una tabla que se llena dinámicamente
 ```
 
 ### click para eliminar
+<small>Creado: 2025-11-26 10:41</small>
 
 #### Explicación
 
-Este código HTML crea una página web que contiene una tabla con filas dinámicas. Cuando se carga la página, el script inserta 20 filas en la tabla utilizando un bucle `for`. Cada fila de la tabla tiene tres celdas (columnas) todas ellas conteniendo el texto "Prueba".
+Este código HTML crea una página web que genera dinámicamente una tabla con 20 filas cuando se carga. Cada fila de la tabla contiene tres celdas (td) todas ellas con el texto "Prueba". Lo importante es que, además, añade un comportamiento interactivo a cada fila: al hacer clic en cualquier fila de la tabla, esta se elimina completamente del documento.
 
-Lo más interesante es que cada fila creada incluye dos eventos de clic. Ambos hacen lo mismo: cuando se hace clic en una fila, dicha fila se elimina del documento. Esto ocurre porque tanto la asignación directa a `fila.onclick` como el método `addEventListener` definen funciones que invocan `this.remove()`, donde `this` es la fila actual sobre la cual se hizo clic.
+El código JavaScript primero selecciona la etiqueta `<table>` y luego crea 20 filas utilizando un bucle for. Dentro del bucle, se crean las celdas para cada fila con el texto "Prueba". Luego, se añade una función de clic a cada fila que elimina la fila de la tabla cuando se hace clic en ella.
 
-Este tipo de interacción dinámica en páginas web es importante para permitir a los usuarios modificar el contenido visualmente, lo que mejora la experiencia del usuario y permite crear aplicaciones más interactivas.
+Este tipo de interacción es común en aplicaciones web dinámicas donde los usuarios pueden modificar directamente el contenido de la página sin necesidad de recargarla. Es un ejemplo sencillo pero práctico de cómo manipular y eliminar elementos del DOM (el árbol de objetos que representa la estructura de una página HTML) utilizando JavaScript.
+
+`004-click para eliminar.html`
 
 ```html
 <!doctype html>
@@ -11533,14 +12791,13 @@ Este tipo de interacción dinámica en páginas web es importante para permitir 
 ```
 
 ### retraso en ejecucion
+<small>Creado: 2025-11-26 10:44</small>
 
 #### Explicación
 
-Este código HTML muestra cómo utilizar la función `setTimeout` en JavaScript para ejecutar un bloque de código después de cierto tiempo. En este caso, cuando el navegador carga esta página web, espera 5 segundos (especificados por "5000" milisegundos) antes de ejecutar la instrucción dentro del script.
+Este código HTML contiene un bloque de script que utiliza la función `setTimeout` para imprimir un mensaje en la consola después de un cierto tiempo. En concreto, el fragmento de JavaScript dentro del script define una función anónima (una función sin nombre) que simplemente imprime "Hola que tal" en la consola cuando se ejecuta. La función `setTimeout` programa esta función para ejecutarse luego de 5000 milisegundos, lo cual equivale a 5 segundos. Este tipo de técnica es útil cuando necesitas realizar una acción después de un período de tiempo específico, por ejemplo, en juegos para retrasar la aparición de elementos o en aplicaciones web para mostrar mensajes después de cierto tiempo sin interacción del usuario.
 
-La función anónima que se pasa a `setTimeout` contiene una llamada a `console.log`, lo cual imprime el texto "Hola que tal" en la consola del navegador. Esto es útil para controlar el tiempo y los eventos en páginas web dinámicas, permitiendo así que otras partes de tu código web funcionen sin interrupciones.
-
-Esta técnica es muy importante cuando se quiere programar acciones temporizadas en sitios web, como mostrar mensajes después de un período específico o realizar comprobaciones cada cierto tiempo.
+`005-retraso en ejecucion.html`
 
 ```html
 <!doctype html>
@@ -11561,14 +12818,17 @@ Esta técnica es muy importante cuando se quiere programar acciones temporizadas
 ```
 
 ### bucle infinito
+<small>Creado: 2025-11-26 10:47</small>
 
 #### Explicación
 
-Este código HTML contiene un bloque de script que realiza una acción en bucle infinito. Lo primero que hace es crear un temporizador que espera un segundo (1000 milisegundos) antes de ejecutar la función llamada `bucle()`. Esta función imprime "Hola" en el área de consola del navegador y luego establece otro temporizador para llamar a sí misma después de 1 segundo. Al crear este nuevo temporizador, asegura que la función se ejecute una y otra vez sin fin.
+Este código HTML contiene un script que ejecuta un bucle infinito con una pausa de un segundo entre cada iteración. La función `bucle()` imprime el mensaje "Hola" en la consola del navegador y luego se llama a sí misma después de un retraso de 1 segundo usando la función `setTimeout()`. Esta técnica crea un efecto parecido a un bucle infinito, pero permite que otras tareas continúen ejecutándose en el navegador.
 
-Es importante destacar que aunque parece un bucle infinito, realmente es controlado por los temporizadores (`setTimeout`), lo cual permite que el navegador no se bloquee mientras la función `bucle()` espera antes de ejecutarse de nuevo. Esta técnica puede ser útil para realizar tareas periódicas en sitios web dinámicos sin necesidad de recargar la página constantemente.
+La clave está en cómo se gestiona el temporizador: cuando la función `bucle()` se llama por primera vez gracias al temporizador inicial (`temporizador`), también elimina ese mismo temporizador con `clearTimeout(temporizador)` y establece uno nuevo para que la función se vuelva a llamar después de un segundo. Esto es crucial porque si no eliminamos el temporizador, podríamos acumular demasiados llamados en cola, lo cual podría causar problemas.
 
-En resumen, este código demuestra cómo usar funciones anidadas y temporizadores para crear un comportamiento repetitivo que se actualiza cada segundo, mostrando así una forma sencilla pero efectiva de gestionar el tiempo en JavaScript desde dentro de un documento HTML.
+Este tipo de bucle es útil cuando necesitas ejecutar una tarea repetidamente pero sin bloquear completamente la página web, permitiendo que otras interacciones del usuario tengan lugar.
+
+`006-bucle infinito.html`
 
 ```html
 <!doctype html>
@@ -11594,14 +12854,23 @@ En resumen, este código demuestra cómo usar funciones anidadas y temporizadore
 ```
 
 ### minijuego
+<small>Creado: 2025-11-26 10:51</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web sencilla que muestra un cuadrado rojo que se mueve aleatoriamente en la pantalla cada segundo. En el `<head>` del documento, hay un estilo CSS definido para un elemento con el id "jugador", que es un cuadro pequeño y rojo. Este cuadro está configurado para moverse suavemente debido al uso de la propiedad `transition`.
+Este código HTML es la base de un pequeño juego donde un cuadrado rojo (representando al jugador) cambia su posición en el navegador cada segundo. El bloque principal del juego se encuentra dentro del `<script>` que está justo antes de cerrar el cuerpo (`</body>`) del documento.
 
-En el `<body>`, se encuentra el div que representa el jugador, y justo después viene el código JavaScript. El código crea un temporizador que llama a una función llamada `bucle()` después de 1 segundo (1000 milisegundos). Esta función establece nuevas posiciones aleatorias para el cuadro "jugador" en la pantalla utilizando las propiedades CSS `left` y `top`. Luego, se elimina el temporizador actual y se crea uno nuevo que vuelve a llamar a `bucle()` después de otro segundo.
+El código JavaScript comienza creando un temporizador que llama a una función llamada `bucle()` después de 1 segundo (1000 milisegundos). Esta función hace lo siguiente:
 
-Este tipo de código es útil para crear efectos animados simples y juegos interactivos en páginas web. Aquí, cada segundo, la posición del cuadrado rojo cambia a una ubicación aleatoria dentro de un área limitada (en este caso, 500 píxeles en ambos ejes), lo que puede ser el inicio para desarrollar mini-juegos más complejos donde los usuarios interactúan con elementos animados.
+- Utiliza la función `Math.random()` para generar coordenadas aleatorias tanto en el eje horizontal (`left`) como en el vertical (`top`). Estas coordenadas se aplican al div con el id "jugador" utilizando `document.querySelector("#jugador").style.left` y `.style.top`, moviendo así visualmente el cuadrado rojo.
+
+- Luego, elimina el temporizador original usando `clearTimeout(temporizador)` para evitar que acumule múltiples ejecuciones de la función `bucle()`. Esto es importante porque si no se limpia, podrías terminar con muchos bucles simultáneos que harían que todo funcione demasiado rápido y caótico.
+
+- Finalmente, crea un nuevo temporizador que vuelve a llamar a la misma función `bucle()` después de otro segundo. Esto asegura que el cuadrado rojo se moverá periódicamente en busca de una nueva posición aleatoria cada 1 segundo.
+
+Este ejercicio es útil para comprender cómo controlar elementos del DOM (Document Object Model) con JavaScript, trabajar con temporizadores y entender los conceptos básicos sobre bucles infinitos en un entorno web.
+
+`007-minijuego.html`
 
 ```html
 <!doctype html>
@@ -11632,14 +12901,19 @@ Este tipo de código es útil para crear efectos animados simples y juegos inter
 ```
 
 ### posicoin del npc
+<small>Creado: 2025-11-26 10:57</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que simula el movimiento aleatorio de un personaje en la pantalla. En la parte superior, define las características visuales del personaje (que es un cuadrado rojo con dimensiones de 20x20 píxeles) y lo posiciona inicialmente en el centro de la ventana web.
+Este código HTML crea una página web donde un cuadrado rojo (representando al jugador) se mueve aleatoriamente en la pantalla cada segundo. La magia detrás del movimiento ocurre en el archivo JavaScript anclado en esta misma página.
 
-En el cuerpo del documento, se carga un script JavaScript que hace que el personaje cambie de posición continuamente. El script establece una función llamada `bucle()` que altera las coordenadas x e y del personaje añadiendo valores aleatorios a su posición actual. Esto ocurre cada segundo gracias al uso de la función `setTimeout`, que también asegura que se ejecuta de forma recurrente, eliminando el temporizador anterior antes de crear uno nuevo para mantener un bucle sin interrupciones.
+Lo primero que hace es definir estilos para el elemento con el id `jugador`, asegurándose de que sea un cuadrado rojo y posicionalmente absoluto, lo que permite moverlo libremente dentro del cuerpo de la página. Luego, mediante una función llamada `bucle()`, se programa que cada segundo (mediante el uso de `setTimeout`), este cuadro cambie su posición en ambos ejes horizontal (`left`) y vertical (`top`). Las nuevas coordenadas para este cuadrado se calculan aleatoriamente, haciendo que parezca moverse sin un patrón claro.
 
-El movimiento del personaje es suave debido a la transición CSS definida en el estilo, lo cual proporciona una experiencia visual más agradable al usuario. Este tipo de animación simple puede ser útil para juegos web básicos o aplicaciones que requieren elementos visuales en movimiento.
+Es importante notar cómo la función `bucle()` se llama a sí misma al final de su ejecución para mantener el efecto en movimiento continuo. Esto se logra eliminando y reprogramando constantemente el temporizador (`temporizador`), asegurándonos así que no haya un acúmulo innecesario de llamadas a la función.
+
+Este código es una excelente introducción al manejo del DOM (Modelo de Objetos de Documento) en JavaScript, mostrando cómo interactuar con elementos HTML y modificar sus propiedades en tiempo real para crear efectos visuales animados.
+
+`008-posicoin del npc.html`
 
 ```html
 <!doctype html>
@@ -11675,14 +12949,17 @@ El movimiento del personaje es suave debido a la transición CSS definida en el 
 ```
 
 ### creador
+<small>Creado: 2025-11-26 11:14</small>
 
 #### Explicación
 
-Este código HTML incluye un poco de JavaScript que permite a los usuarios crear cuadrados y círculos en una página web al hacer clic en dos botones. Cuando se hace clic en el primer botón (Pulsa para crear un cuadrado), se genera un nuevo elemento div con la clase "cuadrado", lo que significa que tiene forma de cuadrado gracias a las reglas CSS proporcionadas. Este nuevo cuadrado aparecerá en una posición aleatoria dentro del área de 500x500 píxeles y tendrá un color de fondo también seleccionado al azar.
+Este código HTML crea una página web interactiva con dos botones que permiten al usuario crear elementos visuales aleatorios en la pantalla. Cuando se pulsa el primer botón, "Pulsa para crear un cuadrado", se genera un cuadrado rojo de 50x50 píxeles y se coloca en una posición aleatoria dentro del área de 500x500 píxeles. El color del cuadrado también es elegido al azar entre todos los tonos de rojo, verde y azul posibles.
 
-Del mismo modo, el segundo botón permite crear círculos. El proceso es exactamente igual que para los cuadrados, pero añade la clase "circulo" en lugar de "cuadrado", lo que cambia su forma a una circunferencia gracias al CSS proporcionado. Ambos elementos (cuadrados y círculos) se insertan en el cuerpo del documento HTML.
+Al presionar el segundo botón, "Pulsa para crear un círculo", ocurre lo mismo pero en lugar de generar un cuadrado, se genera un círculo con las mismas características aleatorias. Ambos elementos son añadidos dinámicamente al final del cuerpo del documento HTML (`document.querySelector("body").appendChild(elemento)`), lo que significa que aparecen directamente en la página web una vez que el usuario presiona los botones.
 
-Este código es importante porque demuestra cómo JavaScript puede manipular la estructura y apariencia de las páginas web dinámicamente, permitiendo a los usuarios interactuar y ver cambios en tiempo real.
+Este fragmento de código es útil para aprender cómo manipular y crear contenido en tiempo real en una página web usando JavaScript, combinado con CSS para estilizar los elementos. Es un ejemplo práctico del uso de eventos (como clics), creación de elementos DOM y manipulación de estilo directamente desde el script.
+
+`009-creador.html`
 
 ```html
 <!doctype html>
@@ -11727,6 +13004,36 @@ Este código es importante porque demuestra cómo JavaScript puede manipular la 
 </html>
 ```
 
+### Actividades propuestas
+
+### Actividades Propuestas
+
+1. **Crear Elementos Dinámicos**
+   - **Descripción:** Los estudiantes deben crear un elemento HTML (`<div>`) y añadirlo a la página utilizando JavaScript. Se espera que aprendan cómo utilizar `document.createElement()` y `appendChild()`.
+   
+2. **Eliminar Elementos Interactivamente**
+   - **Descripción:** Los alumnos deben implementar una función para eliminar dinámicamente cualquier elemento seleccionado en un documento HTML mediante JavaScript. Este ejercicio enseñará a los estudiantes a usar el método `.remove()`.
+
+3. **Gestión de Tablas Dinámicas**
+   - **Descripción:** Se les pide que creen una tabla y añadan filas con contenido específico utilizando JavaScript. Los alumnos aprenderán cómo manipular elementos `<table>`, `<tr>` y `<td>` a través del DOM.
+
+4. **Eventos Click en Tabla**
+   - **Descripción:** Los estudiantes deben implementar eventos de clic para cada fila de una tabla, que permitan eliminar la fila seleccionada al hacer clic en ella. Este ejercicio les enseñará cómo vincular funciones a eventos y manipular los elementos del DOM.
+
+5. **Retrasos y Tiempos**
+   - **Descripción:** Los alumnos deben crear un temporizador (`setTimeout`) para que una función se ejecute después de cierto tiempo. Esto permitirá aprender sobre la ejecución asíncrona en JavaScript.
+   
+6. **Bucle Temporizado Infinito**
+   - **Descripción:** Se les pide implementar un bucle temporal infinito, pero con un temporizador (`setTimeout`) para evitar el uso del bucle clásico `while`. Los alumnos aprenderán cómo gestionar temporizadores y evadir la ejecución bloqueante.
+   
+7. **Posicionamiento Dinámico de Elementos**
+   - **Descripción:** Crear una función que cambie dinámicamente la posición de un elemento en el documento HTML cada cierto tiempo (utilizando `setTimeout`). Esto ayudará a comprender cómo manipular estilos CSS desde JavaScript.
+
+8. **Generador de Formas Aleatorias**
+   - **Descripción:** Los estudiantes deben crear una página con dos botones que creen elementos div de forma aleatoria en el documento, cambiando su estilo y posición cada vez. Esto les enseñará a combinar varias habilidades como eventos, generación dinámica de contenido, manipulación del DOM y uso de estilos CSS.
+
+Estas actividades están diseñadas para complementar los ejercicios existentes en la carpeta proporcionada, permitiendo que los estudiantes practiquen conceptos clave mientras exploran nuevas formas de interactuar con el Document Object Model (DOM) utilizando JavaScript.
+
 
 <a id="manipulacion-de-estilos"></a>
 ## Manipulación de estilos
@@ -11736,10 +13043,13 @@ Este código es importante porque demuestra cómo JavaScript puede manipular la 
 En esta carpeta encontrarás seis ejercicios relacionados con la manipulación de estilos en documentos web utilizando HTML y JavaScript. Los ejercicios te enseñarán cómo cambiar directamente el estilo CSS de un elemento seleccionado, añadir o quitar clases CSS a elementos específicos, aplicar estilos condicionales basados en eventos del usuario, utilizar variables en CSS para definir colores y dimensiones universales, y cómo calcular propiedades del layout dinámicamente con la función `calc()`. Estos ejercicios son fundamentales para aprender a controlar visualmente el contenido de tus páginas web mediante programación.
 
 ### estilo en javascript
+<small>Creado: 2025-12-01 08:35</small>
 
 #### Explicación
 
-Este código HTML muestra cómo modificar el estilo de una parte específica del documento web usando JavaScript. La página comienza con la declaración `<!doctype html>` que indica al navegador que estamos utilizando HTML5. Dentro del cuerpo (`<body>`) del documento, hay un párrafo (`<p>`) que contiene el texto "Esto es un párrafo o parágrafo". Lo importante sucede en el bloque de código `<script>`: aquí se selecciona el párrafo utilizando `document.querySelector("p")`, lo que devuelve una referencia al primer elemento `<p>` encontrado en la página. Luego, se cambia el color del texto de este párrafo a rojo mediante la propiedad `.style.color` y asignando "red" como valor. Este tipo de manipulación dinámica permite cambiar fácilmente el aspecto visual de los elementos HTML mientras el usuario ve la página, sin necesidad de recargarla.
+Este código HTML contiene una página web simple con un fragmento de script en JavaScript. La función principal del código es cambiar el color del texto de un párrafo utilizando JavaScript. En la parte superior, tienes una etiqueta `<p>` que contiene el texto "Esto es un párrafo o parágrafo". Luego, dentro del bloque `<script>`, se selecciona este párrafo usando `document.querySelector("p")` y se guarda en la variable `parrafo`. Después, mediante la propiedad `style.color` de esta variable, el código cambia el color del texto del párrafo a rojo ("red"). Esto es importante porque muestra cómo JavaScript puede manipular directamente los elementos HTML para cambiar su apariencia dinámicamente sin necesidad de recargar la página.
+
+`001-estilo en javascript.html`
 
 ```html
 <!doctype html>
@@ -11758,16 +13068,17 @@ Este código HTML muestra cómo modificar el estilo de una parte específica del
 ```
 
 ### anadir clase
+<small>Creado: 2025-12-01 08:36</small>
 
 #### Explicación
 
-Este código HTML muestra cómo se puede cambiar el estilo de un elemento en una página web utilizando JavaScript. En la parte superior del documento, tenemos las declaraciones básicas para iniciar cualquier archivo HTML, como `<doctype html>` y la etiqueta `<head>`, que contiene meta-información sobre la página.
+Este código HTML te enseña cómo añadir estilos a un párrafo en una página web utilizando JavaScript. En la parte superior del documento, tienes un estilo definido que cambia el color del texto a rojo cuando se aplica la clase "rojo". Luego, en la sección `<body>`, hay un párrafo de texto que inicialmente no tiene ninguna clase asignada.
 
-Dentro de `<style>`, definimos una clase CSS llamada `.rojo` que cambia el color del texto a rojo. Luego, en la sección `<body>`, hay un párrafo que inicialmente no tiene ninguna clase asociada y por lo tanto no tiene ningún estilo especial.
+El script en JavaScript selecciona este párrafo usando `document.querySelector("p")`. Esto es como decirle al navegador que busque el primer elemento con la etiqueta `<p>` y lo guarde en una variable llamada `parrafo`.
 
-Lo importante es lo que sucede en el bloque de código JavaScript dentro de la etiqueta `<script>`. Aquí, usamos `document.querySelector("p")` para seleccionar el primer párrafo (`<p>` tag) en la página. Luego, a este párrafo se le añade la clase "rojo" usando el método `.classList.add()`, lo que aplica los estilos definidos anteriormente (en este caso, cambiar el color del texto a rojo).
+Finalmente, se usa `classList.add("rojo")` para añadir la clase "rojo" a este párrafo. Como resultado, el texto del párrafo cambia de color al rojo debido al estilo definido previamente en la hoja de estilos `<style>`. Esta técnica es útil cuando deseas cambiar dinámicamente cómo se ve un elemento en tu página web sin necesidad de recargar la página.
 
-Este código es crucial para entender cómo JavaScript puede interactuar con el contenido de una página web en tiempo real y modificar su apariencia según sea necesario.
+`002-anadir clase.html`
 
 ```html
 <!doctype html>
@@ -11789,10 +13100,19 @@ Este código es crucial para entender cómo JavaScript puede interactuar con el 
 ```
 
 ### quitar clase
+<small>Creado: 2025-12-01 08:38</small>
 
 #### Explicación
 
-Este código HTML es una página web sencilla que contiene un párrafo con texto que inicialmente aparece en color rojo. El estilo del texto se define mediante una clase CSS llamada "rojo" en la etiqueta `<style>`. Luego, dentro de la etiqueta `<script>`, el código JavaScript selecciona este párrafo específico usando `document.querySelector("p")` y luego quita la clase "rojo" utilizando `parrafo.classList.remove("rojo")`. Como resultado, cuando se carga esta página en un navegador, aunque inicialmente el texto del páarrafo está definido para ser rojo, al final de la carga se elimina esa clase, cambiando el color del texto a su valor por defecto. Esto demuestra cómo puedes usar JavaScript para manipular y modificar los estilos CSS dinámicamente una vez que la página web ya ha comenzado a cargar en el navegador.
+Este fragmento de código HTML es un ejemplo sencillo de cómo modificar el estilo de un elemento en una página web utilizando JavaScript. En concreto, muestra cómo quitar una clase CSS a un elemento específico del documento.
+
+El código comienza definiendo una clase CSS llamada "rojo" que cambia el color del texto a rojo. Luego, hay un párrafo en la página que tiene esta clase aplicada, lo que significa que su texto aparecerá de color rojo.
+
+Lo interesante es que después, con JavaScript, se selecciona este párrafo utilizando `document.querySelector("p")`, que busca el primer párrafo (elemento `<p>`) en la página. Una vez que se ha encontrado el elemento, se utiliza el método `classList.remove("rojo")` para quitar la clase "rojo" del párrafo seleccionado.
+
+Al eliminar esta clase, el estilo asociado a ella (es decir, el color rojo) ya no afectará al párrafo, permitiendo que tome cualquier otro estilo definido posteriormente en el código o que adopte los estilos por defecto del navegador si no hay otros estilos específicos aplicados. Este tipo de manipulación es útil cuando deseas cambiar dinámicamente la apariencia de elementos en respuesta a acciones del usuario, como clics o cambios en el estado de la página.
+
+`003-quitar clase.html`
 
 ```html
 <!doctype html>
@@ -11814,14 +13134,17 @@ Este código HTML es una página web sencilla que contiene un párrafo con texto
 ```
 
 ### estilo condicional
+<small>Creado: 2025-12-01 08:45</small>
 
 #### Explicación
 
-Este código HTML está diseñado para mostrar cómo manipular estilos de una entrada de texto en tiempo real según ciertas condiciones. En concreto, el script JavaScript incorporado cambia el color de fondo del cuadro de entrada dependiendo de si la longitud de lo que se ha escrito es exactamente 9 caracteres o no.
+Este código HTML crea una página web simple que tiene un elemento de entrada (un campo donde el usuario puede escribir) y muestra mensajes basados en la longitud del texto introducido por el usuario. Cuando se escribe en este campo, el código JavaScript comprueba si el número exacto de caracteres escritos es nueve.
 
-Cuando el usuario comienza a escribir en la caja de texto, cada vez que suelta una tecla (evento `keyup`), el script comprueba la longitud del texto introducido. Si el número de caracteres es igual a 9, se añade una clase CSS llamada "verde" y se quita la clase "rojo". Esto cambia el fondo del cuadro de entrada a un tono verde claro. Por otro lado, si no hay exactamente 9 caracteres, se elimina la clase "verde", se añade "rojo", y el fondo del cuadro de texto pasa a ser de color rojo claro.
+Aquí está cómo funciona: cuando el usuario presiona una tecla (evento `onkeyup`), el programa captura lo que ha escrito y cuenta cuántos caracteres hay en la entrada. Si hay exactamente 9 caracteres, cambia el estilo del campo a verde; si no, lo vuelve rojo. Esto ayuda visualmente al usuario a entender si han introducido el número correcto de caracteres requeridos.
 
-Este tipo de interacción en tiempo real es útil para proporcionar retroalimentación visual inmediata al usuario sobre cómo está cumpliendo o no con ciertos requisitos, como un campo que debe tener una longitud específica.
+Este tipo de interacción es importante porque proporciona retroalimentación inmediata y gráfica al usuario sobre el estado de su entrada, facilitando que cumplan con los requisitos específicos del formulario o campo.
+
+`004-estilo condicional.html`
 
 ```html
 <!doctype html>
@@ -11855,10 +13178,9 @@ Este tipo de interacción en tiempo real es útil para proporcionar retroaliment
 ```
 
 ### variables en css
+<small>Creado: 2025-12-01 08:52</small>
 
-#### Explicación
-
-El código que has proporcionado es una página HTML básica que utiliza variables CSS (CSS Variables) para definir y aplicar estilos de forma dinámica. En la sección `<head>` del documento, hay un bloque de estilo donde se define una variable CSS llamada `--color_primario`, asignándole el valor del color rojo (`#ff0000`). Esta variable es utilizada después en las reglas de estilo para elementos `<p>` y `<div>`. Al hacer esto, cualquier cambio futuro en la variable `--color_primario` afectará automáticamente a todos los párrafos y divisiones en el documento sin necesidad de modificar cada regla CSS individualmente. Esto es muy útil cuando se necesita mantener un diseño consistente y fácil de actualizar.
+`005-variables en css.html`
 
 ```html
 <!doctype html>
@@ -11881,12 +13203,17 @@ El código que has proporcionado es una página HTML básica que utiliza variabl
 ```
 
 ### funcion de calculo en css
+<small>Creado: 2025-12-01 08:54</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que incluye el uso del cálculo en CSS para establecer un estilo. En la parte superior, se define la estructura básica de una página HTML con `<!DOCTYPE html>` y las etiquetas `<html>`, `<head>`, y `<body>`. Dentro del bloque `<style>`, se utiliza la regla CSS `calc()` para calcular el ancho de un elemento div. En este caso, el ancho del div es calculado como 50% del ancho total del contenedor más 100 píxeles adicionales. Esto permite a los diseñadores web ajustar dinámicamente el tamaño de elementos basándose en condiciones variables o proporciones complejas.
+El código que has proporcionado es un ejemplo sencillo de cómo usar CSS para aplicar estilos a elementos HTML. En este caso, el bloque de estilo define la propiedad `width` de una etiqueta `<div>` utilizando una función llamada `calc()`. Esta función permite realizar cálculos matemáticos directamente en los valores de las propiedades CSS.
 
-Este tipo de uso del cálculo en CSS es importante porque ofrece flexibilidad y capacidad para crear diseños responsivos que se adaptan automáticamente a diferentes tamaños de pantalla, sin necesidad de escribir reglas CSS adicionales para cada posible configuración. Es una herramienta valiosa cuando se necesita realizar ajustes precisos basados en cálculos matemáticos directamente en el estilo del elemento HTML.
+En concreto, el código establece que el ancho (`width`) del div será el 50% del contenedor padre (generalmente la ventana del navegador o un elemento padre) más 100 píxeles. Además, se ha aplicado un fondo rojo al div para visualizar fácilmente sus dimensiones.
+
+Esta técnica es útil cuando necesitas crear diseños flexibles que respondan a diferentes tamaños de pantalla y situaciones específicas sin tener que recurrir a JavaScript o a valores fijos que puedan no ajustarse bien en todas las circunstancias.
+
+`006-funcion de calculo en css.html`
 
 ```html
 <!doctype html>
@@ -11903,6 +13230,50 @@ Este tipo de uso del cálculo en CSS es importante porque ofrece flexibilidad y 
 </html>
 ```
 
+### Actividades propuestas
+
+### Actividades para Estudiantes de Formación Profesional
+
+#### 1. Cambiar el Color del Párrafo con JavaScript
+**Descripción:** Los estudiantes deben escribir un script en JavaScript que cambie el color de texto de varios párrafos a azul al hacer clic en ellos.
+
+**Objetivo:** Aprender cómo seleccionar elementos y cambiar estilos utilizando JavaScript.
+
+#### 2. Añadir y Quitar Clases CSS con Eventos
+**Descripción:** Los estudiantes deben crear un script que añada una clase "negrita" cuando se hace clic en el texto y la quite al hacer clic nuevamente.
+
+**Objetivo:** Comprender cómo manipular clases de estilos en elementos HTML usando eventos.
+
+#### 3. Estilizar Elementos Dinámicamente con Variables CSS
+**Descripción:** Los estudiantes deben implementar variables CSS para definir colores que luego usarán en diferentes elementos del documento.
+
+**Objetivo:** Aprender a utilizar las variables personalizadas en CSS y cómo aplicarlas a múltiples elementos HTML.
+
+#### 4. Manipulación de Estilos basada en Condiciones
+**Descripción:** Crear un script que cambie el estilo de fondo de una entrada de texto dependiendo del número de caracteres introducidos.
+
+**Objetivo:** Familiarizarse con la manipulación condicional de estilos mediante eventos y métodos como `classList.add()` y `classList.remove()` en JavaScript.
+
+#### 5. Crear Estilos Dinámicos para Elementos Secundarios
+**Descripción:** Los estudiantes deben escribir un script que cambie el color del texto de los elementos secundarios (hijos) cuando se selecciona a un elemento padre específico.
+
+**Objetivo:** Aprender a manipular estilos en cascada y cómo afectar a los hijos directamente desde JavaScript.
+
+#### 6. Crear Estilos Condicionalmente con CSS Calc
+**Descripción:** Los estudiantes deben escribir una función que calcule el ancho de un div basado en la longitud del texto dentro del elemento y establecerlo mediante CSS `calc()`.
+
+**Objetivo:** Comprender cómo combinar lógica JavaScript con CSS para crear estilos dinámicos y responsive.
+
+#### 7. Diseño Responsivo Condicional
+**Descripción:** Los estudiantes deben implementar un diseño responsivo que cambie la apariencia de los elementos basándose en el tamaño de pantalla del dispositivo.
+
+**Objetivo:** Familiarizarse con cómo combinar CSS media queries y JavaScript para crear diseños dinámicos.
+
+#### 8. Manipulación de Estilos en Elementos Desconocidos
+**Descripción:** Los estudiantes deben crear un script que cambie el color del texto a verde cuando se selecciona cualquier elemento desconocido o no definido previamente.
+
+**Objetivo:** Aprender a manipular estilos en elementos HTML dinámicos y desconocidos, así como a manejar eventos de selección de elementos genéricos con JavaScript.
+
 
 <a id="publicacion-web-en-github"></a>
 ## Publicacion web en GitHub
@@ -11912,16 +13283,15 @@ Este tipo de uso del cálculo en CSS es importante porque ofrece flexibilidad y 
 Este conjunto de ejercicios está diseñado para ayudarte a comprender y practicar la publicación web en plataformas como GitHub Pages. Los problemas abordan desde la obtención de un dominio hasta la configuración básica de tu página web utilizando HTML, CSS y Markdown. La práctica incluye crear repositorios públicos en GitHub, estructurar páginas web con elementos HTML y estilizarlas con CSS para mejorar su apariencia visual. Este conjunto de ejercicios te permite familiarizarte con los conceptos fundamentales de alojamiento web y publicación, además de desarrollar habilidades en el uso de herramientas como Git y GitHub para manejar tu contenido web.
 
 ### Repaso de publicacion web
+<small>Creado: 2025-12-01 09:11</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una página informativa sobre la publicación de sitios web en Internet. Explica los elementos básicos necesarios para publicar un sitio web, principalmente enfocándose en el dominio del sitio. El dominio es como la dirección única y personalizada que se necesita para acceder a tu sitio web, compuesto por una parte específica (como "jocarsa") y una extensión (como ".com"). Se explica cómo debe ser único y disponible para poder registrarlo.
+Este fragmento de código HTML es una página web simple que explica los conceptos básicos relacionados con la publicación de sitios web, centrándose principalmente en la obtención y configuración de un dominio. La página describe qué es un dominio, cómo se compone (con ejemplos como "jocarsa.com"), su importancia al evitar tener que recordar direcciones IP complejas y distinguir entre diferentes tipos de extensiones (génericos como .com, .net y geográficas como .es para España o .cn para China). Además, menciona los costos asociados con registrar un dominio y la necesidad de renovarlo periódicamente para mantener su control.
 
-Además, el texto detalla las diferentes extensiones de dominio existentes, desde aquellas genéricas como .com, .net o .org hasta las geográficas que identifican a países específicos. También se menciona la importancia de los dominios en términos de usabilidad y accesibilidad para los usuarios finales.
+La información proporcionada es útil para estudiantes que comienzan a aprender sobre cómo publicar sitios web en Internet, ya que les ayuda a entender la importancia del dominio como parte central del proceso.
 
-Finalmente, el texto aborda aspectos prácticos sobre cómo obtener un dominio, incluyendo costos y procesos. Se indica que comprar un dominio es más bien alquilarlo por períodos anuales, siendo el precio variable dependiendo del tipo de dominio elegido. Es crucial renovar regularmente el dominio para mantener la propiedad y evitar perderla si no se renueva a tiempo.
-
-Este contenido es fundamental para entender los aspectos básicos de cómo hacer accesible un sitio web en Internet desde una dirección única y memorable para tus visitantes.
+`001-Repaso de publicacion web.html`
 
 ```html
 Que hace falta para publicar una web?
@@ -11982,124 +13352,20 @@ El dominio se tiene que renovar
 Si no se renueva, se pierde
 ```
 
-### repaso de publicacion - servidor
-
-#### Explicación
-
-Este fragmento de texto explica los conceptos básicos del alojamiento web para sitios web y menciona algunas opciones comunes. Detalla que un sitio en Internet necesita ser alojado en un servidor que esté disponible las 24 horas del día, sirviendo páginas web a los usuarios que las visitan. Se nombran dos de los servidores web más populares: Apache2 y NGINX, indicando tendencias actuales en su uso.
-
-Además, se explican dos métodos para configurar el alojamiento: mantener tu propio servidor desde casa o contratar un servicio en la nube. También se menciona que existen otras opciones como IIS, Flask y Node.js, aunque no entran en detalles sobre ellas. Finalmente, el texto ofrece una breve descripción de los costos asociados con estos servicios, desde alojamientos gratuitos hasta opciones pagas que pueden variar significativamente en costo.
-
-Esta información es importante para entender cómo funciona Internet detrás del escenario y ayudarte a tomar decisiones informadas sobre dónde y cómo alojar tu sitio web.
-
-```markdown
-A continuación hace falta un hosting (alojamiento)
-Es un servidor conectado a internet 24 horas al día
-Sirviendo páginas web
-
-Los dos más famosos:
--Apache2 (en decrecimiento)
--NGINX (en ascenso)
--Otros (IIS, flask, node)
-
-Un alojamiento consiste:
--O bien tu te montas un ordenador en casa como servidor (hay que mantenerlo)
--O bien contratas algun tipo de hosting en la nube
-
-Precios de hosting en la nube:
--Los hay desde gratuitos
--Hasta hostings de pago
-(Pueden ir desde 1 euro al mes, hasta 1000 euros al mes)
-```
-
-### publicacion de webs en GitHub Pages
-
-#### Explicación
-
-Este fragmento de texto proporciona una guía paso a paso sobre cómo publicar una página web utilizando GitHub Pages, un servicio gratuito que permite alojar sitios web estáticos directamente desde repositorios públicos en GitHub. La guía explica claramente los requisitos necesarios para la creación del sitio (como usar solo HTML, CSS y JavaScript, entre otros), cómo crear un nuevo repositorio público y configurarlo correctamente.
-
-El proceso detalla cómo iniciar sesión o registrarse en GitHub, crear un nuevo repositorio con una estructura adecuada que incluya archivos como `README.md`, y luego clonar el repositorio en tu ordenador para trabajar en él. Una vez que tienes todo listo en tu ordenador (por ejemplo, creando un archivo `index.html`), puedes hacer los cambios necesarios y publicarlos subiendo el contenido al repositorio de GitHub.
-
-El último paso importante es configurar las páginas del sitio web dentro de la sección "Settings" en GitHub, especificando que quieres usar la rama principal (`main`) para servir tu página web. Después de guardar esta configuración, simplemente hay que esperar unos minutos para que los cambios estén disponibles en línea en una URL específica proporcionada por GitHub. Posteriormente, cualquier modificación se puede hacer y publicarse siguiendo el mismo proceso.
-
-Esta guía es fundamental para estudiantes que quieren aprender a alojar sitios web de forma gratuita y sencilla utilizando herramientas ya existentes como GitHub Pages, sin necesidad de configurar servidores o preocuparse por la seguridad del sitio.
-
-```markdown
-GitHub pages es un servicio de publicación web gratuito en GitHub
-
-Requerimientos:
-1.-Solo se puede usar HTML, CSS, JS, JSON (no Py, PHP, MySQL...)
-2.-Requiere que el repositorio esté abierto
-3.-Requiere que la web inicial se llame index.html
-
-Cómo publicar una web en GitHub Pages:
-
-1.-Vamos a GitHub.com
-2.-O iniciamos sesión o creamos un usuario
-3.-Entramos en repositorios
-4.-Creamos un nuevo repositorio
-5.-Cogemos un repo name que no haya sido seleccionado anteriormente
-6.-La visibilidad tiene que ser pública
-7.-Recomiendo añadir un Readme.md
-8.-O bien lo editamos en la nube
-9.-O bien lo clonamos en nuestro ordenador con GitHub Desktop
-	-File - Clone repository
-  -Seleccionamos el repo name que hemos creado
-  -Ahora el repo existe en la carpeta en la que hemos clonado
-10.-Abro la carpeta con un editor y creo un archivo index.html
-11.-Le pongo algo de contenido
-12.-Si ya he puesto algo de contenido, hago commit+push
-13.-De vuelta en GitHub.com, accedo a settings (arriba a la derecha)
-14.-Menu de la izquierda, entro en Pages
-15.-En branch, está en "None", elijo "main"
-16.-No olvidéis pulsar el boton Save
-
-...
-17.-Espero entre 5 y 10 minutos
-...
-18.-Entro en el repositorio via url
-https://[usuario].github.io/[repo]
-https://jocarsa.github.io/curriculum25/[loquesea.html]
-
-...
-
-19.-Una vez publicada la página, podéis realizar las modificaciones que queráis
-20.-Hacemos commit+push de las modificaciones
-21.-Esperamos otros 5-10 minutos
-22.-Recargamos la web en espera de los cambios
-```
-
-### Ejercicio de hoy en clase
-
-#### Explicación
-
-Este fragmento de código es en realidad una serie de instrucciones escritas en Markdown, que es un lenguaje de marcado sencillo para formatear texto y crear estructuras simples. Las instrucciones indican a los estudiantes que deben completar varias tareas relacionadas con la gestión digital de su perfil profesional.
-
-La primera tarea consiste en crear dos repositorios en GitHub: uno llamado "curriculum" y otro llamado "portafolio". Un curriculum es como un currículum vitae pero en formato digital, mientras que el portafolio podría contener proyectos personales o ejemplos de trabajo para mostrar habilidades y experiencia. Estos repositorios servirán para almacenar y compartir estos documentos con potenciales empleadores u otras personas interesadas.
-
-La segunda tarea es crear una cuenta en LinkedIn si no se tiene ya una, un sitio web popular para la búsqueda de empleo y networking profesional. LinkedIn permite a los estudiantes construir su marca personal en línea y conectarse con otros profesionales en su campo.
-
-Finalmente, se les pide que completen un formulario (sin detalles sobre qué formulario es). Esta tarea podría ser parte de una evaluación o para recopilar información adicional necesaria para completar sus perfiles en línea de manera efectiva.
-
-```markdown
-1.-Cread un repositorio (si no lo teníais ya) llamado "curriculum"
-2.-Cread un repositorio llamado portafolio (si no lo teníais ya)
-3.-Cread una cuenta en LinkedIn (si no la teníais ya)
-
-4.-Rellenadme el formulario
-```
-
 ### portafolio
+<small>Creado: 2025-12-01 09:42</small>
 
 #### Explicación
 
-Este código HTML crea una página web simple que sirve como portafolio para mostrar diferentes proyectos del autor. La estructura principal de la página comienza con la declaración `<!doctype html>`, lo que indica que se trata de un documento HTML5.
+Este código HTML representa la estructura de una página web personal que funciona como un portafolio. La página está diseñada para mostrar información sobre el autor, en este caso, Jose Vicente Carratala Sanchis, y presenta varios proyectos o trabajos realizados.
 
-En el `<head>` encontramos metadatos y elementos clave: `<title>` establece el título de la página que aparecerá en la pestaña del navegador, `<meta charset="utf-8">` asegura que los caracteres especiales se manejen correctamente, y `<link rel="stylesheet" href="estilo.css">` indica al navegador que debe cargar estilos adicionales desde un archivo externo llamado `estilo.css`.
+En la parte superior de la página, dentro del `<header>`, se incluye una cabecera principal con su nombre seguido por un subtítulo indicando que es un "Portafolio web". Esto ayuda a los visitantes a entender rápidamente el propósito de la página. A continuación, en el `<main>` se listan varios artículos (proyectos), cada uno compuesto por una imagen del autor (usada como avatar o foto personal), un título breve para el proyecto y una descripción corta seguida de un enlace que invita a los visitantes a "Saber más" sobre ese proyecto específico.
 
-El cuerpo de la página (`<body>`) está dividido en tres partes principales: el encabezado (`<header>`), donde se incluyen datos como el nombre del autor y el título "Portafolio web"; el contenido principal (`<main>`), que consiste en múltiples `<article>` para cada proyecto. Cada artículo presenta una imagen, un título, una breve descripción y un enlace para obtener más información.
+Cada artículo tiene la misma estructura: una imagen, un título del proyecto y una breve descripción. Esto proporciona coherencia visual y permite que los visitantes puedan navegar fácilmente por diferentes proyectos incluidos en el portafolio. En cada artículo hay un vínculo a otra página (otrapagina.html), presumiblemente con información más detallada sobre ese proyecto específico.
 
-Por último, hay un pie de página (`<footer>`) con información de contacto del autor. Esta estructura es fundamental para crear páginas web organizadas y fáciles de navegar, proporcionando al usuario toda la información necesaria de manera clara y visualmente atractiva.
+Finalmente, la sección `<footer>` contiene información de contacto del autor, incluyendo su dirección de correo electrónico y número telefónico para que los visitantes puedan ponerse en contacto si desean saber más detalles o tienen consultas adicionales.
+
+`005-portafolio.html`
 
 ```html
 <!doctype html>
@@ -12172,16 +13438,19 @@ Por último, hay un pie de página (`<footer>`) con información de contacto del
 ```
 
 ### estilo
+<small>Creado: 2025-12-01 09:47</small>
 
 #### Explicación
 
-Este código CSS está diseñado para estilizar tres secciones principales de una página web: el encabezado (header), el contenido principal (main) y el pie de página (footer). Cada uno de estos elementos tiene sus propias reglas específicas, pero también comparten algunas características en común. Por ejemplo, todos tienen un ancho fijo de 1200 píxeles, están centrados horizontalmente gracias a la propiedad `margin: auto`, y tienen relleno interno (padding) y una fuente sin serif para mejorar su apariencia.
+Este código CSS está diseñado para estilizar y organizar elementos HTML específicos de una página web. Primero, establece reglas comunes para los elementos `header`, `main` y `footer`. Estas reglas incluyen un ancho fijo de 1200 píxeles, márgenes automáticos que centrarán el contenido en la pantalla, relleno interno de 20 píxeles y una familia de fuentes sin serif. 
 
-Para el contenido principal (`main`), se utiliza una disposición en cuadrícula (`display: grid`) con tres columnas iguales de ancho. La propiedad `grid-template-columns: repeat(3, 100fr)` indica que hay tres columnas y cada columna ocupa un tercio del espacio disponible, separadas por un espacio libre de 20 píxeles gracias a la propiedad `gap`.
+Para el elemento `main`, se utiliza un diseño de rejilla (`grid`) con tres columnas de igual ancho y un espacio entre las columnas de 20 píxeles. Esto ayuda a distribuir el contenido del sitio web en una estructura visualmente equilibrada.
 
-Los enlaces (`a`) dentro de la página tienen estilos específicos para mejorar su apariencia: el texto es blanco (`color: white`), hereda la eliminación del subrayado o cualquier otro estilo predeterminado (`text-decoration: inherit`), tiene un fondo azul índigo (`background: indigo`), relleno interno de 10 píxeles para aumentar su tamaño visual y bordes redondeados (`border-radius`) para darle un aspecto más agradable.
+Además, estiliza imágenes para que ocupen todo el ancho disponible en su contenedor y los enlaces (`a`) con texto blanco sobre un fondo índigo, sin subrayado pero con bordes redondeados y relleno. Los enlaces heredarán la decoración de texto (como color o negrita) del elemento padre para mantener consistencia estética.
 
-Además, tanto el encabezado como el pie de página tienen sus contenidos centrados horizontalmente (`text-align: center`), lo que asegura que cualquier texto o contenido dentro de ellos esté alineado en el centro.
+Finalmente, centra el contenido tanto en `header` como en `footer`, asegurando una alineación visual coherente a lo largo del sitio web. Este tipo de estilo mejora notablemente la apariencia y legibilidad de las páginas web, proporcionando una estructura uniforme y profesional.
+
+`estilo.css`
 
 ```css
 header,main,footer{
@@ -12207,6 +13476,36 @@ header,footer{
 }
 ```
 
+### Actividades propuestas
+
+### Actividades Propuestas
+
+#### Actividad 1: Creación de un Repositorio en GitHub
+**Descripción:** Crea un nuevo repositorio en tu cuenta de GitHub. Luego, clona el repositorio localmente y añade un archivo `index.html` con contenido personalizado. Aprenderás a configurar y manejar repositorios públicos para publicación web.
+
+#### Actividad 2: Publicación de una Página Web Simples en GitHub Pages
+**Descripción:** Utiliza tu repositorio clonado para crear una página web básica y publica esta página usando GitHub Pages. Aprenderás cómo vincular un archivo `index.html` con los ajustes necesarios en la configuración del repositorio.
+
+#### Actividad 3: Desarrollo de un Portafolio Personal
+**Descripción:** Diseña tu propio portafolio web utilizando el código proporcionado como base y personalízalo para incluir tus propios proyectos, logros y habilidades. Aprenderás a estructurar contenido en HTML y CSS.
+
+#### Actividad 4: Configuración de un Hosting Gratuito
+**Descripción:** Configura tu página web en GitHub Pages tras seguir la guía proporcionada. Comprueba cómo se actualizan los cambios publicados después de hacer commit y push desde tu repositorio local. Aprenderás a gestionar las herramientas necesarias para alojar una web en línea.
+
+#### Actividad 5: Creación de un Formulario Personalizado
+**Descripción:** Crea un formulario HTML para recoger información personal (nombre, correo electrónico, teléfono) y estiliza este formulario utilizando CSS. Aprenderás a estructurar formularios sencillos y aplicarles estilos visuales.
+
+#### Actividad 6: Edición de Estilo en CSS
+**Descripción:** Modifica el archivo `estilo.css` para cambiar el diseño del portafolio proporcionado, incluyendo colores, espaciados y tamaños de fuentes. Aprenderás a aplicar diferentes técnicas de estilo en tu página web.
+
+#### Actividad 7: Despliegue de Contenido Dinámico
+**Descripción:** Incorpora contenido dinámico (como texto cambiante o imágenes interactivas) en tu portafolio web y actualiza la página para ver los cambios reflejados. Aprenderás a utilizar HTML y CSS para hacer páginas más interactivas.
+
+#### Actividad 8: Integración con Redes Sociales
+**Descripción:** Agrega una sección de redes sociales al pie del portafolio donde enlaces a tus perfiles profesionales como LinkedIn. Aprenderás a integrar links externos y optimizar tu presencia online profesional.
+
+Estas actividades están diseñadas para ayudarte a familiarizarte con la publicación web usando GitHub Pages, mejorar tus habilidades en HTML y CSS, así como fortalecer tu presencia digital profesional.
+
 
 
 <a id="definicion-de-esquemas-y-vocabularios-en-lenguajes-de-marcas"></a>
@@ -12219,56 +13518,35 @@ header,footer{
 
 Esta carpeta contiene ejercicios enfocados en la comprensión y aplicación básica de XML (eXtensible Markup Language), una tecnología clave para la definición y estructuración de documentos digitales. Los ejercicios abordan conceptos fundamentales como la importancia de tener un elemento raíz, la sensibilidad a mayúsculas/minúsculas en etiquetas, así como la creación de subetiquetas y listas dentro de elementos parentales. Estos ejercicios ayudan a los estudiantes a desarrollar competencias esenciales para manejar estructuras XML de manera correcta y eficiente, lo que es crucial en el desarrollo web y otras áreas donde se utiliza este lenguaje de marcado.
 
-### Introduccion
-
-#### Explicación
-
-Este fragmento de código en formato Markdown proporciona una introducción a los lenguajes XML y HTML, enfocándose en sus orígenes y diferencias. Explica que XML es un tipo de información plana similar al HTML pero con mayor flexibilidad en cuanto a la definición de etiquetas. El texto menciona que ambos lenguajes nacen del SGML (Standard Generalized Markup Language) y señala una evolución hacia el XHTML después de la creación de XML.
-
-La importancia radica en entender que mientras HTML tiene un conjunto fijo de etiquetas, XML permite crear etiquetas personalizadas para almacenar datos específicos de manera estructurada. Esto es crucial porque XML se utiliza principalmente para guardar y transferir datos entre sistemas diferentes, manteniendo una estructura consistente y extensible.
-
-```markdown
-XML = Información plana
-Mismo origen que HTML
-
-HTML lo crea Tim Berners-Lee
-A partir de HMTL se generaliza XML
-
-Es para guardar los datos
-
-XHTML despues de crear XML
-AMbos vienen filosoficamente de SGML
-
-Son estándares que tienen notación, normativa
-
-Son para datos que cambian
-
-eXtensible Markup Language
-Hyper Text Markup Language
-
-HTML = etiquetas fijas
-XML = etiquetas personalizables
-```
-
 ### repaso xml
+<small>Creado: 2025-12-03 10:29</small>
 
 #### Explicación
 
-Parece que no has proporcionado ningún código XML para analizar en tu solicitud. Si tienes un bloque específico de código XML que te gustaría que explique, por favor compártamelo y estaré encantado de ayudarte a entenderlo. El XML es una forma importante de definir estructuras de datos en texto plano y es muy útil para el intercambio de información entre diferentes sistemas y aplicaciones.
+Parece que no has proporcionado un fragmento de código XML específico para analizar. Sin embargo, puedo darte una idea general de lo que podrían contener los archivos XML en la carpeta de ejercicios que mencionaste.
+
+Por ejemplo, el archivo `001-repaso xml.xml` probablemente incluirá ejemplos básicos del lenguaje XML para repasar conceptos fundamentales. Este podría incluir cómo definir elementos, atributos y estructuras de documentos simples.
+
+Para dar un contexto más específico, necesitaría ver el contenido exacto del archivo `001-repaso xml.xml` o cualquier otro que desees analizar. Si me proporcionas ese código XML, te ayudaré a explicarlo paso a paso.
+
+`001-repaso xml.xml`
 
 ```xml
 
 ```
 
 ### debe haber una etiqueta raiz
+<small>Creado: 2025-12-03 10:34</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo sencillo en XML (eXtensible Markup Language), que se utiliza para definir estructuras de datos y documentos en formato texto plano. En este caso, el código comienza con la declaración `<?xml version="1.0" encoding="UTF-8"?>`, lo cual indica que estamos trabajando con una versión específica del lenguaje XML (la 1.0) y especifica que los caracteres utilizados están en codificación UTF-8, permitiendo el uso de un amplio rango de caracteres internacionales.
+Este fragmento de código XML es muy sencillo pero muy importante para entender la estructura básica de este lenguaje. Primero, el código inicia con una declaración que especifica que estamos trabajando con un documento XML en la versión 1.0 y que utiliza codificación UTF-8, lo cual asegura que el texto puede contener cualquier carácter del alfabeto universal.
 
-Dentro de esta declaración, se define una etiqueta raíz `<persona>`, la cual es vacía en este ejemplo porque no contiene información adicional ni elementos hijos. Esta estructura básica es importante ya que cada documento XML debe tener exactamente una etiqueta raíz que envuelve todo el contenido del documento.
+Lo más destacable es la etiqueta `<persona>`, que está vacía por ahora pero indica claramente que este elemento servirá como el contenedor principal o "raíz" de un documento XML. Cada archivo XML debe tener exactamente una etiqueta raíz, y en este caso se llama simplemente `persona`. Esta estructura es crucial porque define la forma básica del documento, y dentro de esta etiqueta podrían incluirse más detalles sobre una persona, como su nombre, edad o dirección.
 
-La importancia de esta estructura radica en que permite a los lectores y procesadores de XML entender claramente la organización y propósito del archivo, facilitando así su interpretación y manipulación por parte de diferentes aplicaciones o servicios web.
+En resumen, este código establece el marco inicial para un archivo XML que representa información sobre una persona, siguiendo las reglas fundamentales de cómo estructurar documentos en este lenguaje.
+
+`002-debe haber una etiqueta raiz.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12278,14 +13556,15 @@ La importancia de esta estructura radica en que permite a los lectores y procesa
 ```
 
 ### case sensitive
+<small>Creado: 2025-12-03 10:34</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico de XML (eXtensible Markup Language), que se utiliza para definir estructuras de datos y documentos de manera clara y legible. La primera línea `<?xml version="1.0" encoding="UTF-8"?>` indica que estamos trabajando con una versión específica del lenguaje XML, y especifica la codificación utilizada, en este caso UTF-8, que es una codificación muy común para garantizar compatibilidad internacional.
+Este fragmento de código XML muestra un ejemplo incorrecto de cómo se debería estructurar este tipo de documento. En XML, es crucial que todos los nombres de etiquetas sean exactamente iguales en mayúsculas y minúsculas; es decir, el lenguaje es sensible a las diferencias entre letras mayúsculas y minúsculas. En tu ejemplo, tienes una etiqueta `<persona>` con una apertura correctamente escrita pero la etiqueta de cierre está mal escrita como `<Persona>`. Esto genera un error en XML porque considera que `persona` y `Persona` son nombres diferentes de etiquetas.
 
-El elemento principal del documento es `<persona>`, que debería contener información sobre un individuo. Sin embargo, hay un error de mayúsculas y minúsculas: el cierre del elemento se ha escrito como `<Persona>` en lugar de `<persona>`. En XML, la etiqueta de cierre debe coincidir exactamente con la etiqueta de apertura en términos de mayúsculas y minúsculas. Este error impedirá que el archivo XML sea válido y funcionará correctamente.
+Es importante corregir esto para que el documento sea válido y pueda ser procesado correctamente por cualquier sistema que lo lea, ya que la consistencia en los nombres de las etiquetas es fundamental en XML. En este caso, si deseas una estructura vacía sin contenido adicional dentro de `<persona>`, deberías escribir tanto la apertura como el cierre de la misma manera: `<persona></persona>` o simplemente tenerla abierta y cerrada de forma inmediata: `<persona />`.
 
-Es importante corregir este tipo de errores para asegurarte de que tus documentos XML sean válidos y puedan ser procesados correctamente por otros sistemas o programas.
+`003-case sensitive.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12296,14 +13575,17 @@ Esto está mal
 ```
 
 ### subetiquetas
+<small>Creado: 2025-12-03 10:35</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo básico en XML (eXtensible Markup Language), que se utiliza para estructurar y almacenar información. En este caso, el archivo comienza con la declaración de que está utilizando la versión 1.0 del lenguaje XML y especifica que el texto codificado está en UTF-8, lo cual es importante porque asegura que cualquier carácter o símbolo pueda ser representado correctamente.
+Este fragmento de código XML define un documento simple que contiene información sobre una persona. Comienza con la declaración de versión del lenguaje XML, especificando que se utiliza la versión 1.0 y el codificado UTF-8 para asegurar que todos los caracteres puedan ser representados correctamente.
 
-El contenido principal está dentro de una etiqueta raíz llamada `<persona>`, que agrupa toda la información relacionada con una persona. Dentro de esta etiqueta, se encuentran dos subetiquetas: `<nombre>` y `<apellidos>`. La subetiqueta `<nombre>` contiene el nombre "Jose Vicente", mientras que la subetiqueta `<apellidos>` almacena los apellidos "Carratala Sanchis".
+El elemento raíz en este caso es `<persona>`, que engloba toda la información relacionada con un individuo específico. Dentro de este elemento, encontramos dos subelementos: `<nombre>` y `<apellidos>`. Estos elementos contienen respectivamente el nombre "Jose Vicente" y los apellidos "Carratala Sanchis". Esta estructura permite organizar claramente la información personal en un formato que es fácil de leer tanto para humanos como para sistemas informáticos.
 
-Este tipo de estructura es importante porque permite organizar claramente datos en una forma que otros programas y sistemas pueden entender fácilmente. XML es utilizado ampliamente para intercambiar información entre diferentes aplicaciones o sistemas, manteniendo la claridad y consistencia de los datos.
+La importancia de este tipo de estructuración radica en la facilidad con la que otros programas pueden procesar y extraer datos específicos, como el nombre o los apellidos del individuo. Esto facilita tareas como la búsqueda, manipulación y visualización de información personal en diferentes aplicaciones y sistemas web.
+
+`004-subetiquetas.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12314,14 +13596,17 @@ Este tipo de estructura es importante porque permite organizar claramente datos 
 ```
 
 ### varios telefonos
+<small>Creado: 2025-12-03 10:36</small>
 
 #### Explicación
 
-Este fragmento de código XML está estructurado para representar información personal sobre una persona, en este caso incluyendo su nombre, apellidos y varios números telefónicos. La etiqueta raíz `<persona>` engloba toda la información relacionada con esa persona específica.
+Este fragmento de código XML (Lenguaje de Marcas Extensible) define la información personal de una persona, en este caso llamada Jose Vicente Carratala Sanchis. El archivo comienza con una declaración que especifica que es un documento XML version 1.0 codificado en UTF-8, lo cual asegura que todos los caracteres del texto sean correctamente interpretados sin importar su origen lingüístico.
 
-Dentro del bloque principal, primero se especifican el nombre y los apellidos de la persona usando las etiquetas `<nombre>` e `<apellidos>`, respectivamente. Luego, para manejar múltiples números telefónicos de manera organizada, se utiliza una estructura anidada: bajo la etiqueta `<telefonos>`, cada número tiene su propia etiqueta `<telefono>`. Esto permite agregar tantos números telefónicos como sean necesarios para esa persona sin complicar el diseño del documento XML.
+La estructura principal de este código es una etiqueta raíz llamada `<persona>` que agrupa toda la información relevante sobre Jose Vicente. Dentro de esta etiqueta se encuentran otras tres subetiquetas: `<nombre>`, `<apellidos>`, y `<telefonos>`. La etiqueta `<telefonos>` es especial porque contiene una o más subetiquetas `<telefono>`, que en este ejemplo representan dos números telefónicos diferentes. El uso de múltiples etiquetas `<telefono>` dentro de la etiqueta principal `<telefonos>` permite almacenar varios números sin necesidad de crear nuevas etiquetas para cada uno, lo cual es muy práctico cuando se desconoce el número exacto de telefonos que puede tener una persona.
 
-La importancia de este enfoque radica en que proporciona una estructura clara y escalable, permitiendo a otros usuarios o programas entender fácilmente cuál es la información sobre cada sección del archivo. Además, al ser un lenguaje estándar como XML, facilita el intercambio de datos entre diferentes sistemas informáticos y aplicaciones sin necesidad de adaptaciones específicas para cada caso.
+Este tipo de estructura en XML es muy útil para definir documentos y bases de datos donde la información jerárquica es relevante, permitiendo además fácilmente extender el documento con más detalles o diferentes tipos de datos según sea necesario.
+
+`005-varios telefonos.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12336,6 +13621,38 @@ La importancia de este enfoque radica en que proporciona una estructura clara y 
 </persona>
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Introducción a XML y HTML
+**Descripción:** Los estudiantes deben investigar las diferencias entre XML y HTML basándose en la información proporcionada en el archivo `000-Introduccion.md`. Se espera que redacten un breve resumen de sus hallazgos, destacando qué son estas tecnologías y cómo se relacionan entre sí.
+
+### Actividad 2: Creación de Documentos XML
+**Descripción:** Los estudiantes deben crear un documento XML simple siguiendo el ejemplo proporcionado en `001-repaso xml.xml`. El objetivo es entender la estructura básica de un archivo XML, incluyendo el uso del encabezado y las etiquetas raíz.
+
+### Actividad 3: Validación de Etiquetas Raíz
+**Descripción:** Los estudiantes deben revisar y corregir los ejemplos presentados en `002-debe haber una etiqueta raiz.xml` para asegurar que cada documento tiene exactamente una etiqueta raíz. Se espera comprender la importancia de este concepto básico del XML.
+
+### Actividad 4: Sensibilidad a Mayúsculas y Minúsculas
+**Descripción:** Los estudiantes deben corregir el archivo `003-case sensitive.xml` para asegurar que todas las etiquetas estén escritas en mayúsculas o minúsculas consistentemente. Esta actividad demuestra la importancia del caso (mayúscula/minúscula) en XML.
+
+### Actividad 5: Creación de Subetiquetas
+**Descripción:** A partir del ejemplo dado en `004-subetiquetas.xml`, los estudiantes deben ampliar el documento con más información personal, como dirección o email. Se espera que comprendan cómo crear y estructurar subetiquetas dentro de las etiquetas raíz.
+
+### Actividad 6: Manejo de Datos Repetitivos
+**Descripción:** Basándose en `005-varios telefonos.xml`, los estudiantes deben diseñar un documento XML que incluya múltiples elementos repetidos (como direcciones o correos electrónicos). Esto demuestra cómo manejar y estructurar información que se repite dentro del mismo esquema.
+
+### Actividad 7: Análisis de Documento XML Completo
+**Descripción:** Los estudiantes deben analizar un documento XML completo, identificando la etiqueta raíz, subetiquetas y cualquier dato repetitivo. Se espera que puedan distinguir claramente entre datos de texto puro y elementos estructurados.
+
+### Actividad 8: Mejora del Documento XML
+**Descripción:** Basándose en los ejemplos proporcionados, los estudiantes deben mejorar un documento XML existente agregando más detalles o corrigiendo errores. Se espera que demuestren su comprensión de la estructura y sintaxis correcta del XML.
+
+### Actividad 9: Creación de Vocabulario Personalizado
+**Descripción:** Los estudiantes deben diseñar un vocabulario personalizado en XML para almacenar información sobre libros, incluyendo detalles como el título, autor, año de publicación, etc. Se espera que demuestren su capacidad para crear y usar etiquetas personalizadas.
+
+### Actividad 10: Comparativa entre Ejemplos
+**Descripción:** Los estudiantes deben comparar los diferentes ejemplos proporcionados en la carpeta (desde `002-debe haber una etiqueta raíz.xml` hasta `005-varios telefonos.xml`) para identificar mejoras y áreas de mejora. Se espera que puedan evaluar críticamente el diseño y estructura de los documentos XML.
+
 
 <a id="creacion-de-descripciones-de-documentos"></a>
 ## Creación de descripciones de documentos
@@ -12345,14 +13662,13 @@ La importancia de este enfoque radica en que proporciona una estructura clara y 
 En esta carpeta, se trabajan ejercicios que te ayudarán a comprender cómo definir y validar esquemas XML para describir documentos. A través de estos ejemplos, aprenderás a crear un archivo XML con información estructurada (como datos personales) y un archivo XSD (XML Schema Definition) para especificar la estructura y los tipos de datos permitidos en el documento XML. Esto te permitirá asegurar que cualquier otro documento XML que siga este esquema cumpla con las reglas establecidas, mejorando así la integridad y coherencia de tus datos.
 
 ### documento de referencia
+<small>Creado: 2025-12-03 10:41</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo sencillo en XML (Lenguaje de Marca Extensible) que describe información personal sobre una persona. En este caso, el archivo comienza con la declaración del tipo y versión de XML utilizado, especificando que es "1.0" y que utiliza codificación UTF-8 para asegurar que todos los caracteres internacionales sean soportados.
+Este código XML representa la información de una persona, estructurada en elementos que describen diferentes aspectos como el nombre y los apellidos. En la parte central del documento, vemos un elemento `<persona>` que contiene todos los detalles relacionados con esa persona. Dentro de este elemento, hay otros elementos más pequeños: `<nombre>`, `<apellidos>` y `<telefonos>`. El elemento `<telefonos>` es especial porque puede contener varios números telefónicos dentro de elementos `<telefono>`. Este formato permite almacenar información jerárquica y estructurada sobre una persona, facilitando su lectura y procesamiento por otros programas. Es importante para la gestión de datos personales en aplicaciones web o bases de datos.
 
-El código estructura la información en etiquetas (o tags) para ser fácilmente legible tanto por humanos como por sistemas informáticos. La raíz del documento, es decir, el elemento principal, se llama "persona". Dentro de este elemento, hay tres subelementos: "nombre", que contiene el nombre de la persona; "apellidos", con sus apellidos; y "telefonos", que a su vez contienen dos elementos "telefono" para almacenar los números telefónicos asociados.
-
-Esta estructura es importante porque permite organizar datos de manera clara y jerárquica, facilitando tanto su lectura como su procesamiento automático. Por ejemplo, un sistema podría ser programado para buscar el nombre en la etiqueta "nombre" o los números telefónicos dentro de las etiquetas "telefono".
+`001-documento de referencia.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12367,14 +13683,17 @@ Esta estructura es importante porque permite organizar datos de manera clara y j
 ```
 
 ### esquema
+<small>Creado: 2025-12-03 10:42</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo de cómo se define el esquema XML para una estructura de datos en particular, en este caso, la información sobre una persona. Utiliza el lenguaje XSD (XML Schema Definition) que permite especificar reglas estrictas para validar documentos XML.
+Este código es un archivo de tipo XSD (XML Schema Definition), que define la estructura y los tipos de datos permitidos para documentos XML. En este caso, especifica cómo debe ser una etiqueta `<persona>` en un documento XML.
 
-En esta definición, se establece un elemento raíz llamado "persona" que contiene tres subelementos: "nombre", "apellidos" y "telefonos". Los nombres y apellidos son simples campos de texto. El elemento "telefonos" es más complejo porque puede contener uno o varios elementos "telefono", lo cual refleja la realidad de que una persona puede tener múltiples números telefónicos.
+El elemento principal es `<persona>`, el cual contiene tres elementos secundarios: `nombre`, `apellidos` y `telefonos`. El tipo de dato para ambos `nombre` y `apellidos` es simple texto (`xs:string`). Para los teléfonos, se define una estructura que permite uno o más elementos `<telefono>`, todos ellos también del tipo `xs:string`.
 
-Este tipo de estructura es importante en el desarrollo web y sistemas de información para asegurar que los datos intercambiados sigan un formato estándar, facilitando su procesamiento y uso posterior.
+La importancia de este código radica en que proporciona reglas claras sobre cómo debe ser la información estructurada en un documento XML, asegurando así consistencia y coherencia en los datos. Esto es crucial para sistemas que procesan grandes cantidades de datos y necesitan estar seguros de que la información se presenta de una manera predecible y uniforme.
+
+`002-esquema.xsd`
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12399,6 +13718,58 @@ Este tipo de estructura es importante en el desarrollo web y sistemas de informa
 </xs:schema>
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Creación de Documentos XML Básicos
+
+**Descripción:** Los estudiantes deben crear un documento XML similar al proporcionado en la carpeta, pero con información personal diferente. Se espera que los alumnos aprendan a estructurar datos simples utilizando etiquetas y atributos básicos.
+
+---
+
+### Actividad 2: Modificación de Datos Personales
+
+**Descripción:** A partir del archivo `001-documento de referencia.xml`, los estudiantes deben modificar la información personal (nombre, apellidos y teléfonos) por un conjunto diferente. El objetivo es que comprendan cómo actualizar datos en documentos XML.
+
+---
+
+### Actividad 3: Introducción a Esquemas XSD
+
+**Descripción:** Los alumnos deberán estudiar el archivo `002-esquema.xsd` e identificar cómo se define la estructura de un documento XML. Se pretende que comprendan los conceptos básicos de esquemas XSD y cómo aseguran la integridad del contenido.
+
+---
+
+### Actividad 4: Creación de Esquemas Simples
+
+**Descripción:** Los estudiantes deben crear su propio esquema XSD para un documento XML ficticio que contenga datos como nombre, edad y dirección. Se busca que dominen la creación de tipos simples y estructuras complejas.
+
+---
+
+### Actividad 5: Validación de Documentos XML
+
+**Descripción:** Utilizando el archivo `001-documento de referencia.xml` junto con el esquema XSD proporcionado (`002-esquema.xsd`), los estudiantes deben validar que el documento cumple correctamente con las reglas establecidas por el esquema. Esto les enseñará cómo verificar la integridad y consistencia de datos en XML.
+
+---
+
+### Actividad 6: Añadir Elementos a Documentos Existentes
+
+**Descripción:** Los alumnos se encargarán de añadir un nuevo elemento al archivo `001-documento de referencia.xml` (por ejemplo, una fecha de nacimiento), junto con la modificación del esquema XSD para incluir este nuevo elemento. Se busca que comprendan cómo extender y mantener documentos XML.
+
+---
+
+### Actividad 7: Manejo de Atributos en Esquemas
+
+**Descripción:** Los estudiantes deben modificar el archivo `002-esquema.xsd` para permitir la adición de atributos a los elementos ya existentes, como un ID único. Se pretende que aprendan cómo trabajar con atributos y sus restricciones.
+
+---
+
+### Actividad 8: Introducción a Datos Completos
+
+**Descripción:** Los alumnos deben crear un documento XML completo que incluya varios elementos de diferentes tipos (strings, números enteros, fechas) junto con su esquema correspondiente. Se busca que comprendan cómo manejar y validar múltiples tipos de datos en una estructura XML.
+
+---
+
+Estas actividades están diseñadas para permitir a los estudiantes practicar la creación, modificación y validación de documentos XML utilizando XSD.
+
 
 <a id="asociacion-de-descripciones-con-documentos-validacion"></a>
 ## Asociación de descripciones con documentos. Validación
@@ -12408,14 +13779,17 @@ Este tipo de estructura es importante en el desarrollo web y sistemas de informa
 En esta carpeta, trabajaremos con ejercicios que involucran la definición y asociación de esquemas XML (XSD) a documentos XML para validar su estructura. Los estudiantes aprenderán cómo crear un archivo XSD que defina las reglas para el formato del contenido en otro archivo XML. Además, se practicará el uso de bibliotecas como lxml en Python para cargar y validar estos documentos según el esquema definido. Este conjunto de ejercicios ayuda a comprender la importancia de la estructura y validación en el manejo de datos mediante lenguajes de marcas.
 
 ### documento de referencia
+<small>Creado: 2025-12-03 10:49</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo simple en XML (eXtensible Markup Language) que representa información personal sobre una persona. El archivo comienza declarando la versión del lenguaje y el conjunto de caracteres utilizado, en este caso "UTF-8". La estructura principal se define con una etiqueta raíz llamada `<persona>`, dentro de la cual se encuentran subetiquetas que describen diferentes aspectos de esta persona: su nombre, apellido y números telefónicos.
+Este fragmento de código es un ejemplo sencillo en XML que representa información personal sobre una persona. En la parte superior, se especifica la versión del lenguaje XML y su codificación de caracteres (UTF-8). La estructura principal está formada por una etiqueta `<persona>` que contiene tres elementos dentro: `nombre`, `apellido` e `telefonos`. 
 
-Cada elemento (como `nombre` o `apellido`) contiene información específica. Por ejemplo, el nombre es "Jose Vicente" y los apellidos son "Carratala Sanchis". Además, se define un conjunto de datos para los teléfonos bajo la etiqueta `<telefonos>`, que a su vez contiene dos elementos `<telefono>` con diferentes números.
+El elemento `nombre` alberga el nombre "Jose Vicente", mientras que `apellido` lleva el apellido completo "Carratala Sanchis". El elemento `telefonos` es un contenedor para múltiples números de teléfono, en este caso dos: `12345567` y `6534646`. Este formato XML permite organizar información estructurada de una manera fácilmente legible tanto para humanos como para máquinas.
 
-Este formato XML es importante porque permite estructurar datos de manera clara y lógica, facilitando así el intercambio y procesamiento de información entre diferentes sistemas o aplicaciones.
+Este tipo de archivo es importante porque proporciona un marco claro y estándar para representar datos, lo que facilita su procesamiento y análisis en aplicaciones informáticas.
+
+`001-documento de referencia.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12430,14 +13804,15 @@ Este formato XML es importante porque permite estructurar datos de manera clara 
 ```
 
 ### esquema
+<small>Creado: 2025-12-03 10:45</small>
 
 #### Explicación
 
-Este código es un ejemplo de un fichero XSD (XML Schema Definition), que se utiliza para definir las estructuras y tipos de datos permitidos en archivos XML. En este caso, el archivo define la estructura de una persona con elementos como nombre, apellidos y listas de teléfonos.
+Este fragmento de código es un archivo XSD (XML Schema Definition) que define una estructura para los documentos XML relacionados con personas. En específico, el esquema establece cómo debe ser la estructura de un elemento llamado "persona", incluyendo subelementos como "nombre", "apellidos" y "telefonos". El elemento "persona" contiene tres elementos secuenciales: "nombre", que almacena una cadena de texto; "apellidos", también una cadena de texto; y "telefonos", un contenedor para varios números telefónicos. Bajo el elemento "telefonos", se puede incluir uno o más elementos llamados "telefono", todos ellos almacenando cadenas de texto que representan diferentes números telefónicos asociados a la persona.
 
-El elemento principal es `<persona>`, que contiene tres subelementos: `nombre` (que debe ser un texto), `apellidos` (también un texto) y `telefonos`. El elemento `telefonos` tiene dentro uno o más elementos `telefono`, todos ellos de tipo texto. La parte interesante aquí es que el número mínimo de teléfonos permitidos es 1 (`minOccurs="1"`) y no hay un límite máximo, lo que significa que puedes añadir tantos números telefónicos como desees (`maxOccurs="unbounded"`).
+Este esquema es importante porque garantiza que cualquier documento XML que utilice esta estructura para describir personas siga una norma clara y consistente, lo cual facilita el intercambio y procesamiento de datos entre sistemas diferentes.
 
-Este esquema XSD es importante porque proporciona una estructura precisa para garantizar que los documentos XML se creen correctamente. De esta manera, otros sistemas o programas pueden validar automáticamente si un documento XML cumple con las reglas establecidas en este esquema, asegurando así la consistencia y coherencia de la información intercambiada.
+`002-esquema.xsd`
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12463,12 +13838,19 @@ Este esquema XSD es importante porque proporciona una estructura precisa para ga
 ```
 
 ### validador
+<small>Creado: 2025-12-03 10:50</small>
 
 #### Explicación
 
-Este fragmento de código se utiliza para validar un archivo XML (lenguaje de marcado extensible) con respecto a un esquema XSD (Definición de Esquemas para Lenguajes de Marcado). Primero, el programa importa la biblioteca `lxml.etree`, que proporciona funciones para manejar archivos XML y validarlos. Luego, se carga tanto el documento XML que queremos verificar como el archivo XSD que define las reglas del esquema.
+Este código Python utiliza la biblioteca `lxml` para validar un documento XML utilizando un esquema XSD. En primer lugar, el programa carga dos archivos: uno que contiene un documento XML (llamado "001-documento de referencia.xml") y otro que define los requisitos estructurales del documento en formato XSD ("002-esquema.xsd").
 
-El código crea una instancia de `etree.XMLSchema` pasando el contenido del archivo XSD, lo cual permite definir las estructuras permitidas en el XML según las especificaciones del esquema. Finalmente, se llama a la función `schema.validate(xml_doc)`, que comprueba si el documento XML cumple con las reglas establecidas por el esquema y devuelve un valor booleano (verdadero o falso) indicando si el archivo XML está correctamente formado según dichas reglas. Este proceso es crucial para asegurar la consistencia e integridad de los datos en formatos estructurados como XML, especialmente cuando se comparten entre diferentes sistemas y aplicaciones.
+Luego, crea una instancia de `etree.XMLSchema` pasando el contenido del esquema XSD. Esta instancia actúa como un validador que se encarga de comprobar si el documento XML cumple con los requisitos definidos en el esquema.
+
+Finalmente, la función `schema.validate(xml_doc)` comprueba la validez del documento XML según el esquema y imprime `True` si el documento es válido o `False` en caso contrario. Esto ayuda a asegurarse de que los datos contenidos en el archivo XML estén correctamente estructurados y formateados según lo especificado.
+
+Este tipo de validación es crucial en aplicaciones donde la consistencia y integridad de los datos son fundamentales, ya que permite detectar errores antes de procesar o almacenar los datos.
+
+`003-validador.py`
 
 ```python
 # pip3 install lxml --break-system-packages
@@ -12483,6 +13865,48 @@ schema = etree.XMLSchema(xsd_doc)
 print(schema.validate(xml_doc))
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Comprender la Estructura XML y XSD
+
+**Descripción:** Los estudiantes deben analizar el archivo `001-documento de referencia.xml` para entender cómo se estructuran los datos personales. A continuación, deberán revisar el esquema `002-esquema.xsd` para comprender qué reglas define sobre la estructura del XML. Se espera que puedan identificar y explicar las diferencias entre elementos obligatorios y opcionales en ambos documentos.
+
+### Actividad 2: Modificación de Datos Personales
+
+**Descripción:** Los estudiantes deben modificar el contenido del archivo `001-documento de referencia.xml` para añadir o eliminar información personal como nombres, apellidos u otros datos. Luego deberán probar si el nuevo documento XML sigue siendo válido según el esquema proporcionado.
+
+### Actividad 3: Crear un Nuevo Documento XML
+
+**Descripción:** Los estudiantes deben crear un nuevo archivo XML basándose en la estructura definida en `002-esquema.xsd`. Se les pedirá que incluyan al menos dos registros de personas con diferentes datos. Una vez creado, deben validar el documento utilizando el script proporcionado.
+
+### Actividad 4: Añadir Elementos y Atributos
+
+**Descripción:** Los estudiantes tendrán la tarea de agregar un nuevo elemento a `001-documento de referencia.xml`, como por ejemplo “correo electrónico”. Posteriormente deberán modificar el archivo XSD para incluir este nuevo elemento y asegurarse de que el documento XML sigue siendo válido.
+
+### Actividad 5: Validación Automática con Python
+
+**Descripción:** Los estudiantes deben utilizar el script `003-validador.py` para validar un conjunto de archivos XML proporcionados por el profesor. Se les pedirá que identifiquen y documenten los errores encontrados en la validación.
+
+### Actividad 6: Mejora del Script Validador
+
+**Descripción:** Los estudiantes deben mejorar el script `003-validador.py` para incluir una funcionalidad que liste todos los elementos no válidos dentro de un documento XML, proporcionando detalles sobre qué partes específicas del esquema no se cumplen.
+
+### Actividad 7: Crear un Esquema XSD Complejo
+
+**Descripción:** Los estudiantes deben crear un nuevo esquema XSD para un conjunto de datos más complejos. Este debe incluir elementos con atributos, listas y referencias a otros documentos XML. El objetivo es validar un documento XML basado en este nuevo esquema.
+
+### Actividad 8: Integración de Funciones Python
+
+**Descripción:** Los estudiantes deben integrar funciones en el script `003-validador.py` para facilitar la validación automática de múltiples archivos XML. La función debe ser capaz de recoger los nombres de los archivos a validar desde una lista o directorio dado.
+
+### Actividad 9: Documentación del Proceso de Validación
+
+**Descripción:** Los estudiantes deben escribir un breve informe (2-3 páginas) explicando el proceso de validación XML-XSD, incluyendo cómo se estructura el esquema XSD y cómo este se utiliza para validar archivos XML.
+
+### Actividad 10: Diseño e Implementación de una Aplicación Simulada
+
+**Descripción:** Los estudiantes deben diseñar e implementar una aplicación sencilla que permita a los usuarios ingresar datos personales, estos serán validados contra un esquema XSD y luego almacenados en un archivo XML. Se espera que la interfaz sea amigable para el usuario y las operaciones sean seguras.
+
 
 <a id="herramientas-de-creacion-y-validacion"></a>
 ## Herramientas de creación y validación
@@ -12491,30 +13915,18 @@ print(schema.validate(xml_doc))
 
 En esta actividad, vais a crear un curriculum vitae personal en formato XML. Este ejercicio os permitirá familiarizaros con la estructura y el uso del lenguaje de marcas XML para representar datos estructurados. Además, tendréis que diseñar el esquema XSD correspondiente a partir del archivo XML creado, lo cual implica comprender las restricciones y tipos de datos necesarios para validar el CV generado. Este ejercicio practica la creación de documentos XML válidos y la definición de sus respectivos esquemas XML (XSD), fomentando así una sólida base en la representación y validación de datos estructurados utilizando lenguajes de marcas.
 
-### enunciado del ejercicio
-
-#### Explicación
-
-Este fragmento de texto está proporcionando instrucciones para un ejercicio práctico. Te pide que crees tu currículum vitae (CV) en formato XML, que es un tipo de código estructurado muy comúnmente utilizado en la web y en la informática en general. Después de crear el CV en XML, debes generar un archivo XSD (XML Schema Definition), utilizando herramientas como ChatGPT si es necesario, para definir las reglas sobre cómo debe ser estructurado tu documento XML. Finalmente, se te pide que valides tu archivo XML con la ayuda del XSD para asegurarte de que sigues correctamente el formato y las reglas establecidas.
-
-Este ejercicio es importante porque te enseña a trabajar con dos herramientas fundamentales en el manejo de datos estructurados: XML para almacenar información y XSD para definir y validar esquemas. Estos conocimientos son clave en campos como la programación web, la gestión de bases de datos y el desarrollo de aplicaciones que requieren un intercambio de datos preciso y consistente.
-
-```markdown
-Tenéis que hacer vuestro CV en XML
-Y tenéis que hacer (ChatGPT mediante) el XSD a partir del XML
-
-Y por último pasáis el validador
-```
-
 ### curriculum
+<small>Creado: 2025-12-03 11:04</small>
 
 #### Explicación
 
-Este código XML representa un currículum profesional estructurado de manera clara y ordenada. La información se divide en diferentes elementos como datos personales, perfil profesional, experiencia laboral, formación académica, publicaciones, proyectos destacados, competencias técnicas e idiomas. Cada sección está bien definida para facilitar la lectura y comprensión del currículum.
+Este archivo XML se utiliza para definir un currículum en formato estructurado. Cada elemento del currículum está representado por etiquetas XML específicas que contienen información relevante como datos personales, experiencia profesional, formación académica y competencias técnicas. Por ejemplo, el elemento `<datosPersonales>` contiene detalles sobre el nombre, apellidos, fecha de nacimiento, nacionalidad, contacto y dirección del individuo.
 
-El uso de XML permite organizar y estructurar la información de manera muy clara y semánticamente correcta. Por ejemplo, en la sección "experienciaProfesional", cada puesto de trabajo tiene sus propios elementos como título, empresa, descripción y fechas relevantes. Esto hace que el currículum sea no solo fácil de leer para humanos, sino también accesible para sistemas informáticos que puedan procesar esta información estructurada.
+La estructura permite organizar la información en secciones claras como `experienciaProfesional`, donde cada puesto tiene sus propios elementos para describir el título del trabajo, empresa, localización, fechas y una breve descripción. Similarmente, otros bloques como `formacionAcademica` y `publicaciones` siguen un patrón similar para listar estudios completados y obras escritas respectivamente.
 
-El uso de namespaces (espacio de nombres), en este caso `xmlns="https://ejemplo.com/curriculum"`, ayuda a evitar conflictos con otras etiquetas XML y proporciona una forma estándar de referirse a elementos específicos dentro del currículum, lo que es especialmente útil si el mismo documento se comparte o integra con otros sistemas.
+Este formato es importante porque facilita la creación de currículos que son no solo legibles para humanos sino también procesables por software, lo cual puede ser útil en sistemas automatizados de gestión de empleados o bases de datos de candidatos. Además, al usar XML se asegura una estructuración clara y consistente de los datos, permitiendo a las personas interesadas en el currículum acceder fácilmente a la información necesaria.
+
+`002-curriculum.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12674,6 +14086,50 @@ El uso de namespaces (espacio de nombres), en este caso `xmlns="https://ejemplo.
     </otrosDatos>
 </curriculum>
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Creación de CV Personalizado en XML
+
+**Descripción:** Crea un currículum vitae personalizado usando el formato XML proporcionado. Llena los campos relevantes con tus datos personales y profesional, incluyendo experiencias laborales, formación académica y competencias técnicas.
+
+### Actividad 2: Generación del Esquema XSD
+
+**Descripción:** A partir de tu CV personalizado en formato XML, crea un esquema XSD que valide el contenido estructurado. El objetivo es asegurar la consistencia y integridad del documento XML generado por cada estudiante.
+
+### Actividad 3: Validación XML con XSD
+
+**Descripción:** Valida tu currículum vitae (XML) contra el esquema XSD recién creado para garantizar que cumple con las reglas definidas. Utiliza herramientas de validación online o software local si es necesario.
+
+### Actividad 4: Anatomía del XML en CV
+
+**Descripción:** Analiza y documenta el contenido de los diferentes elementos y atributos presentes en el ejemplo de currículum vitae (XML). Explica la estructura, función y relevancia de cada parte del documento.
+
+### Actividad 5: Personalización de Competencias Técnicas
+
+**Descripción:** Añade al menos dos competencias técnicas adicionales a tu perfil profesional basado en tus conocimientos actuales o habilidades que estás adquiriendo. Describe cómo estas competencias mejorarían tu CV y posibilidades laborales.
+
+### Actividad 6: Integración de Proyectos Destacados
+
+**Descripción:** Agrega detalles sobre al menos dos proyectos destacados que hayas realizado, incluyendo la descripción del proyecto, el rol que has desempeñado y las tecnologías utilizadas. Refuerza tu perfil profesional con estos ejemplos prácticos.
+
+### Actividad 7: Mejora de Flujo Descriptivo
+
+**Descripción:** Revisa los bloques de texto dentro del currículum (especialmente en experiencia laboral y descripciones) para mejorar la claridad y fluidez. Asegúrate de que cada sección esté bien estructurada y sea fácil de leer.
+
+### Actividad 8: Expansión del Contenido de Idiomas
+
+**Descripción:** Llena las etiquetas `<idioma>` con información relevante sobre el conocimiento adicional de idiomas. Incluye al menos un segundo idioma y su nivel, utilizando la estructura proporcionada en el archivo XML.
+
+### Actividad 9: Añadir Datos Adicionales
+
+**Descripción:** Agrega más datos relevantes a la sección `<otrosDatos>`, como disponibilidad para viajes o certificaciones técnicas. Esto ayuda a completar tu perfil profesional y destaca cualidades adicionales que podrían ser valoradas por empleadores.
+
+### Actividad 10: Revisión Final del CV
+
+**Descripción:** Realiza una revisión final de todo el currículum vitae generado en XML, asegurándote de que no haya errores gramaticales ni de formato. Prepara tu CV para su posible uso en la búsqueda de empleo o para presentaciones profesionales futuras.
+
+Estas actividades están diseñadas para ayudar a los estudiantes a entender y aplicar conceptos clave sobre lenguajes de marcas, estructuración de datos y validación mediante esquemas XML.
 
 
 
